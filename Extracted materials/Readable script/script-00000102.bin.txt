@@ -1,0 +1,464 @@
+SECTION 0
+ 0000	section_setup
+ 0001	name 9, SHOW_LEFT
+ 0003	cmd76 00000, 00017
+ 0006	hidetextbox 00000
+ 0008	text "Well,"
+ 0013	wait 00012
+ 0015	text " which shoe print should\nwe start with...?"
+ 0057	paragraph
+ 0058	text "If we\'re going to verify the\ndefendant\'s account,"
+ 0107	wait 00008
+ 0109	text " here\'s\nthe place to start!"
+ 0136	paragraph
+ 0137	hidetextbox 00001
+ 0139	cmd76 00002, 00000
+ 0142	cmd74 00005, 00000
+ 0145	halt
+ 0146	section_end
+ENDSECTION
+SECTION 1
+ 0000	section_setup
+ 0001	name 9, SHOW_LEFT
+ 0003	cmd76 00000, 00017
+ 0006	hidetextbox 00000
+ 0008	speed 00003
+ 0010	text "Shoe prints,"
+ 0022	wait 00008
+ 0024	text " prepare to be\nexamined!"
+ 0048	paragraph
+ 0049	cmd76 00002, 00000
+ 0052	name 5, SHOW_LEFT
+ 0054	cmd76 00001, 00004
+ 0057	speed 00005
+ 0059	text "Ooh!"
+ 0063	wait 00012
+ 0065	newline
+ 0066	speed 00003
+ 0068	text "This is so exciting!"
+ 0088	paragraph
+ 0089	hidetextbox 00001
+ 0091	cmd76 00002, 00000
+ 0094	cmd74 00005, 00000
+ 0097	halt
+ 0098	section_end
+ENDSECTION
+SECTION 2
+ 0000	section_setup
+ 0001	hidetextbox 00000
+ 0003	text "First,"
+ 0009	wait 00008
+ 0011	text " choose the print\nto examine."
+ 0040	paragraph
+ 0041	cmd74 00005, 00000
+ 0044	halt
+ 0045	section_end
+ENDSECTION
+SECTION 3
+ 0000	section_setup
+ 0001	hidetextbox 00000
+ 0003	text "I\'d say of all the prints,"
+ 0029	wait 00008
+ 0031	newline
+ 0032	text "this one looks the cleanest."
+ 0060	paragraph
+ 0061	cmd74 00005, 00000
+ 0064	halt
+ 0065	section_end
+ENDSECTION
+SECTION 4
+ 0000	section_setup
+ 0001	hidetextbox 00000
+ 0003	text "First,"
+ 0009	wait 00010
+ 0011	text " we pour in the plaster."
+ 0035	paragraph
+ 0036	cmd74 00005, 00000
+ 0039	halt
+ 0040	section_end
+ENDSECTION
+SECTION 5
+ 0000	section_setup
+ 0001	wait 00060
+ 0003	cmd74 00008, 00050
+ 0006	wait 00005
+ 0008	hidetextbox 00000
+ 0010	cmd30 00001
+ 0012	cmd74 00019, 00000
+ 0015	cmd76 00000, 00017
+ 0018	text "Right,"
+ 0024	wait 00008
+ 0026	text " here goes!"
+ 0037	wait 00016
+ 0039	newline
+ 0040	text "First..."
+ 0048	paragraph
+ 0049	text "{00385}Pour the plaster into the\nprint until it\'s full.{00385}"
+ 0099	paragraph
+ 0100	speed 00004
+ 0102	text "..."
+ 0105	wait 00015
+ 0107	text "You try it."
+ 0118	paragraph
+ 0119	cmd30 00000
+ 0121	cmd74 00019, 00002
+ 0124	shake 00030, 00001
+ 0127	speed 00003
+ 0129	text "How am I supposed to do that!?"
+ 0159	paragraph
+ 0160	cmd30 00001
+ 0162	cmd74 00019, 00000
+ 0165	text "Just touch the screen where\nyou want to pour the plaster."
+ 0222	paragraph
+ 0223	text "Like this!"
+ 0233	paragraph
+ 0234	cmd74 00008, 00051
+ 0237	wait 00005
+ 0239	cmd76 00002, 00000
+ 0242	wait 00015
+ 0244	cmd74 00008, 00062
+ 0247	wait 00060
+ 0249	cmd30 00000
+ 0251	cmd74 00008, 00050
+ 0254	wait 00005
+ 0256	cmd74 00019, 00002
+ 0259	textcolor COLOR_BLUE
+ 0261	text "(Hmm,"
+ 0266	wait 00008
+ 0268	text " that doesn\'t look too\nhard...)"
+ 0299	textcolor COLOR_WHITE
+ 0301	paragraph
+ 0302	cmd30 00001
+ 0304	cmd74 00019, 00000
+ 0307	cmd76 00000, 00016
+ 0310	text "If you run out of plaster in\nyour beaker before you\'re\ndone,"
+ 0370	wait 00008
+ 0372	text " you have to start over!"
+ 0396	paragraph
+ 0397	cmd74 00008, 00051
+ 0400	wait 00005
+ 0402	wait 00005
+ 0404	cmd76 00002, 00000
+ 0407	wait 00015
+ 0409	cmd74 00005, 00000
+ 0412	halt
+ 0413	section_end
+ENDSECTION
+SECTION 6
+ 0000	section_setup
+ 0001	hidetextbox 00000
+ 0003	name 9, SHOW_LEFT
+ 0005	cmd76 00000, 00024
+ 0008	text "..."
+ 0011	wait 00012
+ 0013	text "OK!"
+ 0016	wait 00008
+ 0018	newline
+ 0019	text "Looking good."
+ 0032	paragraph
+ 0033	text "Next,"
+ 0038	wait 00008
+ 0040	text " to dry the plaster!"
+ 0060	paragraph
+ 0061	bganim 00098, 00579
+ 0064	hidetextbox 00001
+ 0066	cmd74 00005, 00000
+ 0069	halt
+ 0070	section_end
+ENDSECTION
+SECTION 7
+ 0000	section_setup
+ 0001	hidetextbox 00000
+ 0003	cmd76 00000, 00018
+ 0006	name 9, SHOW_LEFT
+ 0008	screen_fade 02305, 00008, 00031
+ 0012	sound 00053, 00001
+ 0015	shake 00030, 00001
+ 0018	speed 00002
+ 0020	text "What are you doing!?"
+ 0040	wait 00016
+ 0042	newline
+ 0043	speed 00003
+ 0045	text "Out of plaster already?"
+ 0068	paragraph
+ 0069	name 4, SHOW_LEFT
+ 0071	text "Hey,"
+ 0075	wait 00008
+ 0077	text " give me a break!"
+ 0094	wait 00010
+ 0096	newline
+ 0097	text "I\'m just a beginner at this!"
+ 0125	paragraph
+ 0126	name 9, SHOW_LEFT
+ 0128	text "I\'m not that far ahead of you,"
+ 0158	wait 00016
+ 0160	newline
+ 0161	text "believe me!"
+ 0172	wait 00016
+ 0174	text " ..."
+ 0178	wait 00020
+ 0180	text "Fine."
+ 0185	paragraph
+ 0186	cmd76 00000, 00016
+ 0189	text "I\'ll make another batch."
+ 0213	wait 00016
+ 0215	newline
+ 0216	text "Don\'t mess it up this time."
+ 0243	paragraph
+ 0244	bganim 00098, 00579
+ 0247	cmd74 00005, 00000
+ 0250	halt
+ 0251	section_end
+ENDSECTION
+SECTION 8
+ 0000	section_setup
+ 0001	hidetextbox 00000
+ 0003	name 4, SHOW_LEFT
+ 0005	textcolor COLOR_BLUE
+ 0007	text "(Plaster,"
+ 0016	wait 00008
+ 0018	text " here comes Justice!"
+ 0038	wait 00016
+ 0040	newline
+ 0041	text "*sigh*)"
+ 0048	textcolor COLOR_WHITE
+ 0050	paragraph
+ 0051	hidetextbox 00001
+ 0053	cmd74 00005, 00000
+ 0056	halt
+ 0057	section_end
+ENDSECTION
+SECTION 9
+ 0000	section_setup
+ 0001	name 9, SHOW_LEFT
+ 0003	cmd76 00000, 00016
+ 0006	hidetextbox 00000
+ 0008	text "Not bad."
+ 0016	wait 00016
+ 0018	text " You\'re handier with\nthat than you look."
+ 0058	paragraph
+ 0059	name 4, SHOW_LEFT
+ 0061	textcolor COLOR_BLUE
+ 0063	text "(What\'s that supposed to\nmean?)"
+ 0094	textcolor COLOR_WHITE
+ 0096	paragraph
+ 0097	name 9, SHOW_LEFT
+ 0099	cmd76 00000, 00017
+ 0102	speed 00003
+ 0104	text "On to the next step!"
+ 0124	paragraph
+ 0125	text "Um..."
+ 0130	wait 00016
+ 0132	text " {00385}Dry the plaster until\nit turns white."
+ 0171	wait 00010
+ 0173	text "{00385} Right!"
+ 0181	paragraph
+ 0182	cmd74 00008, 00082
+ 0185	text "Just touch to direct the\ndryer!"
+ 0216	paragraph
+ 0217	cmd76 00002, 00000
+ 0220	hidetextbox 00001
+ 0222	wait 00015
+ 0224	cmd74 00008, 00083
+ 0227	wait 00090
+ 0229	cmd74 00008, 00082
+ 0232	wait 00030
+ 0234	name 9, SHOW_LEFT
+ 0236	cmd76 00000, 00017
+ 0239	wait 00015
+ 0241	nextpage_nobutton
+ 0242	hidetextbox 00000
+ 0244	text "..."
+ 0247	wait 00020
+ 0249	text "There,"
+ 0255	wait 00012
+ 0257	text " give it a shot!"
+ 0273	paragraph
+ 0274	cmd76 00002, 00000
+ 0277	hidetextbox 00001
+ 0279	cmd74 00005, 00000
+ 0282	halt
+ 0283	section_end
+ENDSECTION
+SECTION 10
+ 0000	section_setup
+ 0001	name 9, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	shake 00030, 00000
+ 0008	screen_fade 02305, 00008, 00031
+ 0012	speed 00002
+ 0014	text "OK,"
+ 0017	wait 00016
+ 0019	text " let\'s take out the mold!"
+ 0044	wait 00016
+ 0046	paragraph
+ 0047	cmd74 00005, 00000
+ 0050	halt
+ 0051	section_end
+ENDSECTION
+SECTION 11
+ 0000	section_setup
+ 0001	hidetextbox 00000
+ 0003	name 9, SHOW_LEFT
+ 0005	cmd76 00000, 00016
+ 0008	text "Looks like it\'s hardened\nnicely."
+ 0040	wait 00016
+ 0042	text " Let\'s take a look!"
+ 0061	paragraph
+ 0062	cmd76 00002, 00000
+ 0065	hidetextbox 00001
+ 0067	cmd74 00005, 00000
+ 0070	halt
+ 0071	section_end
+ENDSECTION
+SECTION 12
+ 0000	section_setup
+ 0001	name 9, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	text "Hmm..."
+ 0011	wait 00016
+ 0013	text " Yes,"
+ 0018	wait 00008
+ 0020	text " that\'s a good\none."
+ 0039	wait 00016
+ 0041	text " Next,"
+ 0047	wait 00008
+ 0049	text " the ink!"
+ 0058	paragraph
+ 0059	cmd74 00005, 00000
+ 0062	halt
+ 0063	section_end
+ENDSECTION
+SECTION 13
+ 0000	section_setup
+ 0001	hidetextbox 00000
+ 0003	name 9, SHOW_LEFT
+ 0005	cmd76 00000, 00017
+ 0008	speed 00003
+ 0010	text "Ready for the next step?"
+ 0034	paragraph
+ 0035	cmd76 00002, 00000
+ 0038	hidetextbox 00001
+ 0040	cmd74 00005, 00000
+ 0043	halt
+ 0044	section_end
+ENDSECTION
+SECTION 14
+ 0000	section_setup
+ 0001	hidetextbox 00000
+ 0003	name 9, SHOW_LEFT
+ 0005	cmd76 00000, 00017
+ 0008	text "Use the roller to ink\njust the shoe print part."
+ 0055	paragraph
+ 0056	text "Hold on to that roller tight\nnow,"
+ 0089	wait 00008
+ 0091	text " and roll it up and down."
+ 0116	paragraph
+ 0117	text "Keep going till you get enough\nink on there for a good print!"
+ 0178	paragraph
+ 0179	cmd76 00002, 00000
+ 0182	hidetextbox 00001
+ 0184	wait 00030
+ 0186	cmd74 00005, 00000
+ 0189	halt
+ 0190	section_end
+ENDSECTION
+SECTION 15
+ 0000	section_setup
+ 0001	hidetextbox 00000
+ 0003	name 9, SHOW_LEFT
+ 0005	sound 00051, 00001
+ 0008	screen_fade 02305, 00008, 00031
+ 0012	shake 00030, 00001
+ 0015	speed 00002
+ 0017	text "Right,"
+ 0023	wait 00008
+ 0025	text " now the moment you\'ve\nall been waiting for!"
+ 0069	wait 00014
+ 0071	text " Let\'s\ntake our print!"
+ 0093	paragraph
+ 0094	hidetextbox 00001
+ 0096	cmd74 00005, 00000
+ 0099	halt
+ 0100	section_end
+ENDSECTION
+SECTION 16
+ 0000	section_setup
+ 0001	name 9, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	sound 00051, 00001
+ 0008	screen_fade 02305, 00008, 00031
+ 0012	shake 00030, 00001
+ 0015	speed 00002
+ 0017	text "Right,"
+ 0023	wait 00008
+ 0025	text " now the moment you\'ve\nall been waiting for!"
+ 0069	wait 00014
+ 0071	text " "
+ 0072	speed 00003
+ 0074	text "Let\'s\ntake our print!"
+ 0095	paragraph
+ 0096	cmd76 00002, 00000
+ 0099	hidetextbox 00001
+ 0101	cmd74 00005, 00000
+ 0104	halt
+ 0105	section_end
+ENDSECTION
+SECTION 17
+ 0000	section_setup
+ 0001	name 9, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	text "Ready?"
+ 0011	wait 00016
+ 0013	newline
+ 0014	text "Here goes!"
+ 0024	paragraph
+ 0025	cmd74 00005, 00000
+ 0028	halt
+ 0029	section_end
+ENDSECTION
+SECTION 18
+ 0000	section_setup
+ 0001	name 9, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	text "Let\'s see if we get a match."
+ 0033	paragraph
+ 0034	cmd74 00005, 00000
+ 0037	halt
+ 0038	section_end
+ENDSECTION
+SECTION 19
+ 0000	section_setup
+ 0001	name 9, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	text "Ooh,"
+ 0009	wait 00012
+ 0011	text " not bad!"
+ 0020	wait 00015
+ 0022	text " That\'s a fine\nprint you took there."
+ 0058	paragraph
+ 0059	text "Next,"
+ 0064	wait 00008
+ 0066	text " to match it."
+ 0079	paragraph
+ 0080	hidetextbox 00001
+ 0082	cmd74 00005, 00000
+ 0085	halt
+ 0086	section_end
+ENDSECTION
+SECTION 20
+ 0000	section_setup
+ 0001	hidetextbox 00000
+ 0003	name 9, SHOW_LEFT
+ 0005	text "Hmm,"
+ 0009	wait 00008
+ 0011	text " no good."
+ 0020	wait 00016
+ 0022	text " Must have\nmessed up somewhere."
+ 0053	wait 00016
+ 0055	text " Shall\nwe try on another print?"
+ 0086	paragraph
+ 0087	cmd74 00005, 00000
+ 0090	halt
+ 0091	section_end
+ENDSECTION
