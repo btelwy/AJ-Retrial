@@ -1,0 +1,2647 @@
+SECTION 0
+ 0000	section_setup
+ 0001	cmd62
+ 0002	textcolor 00004
+ 0004	hide_court_record_button 00000
+ 0006	bg 30, BG_NOSHIFT
+ 0008	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0012	name 0, SHOW_LEFT
+ 0014	screen_fade 4, FADE_FROM_BLACK, 1, 31
+ 0018	wait 00025
+ 0020	hidetextbox 00000
+ 0022	cmd74 00002, 00000
+ 0025	wait 00030
+ 0027	speed 00010
+ 0029	cmd30 00002
+ 0031	toggle_center_text 00001
+ 0033	textcolor COLOR_GREEN
+ 0035	text "July 10, 9:49 AM\nDistrict Court\nDefendant Lobby No. 2"
+ 0088	nextpage_button
+ 0089	textcolor COLOR_WHITE
+ 0091	fademusic 0, 5
+ 0094	shake 00000, 00093
+ 0097	section_setup
+ 0098	wait 00030
+ 0100	speed 00255
+ 0102	cmd38 00001
+ 0104	person 5, PLACE_DEFAULT, 0, 96, 95
+ 0108	name 5, SHOW_LEFT
+ 0110	hidetextbox 00000
+ 0112	screen_fade 02305, 00008, 00031
+ 0116	shake 00030, 00000
+ 0119	speed 00002
+ 0121	text "Well,"
+ 0126	wait 00006
+ 0128	text " this is it!"
+ 0140	paragraph
+ 0141	name 4, SHOW_LEFT
+ 0143	person 5, PLACE_DEFAULT, 0, 95, 95
+ 0147	speed 00003
+ 0149	text "Today\'s the day it all goes\ndown."
+ 0182	paragraph
+ 0183	speed 00004
+ 0185	textcolor COLOR_BLUE
+ 0187	text "(And then there was\nyesterday...)"
+ 0220	textcolor COLOR_WHITE
+ 0222	nextpage_button
+ 0223	hidetextbox 00001
+ 0225	sound 00049, 00001
+ 0228	screen_fade 2, FADE_TO_WHITE, 1, 31
+ 0232	wait 00015
+ 0234	cmd5F 00003, 00001, 00031
+ 0238	cmd4D 00039, 00000
+ 0241	person 37, PLACE_DEFAULT, 0, 815, 815
+ 0245	screen_fade 2, FADE_FROM_WHITE, 1, 31
+ 0249	wait 00015
+ 0251	name 37, SHOW_LEFT
+ 0253	person 37, PLACE_DEFAULT, 0, 816, 815
+ 0257	hidetextbox 00000
+ 0259	speed 00003
+ 0261	text "This meeting is over."
+ 0282	wait 00012
+ 0284	newline
+ 0285	speed 00004
+ 0287	cmd5A 00369
+ 0289	text ".."
+ 0291	cmd59 00172
+ 0293	text "orry."
+ 0298	nextpage_button
+ 0299	person 37, PLACE_DEFAULT, 0, 815, 815
+ 0303	name 4, SHOW_LEFT
+ 0305	screen_fade 02305, 00008, 00031
+ 0309	shake 00030, 00000
+ 0312	speed 00003
+ 0314	text "Just give us five more\nminutes."
+ 0345	wait 00010
+ 0347	text " We can call them\nback after that."
+ 0381	nextpage_button
+ 0382	person 37, PLACE_DEFAULT, 0, 818, 817
+ 0386	name 37, SHOW_LEFT
+ 0388	speed 00003
+ 0390	text "Sorry,"
+ 0396	wait 00008
+ 0398	text " no go."
+ 0405	wait 00012
+ 0407	text " C\'mon,"
+ 0414	wait 00008
+ 0416	newline
+ 0417	text "piano{DASH}boy."
+ 0427	wait 00012
+ 0429	text " We\'re leaving."
+ 0444	nextpage_button
+ 0445	person 5, PLACE_DEFAULT, 0, 96, 95
+ 0449	name 5, SHOW_LEFT
+ 0451	screen_fade 02305, 00008, 00031
+ 0455	sound 00053, 00001
+ 0458	shake 00030, 00001
+ 0461	speed 00003
+ 0463	text "Daryan!"
+ 0470	wait 00012
+ 0472	screen_fade 02305, 00008, 00031
+ 0476	shake 00030, 00000
+ 0479	text " "
+ 0480	speed 00002
+ 0482	text "Wait!"
+ 0487	nextpage_button
+ 0488	hidetextbox 00001
+ 0490	personvanish 00004, 00001
+ 0493	wait 00016
+ 0495	personvanish 00003, 00001
+ 0498	person 37, PLACE_DEFAULT, 0, 816, 815
+ 0502	name 37, SHOW_LEFT
+ 0504	cmd5A 00012
+ 0506	flagctl 0, 28, 0
+ 0508	section_setup
+ 0509	cmd59 00018
+ 0511	text "{02289}"
+ 0512	finger_choice_2_args_jmp 4294967199, 4294967179
+ 0515	pause
+ 0516	text "...I never liked you."
+ 0537	wait 00016
+ 0539	text " Either\nof you."
+ 0554	nextpage_button
+ 0555	person 37, PLACE_DEFAULT, 0, 815, 815
+ 0559	name 4, SHOW_LEFT
+ 0561	sound 00051, 00001
+ 0564	screen_fade 02305, 00008, 00031
+ 0568	text "Huh"
+ 0571	speed 00008
+ 0573	cmd5A 00369
+ 0575	text "..?"
+ 0578	nextpage_button
+ 0579	hidetextbox 00001
+ 0581	personvanish 00004, 00004
+ 0584	wait 00064
+ 0586	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0590	wait 00100
+ 0592	person 5, PLACE_DEFAULT, 0, 96, 95
+ 0596	name 5, SHOW_LEFT
+ 0598	screen_fade 02305, 00008, 00031
+ 0602	sound 00053, 00001
+ 0605	shake 00030, 00001
+ 0608	hidetextbox 00000
+ 0610	speed 00003
+ 0612	text "Darn it! We were so close!\n"
+ 0639	shake 00030, 00000
+ 0642	text "He was about to tell us!"
+ 0666	nextpage_button
+ 0667	person 5, PLACE_DEFAULT, 0, 68, 67
+ 0671	speed 00003
+ 0673	text "Hey, Apollo..."
+ 0687	nextpage_button
+ 0688	name 4, SHOW_LEFT
+ 0690	speed 00004
+ 0692	textcolor COLOR_BLUE
+ 0694	text "(He didn\'t want us to hear\nwhat Machi had to say"
+ 0742	speed 00008
+ 0744	text "...)"
+ 0748	textcolor COLOR_WHITE
+ 0750	nextpage_button
+ 0751	hidetextbox 00001
+ 0753	sound 00049, 00001
+ 0756	screen_fade 2, FADE_TO_WHITE, 1, 31
+ 0760	wait 00015
+ 0762	cmd5F 00004, 00001, 00001
+ 0766	bg 30, BG_NOSHIFT
+ 0768	person 5, PLACE_DEFAULT, 0, 95, 95
+ 0772	screen_fade 2, FADE_FROM_WHITE, 1, 31
+ 0776	wait 00015
+ 0778	name 4, SHOW_LEFT
+ 0780	hidetextbox 00000
+ 0782	speed 00008
+ 0784	textcolor COLOR_BLUE
+ 0786	text "(..."
+ 0790	wait 00018
+ 0792	speed 00004
+ 0794	text "And I think I know why.\n"
+ 0818	screen_fade 02305, 00008, 00031
+ 0822	shake 00030, 00000
+ 0825	speed 00003
+ 0827	text "Time to bring down a little\nJustice!)"
+ 0864	textcolor COLOR_WHITE
+ 0866	nextpage_button
+ 0867	hidetextbox 00001
+ 0869	person 5, PLACE_DEFAULT, 0, 81, 81
+ 0873	name 0, SHOW_LEFT
+ 0875	fademusic 30, 66
+ 0878	section_setup
+ 0879	sound 00177, 00001
+ 0882	shake 00030, 00001
+ 0885	screen_fade 02305, 00008, 00031
+ 0889	hidetextbox 00000
+ 0891	toggle_center_text 00001
+ 0893	speed 00001
+ 0895	textcolor COLOR_GREEN
+ 0897	text "...BANG!..."
+ 0908	togglevoicesfx 00001
+ 0910	toggle_center_text 00000
+ 0912	textcolor COLOR_WHITE
+ 0914	wait 00040
+ 0916	nextpage_nobutton
+ 0917	name 5, SHOW_LEFT
+ 0919	person 5, PLACE_DEFAULT, 0, 77, 81
+ 0923	cmd8F
+ 0924	wait_noanim 00143
+ 0926	cmd4F 00143, 00080, 00018, 02305, 00008, 00031, 00006
+ 0934	nextpage_button
+ 0935	newline
+ 0936	shake 00030, 00001
+ 0939	shake 00030, 00001
+ 0942	screen_fade 02305, 00008, 00031
+ 0946	speed 00003
+ 0948	text "E"
+ 0949	screen_fade 02305, 00008, 00031
+ 0953	text "ee"
+ 0955	screen_fade 02305, 00008, 00031
+ 0959	text "k!"
+ 0961	cmd63
+ 0962	nextpage_nobutton
+ 0963	hidetextbox 00001
+ 0965	personvanish 00004, 00001
+ 0968	wait 00016
+ 0970	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0974	name 4, SHOW_LEFT
+ 0976	hidetextbox 00000
+ 0978	screen_fade 02305, 00008, 00031
+ 0982	sound 00053, 00001
+ 0985	shake 00030, 00001
+ 0988	speed 00004
+ 0990	text "Wh{DASH}"
+ 0993	wait 00015
+ 0995	screen_fade 02305, 00008, 00031
+ 0999	shake 00030, 00001
+ 1002	speed 00003
+ 1004	text "What was that!?"
+ 1019	nextpage_button
+ 1020	person 0, PLACE_DEFAULT, 0, 0, 0
+ 1024	name 2, SHOW_LEFT
+ 1026	sound 00052, 00001
+ 1029	screen_fade 02305, 00008, 00031
+ 1033	hidetextbox 00000
+ 1035	speed 00005
+ 1037	text "He is heard but unseen"
+ 1059	speed 00008
+ 1061	text "..."
+ 1064	nextpage_button
+ 1065	hidetextbox 00001
+ 1067	personvanish 00003, 00001
+ 1070	person 5, PLACE_DEFAULT, 0, 82, 81
+ 1074	wait 00016
+ 1076	name 5, SHOW_LEFT
+ 1078	hidetextbox 00000
+ 1080	sound 00051, 00001
+ 1083	screen_fade 02305, 00008, 00031
+ 1087	speed 00003
+ 1089	text "Who\'s that talking"
+ 1107	speed 00008
+ 1109	cmd5A 00369
+ 1111	text "..?"
+ 1114	nextpage_button
+ 1115	hidetextbox 00001
+ 1117	personvanish 00004, 00001
+ 1120	wait 00016
+ 1122	sound 00058, 00001
+ 1125	wait 00030
+ 1127	sound 00026, 00001
+ 1130	screen_fade 02305, 00008, 00031
+ 1134	shake 00030, 00001
+ 1137	personvanish 00003, 00001
+ 1140	person 33, PLACE_DEFAULT, 0, 723, 723
+ 1144	sound 00147, 00001
+ 1147	wait 00010
+ 1149	person 33, PLACE_DEFAULT, 0, 738, 723
+ 1153	wait 00015
+ 1155	person 33, PLACE_DEFAULT, 0, 723, 723
+ 1159	wait 00004
+ 1161	person 33, PLACE_DEFAULT, 0, 744, 723
+ 1165	wait 00002
+ 1167	person 33, PLACE_DEFAULT, 0, 739, 723
+ 1171	wait 00006
+ 1173	person 33, PLACE_DEFAULT, 0, 740, 723
+ 1177	wait 00007
+ 1179	person 33, PLACE_DEFAULT, 0, 741, 723
+ 1183	wait 00007
+ 1185	person 33, PLACE_DEFAULT, 0, 742, 723
+ 1189	wait 00003
+ 1191	person 33, PLACE_DEFAULT, 0, 743, 723
+ 1195	wait 00004
+ 1197	person 33, PLACE_DEFAULT, 0, 744, 723
+ 1201	wait 00006
+ 1203	person 33, PLACE_DEFAULT, 0, 723, 723
+ 1207	wait 00006
+ 1209	wait 00016
+ 1211	name 4, SHOW_LEFT
+ 1213	hidetextbox 00000
+ 1215	fademusic 0, 5
+ 1218	scenario_end_save
+ 1219	section_setup
+ 1220	screen_fade 02305, 00008, 00031
+ 1224	shake 00030, 00000
+ 1227	speed 00003
+ 1229	text "..."
+ 1232	wait 00006
+ 1234	text "Valant Gramarye!"
+ 1250	wait 00050
+ 1252	newline
+ 1253	speed 00005
+ 1255	textcolor COLOR_BLUE
+ 1257	text "(...Using the door like an\naverage muggle, no less.)"
+ 1309	textcolor COLOR_WHITE
+ 1311	nextpage_button
+ 1312	hidetextbox 00001
+ 1314	personvanish 00004, 00001
+ 1317	wait 00016
+ 1319	personvanish 00003, 00001
+ 1322	name 5, SHOW_LEFT
+ 1324	person 5, PLACE_DEFAULT, 0, 82, 81
+ 1328	cmd5A 00012
+ 1330	flagctl 0, 28, 0
+ 1332	section_setup
+ 1333	cmd59 00011
+ 1335	pause
+ 1336	text "You"
+ 1339	speed 00008
+ 1341	cmd5A 00369
+ 1343	text ".."
+ 1345	wait 00018
+ 1347	cmd59 00399
+ 1349	speed 00003
+ 1351	text "aren\'t the witness\ntoday,"
+ 1376	wait 00006
+ 1378	text " are you,"
+ 1387	wait 00008
+ 1389	text " Uncle Valant?"
+ 1403	nextpage_button
+ 1404	hidetextbox 00001
+ 1406	personvanish 00004, 00001
+ 1409	wait 00016
+ 1411	personvanish 00003, 00001
+ 1414	name 33, SHOW_LEFT
+ 1416	person 33, PLACE_DEFAULT, 0, 729, 723
+ 1420	cmd5A 00012
+ 1422	flagctl 0, 28, 0
+ 1424	section_setup
+ 1425	cmd59 00011
+ 1427	textcolor 00154
+ 1429	text "h"
+ 1430	wait 00006
+ 1432	text " ha"
+ 1435	wait 00006
+ 1437	text " ha"
+ 1440	wait 00006
+ 1442	text " ha"
+ 1445	wait 00006
+ 1447	text " ha"
+ 1450	wait 00006
+ 1452	text " ha!"
+ 1456	cmd5A 00012
+ 1458	testimony_box 00001, 00030
+ 1461	evidence_window_lifebar
+ 1462	text "{00708}{00707}A preposterous proposition."
+ 1491	paragraph
+ 1492	person 33, PLACE_DEFAULT, 0, 733, 732
+ 1496	speed 00004
+ 1498	text "How could I stand to stand\nupon the stand?"
+ 1540	paragraph
+ 1541	cmd59 00030
+ 1543	evidence_window_lifebar
+ 1544	text "{00708}{00707}"
+ 1546	screen_fade 02305, 00008, 00031
+ 1550	shake 00030, 00000
+ 1553	speed 00002
+ 1555	text "Why,"
+ 1559	wait 00006
+ 1561	text " my secrets would be\nfree for the"
+ 1594	wait 00006
+ 1596	screen_fade 02305, 00008, 00031
+ 1600	text " plucking!"
+ 1610	paragraph
+ 1611	person 33, PLACE_DEFAULT, 0, 733, 732
+ 1615	speed 00004
+ 1617	cmd5A 00369
+ 1619	text ".."
+ 1621	cmd59 00011
+ 1623	textcolor 00162
+ 1625	text " might even have to\nsign autographs!"
+ 1661	nextpage_button
+ 1662	person 33, PLACE_DEFAULT, 0, 724, 723
+ 1666	speed 00003
+ 1668	text "That is why I intend to remain\nhidden for the entire day."
+ 1725	nextpage_button
+ 1726	hidetextbox 00001
+ 1728	personvanish 00004, 00001
+ 1731	wait 00016
+ 1733	personvanish 00003, 00001
+ 1736	person 5, PLACE_DEFAULT, 0, 72, 69
+ 1740	name 5, SHOW_LEFT
+ 1742	cmd5A 00012
+ 1744	flagctl 0, 28, 0
+ 1746	section_setup
+ 1747	cmd59 00018
+ 1749	text "{02289}"
+ 1750	finger_choice_2_args_jmp 4294967199, 4294967207
+ 1753	person 0, PLACE_DEFAULT, 0, 168, 194
+ 1757	text "h,"
+ 1759	wait 00008
+ 1761	text " with vanishing magic!?"
+ 1784	person 5, PLACE_DEFAULT, 0, 70, 70
+ 1788	nextpage_button
+ 1789	cmd38 00001
+ 1791	person 33, PLACE_DEFAULT, 0, 724, 723
+ 1795	name 33, SHOW_LEFT
+ 1797	screen_fade 02305, 00008, 00031
+ 1801	shake 00030, 00000
+ 1804	text "Indeed!"
+ 1811	cmd5A 00012
+ 1813	removeevidence
+ 1814	cmd59 00018
+ 1816	text "{02289}"
+ 1817	finger_choice_2_args_jmp 4294967199, 4294967207
+ 1820	person 0, PLACE_DEFAULT, 0, 399, 162
+ 1824	text " will jump upon an\nexpress train,"
+ 1857	wait 00008
+ 1859	text " and express\nmyself to the next town over!"
+ 1901	paragraph
+ 1902	person 33, PLACE_DEFAULT, 0, 733, 732
+ 1906	speed 00004
+ 1908	text "But before I go"
+ 1923	speed 00008
+ 1925	cmd5A 00369
+ 1927	text ".."
+ 1929	wait 00018
+ 1931	cmd59 00399
+ 1933	speed 00004
+ 1935	text "a word\nof warning."
+ 1953	nextpage_button
+ 1954	hidetextbox 00001
+ 1956	personvanish 00004, 00001
+ 1959	wait 00016
+ 1961	personvanish 00003, 00001
+ 1964	person 5, PLACE_DEFAULT, 0, 82, 81
+ 1968	name 5, SHOW_LEFT
+ 1970	cmd5A 00012
+ 1972	flagctl 0, 28, 0
+ 1974	section_setup
+ 1975	cmd59 00012
+ 1977	finger_choice_2_args_jmp 4294967174, 4294967220
+ 1980	newline
+ 1981	screen_fade 02305, 00008, 00031
+ 1985	text "Warning...?"
+ 1996	wait 00008
+ 1998	text " What?"
+ 2004	nextpage_button
+ 2005	hidetextbox 00001
+ 2007	personvanish 00004, 00001
+ 2010	wait 00016
+ 2012	personvanish 00003, 00001
+ 2015	person 33, PLACE_DEFAULT, 0, 733, 732
+ 2019	name 33, SHOW_LEFT
+ 2021	cmd5A 00012
+ 2023	flagctl 0, 28, 0
+ 2025	section_setup
+ 2026	cmd59 00018
+ 2028	text "{02289}"
+ 2029	finger_choice_2_args_jmp 4294967199, 4294967179
+ 2032	pause
+ 2033	text "A grand Gramarye glamour\nresides at the root of all\nthat has happened."
+ 2103	nextpage_button
+ 2104	person 33, PLACE_DEFAULT, 0, 724, 723
+ 2108	speed 00004
+ 2110	text "Do not forget this"
+ 2128	wait 00006
+ 2130	text " truth."
+ 2137	nextpage_button
+ 2138	person 33, PLACE_DEFAULT, 0, 723, 723
+ 2142	name 4, SHOW_LEFT
+ 2144	sound 00052, 00001
+ 2147	screen_fade 02305, 00008, 00031
+ 2151	speed 00004
+ 2153	text "A"
+ 2154	speed 00008
+ 2156	text "... "
+ 2160	speed 00004
+ 2162	text "glamour?"
+ 2170	nextpage_button
+ 2171	person 33, PLACE_DEFAULT, 0, 724, 723
+ 2175	name 33, SHOW_LEFT
+ 2177	speed 00003
+ 2179	text "A spell,"
+ 2187	wait 00008
+ 2189	text " a sorcery"
+ 2199	cmd5A 00369
+ 2201	text ".."
+ 2203	wait 00012
+ 2205	newline
+ 2206	cmd59 00180
+ 2208	text " great illusion!"
+ 2224	paragraph
+ 2225	speed 00005
+ 2227	cmd5A 00369
+ 2229	text ".."
+ 2231	wait 00006
+ 2233	cmd59 00011
+ 2235	pause
+ 2236	text "Miss Trucy,"
+ 2247	wait 00006
+ 2249	text " though it pains\nme to part so"
+ 2279	speed 00008
+ 2281	cmd5A 00369
+ 2283	text ".."
+ 2285	paragraph
+ 2286	person 33, PLACE_DEFAULT, 0, 733, 732
+ 2290	speed 00003
+ 2292	text "...I need to get in line for\na ticket."
+ 2330	paragraph
+ 2331	hidetextbox 00001
+ 2333	person 33, PLACE_DEFAULT, 0, 723, 723
+ 2337	sound 00147, 00001
+ 2340	wait 00010
+ 2342	person 33, PLACE_DEFAULT, 0, 738, 723
+ 2346	wait 00015
+ 2348	person 33, PLACE_DEFAULT, 0, 723, 723
+ 2352	wait 00004
+ 2354	person 33, PLACE_DEFAULT, 0, 744, 723
+ 2358	wait 00002
+ 2360	person 33, PLACE_DEFAULT, 0, 739, 723
+ 2364	wait 00006
+ 2366	person 33, PLACE_DEFAULT, 0, 740, 723
+ 2370	wait 00007
+ 2372	person 33, PLACE_DEFAULT, 0, 741, 723
+ 2376	wait 00007
+ 2378	person 33, PLACE_DEFAULT, 0, 742, 723
+ 2382	wait 00003
+ 2384	person 33, PLACE_DEFAULT, 0, 743, 723
+ 2388	wait 00004
+ 2390	person 33, PLACE_DEFAULT, 0, 744, 723
+ 2394	wait 00006
+ 2396	person 33, PLACE_DEFAULT, 0, 723, 723
+ 2400	wait 00006
+ 2402	person 33, PLACE_DEFAULT, 0, 724, 723
+ 2406	hidetextbox 00000
+ 2408	screen_fade 02305, 00008, 00031
+ 2412	shake 00030, 00000
+ 2415	speed 00002
+ 2417	text "Farewell!"
+ 2426	cmd5A 00012
+ 2428	person 46, PLACE_DEFAULT, 0, 28, 1
+ 2432	sound 00146, 00001
+ 2435	cmd38 00000
+ 2437	person 0, PLACE_DEFAULT, 0, 0, 0
+ 2441	fademusic 60, 12
+ 2444	cmd78 00034
+ 2446	section_setup
+ 2447	music 00039, 00100
+ 2450	personvanish 00003, 00002
+ 2453	person 5, PLACE_DEFAULT, 0, 75, 75
+ 2457	wait 00032
+ 2459	name 5, SHOW_LEFT
+ 2461	person 5, PLACE_DEFAULT, 0, 76, 75
+ 2465	hidetextbox 00000
+ 2467	speed 00005
+ 2469	text "And there he goes."
+ 2487	wait_noanim 00015
+ 2489	person 5, PLACE_DEFAULT, 0, 68, 67
+ 2493	nextpage_button
+ 2494	person 5, PLACE_DEFAULT, 0, 67, 67
+ 2498	name 4, SHOW_LEFT
+ 2500	screen_fade 02305, 00008, 00031
+ 2504	speed 00003
+ 2506	text "He sure seemed happy about\nthat illusion thing..."
+ 2555	nextpage_button
+ 2556	person 5, PLACE_DEFAULT, 0, 68, 67
+ 2560	name 5, SHOW_LEFT
+ 2562	speed 00003
+ 2564	text "Oh,"
+ 2567	wait 00008
+ 2569	text " big illusions are the\n"
+ 2592	wait 00018
+ 2594	text "bread and butter of a\nmagician!"
+ 2625	paragraph
+ 2626	person 5, PLACE_DEFAULT, 0, 74, 73
+ 2630	screen_fade 02305, 00008, 00031
+ 2634	text "You can\'t pull off a show\nwithout one!"
+ 2672	nextpage_button
+ 2673	person 5, PLACE_DEFAULT, 0, 68, 67
+ 2677	name 5, SHOW_LEFT
+ 2679	speed 00003
+ 2681	text "The big illusion is always\na spectacle to remember!"
+ 2732	paragraph
+ 2733	person 5, PLACE_DEFAULT, 0, 96, 95
+ 2737	shake 00030, 00000
+ 2740	speed 00002
+ 2742	text "Usually,"
+ 2750	wait 00010
+ 2752	text " it involves cutting\nup things,"
+ 2783	wait 00008
+ 2785	text " like people or\nelephants"
+ 2810	cmd5A 00369
+ 2812	text ".."
+ 2814	wait 00020
+ 2816	nextpage_nobutton
+ 2817	cmd59 00039
+ 2819	person 0, PLACE_DEFAULT, 0, 369, 369
+ 2823	text "."
+ 2824	wait 00020
+ 2826	text "or the Eiffel Tower."
+ 2846	wait_noanim 00015
+ 2848	newline
+ 2849	person 5, PLACE_DEFAULT, 0, 74, 73
+ 2853	screen_fade 02305, 00008, 00031
+ 2857	shake 00030, 00000
+ 2860	speed 00002
+ 2862	text "Anything,"
+ 2871	wait 00008
+ 2873	text " really!"
+ 2881	nextpage_button
+ 2882	person 5, PLACE_DEFAULT, 0, 73, 73
+ 2886	name 4, SHOW_LEFT
+ 2888	speed 00004
+ 2890	text "So he was talking about what\nwe saw at the concert."
+ 2941	nextpage_button
+ 2942	person 5, PLACE_DEFAULT, 0, 76, 75
+ 2946	name 5, SHOW_LEFT
+ 2948	speed 00004
+ 2950	text "Lamiroir\'s disappearing act."
+ 2978	nextpage_button
+ 2979	person 5, PLACE_DEFAULT, 0, 75, 75
+ 2983	name 4, SHOW_LEFT
+ 2985	speed 00003
+ 2987	text "And Prosecutor Gavin\'s\nexploding guitar."
+ 3027	nextpage_button
+ 3028	person 5, PLACE_DEFAULT, 0, 96, 95
+ 3032	name 5, SHOW_LEFT
+ 3034	speed 00004
+ 3036	text "I wonder what he meant by it\nbeing at"
+ 3073	wait 00006
+ 3075	text " {00385}the root of all\nthat has happened{00385}?"
+ 3112	nextpage_button
+ 3113	person 5, PLACE_DEFAULT, 0, 95, 95
+ 3117	name 4, SHOW_LEFT
+ 3119	screen_fade 02305, 00008, 00031
+ 3123	speed 00005
+ 3125	text "Well,"
+ 3130	wait 00008
+ 3132	text " it\'s about time."
+ 3149	wait 00010
+ 3151	newline
+ 3152	text "Shall we go?"
+ 3164	nextpage_button
+ 3165	hidetextbox 00001
+ 3167	fademusic 45, 49
+ 3170	pause
+ 3171	paragraph
+ 3172	wait 00032
+ 3174	person 0, PLACE_DEFAULT, 0, 0, 0
+ 3178	wait 00045
+ 3180	wait 00030
+ 3182	name 43, SHOW_LEFT
+ 3184	hidetextbox 00000
+ 3186	sound 00051, 00001
+ 3189	screen_fade 02305, 00008, 00031
+ 3193	speed 00003
+ 3195	text "Ah,"
+ 3198	wait 00010
+ 3200	text " excuse me,"
+ 3211	wait 00010
+ 3213	text " sir."
+ 3218	nextpage_button
+ 3219	name 4, SHOW_LEFT
+ 3221	sound 00052, 00001
+ 3224	screen_fade 02305, 00008, 00031
+ 3228	pausemusic 00000, 00005
+ 3231	text "ò"
+ 3232	cmd3C 00011
+ 3234	pause
+ 3235	text "Y{DASH}"
+ 3237	wait 00008
+ 3239	text "Yes?"
+ 3243	nextpage_button
+ 3244	name 43, SHOW_LEFT
+ 3246	speed 00003
+ 3248	text "The scheduled starting time\nfor the trial has been\nchanged."
+ 3307	paragraph
+ 3308	speed 00003
+ 3310	text "The trial will not be\ncommencing until 10:30 AM."
+ 3358	wait 00012
+ 3360	newline
+ 3361	text "Sorry for the inconvenience."
+ 3389	nextpage_button
+ 3390	name 4, SHOW_LEFT
+ 3392	sound 00051, 00001
+ 3395	screen_fade 02305, 00008, 00031
+ 3399	speed 00002
+ 3401	text "Huh?"
+ 3405	wait 00016
+ 3407	text " "
+ 3408	speed 00003
+ 3410	text "Did something happen?"
+ 3431	wait 00014
+ 3433	newline
+ 3434	text "This is a first..."
+ 3452	nextpage_button
+ 3453	name 43, SHOW_LEFT
+ 3455	speed 00003
+ 3457	text "It was by the judge\'s request."
+ 3487	wait 00016
+ 3489	newline
+ 3490	text "Some urgent personal business."
+ 3520	nextpage_button
+ 3521	name 4, SHOW_LEFT
+ 3523	speed 00004
+ 3525	textcolor COLOR_BLUE
+ 3527	text "(Great."
+ 3534	wait 00015
+ 3536	text " I bet he stayed up\ntoo late last night,"
+ 3576	wait 00008
+ 3578	text " watching\ncourtroom dramas.)"
+ 3606	textcolor COLOR_WHITE
+ 3608	nextpage_button
+ 3609	name 43, SHOW_LEFT
+ 3611	speed 00004
+ 3613	text "Apparently,"
+ 3624	wait 00006
+ 3626	text " he\'s visiting\nthe "
+ 3645	screen_fade 02305, 00008, 00031
+ 3649	text "hospital again."
+ 3664	nextpage_button
+ 3665	name 4, SHOW_LEFT
+ 3667	sound 00052, 00001
+ 3670	screen_fade 02305, 00008, 00031
+ 3674	speed 00004
+ 3676	text "The hospital?"
+ 3689	nextpage_button
+ 3690	name 43, SHOW_LEFT
+ 3692	speed 00003
+ 3694	text "I believe it was mentioned\nthat the Chief Justice\'s son\nis unwell."
+ 3760	nextpage_button
+ 3761	speed 00003
+ 3763	text "Apparently his condition\nworsened considerably this\nmorning."
+ 3823	nextpage_button
+ 3824	name 4, SHOW_LEFT
+ 3826	speed 00004
+ 3828	text "The Chief Justice\'s son"
+ 3851	speed 00008
+ 3853	cmd5A 00369
+ 3855	text ".."
+ 3857	nextpage_button
+ 3858	cmd38 00001
+ 3860	person 5, PLACE_DEFAULT, 0, 76, 75
+ 3864	name 5, SHOW_LEFT
+ 3866	sound 00051, 00001
+ 3869	screen_fade 02305, 00008, 00031
+ 3873	speed 00003
+ 3875	text "Oh, that\'s right..."
+ 3894	paragraph
+ 3895	person 5, PLACE_DEFAULT, 0, 96, 95
+ 3899	text "Remember yesterday morning?"
+ 3926	wait 00010
+ 3928	newline
+ 3929	screen_fade 02305, 00008, 00031
+ 3933	text "The judge said he had to go\nvisit him after the trial."
+ 3987	nextpage_button
+ 3988	name 43, SHOW_LEFT
+ 3990	showevidence 143, SHOW_LEFT
+ 3992	speed 00004
+ 3994	text "There\'s an article about it\nin the newspaper."
+ 4039	nextpage_button
+ 4040	speed 00003
+ 4042	text "If you care to read about it\nyourself..."
+ 4082	nextpage_button
+ 4083	bganim 00098, 00579
+ 4086	newevidence 143, EVIDENCE, 1
+ 4088	name 0, SHOW_LEFT
+ 4090	textcolor COLOR_BLUE
+ 4092	speed 00004
+ 4094	text "Newspaper Article added to the\nCourt Record."
+ 4138	nextpage_button
+ 4139	speed 00255
+ 4141	textcolor COLOR_WHITE
+ 4143	bg 143, BG_NOSHIFT
+ 4145	person 0, PLACE_DEFAULT, 0, 0, 0
+ 4149	name 4, SHOW_LEFT
+ 4151	speed 00004
+ 4153	textcolor COLOR_BLUE
+ 4155	text "({00385}"
+ 4157	textcolor COLOR_RED
+ 4159	text "Incuritis"
+ 4168	textcolor COLOR_BLUE
+ 4170	text "{00385}"
+ 4171	speed 00008
+ 4173	text "...?"
+ 4177	wait 00018
+ 4179	text " "
+ 4180	speed 00004
+ 4182	text "Where have I\nheard that before?)"
+ 4214	textcolor COLOR_WHITE
+ 4216	nextpage_button
+ 4217	bg 30, BG_NOSHIFT
+ 4219	person 5, PLACE_DEFAULT, 0, 96, 95
+ 4223	name 5, SHOW_LEFT
+ 4225	shake 00030, 00000
+ 4228	speed 00003
+ 4230	text "I\'ll let you read that\narticle for us,"
+ 4268	wait 00006
+ 4270	text " Apollo!"
+ 4278	paragraph
+ 4279	person 5, PLACE_DEFAULT, 0, 72, 69
+ 4283	screen_fade 02305, 00008, 00031
+ 4287	shake 00030, 00000
+ 4290	text "Just leave the TV guide page\nto me!"
+ 4325	nextpage_button
+ 4326	person 5, PLACE_DEFAULT, 0, 69, 69
+ 4330	name 4, SHOW_LEFT
+ 4332	screen_fade 02305, 00008, 00031
+ 4336	speed 00004
+ 4338	text "...Try not to lose the page\nwith the funnies if you can."
+ 4394	nextpage_button
+ 4395	hidetextbox 00001
+ 4397	fademusic 45, 18
+ 4400	text "{00500}\n"
+ 4402	hideperson
+ 4403	wait 00025
+ 4405	section_end
+ENDSECTION
+SECTION 1
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0007	screen_fade 2, FADE_FROM_BLACK, 1, 31
+ 0011	wait 00015
+ 0013	hide_court_record_button 00000
+ 0015	wait 00030
+ 0017	speed 00010
+ 0019	cmd30 00002
+ 0021	toggle_center_text 00001
+ 0023	hidetextbox 00000
+ 0025	textcolor COLOR_GREEN
+ 0027	text "July 10, 10:30 AM\nDistrict Court\nCourtroom No. 3"
+ 0075	textcolor COLOR_WHITE
+ 0077	nextpage_button
+ 0078	toggle_center_text 00000
+ 0080	speed 00255
+ 0082	wait 00030
+ 0084	fademusic 0, 5
+ 0087	testemony_animation 00000
+ 0089	bg 29, BG_NOSHIFT
+ 0091	person 10, PLACE_DEFAULT, 0, 259, 258
+ 0095	name 10, SHOW_LEFT
+ 0097	speed 00004
+ 0099	text "Ahem."
+ 0104	wait_noanim 00018
+ 0106	newline
+ 0107	person 10, PLACE_DEFAULT, 0, 263, 262
+ 0111	text "My apologies for the delay."
+ 0138	paragraph
+ 0139	screen_fade 02305, 00008, 00031
+ 0143	speed 00003
+ 0145	text "Court is now in session for\nthe trial of"
+ 0185	cmd5A 00369
+ 0187	text ".."
+ 0189	cmd59 00012
+ 0191	finger_choice_2_args_jmp 271, 4294967179
+ 0194	pause
+ 0195	text "erm,"
+ 0199	wait 00008
+ 0201	text " "
+ 0202	person 10, PLACE_DEFAULT, 0, 265, 264
+ 0206	text "how do\nyou say this name again?"
+ 0237	nextpage_button
+ 0238	bg 26, BG_NOSHIFT
+ 0240	person 6, PLACE_DEFAULT, 0, 146, 145
+ 0244	name 53, SHOW_LEFT
+ 0246	speed 00004
+ 0248	text "Machi Tobaye"
+ 0260	speed 00008
+ 0262	cmd5A 00369
+ 0264	text ".."
+ 0266	wait 00018
+ 0268	cmd59 00399
+ 0270	speed 00003
+ 0272	text "our suspect\nfortissimo."
+ 0295	nextpage_button
+ 0296	bg 29, BG_NOSHIFT
+ 0298	name 10, SHOW_LEFT
+ 0300	person 10, PLACE_DEFAULT, 0, 260, 260
+ 0304	speed 00003
+ 0306	text "...Right."
+ 0315	cmd63
+ 0316	newline
+ 0317	person 10, PLACE_DEFAULT, 0, 259, 258
+ 0321	text "It\'s his trial,"
+ 0336	wait 00006
+ 0338	text " in any case."
+ 0351	nextpage_button
+ 0352	bg 25, BG_NOSHIFT
+ 0354	person 4, PLACE_DEFAULT, 0, 37, 36
+ 0358	name 4, SHOW_LEFT
+ 0360	speed 00003
+ 0362	text "The defense is prepared,"
+ 0386	wait 00008
+ 0388	newline
+ 0389	text "Your Honor."
+ 0400	nextpage_button
+ 0401	hidetextbox 00001
+ 0403	swoosh 00001, 00001, 00006, 00145
+ 0408	wait 00032
+ 0410	bg 26, BG_NOSHIFT
+ 0412	person 6, PLACE_DEFAULT, 0, 146, 145
+ 0416	name 53, SHOW_LEFT
+ 0418	hidetextbox 00000
+ 0420	speed 00003
+ 0422	text "The prosecution"
+ 0437	speed 00008
+ 0439	cmd5A 00369
+ 0441	text ".."
+ 0443	wait 00018
+ 0445	cmd59 00399
+ 0447	speed 00004
+ 0449	text "is ready\nto rock."
+ 0466	nextpage_button
+ 0467	bg 29, BG_NOSHIFT
+ 0469	person 10, PLACE_DEFAULT, 0, 266, 266
+ 0473	name 10, SHOW_LEFT
+ 0475	speed 00008
+ 0477	text "......"
+ 0483	nextpage_button
+ 0484	bg 25, BG_NOSHIFT
+ 0486	person 4, PLACE_DEFAULT, 0, 62, 61
+ 0490	animation 149, ANIM_START
+ 0493	name 4, SHOW_LEFT
+ 0495	sound 00052, 00001
+ 0498	screen_fade 02305, 00008, 00031
+ 0502	speed 00003
+ 0504	text "I{DASH}"
+ 0506	wait 00006
+ 0508	text "Is something wrong,"
+ 0527	wait 00008
+ 0529	text " Your\nHonor?"
+ 0541	nextpage_button
+ 0542	bg 29, BG_NOSHIFT
+ 0544	person 10, PLACE_DEFAULT, 0, 259, 258
+ 0548	name 10, SHOW_LEFT
+ 0550	speed 00004
+ 0552	text "No."
+ 0555	wait 00006
+ 0557	text " Well,"
+ 0563	wait 00006
+ 0565	text " yes"
+ 0569	speed 00008
+ 0571	cmd5A 00369
+ 0573	text ".."
+ 0575	cmd59 00002
+ 0577	speed 00003
+ 0579	text "It\'s just,"
+ 0589	wait 00006
+ 0591	text " I\'ve been friends\nwith the Chief Justice since\nwe were students."
+ 0656	nextpage_button
+ 0657	person 10, PLACE_DEFAULT, 0, 266, 266
+ 0661	speed 00004
+ 0663	text "It pains me to see him going\nthrough such a difficult time."
+ 0722	nextpage_button
+ 0723	bg 28, BG_NOSHIFT
+ 0725	person 5, PLACE_DEFAULT, 0, 105, 104
+ 0729	name 5, SHOW_LEFT
+ 0731	screen_fade 02305, 00008, 00031
+ 0735	speed 00004
+ 0737	text "{00385}Incuritis{00385},"
+ 0749	wait 00006
+ 0751	text " was it?"
+ 0759	nextpage_button
+ 0760	person 5, PLACE_DEFAULT, 0, 103, 102
+ 0764	speed 00003
+ 0766	text "That article said there is\nno known cure!"
+ 0807	nextpage_button
+ 0808	bg 26, BG_NOSHIFT
+ 0810	person 6, PLACE_DEFAULT, 0, 146, 145
+ 0814	name 53, SHOW_LEFT
+ 0816	speed 00004
+ 0818	text "Herr Judge,"
+ 0829	wait 00012
+ 0831	text " let me say,"
+ 0843	wait 00012
+ 0845	text " with\nall honesty,"
+ 0863	wait 00006
+ 0865	text " I feel your pain."
+ 0883	paragraph
+ 0884	person 6, PLACE_DEFAULT, 0, 151, 150
+ 0888	speed 00004
+ 0890	text "But,"
+ 0894	wait 00006
+ 0896	text " now is not the time for\ntears."
+ 0927	paragraph
+ 0928	person 6, PLACE_DEFAULT, 0, 146, 145
+ 0932	speed 00003
+ 0934	text "Now is the time"
+ 0949	cmd5A 00369
+ 0951	text ".."
+ 0953	cmd59 00399
+ 0955	text "for law."
+ 0963	nextpage_button
+ 0964	bg 29, BG_NOSHIFT
+ 0966	person 10, PLACE_DEFAULT, 0, 260, 260
+ 0970	name 10, SHOW_LEFT
+ 0972	speed 00004
+ 0974	text "..."
+ 0977	wait 00020
+ 0979	text "Indeed."
+ 0986	cmd63
+ 0987	nextpage_button
+ 0988	person 10, PLACE_DEFAULT, 0, 263, 262
+ 0992	speed 00003
+ 0994	text "We left off at quite the\njuncture yesterday."
+ 1038	nextpage_button
+ 1039	hidetextbox 00001
+ 1041	sound 00049, 00001
+ 1044	fademusic 45, 18
+ 1047	text "{01010}\n"
+ 1049	hideperson
+ 1050	wait 00015
+ 1052	bg 27, BG_NOSHIFT
+ 1054	person 37, PLACE_DEFAULT, 0, 816, 815
+ 1058	cmd5A 00095
+ 1060	textcolor COLOR_RED
+ 1062	hideperson
+ 1063	fademusic 0, 5
+ 1066	screen_fade 0, FADE_NONE, 18, 770
+ 1070	newline
+ 1071	hideperson
+ 1072	wait 00015
+ 1074	name 37, SHOW_LEFT
+ 1076	hidetextbox 00000
+ 1078	cmd59 00011
+ 1080	textcolor 00162
+ 1082	text " asked Interpol about that\nnumber."
+ 1116	paragraph
+ 1117	speed 00004
+ 1119	text "{00385}IPXX314206{00385}"
+ 1131	speed 00008
+ 1133	cmd5A 00369
+ 1135	text ".."
+ 1137	paragraph
+ 1138	speed 00003
+ 1140	text "The agent registered under\nthis number"
+ 1178	speed 00008
+ 1180	cmd5A 00369
+ 1182	text ".."
+ 1184	paragraph
+ 1185	sound 00052, 00001
+ 1188	screen_fade 02305, 00008, 00031
+ 1192	text "..."
+ 1195	wait 00004
+ 1197	speed 00005
+ 1199	text "was Romein LeTouse."
+ 1218	nextpage_button
+ 1219	bg 29, BG_NOSHIFT
+ 1221	name 10, SHOW_LEFT
+ 1223	person 10, PLACE_DEFAULT, 0, 259, 258
+ 1227	speed 00004
+ 1229	text "Thanks for looking into that\nfor us,"
+ 1265	wait 00012
+ 1267	text " Detective Crescend."
+ 1287	wait 00016
+ 1289	newline
+ 1290	speed 00003
+ 1292	text "It\'s a great help."
+ 1310	nextpage_button
+ 1311	bg 27, BG_NOSHIFT
+ 1313	name 37, SHOW_LEFT
+ 1315	person 37, PLACE_DEFAULT, 0, 816, 815
+ 1319	text "Oh,"
+ 1322	wait 00008
+ 1324	text " no problem at all,"
+ 1343	wait 00008
+ 1345	newline
+ 1346	text "Your Honor."
+ 1357	paragraph
+ 1358	speed 00004
+ 1360	cmd5A 00369
+ 1362	text ".."
+ 1364	cmd59 00162
+ 1366	text "\'ll be heading out"
+ 1384	speed 00008
+ 1386	cmd5A 00369
+ 1388	text ".."
+ 1390	nextpage_button
+ 1391	bg 24, BG_NOSHIFT
+ 1393	person 0, PLACE_DEFAULT, 0, 0, 0
+ 1397	animation 52, ANIM_START
+ 1400	animation 53, ANIM_START
+ 1403	animation 54, ANIM_START
+ 1406	animation 62, ANIM_START
+ 1409	animation 63, ANIM_START
+ 1412	animation 79, ANIM_START
+ 1415	hidetextbox 00001
+ 1417	screen_fade 1, FADE_FROM_WHITE, 8, 31
+ 1421	animation 14, ANIM_START
+ 1424	sound 00026, 00001
+ 1427	wait_noanim 00063
+ 1429	bg 29, BG_NOSHIFT
+ 1431	name 10, SHOW_LEFT
+ 1433	person 10, PLACE_DEFAULT, 0, 264, 264
+ 1437	sound 00048, 00001
+ 1440	screen_fade 02305, 00008, 00031
+ 1444	wait 00045
+ 1446	bg 26, BG_NOSHIFT
+ 1448	name 53, SHOW_LEFT
+ 1450	person 6, PLACE_DEFAULT, 0, 145, 145
+ 1454	sound 00048, 00001
+ 1457	screen_fade 02305, 00008, 00031
+ 1461	wait 00045
+ 1463	bg 25, BG_NOSHIFT
+ 1465	name 4, SHOW_LEFT
+ 1467	person 4, PLACE_DEFAULT, 0, 58, 58
+ 1471	sound 00048, 00001
+ 1474	screen_fade 02305, 00008, 00031
+ 1478	wait 00045
+ 1480	bg 27, BG_NOSHIFT
+ 1482	name 8, SHOW_LEFT
+ 1484	person 34, PLACE_DEFAULT, 0, 746, 746
+ 1488	sound 00050, 00001
+ 1491	screen_fade 02305, 00008, 00031
+ 1495	shake 00030, 00001
+ 1498	wait 00060
+ 1500	person 34, PLACE_DEFAULT, 0, 748, 746
+ 1504	name 34, SHOW_LEFT
+ 1506	hidetextbox 00000
+ 1508	speed 00004
+ 1510	wait 00008
+ 1512	text "Wait!"
+ 1517	wait 00008
+ 1519	paragraph
+ 1520	name 34, SHOW_LEFT
+ 1522	person 34, PLACE_DEFAULT, 0, 748, 746
+ 1526	wait 00012
+ 1528	speed 00003
+ 1530	text "That"
+ 1534	shake 00030, 00000
+ 1537	text " "
+ 1538	cmd59 00201
+ 1540	text "oice just now"
+ 1553	speed 00008
+ 1555	cmd5A 00369
+ 1557	text ".."
+ 1559	nextpage_button
+ 1560	speed 00003
+ 1562	text "............\n"
+ 1575	person 34, PLACE_DEFAULT, 0, 748, 746
+ 1579	text "It was"
+ 1585	screen_fade 02305, 00008, 00031
+ 1589	sound 00051, 00001
+ 1592	text " him."
+ 1597	wait 00016
+ 1599	text " I am sure of it."
+ 1616	nextpage_button
+ 1617	bg 29, BG_NOSHIFT
+ 1619	name 10, SHOW_LEFT
+ 1621	person 10, PLACE_DEFAULT, 0, 263, 262
+ 1625	sound 00052, 00001
+ 1628	screen_fade 02305, 00008, 00031
+ 1632	speed 00005
+ 1634	text "It was"
+ 1640	wait 00006
+ 1642	text " {00385}him{00385}?"
+ 1649	nextpage_button
+ 1650	bg 27, BG_NOSHIFT
+ 1652	name 34, SHOW_LEFT
+ 1654	person 34, PLACE_DEFAULT, 0, 748, 746
+ 1658	speed 00004
+ 1660	text "That voice I heard,"
+ 1679	wait 00008
+ 1681	text " talking\nto Mr. LeTouse"
+ 1704	speed 00008
+ 1706	cmd5A 00369
+ 1708	text ".."
+ 1710	wait 00018
+ 1712	cmd59 00399
+ 1714	speed 00004
+ 1716	text "when I heard\nthe gunshots fired."
+ 1748	paragraph
+ 1749	speed 00003
+ 1751	text "It was "
+ 1758	screen_fade 02305, 00008, 00031
+ 1762	text "him!"
+ 1766	wait_noanim 00018
+ 1768	text " "
+ 1769	person 34, PLACE_DEFAULT, 0, 748, 746
+ 1773	sound 00026, 00001
+ 1776	screen_fade 02305, 00008, 00031
+ 1780	shake 00030, 00001
+ 1783	speed 00003
+ 1785	text "It was\nMr. Daryan!"
+ 1803	nextpage_button
+ 1804	bg 27, BG_NOSHIFT
+ 1806	name 37, SHOW_LEFT
+ 1808	person 37, PLACE_DEFAULT, 0, 823, 822
+ 1812	screen_fade 02305, 00008, 00031
+ 1816	sound 00053, 00001
+ 1819	shake 00030, 00001
+ 1822	speed 00008
+ 1824	cmd5A 00369
+ 1826	text ".."
+ 1828	wait 00018
+ 1830	cmd59 00011
+ 1832	pause
+ 1833	screen_fade 02305, 00008, 00031
+ 1837	text "No way"
+ 1843	speed 00008
+ 1845	cmd5A 00369
+ 1847	text ".."
+ 1849	wait 00018
+ 1851	cmd59 00045
+ 1853	hidetextbox 00001
+ 1855	sound 00049, 00001
+ 1858	fademusic 45, 18
+ 1861	text "{01010}\n"
+ 1863	hideperson
+ 1864	wait 00015
+ 1866	bg 26, BG_NOSHIFT
+ 1868	person 6, PLACE_DEFAULT, 0, 146, 145
+ 1872	cmd5A 00034
+ 1874	section_setup
+ 1875	music 00040, 00100
+ 1878	cmd5F 00004, 00001, 00001
+ 1882	screen_fade 2, FADE_FROM_WHITE, 1, 31
+ 1886	wait 00015
+ 1888	name 53, SHOW_LEFT
+ 1890	hidetextbox 00000
+ 1892	cmd59 00011
+ 1894	pause
+ 1895	text "Quite a sensational ending."
+ 1922	nextpage_button
+ 1923	person 6, PLACE_DEFAULT, 0, 149, 148
+ 1927	speed 00003
+ 1929	text "Who would have thought Daryan\nwould guest star in the season\ncliff{DASH}hanger"
+ 2002	cmd5A 00011
+ 2004	sound 00369, 00369
+ 2007	text "."
+ 2008	speed 00003
+ 2010	wait 00016
+ 2012	cmd59 00399
+ 2014	text "as a suspect?"
+ 2027	nextpage_button
+ 2028	bg 29, BG_NOSHIFT
+ 2030	person 10, PLACE_DEFAULT, 0, 259, 258
+ 2034	name 10, SHOW_LEFT
+ 2036	text "I asked the prosecution to\nlook into this matter."
+ 2085	nextpage_button
+ 2086	person 10, PLACE_DEFAULT, 0, 263, 262
+ 2090	speed 00004
+ 2092	cmd5A 00369
+ 2094	text ".."
+ 2096	cmd59 00169
+ 2098	text "lease tell the court your\nfindings."
+ 2133	nextpage_button
+ 2134	bg 26, BG_NOSHIFT
+ 2136	person 6, PLACE_DEFAULT, 0, 151, 150
+ 2140	name 53, SHOW_LEFT
+ 2142	speed 00004
+ 2144	text "Daryan Crescend is a member of\nmy band,"
+ 2183	wait 00010
+ 2185	text " the Gavinners"
+ 2199	speed 00008
+ 2201	cmd5A 00369
+ 2203	text ".."
+ 2205	wait 00018
+ 2207	cmd59 00002
+ 2209	person 6, PLACE_DEFAULT, 0, 146, 145
+ 2213	speed 00003
+ 2215	text "...He is also a detective,"
+ 2241	wait 00006
+ 2243	newline
+ 2244	text "making the current charges\nserious indeed."
+ 2286	paragraph
+ 2287	person 6, PLACE_DEFAULT, 0, 149, 148
+ 2291	screen_fade 02305, 00008, 00031
+ 2295	speed 00003
+ 2297	text "Yet,"
+ 2301	wait 00010
+ 2303	text " after investigation,"
+ 2324	wait 00010
+ 2326	text " I\nhave found no cause to alter\nour case,"
+ 2367	wait 00010
+ 2369	text " or file new charges."
+ 2390	nextpage_button
+ 2391	hidetextbox 00001
+ 2393	swoosh 00001, 04096, 00004, 00058
+ 2398	wait 00032
+ 2400	bg 25, BG_NOSHIFT
+ 2402	person 4, PLACE_DEFAULT, 0, 59, 58
+ 2406	name 4, SHOW_LEFT
+ 2408	hidetextbox 00000
+ 2410	sound 00052, 00001
+ 2413	screen_fade 02305, 00008, 00031
+ 2417	speed 00004
+ 2419	cmd5A 00369
+ 2421	text ".."
+ 2423	cmd59 00154
+ 2425	text "nd your reason is?"
+ 2443	nextpage_button
+ 2444	bg 26, BG_NOSHIFT
+ 2446	person 6, PLACE_DEFAULT, 0, 149, 148
+ 2450	name 53, SHOW_LEFT
+ 2452	speed 00004
+ 2454	text "Weren\'t you aware,"
+ 2472	wait 00010
+ 2474	text " Herr\nForehead?"
+ 2489	paragraph
+ 2490	hidetextbox 00001
+ 2492	person 6, PLACE_DEFAULT, 0, 164, 164
+ 2496	cmd63
+ 2497	person 6, PLACE_DEFAULT, 0, 165, 165
+ 2501	sound 00025, 00001
+ 2504	wait 00070
+ 2506	hidetextbox 00000
+ 2508	person 6, PLACE_DEFAULT, 0, 167, 166
+ 2512	screen_fade 02305, 00008, 00031
+ 2516	speed 00004
+ 2518	text "He has an impeccable alibi."
+ 2545	nextpage_button
+ 2546	bg 29, BG_NOSHIFT
+ 2548	person 10, PLACE_DEFAULT, 0, 263, 262
+ 2552	name 10, SHOW_LEFT
+ 2554	sound 00052, 00001
+ 2557	screen_fade 02305, 00008, 00031
+ 2561	speed 00004
+ 2563	text "An alibi?"
+ 2572	nextpage_button
+ 2573	bg 26, BG_NOSHIFT
+ 2575	person 6, PLACE_DEFAULT, 0, 146, 145
+ 2579	name 53, SHOW_LEFT
+ 2581	speed 00003
+ 2583	text "Let us review the facts again,"
+ 2613	wait 00006
+ 2615	newline
+ 2616	text "shall we?"
+ 2625	paragraph
+ 2626	speed 00004
+ 2628	text "The concert held on the night\nof the shooting was in three\nsets."
+ 2692	nextpage_button
+ 2693	hidetextbox 00001
+ 2695	sound 00049, 00001
+ 2698	screen_fade 02561, 00001, 00031
+ 2702	wait 00001
+ 2704	bg 4095, BG_NOSHIFT
+ 2706	person 0, PLACE_DEFAULT, 0, 0, 0
+ 2710	cmd5F 00003, 00001, 00031
+ 2714	screen_fade 02305, 00001, 00031
+ 2718	wait 00007
+ 2720	hidetextbox 00001
+ 2722	bganim 00768, 00000
+ 2725	bganim 00775, 00000
+ 2728	hidetextbox 00000
+ 2730	person 0, PLACE_DEFAULT, 0, 0, 0
+ 2734	hidetextbox 00000
+ 2736	speed 00003
+ 2738	text "The Gavinners ripped up the\nstage during the first set."
+ 2793	paragraph
+ 2794	hidetextbox 00001
+ 2796	sound 00049, 00001
+ 2799	screen_fade 02561, 00001, 00031
+ 2803	wait 00001
+ 2805	cmd5F 00004, 00001, 00001
+ 2809	bg 26, BG_NOSHIFT
+ 2811	person 6, PLACE_DEFAULT, 0, 145, 145
+ 2815	screen_fade 02305, 00001, 00031
+ 2819	wait 00007
+ 2821	bg 26, BG_NOSHIFT
+ 2823	person 6, PLACE_DEFAULT, 0, 146, 145
+ 2827	hidetextbox 00000
+ 2829	speed 00003
+ 2831	text "For the second set,"
+ 2850	wait 00008
+ 2852	text " our guest\ntook center stage"
+ 2880	speed 00008
+ 2882	cmd5A 00369
+ 2884	text ".."
+ 2886	nextpage_button
+ 2887	hidetextbox 00001
+ 2889	sound 00049, 00001
+ 2892	screen_fade 02561, 00001, 00031
+ 2896	wait 00001
+ 2898	cmd6B 00000, 00000, 00000
+ 2902	cmd7F
+ 2903	finger_choice_2_args_jmp 4294967275, 4294967170
+ 2906	section_setup
+ 2907	section_setup
+ 2908	cmd7F
+ 2909	wait 00030
+ 2911	section_setup
+ 2912	section_setup
+ 2913	section_setup
+ 2914	hide_court_record_button 00001
+ 2916	bganim 00000, 08192
+ 2919	screen_fade 02305, 00001, 00031
+ 2923	wait 00007
+ 2925	hidetextbox 00000
+ 2927	speed 00003
+ 2929	text "The only performers appearing\nwere myself,"
+ 2971	wait 00008
+ 2973	text " Lamiroir,"
+ 2983	wait 00008
+ 2985	text " and\nMachi..."
+ 2998	wait 00030
+ 3000	nextpage_nobutton
+ 3001	text "...along with a drummer and\nbassist,"
+ 3037	wait 00010
+ 3039	text " for a total of five."
+ 3060	wait 00030
+ 3062	cmd6B 00356, 00000, 00000
+ 3066	cmd7F
+ 3067	name 0, (null)
+ 3069	hidetextbox 00001
+ 3071	sound 00049, 00001
+ 3074	screen_fade 02561, 00001, 00031
+ 3078	wait 00001
+ 3080	cmd7F
+ 3081	finger_choice_3_args_jmp 4294967206, 4294967168, 4294967273
+ 3085	section_setup
+ 3086	text "{04080}"
+ 3087	bg 26, BG_NOSHIFT
+ 3089	person 6, PLACE_DEFAULT, 0, 150, 150
+ 3093	screen_fade 02305, 00001, 00031
+ 3097	wait 00007
+ 3099	bg 26, BG_NOSHIFT
+ 3101	person 6, PLACE_DEFAULT, 0, 151, 150
+ 3105	hidetextbox 00000
+ 3107	speed 00003
+ 3109	text "The shooting in the dressing\nroom,"
+ 3143	wait 00008
+ 3145	text " however, took place\nduring the "
+ 3177	screen_fade 02305, 00008, 00031
+ 3181	text "third set."
+ 3191	paragraph
+ 3192	speed 00003
+ 3194	text "Lamiroir and the defendant,"
+ 3221	wait 00006
+ 3223	newline
+ 3224	text "Machi Tobaye had left the\nstage at that point"
+ 3269	cmd5A 00369
+ 3271	text ".."
+ 3273	nextpage_button
+ 3274	cmd5A 00369
+ 3276	text ".."
+ 3278	wait 00010
+ 3280	cmd59 00180
+ 3282	text "nd the Gavinners were\nalready rocking."
+ 3320	paragraph
+ 3321	hidetextbox 00001
+ 3323	sound 00177, 00001
+ 3326	screen_fade 02561, 00008, 00031
+ 3330	wait 00001
+ 3332	bg 253, BG_NOSHIFT
+ 3334	person 0, PLACE_DEFAULT, 0, 0, 0
+ 3338	screen_fade 02305, 00000, 00031
+ 3342	wait 00001
+ 3344	wait 00001
+ 3346	shift_background SHIFT_RIGHT, 8
+ 3348	wait 00080
+ 3350	hidetextbox 00000
+ 3352	speed 00003
+ 3354	text "This is when two shots rang\nout at the scene of the crime."
+ 3412	paragraph
+ 3413	speed 00003
+ 3415	text "Shots heard by Detective Ema\nSkye,"
+ 3449	wait 00008
+ 3451	text " mind you."
+ 3461	nextpage_button
+ 3462	bg 28, BG_NOSHIFT
+ 3464	person 5, PLACE_DEFAULT, 0, 105, 104
+ 3468	name 5, SHOW_LEFT
+ 3470	speed 00003
+ 3472	text "And Apollo."
+ 3483	wait 00016
+ 3485	text " You heard them\ntoo,"
+ 3505	wait 00008
+ 3507	text " right?"
+ 3514	nextpage_button
+ 3515	person 5, PLACE_DEFAULT, 0, 104, 104
+ 3519	name 4, SHOW_LEFT
+ 3521	speed 00004
+ 3523	text "I sure did."
+ 3534	nextpage_button
+ 3535	bg 26, BG_NOSHIFT
+ 3537	person 6, PLACE_DEFAULT, 0, 151, 150
+ 3541	name 53, SHOW_LEFT
+ 3543	speed 00004
+ 3545	text "Furthermore,"
+ 3557	wait 00006
+ 3559	text " Lamiroir herself\nwitnessed the moment of the\ncrime"
+ 3610	speed 00008
+ 3612	cmd5A 00369
+ 3614	text ".."
+ 3616	paragraph
+ 3617	person 6, PLACE_DEFAULT, 0, 146, 145
+ 3621	text "..."
+ 3624	wait 00012
+ 3626	speed 00003
+ 3628	text "Well,"
+ 3633	wait 00006
+ 3635	text " perhaps I should say,"
+ 3657	wait 00010
+ 3659	newline
+ 3660	text "she"
+ 3663	wait 00006
+ 3665	text " {00385}heard{00385}"
+ 3673	wait 00006
+ 3675	text " the moment of the\ncrime."
+ 3700	paragraph
+ 3701	text "..."
+ 3704	wait 00006
+ 3706	text "When she claims to have\nheard Mr. LeTouse and\nDetective Crescend"
+ 3770	wait 00006
+ 3772	text " {00385}talking{00385}."
+ 3783	nextpage_button
+ 3784	bg 29, BG_NOSHIFT
+ 3786	person 10, PLACE_DEFAULT, 0, 263, 262
+ 3790	name 10, SHOW_LEFT
+ 3792	screen_fade 02305, 00008, 00031
+ 3796	sound 00053, 00001
+ 3799	shake 00030, 00001
+ 3802	speed 00002
+ 3804	text "B{DASH}"
+ 3806	wait 00012
+ 3808	text "But that\'s impossible!"
+ 3830	wait 00016
+ 3832	newline
+ 3833	text "Detective Crescend was"
+ 3855	speed 00008
+ 3857	cmd5A 00369
+ 3859	text ".."
+ 3861	nextpage_button
+ 3862	bg 26, BG_NOSHIFT
+ 3864	person 6, PLACE_DEFAULT, 0, 151, 150
+ 3868	name 53, SHOW_LEFT
+ 3870	speed 00005
+ 3872	text "Precisely."
+ 3882	wait 00012
+ 3884	text " "
+ 3885	speed 00004
+ 3887	text "Detective Crescend\nwas on stage,"
+ 3919	wait 00006
+ 3921	text " getting his\ngroove on,"
+ 3944	wait 00008
+ 3946	text " no less."
+ 3955	paragraph
+ 3956	fademusic 45, 28
+ 3959	newline
+ 3960	person 6, PLACE_DEFAULT, 0, 164, 164
+ 3964	cmd63
+ 3965	person 6, PLACE_DEFAULT, 0, 165, 165
+ 3969	sound 00025, 00001
+ 3972	wait 00070
+ 3974	hidetextbox 00000
+ 3976	bg 26, BG_NOSHIFT
+ 3978	person 6, PLACE_DEFAULT, 0, 167, 166
+ 3982	name 53, SHOW_LEFT
+ 3984	hidetextbox 00000
+ 3986	speed 00004
+ 3988	text "Voila."
+ 3994	wait 00030
+ 3996	nextpage_nobutton
+ 3997	hidetextbox 00001
+ 3999	person 6, PLACE_DEFAULT, 0, 158, 158
+ 4003	cmd63
+ 4004	hidetextbox 00000
+ 4006	person 6, PLACE_DEFAULT, 0, 155, 155
+ 4010	sound 00026, 00001
+ 4013	screen_fade 02305, 00008, 00031
+ 4017	shake 00030, 00001
+ 4020	speed 00002
+ 4022	text "A "
+ 4024	screen_fade 02305, 00008, 00031
+ 4028	text "perfect alibi!"
+ 4042	fademusic 0, 5
+ 4045	screen_fade 0, FADE_NONE, 2, 27
+ 4049	shift_background SHIFT_LEFT, 30
+ 4051	pagebreak_section 138
+ 4053	text "Ú"
+ 4054	name 10, SHOW_LEFT
+ 4056	speed 00004
+ 4058	text "Hmm."
+ 4062	wait 00018
+ 4064	text " "
+ 4065	person 10, PLACE_DEFAULT, 0, 263, 262
+ 4069	speed 00003
+ 4071	text "Does the defense have\nanything to add to this?"
+ 4117	nextpage_button
+ 4118	bg 25, BG_NOSHIFT
+ 4120	person 4, PLACE_DEFAULT, 0, 40, 40
+ 4124	name 4, SHOW_LEFT
+ 4126	speed 00003
+ 4128	textcolor COLOR_BLUE
+ 4130	text "(It\'s true."
+ 4141	wait 00016
+ 4143	text " When I heard those\ngunshots,"
+ 4172	wait 00008
+ 4174	text " he must have been\non stage.)"
+ 4203	paragraph
+ 4204	speed 00004
+ 4206	text "(Still,"
+ 4213	wait 00010
+ 4215	text " there\'s something here\nthat doesn\'t quite add up"
+ 4264	speed 00008
+ 4266	text "...)"
+ 4270	textcolor COLOR_WHITE
+ 4272	nextpage_button
+ 4273	hidetextbox 00001
+ 4275	bg 9, BG_NOSHIFT
+ 4277	person 0, PLACE_DEFAULT, 0, 0, 0
+ 4281	animation 3, ANIM_START
+ 4284	cmd6B 00000, 00000, 00000
+ 4288	bganim 00098, 00273
+ 4291	wait 00040
+ 4293	bg 29, BG_NOSHIFT
+ 4295	person 10, PLACE_DEFAULT, 0, 259, 258
+ 4299	name 10, SHOW_LEFT
+ 4301	hidetextbox 00000
+ 4303	cmd5A 00369
+ 4305	text ".."
+ 4307	wait 00010
+ 4309	cmd59 00011
+ 4311	pause
+ 4312	text "It appears the defense\nhas no objections."
+ 4353	paragraph
+ 4354	speed 00003
+ 4356	text "I believe we can safely say\nthat Daryan Crescend\'s alibi\nhas been acknowledged."
+ 4435	nextpage_button
+ 4436	bg 26, BG_NOSHIFT
+ 4438	person 6, PLACE_DEFAULT, 0, 146, 145
+ 4442	name 53, SHOW_LEFT
+ 4444	speed 00003
+ 4446	text "Which means that Lamiroir\nwas sadly mistaken."
+ 4491	paragraph
+ 4492	person 6, PLACE_DEFAULT, 0, 149, 148
+ 4496	screen_fade 02305, 00008, 00031
+ 4500	speed 00003
+ 4502	text "Her testimony cannot be true."
+ 4531	nextpage_button
+ 4532	bg 29, BG_NOSHIFT
+ 4534	person 10, PLACE_DEFAULT, 0, 260, 260
+ 4538	name 10, SHOW_LEFT
+ 4540	speed 00004
+ 4542	text "Very well."
+ 4552	wait 00012
+ 4554	text " "
+ 4555	cmd63
+ 4556	person 10, PLACE_DEFAULT, 0, 259, 258
+ 4560	text "Of course,"
+ 4570	wait 00008
+ 4572	text " if we\ndisregard her testimony"
+ 4602	speed 00008
+ 4604	cmd5A 00369
+ 4606	text ".."
+ 4608	paragraph
+ 4609	cmd59 00030
+ 4611	pagebreak_section 133
+ 4613	text "ú..."
+ 4617	wait 00006
+ 4619	speed 00003
+ 4621	cmd63
+ 4622	person 10, PLACE_DEFAULT, 0, 263, 262
+ 4626	text "then I see no evidence\nkeeping us from declaring\na verdict."
+ 4685	paragraph
+ 4686	person 10, PLACE_DEFAULT, 0, 263, 262
+ 4690	speed 00004
+ 4692	cmd5A 00369
+ 4694	text ".."
+ 4696	cmd59 00011
+ 4698	textcolor 00162
+ 4700	text "f indeed,"
+ 4709	wait 00012
+ 4711	text " there are no\nobjections?"
+ 4736	nextpage_button
+ 4737	bg 28, BG_NOSHIFT
+ 4739	person 5, PLACE_DEFAULT, 0, 103, 102
+ 4743	name 5, SHOW_LEFT
+ 4745	screen_fade 02305, 00008, 00031
+ 4749	sound 00053, 00001
+ 4752	shake 00030, 00001
+ 4755	speed 00002
+ 4757	text "Uh oh,"
+ 4763	wait 00006
+ 4765	text " Apollo!"
+ 4773	wait 00016
+ 4775	text " "
+ 4776	speed 00004
+ 4778	text "If he declares\na verdict now"
+ 4806	speed 00008
+ 4808	cmd5A 00369
+ 4810	text ".."
+ 4812	nextpage_button
+ 4813	bg 25, BG_NOSHIFT
+ 4815	person 4, PLACE_DEFAULT, 0, 58, 58
+ 4819	name 4, SHOW_LEFT
+ 4821	screen_fade 02305, 00008, 00031
+ 4825	shake 00030, 00000
+ 4828	speed 00002
+ 4830	textcolor COLOR_BLUE
+ 4832	text "(Ack!"
+ 4837	wait 00018
+ 4839	text " "
+ 4840	speed 00003
+ 4842	text "But Prosecutor Gavin\'s\ncase is airtight!)"
+ 4883	nextpage_button
+ 4884	person 4, PLACE_DEFAULT, 0, 40, 40
+ 4888	speed 00003
+ 4890	text "(Lamiroir might have been\nlying to protect Machi!)"
+ 4940	paragraph
+ 4941	text "(How can I rely on her\ntestimony"
+ 4973	speed 00008
+ 4975	cmd5A 00369
+ 4977	text "..?)"
+ 4981	nextpage_button
+ 4982	person 4, PLACE_DEFAULT, 0, 58, 58
+ 4986	sound 00051, 00001
+ 4989	screen_fade 02305, 00008, 00031
+ 4993	speed 00004
+ 4995	text "(Wait"
+ 5000	speed 00008
+ 5002	cmd5A 00369
+ 5004	text ".."
+ 5006	wait 00018
+ 5008	cmd59 00399
+ 5010	speed 00004
+ 5012	text "What about yesterday\nin the detention center"
+ 5056	speed 00008
+ 5058	cmd5A 00369
+ 5060	text "..?)"
+ 5064	textcolor COLOR_WHITE
+ 5066	paragraph
+ 5067	hidetextbox 00001
+ 5069	sound 00049, 00001
+ 5072	screen_fade 2, FADE_TO_WHITE, 1, 31
+ 5076	wait 00015
+ 5078	cmd5F 00003, 00001, 00031
+ 5082	cmd4D 00039, 00001
+ 5085	person 35, PLACE_DEFAULT, 0, 784, 784
+ 5089	screen_fade 2, FADE_FROM_WHITE, 1, 31
+ 5093	wait 00015
+ 5095	name 35, SHOW_LEFT
+ 5097	person 35, PLACE_DEFAULT, 0, 785, 784
+ 5101	hidetextbox 00000
+ 5103	speed 00004
+ 5105	text "{01866}{01861}{01859}{01864}"
+ 5109	speed 00008
+ 5111	text "‥‥"
+ 5113	cmd5A 00392
+ 5115	text "‥"
+ 5116	nextpage_button
+ 5117	cmd4D 00039, 00000
+ 5120	name 34, SHOW_LEFT
+ 5122	person 34, PLACE_DEFAULT, 0, 767, 766
+ 5126	sound 00052, 00001
+ 5129	screen_fade 02305, 00008, 00031
+ 5133	shake 00030, 00000
+ 5136	cmd59 00012
+ 5138	finger_choice_2_args_jmp 4294967179, 4294967172
+ 5141	text "{00385}About the case"
+ 5156	speed 00008
+ 5158	cmd5A 00369
+ 5160	text "..{00385}?"
+ 5164	wait 00018
+ 5166	cmd59 00001
+ 5168	speed 00003
+ 5170	text "What about the case?"
+ 5190	nextpage_button
+ 5191	name 4, SHOW_LEFT
+ 5193	sound 00051, 00001
+ 5196	screen_fade 02305, 00008, 00031
+ 5200	shake 00030, 00000
+ 5203	speed 00003
+ 5205	textcolor COLOR_BLUE
+ 5207	text "(He wants to tell us about\nMr. LeTouse\'s death!?)"
+ 5256	textcolor COLOR_WHITE
+ 5258	nextpage_button
+ 5259	hidetextbox 00001
+ 5261	personvanish 00004, 00001
+ 5264	wait 00016
+ 5266	cmd4D 00039, 00001
+ 5269	name 35, SHOW_LEFT
+ 5271	personvanish 00003, 00001
+ 5274	person 35, PLACE_DEFAULT, 0, 785, 784
+ 5278	cmd5A 00012
+ 5280	flagctl 0, 28, 0
+ 5282	section_setup
+ 5283	cmd59 00011
+ 5285	music 01873, 01874
+ 5288	text "{01865}{01870}{01866}{01971}"
+ 5292	wait 00006
+ 5294	text "{01865}{01866}{01861}"
+ 5297	speed 00008
+ 5299	cmd5A 00392
+ 5301	text "‥"
+ 5302	wait 00030
+ 5304	nextpage_nobutton
+ 5305	person 35, PLACE_DEFAULT, 0, 784, 784
+ 5309	name 2, SHOW_LEFT
+ 5311	sound 00026, 00001
+ 5314	screen_fade 02305, 00008, 00031
+ 5318	shake 00030, 00000
+ 5321	speed 00003
+ 5323	text "This "
+ 5328	screen_fade 02305, 00008, 00031
+ 5332	text "meeting\'s over."
+ 5347	nextpage_button
+ 5348	hidetextbox 00001
+ 5350	personvanish 00004, 00001
+ 5353	wait 00016
+ 5355	person 0, PLACE_DEFAULT, 0, 0, 0
+ 5359	wait 00060
+ 5361	cmd4D 00039, 00000
+ 5364	personvanish 00003, 00004
+ 5367	person 37, PLACE_DEFAULT, 0, 815, 815
+ 5371	wait 00064
+ 5373	wait 00080
+ 5375	person 5, PLACE_DEFAULT, 0, 82, 81
+ 5379	name 5, SHOW_LEFT
+ 5381	sound 00051, 00001
+ 5384	screen_fade 02305, 00008, 00031
+ 5388	hidetextbox 00000
+ 5390	speed 00008
+ 5392	cmd5A 00369
+ 5394	text ".."
+ 5396	wait 00018
+ 5398	cmd59 00157
+ 5400	text "aryan?"
+ 5406	nextpage_button
+ 5407	hidetextbox 00001
+ 5409	sound 00049, 00001
+ 5412	screen_fade 2, FADE_TO_WHITE, 1, 31
+ 5416	wait 00015
+ 5418	cmd5F 00004, 00001, 00001
+ 5422	bg 25, BG_NOSHIFT
+ 5424	person 4, PLACE_DEFAULT, 0, 40, 40
+ 5428	screen_fade 2, FADE_FROM_WHITE, 1, 31
+ 5432	wait 00015
+ 5434	name 4, SHOW_LEFT
+ 5436	hidetextbox 00000
+ 5438	speed 00003
+ 5440	textcolor COLOR_BLUE
+ 5442	text "(Machi was trying to tell us\nsomething,"
+ 5481	wait 00008
+ 5483	text " "
+ 5484	screen_fade 02305, 00008, 00031
+ 5488	shake 00030, 00000
+ 5491	text "I know it!)"
+ 5502	paragraph
+ 5503	person 4, PLACE_DEFAULT, 0, 58, 58
+ 5507	speed 00008
+ 5509	text "(..."
+ 5513	wait 00018
+ 5515	speed 00003
+ 5517	text "Maybe the best thing to do\n"
+ 5544	speed 00003
+ 5546	text "is ask him... "
+ 5560	wait 00016
+ 5562	screen_fade 02305, 00008, 00031
+ 5566	shake 00030, 00000
+ 5569	text "under oath!)"
+ 5581	textcolor COLOR_WHITE
+ 5583	paragraph
+ 5584	bg 29, BG_NOSHIFT
+ 5586	name 10, SHOW_LEFT
+ 5588	person 10, PLACE_DEFAULT, 0, 259, 258
+ 5592	speed 00004
+ 5594	text "Very well."
+ 5604	wait 00016
+ 5606	text " The court finds\nthe defendant,"
+ 5637	wait 00008
+ 5639	text " er,"
+ 5643	wait 00008
+ 5645	text " what\nwas his name again?"
+ 5670	nextpage_button
+ 5671	fademusic 45, 28
+ 5674	newline
+ 5675	screen_fade 1, FADE_FROM_WHITE, 8, 31
+ 5679	animation 12, ANIM_START
+ 5682	sound 00032, 00001
+ 5685	wait 00060
+ 5687	bg 25, BG_NOSHIFT
+ 5689	name 4, SHOW_LEFT
+ 5691	person 4, PLACE_DEFAULT, 0, 59, 58
+ 5695	hidetextbox 00000
+ 5697	screen_fade 02305, 00008, 00031
+ 5701	sound 00053, 00001
+ 5704	shake 00030, 00001
+ 5707	speed 00002
+ 5709	text "Your Honor!!!"
+ 5722	paragraph
+ 5723	bg 29, BG_NOSHIFT
+ 5725	name 10, SHOW_LEFT
+ 5727	person 10, PLACE_DEFAULT, 0, 265, 264
+ 5731	screen_fade 02305, 00008, 00031
+ 5735	shake 00030, 00000
+ 5738	speed 00003
+ 5740	text "No,"
+ 5743	wait 00006
+ 5745	text " that wasn\'t it."
+ 5761	wait 00010
+ 5763	text " It was\nsomething like"
+ 5785	wait 00006
+ 5787	text " {00385}marquis{00385} or{DASH}{DASH}\n"
+ 5803	cmd5A 00369
+ 5805	text ".."
+ 5807	cmd59 00012
+ 5809	finger_choice_2_args_jmp 38, 69
+ 5812	text ". Justice?"
+ 5822	paragraph
+ 5823	bg 25, BG_NOSHIFT
+ 5825	name 4, SHOW_LEFT
+ 5827	person 4, PLACE_DEFAULT, 0, 59, 58
+ 5831	speed 00003
+ 5833	text "Your Honor,"
+ 5844	wait 00006
+ 5846	text " before you declare\na verdict,"
+ 5876	wait 00006
+ 5878	text " I would like to\ncall another witness!"
+ 5916	nextpage_button
+ 5917	hidetextbox 00001
+ 5919	swoosh 00001, 00001, 00006, 00145
+ 5924	wait 00032
+ 5926	bg 26, BG_NOSHIFT
+ 5928	name 53, SHOW_LEFT
+ 5930	person 6, PLACE_DEFAULT, 0, 149, 148
+ 5934	hidetextbox 00000
+ 5936	speed 00003
+ 5938	text "Exactly who else do you need\nto hear from?"
+ 5980	paragraph
+ 5981	bg 25, BG_NOSHIFT
+ 5983	name 4, SHOW_LEFT
+ 5985	person 4, PLACE_DEFAULT, 0, 37, 36
+ 5989	speed 00003
+ 5991	text "A witness who,"
+ 6005	wait 00006
+ 6007	text " until now,"
+ 6018	wait 00008
+ 6020	text " has\nnot been given a chance to\nspeak in this court."
+ 6072	paragraph
+ 6073	person 4, PLACE_DEFAULT, 0, 59, 58
+ 6077	cmd5A 00011
+ 6079	finger_choice_2_args_jmp 241, 241
+ 6082	text "."
+ 6083	wait 00020
+ 6085	cmd59 00011
+ 6087	pause
+ 6088	text "Because he doesn\'t speak\n"
+ 6113	screen_fade 02305, 00008, 00031
+ 6117	speed 00004
+ 6119	text "English."
+ 6127	paragraph
+ 6128	bg 26, BG_NOSHIFT
+ 6130	name 53, SHOW_LEFT
+ 6132	person 6, PLACE_DEFAULT, 0, 146, 145
+ 6136	sound 00051, 00001
+ 6139	screen_fade 02305, 00008, 00031
+ 6143	speed 00005
+ 6145	text "You don\'t mean"
+ 6159	speed 00008
+ 6161	cmd5A 00369
+ 6163	text ".."
+ 6165	paragraph
+ 6166	bg 25, BG_NOSHIFT
+ 6168	name 4, SHOW_LEFT
+ 6170	person 4, PLACE_DEFAULT, 0, 59, 58
+ 6174	speed 00005
+ 6176	text "I do."
+ 6181	wait 00020
+ 6183	nextpage_nobutton
+ 6184	person 4, PLACE_DEFAULT, 0, 64, 65
+ 6188	sound 00026, 00001
+ 6191	screen_fade 02305, 00008, 00031
+ 6195	shake 00030, 00001
+ 6198	speed 00002
+ 6200	text "The defense calls defendant\nMachi Tobaye to the stand!"
+ 6254	fademusic 0, 5
+ 6257	pausemusic 00000, 00045
+ 6260	bg 29, BG_NOSHIFT
+ 6262	name 10, SHOW_LEFT
+ 6264	person 10, PLACE_DEFAULT, 0, 265, 264
+ 6268	speed 00004
+ 6270	text "Wh{DASH}"
+ 6273	wait 00008
+ 6275	screen_fade 02305, 00008, 00031
+ 6279	sound 00053, 00001
+ 6282	shake 00030, 00001
+ 6285	text "What!?"
+ 6291	cmd5A 00012
+ 6293	removeevidence
+ 6294	cmd59 00399
+ 6296	text "But he doesn\'t\nspeak English"
+ 6324	speed 00008
+ 6326	cmd5A 00369
+ 6328	text ".."
+ 6330	paragraph
+ 6331	bg 25, BG_NOSHIFT
+ 6333	name 4, SHOW_LEFT
+ 6335	person 4, PLACE_DEFAULT, 0, 59, 58
+ 6339	screen_fade 02305, 00008, 00031
+ 6343	shake 00030, 00000
+ 6346	speed 00003
+ 6348	text "We\'ll use an"
+ 6360	wait 00006
+ 6362	text " "
+ 6363	shake 00030, 00000
+ 6366	text "interpreter!"
+ 6378	paragraph
+ 6379	bg 26, BG_NOSHIFT
+ 6381	name 53, SHOW_LEFT
+ 6383	person 6, PLACE_DEFAULT, 0, 151, 150
+ 6387	speed 00004
+ 6389	text "Interpreter?"
+ 6401	wait 00012
+ 6403	text " I\'m afraid you\'ll\nhave to look elsewhere."
+ 6445	paragraph
+ 6446	person 6, PLACE_DEFAULT, 0, 146, 145
+ 6450	speed 00003
+ 6452	text "I only speak a few phrases,"
+ 6479	wait 00006
+ 6481	newline
+ 6482	text "such as,"
+ 6490	wait 00006
+ 6492	text " {00385}I love you,{00385} and,\n{00385}Where is the toilet?{00385}"
+ 6534	paragraph
+ 6535	bg 25, BG_NOSHIFT
+ 6537	name 4, SHOW_LEFT
+ 6539	person 4, PLACE_DEFAULT, 0, 39, 39
+ 6543	cmd63
+ 6544	person 4, PLACE_DEFAULT, 0, 37, 36
+ 6548	speed 00004
+ 6550	text "The defense would like to\nrequest Lamiroir as the\ninterpreter."
+ 6612	paragraph
+ 6613	bg 29, BG_NOSHIFT
+ 6615	name 10, SHOW_LEFT
+ 6617	person 10, PLACE_DEFAULT, 0, 265, 264
+ 6621	sound 00051, 00001
+ 6624	screen_fade 02305, 00008, 00031
+ 6628	speed 00004
+ 6630	text "L{DASH}"
+ 6632	wait 00010
+ 6634	speed 00003
+ 6636	text "Lamiroir!?"
+ 6646	paragraph
+ 6647	person 10, PLACE_DEFAULT, 0, 263, 262
+ 6651	speed 00004
+ 6653	text "But there\'s a possibility\nshe\'s protecting the\ndefendant"
+ 6709	speed 00008
+ 6711	cmd5A 00369
+ 6713	text "..!"
+ 6716	paragraph
+ 6717	bg 25, BG_NOSHIFT
+ 6719	name 4, SHOW_LEFT
+ 6721	person 4, PLACE_DEFAULT, 0, 59, 58
+ 6725	screen_fade 02305, 00008, 00031
+ 6729	shake 00030, 00000
+ 6732	speed 00003
+ 6734	text "But she\'d be interpreting for\nthe defendant!"
+ 6778	wait 00016
+ 6780	text " "
+ 6781	speed 00002
+ 6783	text "Why would she\nlie?"
+ 6801	paragraph
+ 6802	bg 29, BG_NOSHIFT
+ 6804	name 10, SHOW_LEFT
+ 6806	person 10, PLACE_DEFAULT, 0, 265, 264
+ 6810	shake 00030, 00000
+ 6813	speed 00004
+ 6815	text "This is most unusual"
+ 6835	speed 00008
+ 6837	cmd5A 00369
+ 6839	text ".."
+ 6841	paragraph
+ 6842	bg 26, BG_NOSHIFT
+ 6844	name 53, SHOW_LEFT
+ 6846	person 6, PLACE_DEFAULT, 0, 147, 147
+ 6850	text "Ah"
+ 6852	wait 00006
+ 6854	text " ha"
+ 6857	wait 00006
+ 6859	text " ha"
+ 6862	speed 00008
+ 6864	text "..."
+ 6867	wait 00012
+ 6869	text " "
+ 6870	person 6, PLACE_DEFAULT, 0, 149, 148
+ 6874	speed 00003
+ 6876	text "Bravo,"
+ 6882	wait 00010
+ 6884	text " Herr\nForehead."
+ 6899	paragraph
+ 6900	person 6, PLACE_DEFAULT, 0, 151, 150
+ 6904	speed 00003
+ 6906	text "Herr Judge!"
+ 6917	wait 00012
+ 6919	text " The prosecution\nagrees with the defense\'s\nrequest."
+ 6970	paragraph
+ 6971	person 6, PLACE_DEFAULT, 0, 146, 145
+ 6975	text "If Lamiroir lies,"
+ 6992	wait 00006
+ 6994	text " I\'ll be\nable to tell."
+ 7016	paragraph
+ 7017	person 6, PLACE_DEFAULT, 0, 149, 148
+ 7021	speed 00004
+ 7023	text "Even my limited knowledge of\nthe language should be enough\nfor that."
+ 7091	paragraph
+ 7092	bg 29, BG_NOSHIFT
+ 7094	name 10, SHOW_LEFT
+ 7096	person 10, PLACE_DEFAULT, 0, 266, 266
+ 7100	fademusic 60, 6
+ 7103	setmovelocations 1, 18, 2305, 8, 31
+ 7109	speed 00005
+ 7111	text "Well,"
+ 7116	wait 00016
+ 7118	text " "
+ 7119	speed 00004
+ 7121	person 10, PLACE_DEFAULT, 0, 259, 258
+ 7125	text "if both prosecution and\ndefense are for this,"
+ 7170	wait 00008
+ 7172	text " I see\nlittle cause for refusal."
+ 7204	paragraph
+ 7205	bg 25, BG_NOSHIFT
+ 7207	name 4, SHOW_LEFT
+ 7209	person 4, PLACE_DEFAULT, 0, 58, 58
+ 7213	screen_fade 02305, 00008, 00031
+ 7217	shake 00030, 00000
+ 7220	speed 00003
+ 7222	textcolor COLOR_BLUE
+ 7224	text "(Finally!"
+ 7233	wait 00012
+ 7235	text " Some progress!)\n"
+ 7252	textcolor COLOR_WHITE
+ 7254	paragraph
+ 7255	bg 29, BG_NOSHIFT
+ 7257	name 10, SHOW_LEFT
+ 7259	person 10, PLACE_DEFAULT, 0, 263, 262
+ 7263	shake 00030, 00000
+ 7266	speed 00003
+ 7268	text "Bailiff!"
+ 7276	wait 00012
+ 7278	text " Please show the\ndefendant and Lamiroir to\nthe witness stand!"
+ 7339	nextpage_button
+ 7340	hidetextbox 00001
+ 7342	fademusic 45, 18
+ 7345	text "{00498}\n"
+ 7347	hideperson
+ 7348	wait 00015
+ 7350	section_end
+ENDSECTION
+SECTION 2
+ 0000	section_setup
+ 0001	bg 27, BG_NOSHIFT
+ 0003	person 42, PLACE_DEFAULT, 0, 771, 771
+ 0007	cmd6B 00000, 00000, 00000
+ 0011	bganim 00098, 00522
+ 0014	fademusic 0, 5
+ 0017	testemony_animation 00000
+ 0019	screen_fade 4, FADE_FROM_BLACK, 1, 31
+ 0023	wait 00025
+ 0025	wait 00060
+ 0027	hidetextbox 00001
+ 0029	swoosh 00002, 00001, 00006, 00148
+ 0034	wait 00032
+ 0036	bg 26, BG_NOSHIFT
+ 0038	name 53, SHOW_LEFT
+ 0040	person 6, PLACE_DEFAULT, 0, 149, 148
+ 0044	hidetextbox 00000
+ 0046	speed 00004
+ 0048	text "I suppose there is a first\ntime for everything."
+ 0095	wait 00016
+ 0097	text " "
+ 0098	speed 00003
+ 0100	text "Shall\nwe proceed?"
+ 0117	paragraph
+ 0118	person 6, PLACE_DEFAULT, 0, 146, 145
+ 0122	speed 00003
+ 0124	text "Your name,"
+ 0134	wait 00008
+ 0136	text " to begin with."
+ 0151	cmd5A 00012
+ 0153	flagctl 0, 89, 0
+ 0155	newline
+ 0156	speed 00008
+ 0158	cmd5A 00369
+ 0160	text ".."
+ 0162	wait 00018
+ 0164	cmd59 00011
+ 0166	pause
+ 0167	text "If you would,"
+ 0180	wait 00008
+ 0182	text " Lamiroir."
+ 0192	paragraph
+ 0193	bg 27, BG_NOSHIFT
+ 0195	name 34, SHOW_LEFT
+ 0197	person 42, PLACE_DEFAULT, 0, 772, 771
+ 0201	cmd6B 00000, 00000, 00000
+ 0205	bganim 00098, 00522
+ 0208	speed 00004
+ 0210	wait 00008
+ 0212	text "Yes"
+ 0215	speed 00008
+ 0217	text "."
+ 0218	cmd5A 00369
+ 0220	text "."
+ 0221	wait 00018
+ 0223	paragraph
+ 0224	hidetextbox 00001
+ 0226	person 42, PLACE_DEFAULT, 0, 776, 775
+ 0230	cmd6B 00004, 00000, 00000
+ 0234	bganim 00098, 00522
+ 0237	wait 00060
+ 0239	person 42, PLACE_DEFAULT, 0, 796, 795
+ 0243	cmd6B 00004, 00000, 00000
+ 0247	bganim 00098, 00522
+ 0250	wait 00060
+ 0252	person 42, PLACE_DEFAULT, 0, 772, 771
+ 0256	cmd6B 00000, 00000, 00000
+ 0260	bganim 00098, 00522
+ 0263	cmd5A 00012
+ 0265	removeevidence
+ 0266	hidetextbox 00000
+ 0268	cmd59 00011
+ 0270	pause
+ 0271	text "He says,"
+ 0279	wait 00008
+ 0281	text " {00385}Machi Tobaye,"
+ 0296	wait 00008
+ 0298	text " the\ndefendant.{00385}"
+ 0314	paragraph
+ 0315	bg 29, BG_NOSHIFT
+ 0317	name 10, SHOW_LEFT
+ 0319	person 10, PLACE_DEFAULT, 0, 266, 266
+ 0323	speed 00004
+ 0325	text "Hmm,"
+ 0329	wait 00008
+ 0331	text " "
+ 0332	person 10, PLACE_DEFAULT, 0, 259, 258
+ 0336	text "this is certainly a first\nfor this courtroom."
+ 0381	paragraph
+ 0382	person 10, PLACE_DEFAULT, 0, 263, 262
+ 0386	speed 00004
+ 0388	text "Not that we really needed an\ninterpretation of that message\nin particular."
+ 0462	paragraph
+ 0463	bg 25, BG_NOSHIFT
+ 0465	name 4, SHOW_LEFT
+ 0467	person 4, PLACE_DEFAULT, 0, 36, 36
+ 0471	speed 00003
+ 0473	textcolor COLOR_BLUE
+ 0475	text "(So far,"
+ 0483	wait 00006
+ 0485	text " so good"
+ 0493	speed 00008
+ 0495	text "...)"
+ 0499	textcolor COLOR_WHITE
+ 0501	paragraph
+ 0502	bg 29, BG_NOSHIFT
+ 0504	name 10, SHOW_LEFT
+ 0506	person 10, PLACE_DEFAULT, 0, 259, 258
+ 0510	speed 00003
+ 0512	text "Very well."
+ 0522	wait 00016
+ 0524	text " "
+ 0525	person 10, PLACE_DEFAULT, 0, 263, 262
+ 0529	text "Mr. Justice,"
+ 0541	wait 00006
+ 0543	text " if\nyou would."
+ 0557	paragraph
+ 0558	bg 25, BG_NOSHIFT
+ 0560	name 4, SHOW_LEFT
+ 0562	person 4, PLACE_DEFAULT, 0, 37, 36
+ 0566	sound 00051, 00001
+ 0569	screen_fade 02305, 00008, 00031
+ 0573	speed 00004
+ 0575	text "Huh?"
+ 0579	wait_noanim 00030
+ 0581	newline
+ 0582	person 4, PLACE_DEFAULT, 0, 50, 49
+ 0586	speed 00004
+ 0588	text "If I would what,"
+ 0604	wait 00006
+ 0606	text " Your Honor?"
+ 0618	paragraph
+ 0619	bg 29, BG_NOSHIFT
+ 0621	name 10, SHOW_LEFT
+ 0623	person 10, PLACE_DEFAULT, 0, 265, 264
+ 0627	screen_fade 02305, 00008, 00031
+ 0631	sound 00053, 00001
+ 0634	shake 00030, 00001
+ 0637	speed 00002
+ 0639	text "{00385}Would what{00385}!?"
+ 0653	wait 00010
+ 0655	text " You called the\ndefendant to the stand,"
+ 0694	wait 00006
+ 0696	text " "
+ 0697	shake 00030, 00000
+ 0700	speed 00003
+ 0702	text "did\nyou not?"
+ 0714	paragraph
+ 0715	person 10, PLACE_DEFAULT, 0, 263, 262
+ 0719	speed 00004
+ 0721	text "What would you have him\ntestify about!?"
+ 0760	paragraph
+ 0761	bg 25, BG_NOSHIFT
+ 0763	name 4, SHOW_LEFT
+ 0765	person 4, PLACE_DEFAULT, 0, 41, 40
+ 0769	speed 00004
+ 0771	text "What do I want him to testify\nabout"
+ 0806	speed 00008
+ 0808	cmd5A 00369
+ 0810	text "..?"
+ 0813	paragraph
+ 0814	person 4, PLACE_DEFAULT, 0, 61, 61
+ 0818	animation 149, ANIM_START
+ 0821	speed 00004
+ 0823	textcolor COLOR_BLUE
+ 0825	text "(Ack,"
+ 0830	wait 00008
+ 0832	text " I hadn\'t thought that\nfar yet!)"
+ 0864	textcolor COLOR_WHITE
+ 0866	paragraph
+ 0867	bg 28, BG_NOSHIFT
+ 0869	name 5, SHOW_LEFT
+ 0871	person 5, PLACE_DEFAULT, 0, 103, 102
+ 0875	screen_fade 02305, 00008, 00031
+ 0879	sound 00053, 00001
+ 0882	shake 00030, 00001
+ 0885	speed 00003
+ 0887	text "Apollo!"
+ 0894	paragraph
+ 0895	screen_fade 02305, 00008, 00031
+ 0899	shake 00030, 00000
+ 0902	speed 00003
+ 0904	text "Aren\'t you going to ask him\nwhat he was about to tell\nus yesterday?"
+ 0971	paragraph
+ 0972	name 4, SHOW_LEFT
+ 0974	person 5, PLACE_DEFAULT, 0, 102, 102
+ 0978	speed 00004
+ 0980	text "How can I if I don\'t know\nwhat he was saying"
+ 1024	speed 00008
+ 1026	cmd5A 00369
+ 1028	text "..?"
+ 1031	paragraph
+ 1032	bg 27, BG_NOSHIFT
+ 1034	name 34, SHOW_LEFT
+ 1036	person 42, PLACE_DEFAULT, 0, 772, 771
+ 1040	cmd6B 00000, 00000, 00000
+ 1044	bganim 00098, 00522
+ 1047	sound 00052, 00001
+ 1050	screen_fade 02305, 00008, 00031
+ 1054	speed 00004
+ 1056	text "Excuse me,"
+ 1066	wait 00012
+ 1068	text " a moment."
+ 1078	wait 00016
+ 1080	text " "
+ 1081	speed 00004
+ 1083	text "If I\nmight speak?"
+ 1100	paragraph
+ 1101	bg 29, BG_NOSHIFT
+ 1103	name 10, SHOW_LEFT
+ 1105	person 10, PLACE_DEFAULT, 0, 263, 262
+ 1109	speed 00003
+ 1111	text "Yes,"
+ 1115	wait 00008
+ 1117	text " Lamiroir?"
+ 1127	paragraph
+ 1128	bg 27, BG_NOSHIFT
+ 1130	name 34, SHOW_LEFT
+ 1132	person 42, PLACE_DEFAULT, 0, 772, 771
+ 1136	cmd6B 00000, 00000, 00000
+ 1140	bganim 00098, 00522
+ 1143	speed 00004
+ 1145	text "Just now,"
+ 1154	wait 00006
+ 1156	text " Machi said there\nis something about which he"
+ 1201	wait 00006
+ 1203	newline
+ 1204	screen_fade 02305, 00008, 00031
+ 1208	text "{00385}wishes to testify{00385}."
+ 1228	paragraph
+ 1229	bg 25, BG_NOSHIFT
+ 1231	name 4, SHOW_LEFT
+ 1233	person 4, PLACE_DEFAULT, 0, 40, 40
+ 1237	sound 00051, 00001
+ 1240	screen_fade 02305, 00008, 00031
+ 1244	speed 00003
+ 1246	textcolor COLOR_BLUE
+ 1248	text "(Machi wants to testify about\nsomething?"
+ 1288	wait 00016
+ 1290	text " What could it be?)"
+ 1309	textcolor COLOR_WHITE
+ 1311	paragraph
+ 1312	bg 29, BG_NOSHIFT
+ 1314	name 10, SHOW_LEFT
+ 1316	person 10, PLACE_DEFAULT, 0, 263, 262
+ 1320	speed 00004
+ 1322	text "What sort of testimony is\nhe talking about?"
+ 1365	paragraph
+ 1366	bg 27, BG_NOSHIFT
+ 1368	name 34, SHOW_LEFT
+ 1370	person 42, PLACE_DEFAULT, 0, 772, 771
+ 1374	cmd6B 00000, 00000, 00000
+ 1378	bganim 00098, 00522
+ 1381	speed 00004
+ 1383	cmd5A 00369
+ 1385	text ".."
+ 1387	cmd59 00168
+ 1389	text "ne moment,"
+ 1399	wait 00006
+ 1401	text " please."
+ 1409	paragraph
+ 1410	hidetextbox 00001
+ 1412	fademusic 120, 30
+ 1415	cmd2A 00776, 00775, 00107
+ 1419	pause
+ 1420	section_setup
+ 1421	section_setup
+ 1422	bganim 00098, 00522
+ 1425	wait 00060
+ 1427	person 42, PLACE_DEFAULT, 0, 796, 795
+ 1431	cmd6B 00004, 00000, 00000
+ 1435	bganim 00098, 00522
+ 1438	wait 00060
+ 1440	cmd5A 00012
+ 1442	removeevidence
+ 1443	bg 25, BG_NOSHIFT
+ 1445	name 4, SHOW_LEFT
+ 1447	person 4, PLACE_DEFAULT, 0, 58, 58
+ 1451	hidetextbox 00000
+ 1453	speed 00004
+ 1455	textcolor COLOR_BLUE
+ 1457	text "(Argh!"
+ 1463	wait 00018
+ 1465	text " "
+ 1466	speed 00004
+ 1468	text "The suspense is\nkilling me"
+ 1494	speed 00008
+ 1496	text "...)"
+ 1500	textcolor COLOR_WHITE
+ 1502	paragraph
+ 1503	hidetextbox 00001
+ 1505	bg 27, BG_NOSHIFT
+ 1507	person 42, PLACE_DEFAULT, 0, 776, 775
+ 1511	cmd6B 00004, 00000, 00000
+ 1515	bganim 00098, 00522
+ 1518	wait 00060
+ 1520	person 42, PLACE_DEFAULT, 0, 796, 795
+ 1524	cmd6B 00004, 00000, 00000
+ 1528	bganim 00098, 00522
+ 1531	wait 00060
+ 1533	name 34, SHOW_LEFT
+ 1535	person 42, PLACE_DEFAULT, 0, 776, 775
+ 1539	cmd6B 00004, 00000, 00000
+ 1543	bganim 00098, 00522
+ 1546	hidetextbox 00000
+ 1548	sound 00051, 00001
+ 1551	screen_fade 02305, 00008, 00031
+ 1555	speed 00004
+ 1557	text "What"
+ 1561	speed 00008
+ 1563	text "...!?"
+ 1568	paragraph
+ 1569	bg 25, BG_NOSHIFT
+ 1571	name 4, SHOW_LEFT
+ 1573	person 4, PLACE_DEFAULT, 0, 61, 61
+ 1577	animation 149, ANIM_START
+ 1580	shake 00030, 00000
+ 1583	speed 00004
+ 1585	textcolor COLOR_BLUE
+ 1587	text "(What?"
+ 1593	wait 00016
+ 1595	text " What!?)"
+ 1603	textcolor COLOR_WHITE
+ 1605	paragraph
+ 1606	hidetextbox 00001
+ 1608	bg 27, BG_NOSHIFT
+ 1610	person 42, PLACE_DEFAULT, 0, 776, 775
+ 1614	cmd6B 00004, 00000, 00000
+ 1618	bganim 00098, 00522
+ 1621	wait 00060
+ 1623	person 42, PLACE_DEFAULT, 0, 796, 795
+ 1627	cmd6B 00004, 00000, 00000
+ 1631	bganim 00098, 00522
+ 1634	wait 00060
+ 1636	cmd5A 00012
+ 1638	removeevidence
+ 1639	bg 29, BG_NOSHIFT
+ 1641	name 10, SHOW_LEFT
+ 1643	person 10, PLACE_DEFAULT, 0, 263, 262
+ 1647	hidetextbox 00000
+ 1649	speed 00004
+ 1651	text "W{DASH}"
+ 1653	wait 00006
+ 1655	text "Well,"
+ 1660	wait 00008
+ 1662	text " Lamiroir?"
+ 1672	paragraph
+ 1673	bg 27, BG_NOSHIFT
+ 1675	name 34, SHOW_LEFT
+ 1677	person 42, PLACE_DEFAULT, 0, 772, 771
+ 1681	cmd6B 00000, 00000, 00000
+ 1685	bganim 00098, 00522
+ 1688	text "According to Machi"
+ 1706	speed 00008
+ 1708	cmd5A 00369
+ 1710	text ".."
+ 1712	paragraph
+ 1713	screen_fade 02305, 00008, 00031
+ 1717	cmd59 00011
+ 1719	pause
+ 1720	text "He has"
+ 1726	wait 00008
+ 1728	text " {00385}proof of his\ninnocence{00385}."
+ 1754	paragraph
+ 1755	bg 29, BG_NOSHIFT
+ 1757	name 10, SHOW_LEFT
+ 1759	person 10, PLACE_DEFAULT, 0, 265, 264
+ 1763	speed 00004
+ 1765	text "Wh{DASH}"
+ 1768	wait 00018
+ 1770	screen_fade 02305, 00008, 00031
+ 1774	sound 00053, 00001
+ 1777	shake 00030, 00001
+ 1780	text "Wh{DASH}"
+ 1783	screen_fade 02305, 00008, 00031
+ 1787	text "Wha"
+ 1790	screen_fade 02305, 00008, 00031
+ 1794	shake 00030, 00001
+ 1797	text "aa"
+ 1799	screen_fade 02305, 00008, 00031
+ 1803	text "aa"
+ 1805	screen_fade 02305, 00008, 00031
+ 1809	text "aa"
+ 1811	screen_fade 02305, 00008, 00031
+ 1815	text "t!?"
+ 1818	fademusic 0, 5
+ 1821	pausemusic 00000, 00090
+ 1824	wait 00040
+ 1826	nextpage_nobutton
+ 1827	hidetextbox 00001
+ 1829	bg 24, BG_NOSHIFT
+ 1831	person 0, PLACE_DEFAULT, 0, 0, 0
+ 1835	animation 52, ANIM_START
+ 1838	animation 53, ANIM_START
+ 1841	animation 54, ANIM_START
+ 1844	animation 62, ANIM_START
+ 1847	animation 63, ANIM_START
+ 1850	animation 78, ANIM_START
+ 1853	sound 00022, 00001
+ 1856	wait 00120
+ 1858	bg 26, BG_NOSHIFT
+ 1860	name 53, SHOW_LEFT
+ 1862	person 6, PLACE_DEFAULT, 0, 146, 145
+ 1866	hidetextbox 00000
+ 1868	speed 00004
+ 1870	cmd5A 00369
+ 1872	text ".."
+ 1874	cmd59 00173
+ 1876	text "his is a surprise."
+ 1894	paragraph
+ 1895	bg 28, BG_NOSHIFT
+ 1897	name 5, SHOW_LEFT
+ 1899	person 5, PLACE_DEFAULT, 0, 99, 98
+ 1903	sound 00051, 00001
+ 1906	screen_fade 02305, 00008, 00031
+ 1910	speed 00002
+ 1912	text "Yahoo!"
+ 1918	wait 00010
+ 1920	text " Victory,"
+ 1929	wait 00008
+ 1931	text " Apollo!\n"
+ 1940	shake 00030, 00000
+ 1943	text "We did it!"
+ 1953	paragraph
+ 1954	bg 25, BG_NOSHIFT
+ 1956	name 4, SHOW_LEFT
+ 1958	person 4, PLACE_DEFAULT, 0, 36, 36
+ 1962	speed 00004
+ 1964	textcolor COLOR_BLUE
+ 1966	text "(This is sounding too good to\nbelieve."
+ 2004	wait 00016
+ 2006	text " "
+ 2007	person 4, PLACE_DEFAULT, 0, 58, 58
+ 2011	screen_fade 02305, 00008, 00031
+ 2015	shake 00030, 00000
+ 2018	speed 00003
+ 2020	text "And I know what that\nusually means"
+ 2054	speed 00008
+ 2056	text "...)"
+ 2060	textcolor COLOR_WHITE
+ 2062	paragraph
+ 2063	bg 29, BG_NOSHIFT
+ 2065	name 10, SHOW_LEFT
+ 2067	person 10, PLACE_DEFAULT, 0, 263, 262
+ 2071	speed 00003
+ 2073	text "Well,"
+ 2078	wait 00006
+ 2080	text " if that\'s true,"
+ 2096	wait 00006
+ 2098	text " then\n"
+ 2104	screen_fade 02305, 00008, 00031
+ 2108	shake 00030, 00000
+ 2111	speed 00002
+ 2113	text "this is vital testimony!"
+ 2137	wait 00016
+ 2139	newline
+ 2140	text "Lamiroir"
+ 2148	cmd5A 00369
+ 2150	text ".."
+ 2152	wait 00008
+ 2154	cmd59 00012
+ 2156	finger_choice_2_args_jmp 271, 34
+ 2159	text " mean,"
+ 2165	wait 00006
+ 2167	shake 00030, 00000
+ 2170	text " Machi!"
+ 2177	paragraph
+ 2178	name 10, SHOW_LEFT
+ 2180	person 10, PLACE_DEFAULT, 0, 263, 262
+ 2184	shake 00030, 00000
+ 2187	speed 00003
+ 2189	text "Please testify to the court!"
+ 2217	nextpage_button
+ 2218	hidetextbox 00001
+ 2220	bg 27, BG_NOSHIFT
+ 2222	person 42, PLACE_DEFAULT, 0, 776, 775
+ 2226	cmd6B 00004, 00000, 00000
+ 2230	bganim 00098, 00522
+ 2233	wait 00030
+ 2235	person 42, PLACE_DEFAULT, 0, 796, 795
+ 2239	cmd6B 00004, 00000, 00000
+ 2243	bganim 00098, 00522
+ 2246	wait 00030
+ 2248	person 42, PLACE_DEFAULT, 0, 772, 771
+ 2252	cmd6B 00000, 00000, 00000
+ 2256	bganim 00098, 00522
+ 2259	cmd5A 00012
+ 2261	removeevidence
+ 2262	name 34, SHOW_LEFT
+ 2264	cmd59 00028
+ 2266	section_setup
+ 2267	speed 00004
+ 2269	text "{00385}Very well.{00385}"
+ 2281	nextpage_button
+ 2282	hidetextbox 00001
+ 2284	fademusic 45, 40
+ 2287	newline
+ 2288	halt
+ 2289	section_end
+ENDSECTION

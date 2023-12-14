@@ -1,0 +1,116 @@
+SECTION 0
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0007	name 7, SHOW_LEFT
+ 0009	text "ËÅü{00331}{00333}{00351}{00320}{00592}¿Ç\n4{00622}4{01627}ô{00492}{00508}ÿÜâ;Ç｡{01938}"
+ 0034	nextpage_button
+ 0035	bg 26, BG_NOSHIFT
+ 0037	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0041	name 6, SHOW_LEFT
+ 0043	text "{00328}{00303}{00400}｡îÁÊ、{00557}{00436}{00501}ì\n{00686}{00484}{00619};ŒØ｡"
+ 0063	nextpage_button
+ 0064	bg 25, BG_NOSHIFT
+ 0066	name 4, SHOW_LEFT
+ 0068	person 4, PLACE_DEFAULT, 0, 60, 60
+ 0072	text "É‥‥É‥‥ÉÉÉÉ{00351}!"
+ 0084	nextpage_button
+ 0085	bg 26, BG_NOSHIFT
+ 0087	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0091	name 6, SHOW_LEFT
+ 0093	text "‥‥ÀÀë、éï{01041}{00623}｡\n{00287}{00302}´➁;¿、{00406}Ü{00929}{BRG03}{00476}ó｡"
+ 0119	nextpage_button
+ 0120	bg 26, BG_NOSHIFT
+ 0122	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0126	name 6, SHOW_LEFT
+ 0128	text "{00446}{00447}{00559}ï{00753}{00522}ü‥‥\n{01582}Å{00407}{00271}âÜ;ÈïÏ!"
+ 0149	nextpage_button
+ 0150	bg 25, BG_NOSHIFT
+ 0152	name 4, SHOW_LEFT
+ 0154	person 4, PLACE_DEFAULT, 0, 37, 36
+ 0158	text "îÁ、‟"
+ 0162	textcolor COLOR_RED
+ 0164	text "{00325}{00313}"
+ 0166	textcolor COLOR_WHITE
+ 0168	text "”ì{00527}óàïÊ｡\néÅì、æ{00271}êæ{00450}{00754}î{00994}¿Ç｡"
+ 0192	nextpage_button
+ 0193	bg 26, BG_NOSHIFT
+ 0195	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0199	name 6, SHOW_LEFT
+ 0201	text "‥‥ÀÀêËÆô{00418}ÖùÛàë｡\nîÊîÊ{!}{00400}{00312}Ñ｡"
+ 0226	nextpage_button
+ 0227	bg 25, BG_NOSHIFT
+ 0229	name 4, SHOW_LEFT
+ 0231	person 4, PLACE_DEFAULT, 0, 66, 65
+ 0235	text "Ëï{00439}{00438}ì‟{00436}{00509}”îß‥‥\n{00304}{00324}{00349}{00317}ì{00527};ÅÄï¿Ç!"
+ 0262	nextpage_button
+ 0263	bg 26, BG_NOSHIFT
+ 0265	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0269	name 6, SHOW_LEFT
+ 0271	text "{00726}{00727}ÇÄïæ{00333}♢{00333}♢ÜÀÛ¡｡\nÀèÂÈ、{00438}{00271}âÂËÈÊ｡"
+ 0300	nextpage_button
+ 0301	bg 26, BG_NOSHIFT
+ 0303	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0307	name 6, SHOW_LEFT
+ 0309	text "éï☉{00331}{?}ô、ø{00400}Ô\nààÎËØ¿ÂÀâ€ÜÀë｡"
+ 0334	nextpage_button
+ 0335	bg 232, BG_NOSHIFT
+ 0337	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0341	name 2, SHOW_LEFT
+ 0343	text "{BRG05}ÔìùÅâ{00642}{00271}âÉÒÄø｡\n‥‥{00677}{00678}ôë｡"
+ 0365	nextpage_button
+ 0366	bg 4095, BG_NOSHIFT
+ 0368	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0372	name 6, SHOW_LEFT
+ 0374	text "{00446}{00447}{00559}ï{00753}{00522}ü‥‥\n{01582}Å{00407}{00271}âÜ;ÈïÏ!"
+ 0395	nextpage_button
+ 0396	name 6, SHOW_LEFT
+ 0398	text "‥‥ÀÀë、éï{01041}{00623}｡\n{00287}{00302}´➁;¿、{00406}Ü{00929}{BRG03}{00476}ó｡"
+ 0424	nextpage_button
+ 0425	name 6, SHOW_LEFT
+ 0427	text "‥‥ÀÀêËÆô{00418}ÖùÛàë｡\nîÊîÊ{!}{00400}{00312}Ñ｡"
+ 0452	nextpage_button
+ 0453	name 6, SHOW_LEFT
+ 0455	text "{00726}{00727}ÇÄïæ{00333}♢{00333}♢ÜÀÛ¡｡\nÀèÂÈ、{00438}{00271}âÂËÈÊ｡"
+ 0484	nextpage_button
+ 0485	name 6, SHOW_LEFT
+ 0487	text "éï☉{00331}{?}ô、ø{00400}Ô\nààÎËØ¿ÂÀâ€ÜÀë｡"
+ 0512	nextpage_button
+ 0513	name 2, SHOW_LEFT
+ 0515	text "{BRG05}ÔìùÅâ{00642}{00271}âÉÒÄø｡\n‥‥{00677}{00678}ôë｡"
+ 0537	nextpage_button
+ 0538	hidetextbox 00001
+ 0540	bg 26, BG_NOSHIFT
+ 0542	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0546	name 6, SHOW_LEFT
+ 0548	wait 00200
+ 0550	bg 232, BG_NOSHIFT
+ 0552	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0556	name 2, SHOW_LEFT
+ 0558	wait 00200
+ 0560	hidetextbox 00000
+ 0562	halt
+ 0563	section_end
+ENDSECTION
+SECTION 1
+ 0000	section_setup
+ 0001	bg 243, BG_NOSHIFT
+ 0003	person 17, PLACE_DEFAULT, 0, 404, 403
+ 0007	name 17, SHOW_LEFT
+ 0009	text "{00305}{00351}{00285}{00400}{00324}1ùÑê\n{00543}{00576}Ñê{00470}Èï¿"
+ 0027	paragraph
+ 0028	text "3ù{00785}{00271}âÂÎ;Ç"
+ 0037	nextpage_button
+ 0038	halt
+ 0039	section_end
+ENDSECTION
+SECTION 2
+ 0000	section_setup
+ 0001	bg 236, BG_NOSHIFT
+ 0003	person 8, PLACE_DEFAULT, 0, 202, 201
+ 0007	name 8, SHOW_LEFT
+ 0009	text "{01370}{00567}ô{00695}{00271}âÔÑÏÀ"
+ 0019	nextpage_button
+ 0020	halt
+ 0021	section_end
+ENDSECTION

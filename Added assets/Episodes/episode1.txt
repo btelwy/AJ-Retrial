@@ -1,0 +1,391 @@
+{sectionStart}
+{initialize}
+{wait:1E}
+{textbox:show}
+{background:solitaryConfinement}
+{courtRecordButton:hide}
+{centerText:on}
+{textSpeed:A}{textColor:green}{typewriter}{wait:1E}
+April 27, 9:35 AM{newLine}
+Central Prison{newLine}
+Solitary Cell 13{textboxEnd}
+{centerText:off}{textSpeed:3}{textColor:white}
+{music:darkness}
+{name:apollo}
+{textColor:blue}
+(One week later,{wait:short} I'm still{newLine}
+in shock.{wait:normal} Seeing your mentor{newLine}
+handcuffed will do that to you.){textboxEnd}
+(And just today,{wait:short} I heard that{newLine}
+Mr. Gavin's trial had{newLine}
+concluded.){textboxEnd}
+(Mr. Gavin...{wait:normal} was found guilty,{wait:short}{newLine}
+and transferred to{newLine}
+Central Prison.){textboxEnd}
+(Now that he's out of detention,{wait:short}{newLine}
+he's allowed visitors.{wait:normal}{newLine}
+So here I am.){textboxEnd}
+(Why?{wait:normal} To make sense out{newLine}
+of everything,{wait:short} I suppose.{wait:normal}{newLine}
+And some closure wouldn't hurt.){textboxEnd}
+(Enough trembling.{wait:normal}{newLine}
+Answers,{wait:short} here comes Justice!){textboxEnd}
+{textColor:white}
+{textbox:hide}
+{wait:20}
+{textbox:show}
+{sound:realization}
+{name:???Male}
+{textSpeed:4}I am telling you,{textSpeed:3}{wait:short} cut this{newLine}
+villain act!{textboxEnd}
+You're not evil!{wait:normal} You're not{newLine}
+a criminal!{wait:normal}{newLine}
+You{sound:punctuate}{shake:1} aren't!{textboxEnd}
+{name:kristoph}
+Ah, but everyone says I am, do{newLine}
+they not?{wait:normal} I was pronounced{newLine}
+guilty in a court of law.{textboxEnd}
+What more absolute evidence do{newLine}
+you require?{textboxEnd}
+{name:apollo}
+{textColor:blue}
+(It{sound:ding} sounds like someone is{newLine}
+talking to Mr. Gavin...{wait:normal}{newLine}
+Maybe I should wait a while.){textColor:white}{textboxEnd}
+{name:???Male}
+{textSpeed:2}But you told me about him and{newLine}
+his{sound:punctuate}{shake:1} dirty trick!{wait:normal} Exactly like{newLine}
+seven years ago!{textboxEnd}{textSpeed:3}
+{name:kristoph}
+Indeed.{wait:normal} And I intend to defend{newLine}
+myself to the fullest extent{newLine}
+of the law.{textboxEnd}
+{name:???Male}
+So{sound:punctuate} did you do it or{sound:punctuate} didn't you?{wait:normal}{newLine}
+Be clear for once!{textboxEnd}
+{name:kristoph}
+{textSpeed:6}.........{textSpeed:3}{textboxEnd}
+{name:???Male}
+{textSpeed:4}I want the old Kris back,{textSpeed:3}{wait:short} not{newLine}
+this {shake:1}{sound:punctuate}aloof fraud.{textboxEnd}
+{name:kristoph}
+"Fraud"...{wait:normal} how ironic.{textboxEnd}
+{name:???Male}
+...{wait:normal}I'm leaving to look{newLine}
+into the case.{textboxEnd}
+He must be held accountable,{wait:short}{newLine}
+and you aren't any help.{textboxEnd}
+Not with your equivocating{newLine}
+about the truth.{textboxEnd}
+...{wait:normal}Later.{textboxEnd}
+{name:kristoph}
+Hmph.{textboxEnd}
+{name:apollo}
+{textColor:blue}
+(Someone's{sound:ding} coming!){textboxEnd}{textColor:white}
+{textbox:hide}
+{spriteFade:in}
+{charAnimation:klavierSeriousS}
+{wait:3B}
+{textbox:show}
+{sound:realization}Ack!{textboxEnd}
+{textColor:blue}
+(M-Mr.{sound:shock} Gavin?{wait:normal}{newLine}
+How did you get out of{newLine}
+y-your cell?){textboxEnd}
+{textColor:white}
+{name:???Male}
+{charAnimation:klavierSerious}
+...{wait:normal}Speak of the devil.{wait:normal}{newLine}
+So the sockpuppet of a{newLine}
+lawyer appears.{textboxEnd}
+{name:apollo}
+{sound:shock}{shake:1}W-What?{textboxEnd}
+{textbox:hide}
+{spriteFade:out}
+{wait:3B}
+{charAnimation:kristophNormalS}
+{spriteFade:in}
+{wait:3B}
+{textbox:show}
+{charAnimation:kristophSmiling}
+{name:kristoph}{sound:realization}
+How nice it is to see you{newLine}
+again,{wait:short} Justice.{textboxEnd}
+{name:apollo}
+{textColor:blue}
+(You were just hallucinating{newLine}
+from stress.){textboxEnd}
+(Probably shouldn't have skipped{newLine}
+your cup of joe this morning.){textboxEnd}{textColor:white}
+{name:kristoph}
+{charAnimation:kristophSmiling}
+I'd been hoping you would visit.{wait:normal}{newLine}
+It's not much,{wait:short} but welcome{newLine}
+to my new abode.{textboxEnd}
+{name:apollo}
+{textSpeed:2}Uh,{wait:short} thank you,{wait:short} Mr. Gavin!{textboxEnd}{textSpeed:3}
+{textColor:blue}
+(You{sound:damage}{shake:1} dork!{wait:normal}{newLine}
+What are you doing!?){textboxEnd}
+{textColor:white}
+{name:kristoph}
+{charAnimation:kristophSmiling}
+Of course,{wait:short} I have you to thank{newLine}
+for landing me here, do I not?{textboxEnd}
+{name:apollo}
+{textSpeed:2}Uh,{wait:short} you're welcome,{wait:short} Mr. Gavin.{textboxEnd}{textSpeed:3}
+{textColor:blue}
+(You{sound:damage}{shake:1} dork!{wait:normal}{newLine}
+What are you saying!?){textboxEnd}
+{textColor:white}
+...{wait:normal}Mr. Gavin.{textboxEnd}
+{name:kristoph}
+{charAnimation:kristophSmiling}
+Yes,{wait:short} Justice?{textboxEnd}
+{name:apollo}
+I'm here for answers.{wait:normal}{newLine}
+Answers about the case.{wait:normal}{newLine}
+Why you did what you did.{textboxEnd}
+{textColor:blue}
+(And what you meant about{newLine}
+"revenge" from seven years{newLine}
+ago.){textboxEnd}{textColor:white}
+{name:kristoph}
+{charAnimation:kristophNormal}
+Why,{wait:short} I thought you knew{newLine}
+everything already.{textboxEnd}
+{charAnimation:kristophNormal}
+{sound:ding}Firstly,{wait:short} I'm a murderer.{textboxEnd}
+{charAnimation:kristophNormal}
+{sound:ding}Secondly,{wait:short} I murdered Smith at{newLine}
+the Borscht Bowl Club on{newLine}
+April 17.{textboxEnd}
+{charAnimation:kristophArrogant}
+{sound:ding}Thirdly,{wait:short} I murdered Smith at{newLine}
+the Borscht Bowl Club on{newLine}
+April 17 because I enjoyed it.{textboxEnd}
+{name:apollo}
+I don't buy that for a {shake:1}second,{wait:short}{newLine}
+Mr. Gavin.{textboxEnd}
+You're not the type to{newLine}
+kill people.{wait:normal}{newLine}
+You must've had a reason.{textboxEnd}
+{textSpeed:5}I... You taught me everything{newLine}
+I know.{textboxEnd}
+I don't want to believe{newLine}
+that my teacher is...{wait:normal}{newLine}
+like that.{textboxEnd}{textSpeed:3}
+{name:kristoph}
+{textbox:hide}
+{charAnimation:kristophHeadShake}
+{textbox:show}
+{charAnimation:kristophNormal}
+Ah, I see.{textboxEnd}
+{charAnimation:kristophNormal}
+You came here to reassure{newLine}
+yourself that your mentor{newLine}
+is all fairies and rainbows.{textboxEnd}
+{charAnimation:kristophHandOverMouth}
+In that capacity,{wait:short} let me{newLine}
+remind you of a lesson{newLine}
+you've forgotten:{textboxEnd}
+{textColor:red}
+{charAnimation:kristophNormal}
+{textSpeed:4}
+"Believe in yourself,{wait:short} and{newLine}
+nothing else."{textboxEnd}{textColor:white}{textSpeed:3}
+{name:apollo}
+I know, but you...{shake:1}{wait:normal}{newLine}
+You're an amazing lawyer!{wait:normal}{newLine}
+You {shake:1}help people!{textboxEnd}
+There's no way you...{wait:normal}{newLine}
+{textSpeed:2}I mean,{wait:short} you actually did,{textSpeed:3}{wait:short}{newLine}
+but--{textboxEnd}
+{name:kristoph}
+{charAnimation:kristophScowling}
+Speak{sound:punctuate} clearly,{wait:short} Justice.{wait:normal} Have you{newLine}
+learned anything from me{newLine}
+at all?{textboxEnd}
+{charAnimation:kristophScowling}
+Or are you merely a
+{charAnimation:kristophArrogant}
+ {shake:1}two-bit,{wait:short}{newLine}
+ungrateful pretender...{wait:normal}{textboxEnd}
+{charAnimation:kristophScowling}
+...Who betrays the one who{newLine}
+gave you everything and{newLine}
+presents
+{charAnimation:kristophAngry}
+ {sound:argument}{shake:1}illegal evidence?{textboxEnd}
+{name:apollo}
+{sound:damage}{textSpeed:2}No...{wait:normal}! {sound:damage}I...{wait:normal}{newLine}
+I would never!{textboxEnd}{textSpeed:3}
+{sound:damage}I...{wait:normal} didn't know...{wait:normal}{newLine}
+{sound:damage}that it...{wait:normal}{textboxEnd}
+{textColor:blue}
+(Mind going blank...{wait:normal} Panic{newLine}
+rising...{shake:1}{wait:normal} Scram out of{newLine}
+here,{wait:short} Justice,{wait:short} scram!){textboxEnd}
+{textColor:white}
+{name:kristoph}
+{charAnimation:kristophHandOverMouth}
+I remember your application,{wait:short}{newLine}
+you know.{textboxEnd}
+Remarkable grades,{wait:short} to be sure,{wait:short}{newLine}
+and no lack of passion.{textboxEnd}
+But accomplishments,{wait:short}{newLine}
+connections?{wait:normal}{newLine}
+You had none.{textboxEnd}
+I did not hire you for{newLine}
+you,{wait:short} Justice.{wait:normal} I hired you{newLine}
+for your potential...{wait:normal}{textboxEnd}
+...and perhaps as my charitable{newLine}
+act of the day,{wait:short} to be{newLine}
+quite frank.{textboxEnd}
+{charAnimation:kristophArrogant}
+You should feel thankful that{newLine}
+you ever made it into a{newLine}
+top law firm like mine.{textboxEnd}
+{charAnimation:kristophScowling}
+Yet you {shake:1}threw everything away{newLine}
+for that dirty whelp of{newLine}
+a man.{textboxEnd}
+{charAnimation:kristophAngry}
+What do you intend to do now,{wait:short}{newLine}
+Justice?{textboxEnd}
+{charAnimation:kristophAngry}
+Who will hire the novice who{newLine}
+turned on his own employer?{textboxEnd}
+{name:apollo}
+{sound:shock}I'll find somewhere,{wait:short}{newLine}
+Mr. Gavin...{wait:normal} I {sound:punctuate}have to...!{wait:normal}{textboxEnd}
+{name:kristoph}
+{textbox:hide}
+{charAnimation:kristophHeadShake}
+{textbox:show}
+{charAnimation:kristophNormal}
+{sound:ding}Sincere apologies.{wait:normal} I'm afraid I{newLine}
+allowed my anger at this{newLine}
+situation to get out of hand.{textboxEnd}
+{charAnimation:kristophNormal}
+Let me be clear, Justice:{wait:normal}{newLine}
+{charAnimation:kristophSmiling}
+you surpassed every one{newLine}
+of my expectations.{textboxEnd}
+{charAnimation:kristophSmiling}
+You are my strongest student,{wait:short}{newLine}
+and without question my{newLine}
+favorite.{textboxEnd}
+{charAnimation:kristophNormal}
+I hope you know that.{textboxEnd}
+{charAnimation:kristophScowling}
+I blame only Wright for leading{newLine}
+you astray.{wait:normal}{textboxEnd}
+{charAnimation:kristophScowling}
+And giving you {sound:argument}illegal{newLine}
+evidence like that is{newLine}
+unforgivable.{textboxEnd}
+{name:apollo}
+{charAnimation:kristophNormalS}
+{textColor:blue}
+(I don't know how to feel.{wait:normal}{newLine}
+It doesn't sound like he's{newLine}
+lying.){textboxEnd}
+{textColor:white}
+Thank you,{wait:short} Mr. Gavin.{textboxEnd}
+You're a {textSpeed:4}murderer and a liar,{textSpeed:3}{wait:short}{newLine}
+and I don't regret doing{newLine}
+my job.{textboxEnd}
+But...{wait:normal} I'll keep being a{newLine}
+lawyer you can be proud of.{wait:normal}{newLine}
+I'll come back and {sound:truth}show you.{textboxEnd}
+{charAnimation:kristophSmiling}
+{name:kristoph}
+I look forward to observing{newLine}
+your progress,{wait:short} then.{textboxEnd}
+{charAnimation:kristophSmiling}
+Always remember what
+{charAnimation:kristophNormal}
+ I've{newLine}
+taught you.{textboxEnd}
+{name:apollo}
+{textColor:blue}
+(Answers:{wait:normal} nil.{wait:normal}{newLine}
+Reassurance:{wait:normal} obliterated.){textboxEnd}
+(But uncertainty?{wait:normal}{newLine}
+Got that in spades.){textboxEnd}
+{textColor:white}
+{name:kristoph}
+{charAnimation:kristophHandOverMouth}
+As your mentor,{wait:short} let me{newLine}
+impart one final lesson upon{newLine}
+you before you leave,{wait:short} Justice.{textboxEnd}
+{name:apollo}
+{sound:punctuate}Yes!?{textboxEnd}
+{name:kristoph}
+{charAnimation:kristophNormal}
+The world is an {textSpeed:4}unpredictable,{wait:short}{newLine}
+chaotic place.{textSpeed:3}{wait:normal}{newLine}
+Save for one:{wait:normal} the {textColor:red}{sound:ding}courtroom{textColor:white}.{textboxEnd}
+{charAnimation:kristophNormal}
+Believe in only yourself,{wait:short} and{newLine}
+trust only the law.{wait:normal} The truth{newLine}
+is complex and variable.{textboxEnd}
+{charAnimation:kristophNormal}
+Yet the courtroom is static.{textboxEnd}
+{charAnimation:kristophNormal}
+It is our chance to help{wait:short}{newLine}
+people,{wait:short} an ark amid the{newLine}
+rain.{textboxEnd}
+{charAnimation:kristophNormal}
+It is our chance to{newLine}
+{charAnimation:kristophArrogant}
+make our mark upon the{newLine}
+world.{textboxEnd}
+{charAnimation:kristophSmiling}
+Trust it,{wait:short} do what you{newLine}
+must...{wait:normal} and the{charAnimation:kristophNormal} one,{wait:short}{newLine}
+immutable {sound:ding}truth will emerge.{textboxEnd}
+{name:apollo}
+Thanks,{wait:short} Mr. Gavin.{textboxEnd}
+I do need something to trust,{wait:short}{newLine}
+after I lost all of it.{textboxEnd}
+{textSpeed:5}After I lost you{sound:realization}
+{charAnimation:kristophHandOverMouth}
+ and{newLine}
+Mr. Wright.{textboxEnd}{textSpeed:3}
+And for all your fancy talking,{wait:short}{newLine}
+you're nothing more than{newLine}
+a common criminal.{textboxEnd}
+I miss the person I thought{newLine}
+you were,{wait:short} but you?{wait:normal}{newLine}
+You're not him.{textboxEnd}
+{textColor:blue}
+(Justice has been done,{wait:short} and{newLine}
+so Justice is done with you.){textboxEnd}
+{textColor:white}
+{sound:argument}Goodbye...{wait:normal} Mr. Gavin.{textboxEnd}
+{textbox:hide}
+{spriteFade:out}
+{wait:20}
+{flash:black}{background:black}
+{textbox:show}
+{textColor:blue}
+(And so I discovered that{newLine}
+visiting your convicted murderer{newLine}
+of a boss is a terrible idea.){textboxEnd}
+(I'm on the verge of a{newLine}
+meltdown,{wait:short} but what's worse:{wait:normal}{newLine}
+everything's upside-down.){textboxEnd}
+(My mentor is a murderer, my{wait:short}{newLine}
+idol is a forger,{wait:short} my career{newLine}
+is gone,{wait:short} my trust is broken.){textboxEnd}
+(There might be something{newLine}
+to what Mr. Gavin said{newLine}
+after all.){textboxEnd}
+(But for now, I need to{newLine}
+go home and nap.{wait:normal}{newLine}{musicFade:10}
+Pronto.){textboxEnd}
+{textColor:white}
+{reset}{sectionEnd}

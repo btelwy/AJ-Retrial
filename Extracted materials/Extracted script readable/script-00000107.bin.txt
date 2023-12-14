@@ -1,0 +1,260 @@
+SECTION 0
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "There\'s a number inscribed on\nthe back of the badge."
+ 0059	paragraph
+ 0060	text "There are many numbers like\nit,"
+ 0091	wait 00010
+ 0093	text " but this one is mine."
+ 0115	wait 00020
+ 0117	newline
+ 0118	text "Proof that I\'m an attorney."
+ 0145	paragraph
+ 0146	speed 00004
+ 0148	text "To tell the truth,"
+ 0166	wait 00012
+ 0168	speed 00003
+ 0170	text " I get a\nhappy feeling inside just\nlooking at it."
+ 0219	paragraph
+ 0220	cmd74 00005, 00000
+ 0223	halt
+ 0224	section_end
+ENDSECTION
+SECTION 1
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "Grape juice..."
+ 0021	wait 00015
+ 0023	text " How long has\nit been since I drank grape\njuice?"
+ 0071	paragraph
+ 0072	text "Apparently,"
+ 0083	wait 00012
+ 0085	text " it\'s Mr. Wright\'s\nfavorite drink."
+ 0119	wait 00020
+ 0121	text " I wonder how\nwell it goes with borscht?"
+ 0161	paragraph
+ 0162	cmd74 00005, 00000
+ 0165	halt
+ 0166	section_end
+ENDSECTION
+SECTION 2
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "The bottle is completely\nempty."
+ 0038	paragraph
+ 0039	flagctl 3, 224, 1
+ 0041	halt
+ 0042	cmd74 00005, 00000
+ 0045	halt
+ 0046	section_end
+ENDSECTION
+SECTION 3
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	speed 00002
+ 0005	shake 00030, 00001
+ 0008	text "Wow."
+ 0012	wait 00015
+ 0014	speed 00003
+ 0016	text " The batteries are held\nin with a piece of tape..."
+ 0066	paragraph
+ 0067	text "He should just buy a new one."
+ 0096	wait 00020
+ 0098	newline
+ 0099	text "Maybe he can\'t afford it..."
+ 0126	wait 00015
+ 0128	newline
+ 0129	speed 00004
+ 0131	text "or he just doesn\'t care."
+ 0155	paragraph
+ 0156	cmd74 00005, 00000
+ 0159	halt
+ 0160	section_end
+ENDSECTION
+SECTION 4
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00004
+ 0007	text "The card backs are "
+ 0026	textcolor COLOR_RED
+ 0028	text "red"
+ 0031	textcolor COLOR_WHITE
+ 0033	text "..."
+ 0036	paragraph
+ 0037	speed 00003
+ 0039	text "For some reason I thought that\nthey were using "
+ 0086	textcolor COLOR_BLUE
+ 0088	text "blue"
+ 0092	textcolor COLOR_WHITE
+ 0094	text " cards in\nthat final hand..."
+ 0122	paragraph
+ 0123	text "Didn\'t you,"
+ 0134	wait 00010
+ 0136	text " Mr. Gavin?"
+ 0147	paragraph
+ 0148	cmd76 00000, 00015
+ 0151	name 8, SHOW_LEFT
+ 0153	speed 00003
+ 0155	text "Huh?"
+ 0159	wait 00015
+ 0161	speed 00005
+ 0163	text " Oh,"
+ 0167	wait 00008
+ 0169	text " hmm."
+ 0174	wait 00015
+ 0176	newline
+ 0177	speed 00004
+ 0179	text "Which was it now..."
+ 0198	paragraph
+ 0199	cmd76 00002, 00000
+ 0202	wait 00010
+ 0204	cmd74 00005, 00000
+ 0207	halt
+ 0208	section_end
+ENDSECTION
+SECTION 5
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "Only one of the cards has\na "
+ 0035	textcolor COLOR_BLUE
+ 0037	text "blue"
+ 0041	textcolor COLOR_WHITE
+ 0043	text " back..."
+ 0051	paragraph
+ 0052	text "I\'m much more of a "
+ 0071	textcolor COLOR_RED
+ 0073	text "red"
+ 0076	textcolor COLOR_WHITE
+ 0078	text " guy\nmyself."
+ 0090	wait 00020
+ 0092	text " "
+ 0093	textcolor COLOR_BLUE
+ 0095	text "Blue"
+ 0099	textcolor COLOR_WHITE
+ 0101	text " is so..."
+ 0110	wait 00015
+ 0112	text " not\n"
+ 0117	textcolor COLOR_RED
+ 0119	text "red"
+ 0122	textcolor COLOR_WHITE
+ 0124	text ","
+ 0125	wait 00010
+ 0127	text " you know?"
+ 0137	paragraph
+ 0138	cmd74 00005, 00000
+ 0141	halt
+ 0142	section_end
+ENDSECTION
+SECTION 6
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	textcolor COLOR_BLUE
+ 0007	text "(Wh{DASH}"
+ 0011	wait 00008
+ 0013	text "What...!?)"
+ 0023	textcolor COLOR_WHITE
+ 0025	paragraph
+ 0026	wait 00030
+ 0028	halt
+ 0029	cmd74 00005, 00000
+ 0032	halt
+ 0033	section_end
+ENDSECTION
+SECTION 7
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00004
+ 0007	text "The card backs are "
+ 0026	textcolor COLOR_RED
+ 0028	text "red"
+ 0031	textcolor COLOR_WHITE
+ 0033	text "..."
+ 0036	paragraph
+ 0037	speed 00003
+ 0039	text "For some reason I thought\nthey were using "
+ 0081	textcolor COLOR_BLUE
+ 0083	text "blue"
+ 0087	textcolor COLOR_WHITE
+ 0089	text "{DASH}backed\ncards in the final hand..."
+ 0123	paragraph
+ 0124	wait 00010
+ 0126	cmd74 00005, 00000
+ 0129	halt
+ 0130	section_end
+ENDSECTION
+SECTION 8
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "A single drop of blood\nmarks the front of the card."
+ 0058	paragraph
+ 0059	cmd74 00005, 00000
+ 0062	halt
+ 0063	section_end
+ENDSECTION
+SECTION 9
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "More grape juice..."
+ 0026	wait 00015
+ 0028	text " just like\nthe bottle used as the murder\nweapon."
+ 0076	paragraph
+ 0077	text "I know it\'s Mr. Wright\'s\nfavorite drink,"
+ 0117	wait 00012
+ 0119	text " but isn\'t\none bottle a day enough?"
+ 0154	paragraph
+ 0155	cmd74 00005, 00000
+ 0158	halt
+ 0159	section_end
+ENDSECTION
+SECTION 10
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	sound 00051, 00001
+ 0008	screen_fade 02305, 00008, 00031
+ 0012	shake 00030, 00000
+ 0015	speed 00002
+ 0017	text "...!"
+ 0021	screen_fade 02305, 00008, 00031
+ 0025	wait 00040
+ 0027	newline
+ 0028	speed 00003
+ 0030	text "There\'s something inside\nthe bottle!"
+ 0066	wait 00045
+ 0068	paragraph
+ 0069	hidetextbox 00001
+ 0071	cmd74 00005, 00000
+ 0074	halt
+ 0075	section_end
+ENDSECTION
+SECTION 11
+ 0000	section_setup
+ 0001	section_end
+ENDSECTION
+SECTION 12
+ 0000	section_setup
+ 0001	section_end
+ENDSECTION
+SECTION 13
+ 0000	section_setup
+ 0001	section_end
+ENDSECTION
+SECTION 14
+ 0000	section_setup
+ 0001	section_end
+ENDSECTION
