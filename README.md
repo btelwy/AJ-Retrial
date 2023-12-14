@@ -5,6 +5,7 @@ In progress. This repository does not represent any finished product, as it is d
 
 -------------------------------------------------------------------------------
 Guide to folders:
+
 Added assets: assets not originally in AJ
 
 Extracted materials: rips of AJ's file structure, all taken by me except for SFX (from Sounds Resource) and the soundfont (from iteachvader on YouTube at https://www.youtube.com/watch?v=_UL8lE-daMM)
@@ -17,6 +18,7 @@ Patches: all patches created up to this point
 
 -------------------------------------------------------------------------------
 Guide to extracted materials folder:
+
 AJ soundfont: the instruments the game uses in its music
 
 cpac2d.bin: contains the game's 2D assets
@@ -43,9 +45,15 @@ sound_data.sdat: the binary file containing all the game's music, sound effects,
 
 -------------------------------------------------------------------------------
 Programs used in this project:
+
 ImHex (hex editor)
+
 Tinke (DS file system viewer)
+
 no$gba, DeSmuME, and melonDS (DS emulators)
+
 deltapatcher (creates and applies .xdelta patches)
+
 Ghidra (disassembly tool)
+
 CUE's DS compression tools (compresses and decompresses common DS compression schemes)
