@@ -1,0 +1,976 @@
+SECTION 0
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	textcolor COLOR_BLUE
+ 0009	text "Save"
+ 0013	textcolor COLOR_WHITE
+ 0015	text " cleared stage data\nup to this point?"
+ 0052	speed 00255
+ 0054	toggle_center_text 00000
+ 0056	togglevoicesfx 00001
+ 0058	cmd45
+ 0059	section_end
+ENDSECTION
+SECTION 1
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	textcolor COLOR_BLUE
+ 0009	text "Save"
+ 0013	textcolor COLOR_WHITE
+ 0015	text " game and\n"
+ 0025	textcolor COLOR_BLUE
+ 0027	text "suspend"
+ 0034	textcolor COLOR_WHITE
+ 0036	text " play?"
+ 0042	speed 00255
+ 0044	toggle_center_text 00000
+ 0046	togglevoicesfx 00001
+ 0048	cmd45
+ 0049	section_end
+ENDSECTION
+SECTION 2
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Select an episode."
+ 0025	speed 00255
+ 0027	toggle_center_text 00000
+ 0029	togglevoicesfx 00001
+ 0031	cmd45
+ 0032	section_end
+ENDSECTION
+SECTION 3
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Save failed."
+ 0019	wait 00060
+ 0021	speed 00255
+ 0023	toggle_center_text 00000
+ 0025	togglevoicesfx 00001
+ 0027	cmd45
+ 0028	section_end
+ENDSECTION
+SECTION 4
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Erase all data and restore\ndefault settings?"
+ 0051	speed 00255
+ 0053	toggle_center_text 00000
+ 0055	togglevoicesfx 00001
+ 0057	cmd45
+ 0058	section_end
+ENDSECTION
+SECTION 5
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	newline
+ 0008	text "A brand new Episode\nhas been added."
+ 0043	speed 00255
+ 0045	toggle_center_text 00000
+ 0047	togglevoicesfx 00001
+ 0049	cmd45
+ 0050	section_end
+ENDSECTION
+SECTION 6
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	textcolor COLOR_BLUE
+ 0009	text "Suspending"
+ 0019	textcolor COLOR_WHITE
+ 0021	text " game."
+ 0027	cmd45
+ 0028	section_end
+ENDSECTION
+SECTION 7
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Failed to read data."
+ 0027	speed 00255
+ 0029	toggle_center_text 00000
+ 0031	togglevoicesfx 00001
+ 0033	cmd45
+ 0034	section_end
+ENDSECTION
+SECTION 8
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	textcolor COLOR_BLUE
+ 0009	text "Saving..."
+ 0018	textcolor COLOR_WHITE
+ 0020	newline
+ 0021	text "Do not turn power off."
+ 0043	speed 00255
+ 0045	toggle_center_text 00000
+ 0047	togglevoicesfx 00001
+ 0049	cmd45
+ 0050	section_end
+ENDSECTION
+SECTION 9
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Failed to delete data."
+ 0029	speed 00255
+ 0031	toggle_center_text 00000
+ 0033	togglevoicesfx 00001
+ 0035	cmd45
+ 0036	section_end
+ENDSECTION
+SECTION 10
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Trump\nDay 1 {00384} Trial Former\n"
+ 0044	toggle_center_text 00000
+ 0046	togglevoicesfx 00001
+ 0048	cmd45
+ 0049	section_end
+ENDSECTION
+SECTION 11
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Trump\nDay 1 {00384} Trial Latter\n"
+ 0044	toggle_center_text 00000
+ 0046	togglevoicesfx 00001
+ 0048	cmd45
+ 0049	section_end
+ENDSECTION
+SECTION 12
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Corner\nDay 1 {00384} Investigation\n"
+ 0046	toggle_center_text 00000
+ 0048	togglevoicesfx 00001
+ 0050	cmd45
+ 0051	section_end
+ENDSECTION
+SECTION 13
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Corner\nDay 2 {00384} Trial Former\n"
+ 0045	toggle_center_text 00000
+ 0047	togglevoicesfx 00001
+ 0049	cmd45
+ 0050	section_end
+ENDSECTION
+SECTION 14
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Corner\nDay 2 {00384} Trial Latter\n"
+ 0045	toggle_center_text 00000
+ 0047	togglevoicesfx 00001
+ 0049	cmd45
+ 0050	section_end
+ENDSECTION
+SECTION 15
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Corner\nDay 2 {00384} Investigation\n"
+ 0046	toggle_center_text 00000
+ 0048	togglevoicesfx 00001
+ 0050	cmd45
+ 0051	section_end
+ENDSECTION
+SECTION 16
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Corner\nDay 3 {00384} Trial\n"
+ 0038	toggle_center_text 00000
+ 0040	togglevoicesfx 00001
+ 0042	cmd45
+ 0043	section_end
+ENDSECTION
+SECTION 17
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Serenade\nDay 1 {00384} Investigation\n"
+ 0048	toggle_center_text 00000
+ 0050	togglevoicesfx 00001
+ 0052	cmd45
+ 0053	section_end
+ENDSECTION
+SECTION 18
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Serenade\nDay 2 {00384} Trial\n"
+ 0040	toggle_center_text 00000
+ 0042	togglevoicesfx 00001
+ 0044	cmd45
+ 0045	section_end
+ENDSECTION
+SECTION 19
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Serenade\nDay 2 {00384} Investigation\n"
+ 0048	toggle_center_text 00000
+ 0050	togglevoicesfx 00001
+ 0052	cmd45
+ 0053	section_end
+ENDSECTION
+SECTION 20
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Serenade\nDay 3 {00384} Trial Former\n"
+ 0047	toggle_center_text 00000
+ 0049	togglevoicesfx 00001
+ 0051	cmd45
+ 0052	section_end
+ENDSECTION
+SECTION 21
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Serenade\nDay 3 {00384} Trial Latter\n"
+ 0047	toggle_center_text 00000
+ 0049	togglevoicesfx 00001
+ 0051	cmd45
+ 0052	section_end
+ENDSECTION
+SECTION 22
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Succession\nDay 1 {00384} Investigation\n"
+ 0050	toggle_center_text 00000
+ 0052	togglevoicesfx 00001
+ 0054	cmd45
+ 0055	section_end
+ENDSECTION
+SECTION 23
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Succession\nDay 2 {00384} Trial Former\n"
+ 0049	toggle_center_text 00000
+ 0051	togglevoicesfx 00001
+ 0053	cmd45
+ 0054	section_end
+ENDSECTION
+SECTION 24
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Succession\nDay 2 {00384} Trial Latter\n"
+ 0049	toggle_center_text 00000
+ 0051	togglevoicesfx 00001
+ 0053	cmd45
+ 0054	section_end
+ENDSECTION
+SECTION 25
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Succession\n7 Years Ago {00384} Trial Former\n"
+ 0055	toggle_center_text 00000
+ 0057	togglevoicesfx 00001
+ 0059	cmd45
+ 0060	section_end
+ENDSECTION
+SECTION 26
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Succession\n7 Years Ago {00384} Trial Latter\n"
+ 0055	toggle_center_text 00000
+ 0057	togglevoicesfx 00001
+ 0059	cmd45
+ 0060	section_end
+ENDSECTION
+SECTION 27
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Succession\nMASON System\n"
+ 0041	toggle_center_text 00000
+ 0043	togglevoicesfx 00001
+ 0045	cmd45
+ 0046	section_end
+ENDSECTION
+SECTION 28
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Succession\nDay 3 {00384} Trial\n"
+ 0042	toggle_center_text 00000
+ 0044	togglevoicesfx 00001
+ 0046	cmd45
+ 0047	section_end
+ENDSECTION
+SECTION 29
+ 0000	section_setup
+ 0001	speed 00001
+ 0003	togglevoicesfx 00000
+ 0005	toggle_center_text 00001
+ 0007	text "Turnabout Succession\nEpilogue\n"
+ 0037	toggle_center_text 00000
+ 0039	togglevoicesfx 00001
+ 0041	cmd45
+ 0042	section_end
+ENDSECTION
+SECTION 30
+ 0000	section_setup
+ 0001	name 7, SHOW_LEFT
+ 0003	text "No clues here."
+ 0017	paragraph
+ 0018	toggle_center_text 00000
+ 0020	togglevoicesfx 00001
+ 0022	hidetextbox 00003
+ 0024	halt
+ 0025	section_end
+ENDSECTION
+SECTION 31
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	text "No clues here."
+ 0017	paragraph
+ 0018	toggle_center_text 00000
+ 0020	togglevoicesfx 00001
+ 0022	hidetextbox 00003
+ 0024	halt
+ 0025	section_end
+ENDSECTION
+SECTION 32
+ 0000	section_setup
+ 0001	name 7, SHOW_LEFT
+ 0003	newline
+ 0004	paragraph
+ 0005	newline
+ 0006	paragraph
+ 0007	hidetextbox 00003
+ 0009	halt
+ 0010	section_end
+ENDSECTION
+SECTION 33
+ 0000	section_setup
+ 0001	bg 25, BG_NOSHIFT
+ 0003	name 4, SHOW_LEFT
+ 0005	hidetextbox 00001
+ 0007	person 4, PLACE_DEFAULT, 0, 57, 58
+ 0011	wait 00070
+ 0013	hidetextbox 00000
+ 0015	cmd6E 00020
+ 0017	person 4, PLACE_DEFAULT, 0, 59, 58
+ 0021	screen_fade 02305, 00008, 00031
+ 0025	shake 00030, 00000
+ 0028	speed 00002
+ 0030	text "Your Honor!"
+ 0041	wait 00008
+ 0043	text " That statement\ncontradicts this evidence!"
+ 0085	paragraph
+ 0086	bg 29, BG_NOSHIFT
+ 0088	person 10, PLACE_DEFAULT, 0, 265, 264
+ 0092	name 10, SHOW_LEFT
+ 0094	speed 00003
+ 0096	text "...?"
+ 0100	paragraph
+ 0101	text "It does?"
+ 0109	wait 00020
+ 0111	text " I don\'t see\nanything contradictory..."
+ 0149	paragraph
+ 0150	bg 25, BG_NOSHIFT
+ 0152	person 4, PLACE_DEFAULT, 0, 62, 61
+ 0156	animation 149, ANIM_START
+ 0159	name 4, SHOW_LEFT
+ 0161	screen_fade 02305, 00008, 00031
+ 0165	text "...Um..."
+ 0173	wait 00020
+ 0175	text " You sure about that?"
+ 0196	paragraph
+ 0197	bg 29, BG_NOSHIFT
+ 0199	person 10, PLACE_DEFAULT, 0, 259, 258
+ 0203	name 10, SHOW_LEFT
+ 0205	text "Objection overruled."
+ 0225	paragraph
+ 0226	text "Try to think before you make\naccusations,"
+ 0267	wait 00008
+ 0269	text " Mr. Justice!"
+ 0282	wait_noanim 00002
+ 0284	cmd6B 00001, 00000, 00000
+ 0288	cmd2B
+ 0289	removeevidence
+ 0290	person 10, PLACE_DEFAULT, 0, 258, 258
+ 0294	nextpage_button
+ 0295	name 4, SHOW_LEFT
+ 0297	screen_fade 02305, 00008, 00031
+ 0301	shake 00030, 00000
+ 0304	textcolor COLOR_BLUE
+ 0306	text "(Ack!"
+ 0311	wait 00020
+ 0313	newline
+ 0314	text "That didn\'t go so well.)"
+ 0338	textcolor COLOR_WHITE
+ 0340	nextpage_button
+ 0341	hidetextbox 00001
+ 0343	wait 00030
+ 0345	cmd52 00018
+ 0347	text "{00497}\n"
+ 0349	hideperson
+ 0350	wait 00007
+ 0352	bg 27, BG_NOSHIFT
+ 0354	cmd5E 00018
+ 0356	text "Ò\n"
+ 0358	hideperson
+ 0359	return_to_testimony 00002
+ 0361	section_end
+ENDSECTION
+SECTION 34
+ 0000	section_setup
+ 0001	bg 25, BG_NOSHIFT
+ 0003	name 4, SHOW_LEFT
+ 0005	hidetextbox 00001
+ 0007	person 4, PLACE_DEFAULT, 0, 57, 58
+ 0011	wait 00070
+ 0013	hidetextbox 00000
+ 0015	cmd6E 00020
+ 0017	person 4, PLACE_DEFAULT, 0, 59, 58
+ 0021	screen_fade 02305, 00008, 00031
+ 0025	shake 00030, 00000
+ 0028	speed 00002
+ 0030	text "The witness\'s statement is\nclearly faulty,"
+ 0072	wait 00010
+ 0074	text " Your Honor!"
+ 0086	paragraph
+ 0087	bg 29, BG_NOSHIFT
+ 0089	person 10, PLACE_DEFAULT, 0, 258, 258
+ 0093	name 10, SHOW_LEFT
+ 0095	speed 00008
+ 0097	text "..."
+ 0100	paragraph
+ 0101	person 10, PLACE_DEFAULT, 0, 259, 258
+ 0105	speed 00003
+ 0107	text "I\'m sorry,"
+ 0117	wait 00010
+ 0119	text " but I can\nsee nothing faulty."
+ 0149	paragraph
+ 0150	hidetextbox 00001
+ 0152	person 10, PLACE_DEFAULT, 0, 261, 261
+ 0156	wait 00070
+ 0158	person 10, PLACE_DEFAULT, 0, 259, 258
+ 0162	hidetextbox 00000
+ 0164	text "Unfortunately,"
+ 0178	wait 00015
+ 0180	text " I will have\nto penalize you, Mr. Justice."
+ 0222	person 10, PLACE_DEFAULT, 0, 258, 258
+ 0226	cmd6B 00001, 00000, 00000
+ 0230	cmd2B
+ 0231	removeevidence
+ 0232	nextpage_button
+ 0233	person 10, PLACE_DEFAULT, 0, 262, 262
+ 0237	name 4, SHOW_LEFT
+ 0239	screen_fade 02305, 00008, 00031
+ 0243	shake 00030, 00000
+ 0246	textcolor COLOR_BLUE
+ 0248	text "(Ugh."
+ 0253	wait 00020
+ 0255	text " "
+ 0256	speed 00004
+ 0258	text "I must be on\nthe wrong track...)"
+ 0290	speed 00255
+ 0292	textcolor COLOR_WHITE
+ 0294	nextpage_button
+ 0295	hidetextbox 00001
+ 0297	wait 00030
+ 0299	cmd52 00018
+ 0301	text "{00497}\n"
+ 0303	hideperson
+ 0304	wait 00007
+ 0306	bg 27, BG_NOSHIFT
+ 0308	cmd5E 00018
+ 0310	text "Ò\n"
+ 0312	hideperson
+ 0313	return_to_testimony 00002
+ 0315	section_end
+ENDSECTION
+SECTION 35
+ 0000	section_setup
+ 0001	bg 25, BG_NOSHIFT
+ 0003	person 4, PLACE_DEFAULT, 0, 59, 58
+ 0007	cmd6E 00020
+ 0009	name 4, SHOW_LEFT
+ 0011	text "This evidence "
+ 0025	screen_fade 02305, 00008, 00031
+ 0029	text "clearly reveals\n"
+ 0045	shake 00030, 00000
+ 0048	text "a contradiction in that\nstatement,"
+ 0082	wait 00012
+ 0084	text " "
+ 0085	speed 00002
+ 0087	text "Your Honor!"
+ 0098	paragraph
+ 0099	bg 29, BG_NOSHIFT
+ 0101	person 10, PLACE_DEFAULT, 0, 263, 262
+ 0105	name 10, SHOW_LEFT
+ 0107	speed 00003
+ 0109	text "How exactly are the\nevidence and the statement\njust now related?"
+ 0173	paragraph
+ 0174	bg 25, BG_NOSHIFT
+ 0176	person 4, PLACE_DEFAULT, 0, 59, 58
+ 0180	name 4, SHOW_LEFT
+ 0182	text "They aren\'t,"
+ 0194	wait 00012
+ 0196	text " are they...?"
+ 0209	paragraph
+ 0210	hidetextbox 00001
+ 0212	bg 29, BG_NOSHIFT
+ 0214	person 10, PLACE_DEFAULT, 0, 258, 258
+ 0218	name 10, SHOW_LEFT
+ 0220	person 10, PLACE_DEFAULT, 0, 261, 261
+ 0224	wait 00070
+ 0226	hidetextbox 00000
+ 0228	person 10, PLACE_DEFAULT, 0, 259, 258
+ 0232	text "Not at all."
+ 0243	paragraph
+ 0244	person 10, PLACE_DEFAULT, 0, 263, 262
+ 0248	text "Mr. Justice, please think\nthe facts over before\nmaking accusations."
+ 0315	person 10, PLACE_DEFAULT, 0, 262, 262
+ 0319	cmd6B 00001, 00000, 00000
+ 0323	cmd2B
+ 0324	removeevidence
+ 0325	nextpage_button
+ 0326	name 4, SHOW_LEFT
+ 0328	speed 00004
+ 0330	textcolor COLOR_BLUE
+ 0332	text "(I don\'t think that won me\nany points with the judge...)"
+ 0388	speed 00255
+ 0390	textcolor COLOR_WHITE
+ 0392	nextpage_button
+ 0393	hidetextbox 00001
+ 0395	wait 00030
+ 0397	cmd52 00018
+ 0399	text "{00497}\n"
+ 0401	hideperson
+ 0402	wait 00007
+ 0404	bg 27, BG_NOSHIFT
+ 0406	cmd5E 00018
+ 0408	text "Ò\n"
+ 0410	hideperson
+ 0411	return_to_testimony 00002
+ 0413	section_end
+ENDSECTION
+SECTION 36
+ 0000	section_setup
+ 0001	bg 25, BG_NOSHIFT
+ 0003	person 4, PLACE_DEFAULT, 0, 59, 58
+ 0007	name 4, SHOW_LEFT
+ 0009	cmd6E 00020
+ 0011	screen_fade 02305, 00008, 00031
+ 0015	shake 00030, 00000
+ 0018	speed 00002
+ 0020	text "Your Honor!"
+ 0031	wait 00020
+ 0033	text " "
+ 0034	speed 00003
+ 0036	text "What do you think\nabout the witness\'s statement?"
+ 0084	paragraph
+ 0085	bg 29, BG_NOSHIFT
+ 0087	person 10, PLACE_DEFAULT, 0, 264, 264
+ 0091	name 10, SHOW_LEFT
+ 0093	screen_fade 02305, 00008, 00031
+ 0097	shake 00030, 00000
+ 0100	speed 00005
+ 0102	text "Uh..."
+ 0107	wait_noanim 00030
+ 0109	person 10, PLACE_DEFAULT, 0, 263, 262
+ 0113	speed 00003
+ 0115	text " I\'m not sure\nI follow you."
+ 0142	paragraph
+ 0143	bg 25, BG_NOSHIFT
+ 0145	person 4, PLACE_DEFAULT, 0, 59, 58
+ 0149	name 4, SHOW_LEFT
+ 0151	shake 00030, 00000
+ 0154	speed 00004
+ 0156	text "It clearly,"
+ 0167	wait 00012
+ 0169	shake 00030, 00000
+ 0172	text " er,"
+ 0176	wait 00012
+ 0178	shake 00030, 00000
+ 0181	text " contradicts\nthe..."
+ 0200	wait 00012
+ 0202	shake 00030, 00000
+ 0205	text " um..."
+ 0211	wait 00012
+ 0213	text " "
+ 0214	shake 00030, 00000
+ 0217	text "I thought..."
+ 0229	paragraph
+ 0230	bg 29, BG_NOSHIFT
+ 0232	person 10, PLACE_DEFAULT, 0, 258, 258
+ 0236	name 10, SHOW_LEFT
+ 0238	person 10, PLACE_DEFAULT, 0, 261, 261
+ 0242	wait 00070
+ 0244	person 10, PLACE_DEFAULT, 0, 263, 262
+ 0248	hidetextbox 00000
+ 0250	speed 00003
+ 0252	text "...You don\'t sound very\nsure, Mr. Justice."
+ 0294	paragraph
+ 0295	text "Objection overruled."
+ 0315	person 10, PLACE_DEFAULT, 0, 262, 262
+ 0319	cmd6B 00001, 00000, 00000
+ 0323	cmd2B
+ 0324	removeevidence
+ 0325	nextpage_button
+ 0326	person 10, PLACE_DEFAULT, 0, 262, 262
+ 0330	name 4, SHOW_LEFT
+ 0332	textcolor COLOR_BLUE
+ 0334	text "(I don\'t think that won me\nany points with the judge...)"
+ 0390	textcolor COLOR_WHITE
+ 0392	nextpage_button
+ 0393	hidetextbox 00001
+ 0395	wait 00030
+ 0397	cmd52 00018
+ 0399	text "{00497}\n"
+ 0401	hideperson
+ 0402	wait 00007
+ 0404	bg 27, BG_NOSHIFT
+ 0406	cmd5E 00018
+ 0408	text "Ò\n"
+ 0410	hideperson
+ 0411	return_to_testimony 00002
+ 0413	section_end
+ENDSECTION
+SECTION 37
+ 0000	section_setup
+ 0001	bg 32, BG_NOSHIFT
+ 0003	name 7, SHOW_LEFT
+ 0005	hidetextbox 00001
+ 0007	person 21, PLACE_DEFAULT, 0, 473, 474
+ 0011	wait 00070
+ 0013	hidetextbox 00000
+ 0015	cmd6E 00020
+ 0017	person 21, PLACE_DEFAULT, 0, 475, 474
+ 0021	screen_fade 02305, 00008, 00031
+ 0025	shake 00030, 00000
+ 0028	speed 00002
+ 0030	text "Your Honor!"
+ 0041	wait 00008
+ 0043	text " That statement\ncontradicts this evidence!"
+ 0085	paragraph
+ 0086	bg 36, BG_NOSHIFT
+ 0088	person 10, PLACE_DEFAULT, 0, 265, 264
+ 0092	name 10, SHOW_LEFT
+ 0094	speed 00003
+ 0096	text "...?"
+ 0100	paragraph
+ 0101	text "It does?"
+ 0109	wait 00008
+ 0111	text " I don\'t see\nanything contradictory..."
+ 0149	paragraph
+ 0150	bg 32, BG_NOSHIFT
+ 0152	person 21, PLACE_DEFAULT, 0, 482, 481
+ 0156	name 7, SHOW_LEFT
+ 0158	screen_fade 02305, 00008, 00031
+ 0162	text "Huh?"
+ 0166	wait 00020
+ 0168	text " Really?"
+ 0176	paragraph
+ 0177	bg 36, BG_NOSHIFT
+ 0179	person 10, PLACE_DEFAULT, 0, 259, 258
+ 0183	name 10, SHOW_LEFT
+ 0185	text "Objection overruled."
+ 0205	paragraph
+ 0206	text "Try to think before you make\naccusations, Mr. Wright!"
+ 0259	wait_noanim 00002
+ 0261	person 10, PLACE_DEFAULT, 0, 258, 258
+ 0265	cmd6B 00001, 00000, 00000
+ 0269	cmd2B
+ 0270	removeevidence
+ 0271	nextpage_button
+ 0272	name 7, SHOW_LEFT
+ 0274	screen_fade 02305, 00008, 00031
+ 0278	shake 00030, 00000
+ 0281	textcolor COLOR_BLUE
+ 0283	text "(Whoops!"
+ 0291	wait 00020
+ 0293	newline
+ 0294	text "That didn\'t go so well.)"
+ 0318	textcolor COLOR_WHITE
+ 0320	nextpage_button
+ 0321	hidetextbox 00001
+ 0323	wait 00030
+ 0325	cmd52 00018
+ 0327	text "{00497}\n"
+ 0329	hideperson
+ 0330	wait 00007
+ 0332	bg 34, BG_NOSHIFT
+ 0334	cmd5E 00018
+ 0336	text "Ò\n"
+ 0338	hideperson
+ 0339	return_to_testimony 00002
+ 0341	section_end
+ENDSECTION
+SECTION 38
+ 0000	section_setup
+ 0001	bg 32, BG_NOSHIFT
+ 0003	name 7, SHOW_LEFT
+ 0005	hidetextbox 00001
+ 0007	person 21, PLACE_DEFAULT, 0, 473, 474
+ 0011	wait 00070
+ 0013	hidetextbox 00000
+ 0015	cmd6E 00020
+ 0017	person 21, PLACE_DEFAULT, 0, 475, 474
+ 0021	screen_fade 02305, 00008, 00031
+ 0025	shake 00030, 00000
+ 0028	speed 00002
+ 0030	text "The witness\'s statement is\nclearly faulty, Your Honor!"
+ 0084	paragraph
+ 0085	bg 36, BG_NOSHIFT
+ 0087	person 10, PLACE_DEFAULT, 0, 258, 258
+ 0091	name 10, SHOW_LEFT
+ 0093	wait 00050
+ 0095	text "..."
+ 0098	paragraph
+ 0099	person 10, PLACE_DEFAULT, 0, 259, 258
+ 0103	text "I\'m sorry,"
+ 0113	wait 00010
+ 0115	text " but I can\nsee nothing faulty."
+ 0145	paragraph
+ 0146	hidetextbox 00001
+ 0148	person 10, PLACE_DEFAULT, 0, 261, 261
+ 0152	wait 00070
+ 0154	person 10, PLACE_DEFAULT, 0, 259, 258
+ 0158	hidetextbox 00000
+ 0160	text "Unfortunately,"
+ 0174	wait 00015
+ 0176	text " I will have\nto penalize you, Mr. Wright."
+ 0217	person 10, PLACE_DEFAULT, 0, 258, 258
+ 0221	cmd6B 00001, 00000, 00000
+ 0225	cmd2B
+ 0226	removeevidence
+ 0227	nextpage_button
+ 0228	person 10, PLACE_DEFAULT, 0, 262, 262
+ 0232	name 7, SHOW_LEFT
+ 0234	screen_fade 02305, 00008, 00031
+ 0238	shake 00030, 00000
+ 0241	textcolor COLOR_BLUE
+ 0243	text "(Ugh, I must be on\nthe wrong track...?)"
+ 0282	textcolor COLOR_WHITE
+ 0284	speed 00255
+ 0286	nextpage_button
+ 0287	hidetextbox 00001
+ 0289	wait 00030
+ 0291	cmd52 00018
+ 0293	text "{00497}\n"
+ 0295	hideperson
+ 0296	wait 00007
+ 0298	bg 34, BG_NOSHIFT
+ 0300	cmd5E 00018
+ 0302	text "Ò\n"
+ 0304	hideperson
+ 0305	return_to_testimony 00002
+ 0307	section_end
+ENDSECTION
+SECTION 39
+ 0000	section_setup
+ 0001	bg 32, BG_NOSHIFT
+ 0003	person 21, PLACE_DEFAULT, 0, 475, 474
+ 0007	cmd6E 00020
+ 0009	name 7, SHOW_LEFT
+ 0011	speed 00002
+ 0013	text "This evidence clearly reveals\n"
+ 0043	shake 00030, 00000
+ 0046	text "the contradiction in that\nstatement,"
+ 0082	wait 00012
+ 0084	text " "
+ 0085	screen_fade 02305, 00008, 00031
+ 0089	text "Your Honor!"
+ 0100	paragraph
+ 0101	bg 36, BG_NOSHIFT
+ 0103	person 10, PLACE_DEFAULT, 0, 263, 262
+ 0107	name 10, SHOW_LEFT
+ 0109	speed 00003
+ 0111	text "How exactly are the\nevidence and the statement\njust now related?"
+ 0175	paragraph
+ 0176	bg 32, BG_NOSHIFT
+ 0178	person 21, PLACE_DEFAULT, 0, 475, 474
+ 0182	name 7, SHOW_LEFT
+ 0184	text "They aren\'t,"
+ 0196	wait 00012
+ 0198	text " are they..."
+ 0210	paragraph
+ 0211	hidetextbox 00001
+ 0213	bg 36, BG_NOSHIFT
+ 0215	person 10, PLACE_DEFAULT, 0, 258, 258
+ 0219	name 10, SHOW_LEFT
+ 0221	person 10, PLACE_DEFAULT, 0, 261, 261
+ 0225	wait 00070
+ 0227	hidetextbox 00000
+ 0229	text "Not at all."
+ 0240	paragraph
+ 0241	person 10, PLACE_DEFAULT, 0, 263, 262
+ 0245	text "Mr. Wright,"
+ 0256	wait 00020
+ 0258	text " please think\nthe facts over before\nmaking accusations."
+ 0313	person 10, PLACE_DEFAULT, 0, 262, 262
+ 0317	cmd6B 00001, 00000, 00000
+ 0321	cmd2B
+ 0322	removeevidence
+ 0323	nextpage_button
+ 0324	name 7, SHOW_LEFT
+ 0326	speed 00004
+ 0328	textcolor COLOR_BLUE
+ 0330	text "(I don\'t think that won me\nany points with the judge...)"
+ 0386	textcolor COLOR_WHITE
+ 0388	speed 00255
+ 0390	nextpage_button
+ 0391	hidetextbox 00001
+ 0393	wait 00030
+ 0395	cmd52 00018
+ 0397	text "{00497}\n"
+ 0399	hideperson
+ 0400	wait 00007
+ 0402	bg 34, BG_NOSHIFT
+ 0404	cmd5E 00018
+ 0406	text "Ò\n"
+ 0408	hideperson
+ 0409	return_to_testimony 00002
+ 0411	section_end
+ENDSECTION
+SECTION 40
+ 0000	section_setup
+ 0001	bg 32, BG_NOSHIFT
+ 0003	person 21, PLACE_DEFAULT, 0, 475, 474
+ 0007	cmd6E 00020
+ 0009	name 7, SHOW_LEFT
+ 0011	screen_fade 02305, 00008, 00031
+ 0015	shake 00030, 00000
+ 0018	speed 00002
+ 0020	text "Your Honor!"
+ 0031	wait 00020
+ 0033	text " "
+ 0034	speed 00003
+ 0036	text "What do you think\nabout the witness\'s statement?"
+ 0084	paragraph
+ 0085	bg 36, BG_NOSHIFT
+ 0087	person 10, PLACE_DEFAULT, 0, 264, 264
+ 0091	name 10, SHOW_LEFT
+ 0093	screen_fade 02305, 00008, 00031
+ 0097	shake 00030, 00000
+ 0100	speed 00005
+ 0102	text "Uh..."
+ 0107	wait_noanim 00030
+ 0109	text " I\'m not sure\n"
+ 0123	person 10, PLACE_DEFAULT, 0, 263, 262
+ 0127	text "I follow you."
+ 0140	paragraph
+ 0141	bg 32, BG_NOSHIFT
+ 0143	person 21, PLACE_DEFAULT, 0, 475, 474
+ 0147	name 7, SHOW_LEFT
+ 0149	shake 00030, 00000
+ 0152	speed 00004
+ 0154	text "It clearly,"
+ 0165	wait 00012
+ 0167	text " "
+ 0168	shake 00030, 00000
+ 0171	text "er,"
+ 0174	wait 00012
+ 0176	text " "
+ 0177	shake 00030, 00000
+ 0180	text "contradicts\nthe..."
+ 0198	wait 00012
+ 0200	text " "
+ 0201	shake 00030, 00000
+ 0204	text "um..."
+ 0209	wait 00012
+ 0211	text " "
+ 0212	shake 00030, 00000
+ 0215	text "I thought..."
+ 0227	paragraph
+ 0228	bg 36, BG_NOSHIFT
+ 0230	person 10, PLACE_DEFAULT, 0, 258, 258
+ 0234	name 10, SHOW_LEFT
+ 0236	person 10, PLACE_DEFAULT, 0, 261, 261
+ 0240	wait 00070
+ 0242	person 10, PLACE_DEFAULT, 0, 263, 262
+ 0246	hidetextbox 00000
+ 0248	speed 00003
+ 0250	text "You don\'t sound very\nsure, Mr. Wright."
+ 0288	paragraph
+ 0289	text "Objection overruled."
+ 0309	person 10, PLACE_DEFAULT, 0, 262, 262
+ 0313	cmd6B 00001, 00000, 00000
+ 0317	cmd2B
+ 0318	removeevidence
+ 0319	nextpage_button
+ 0320	person 10, PLACE_DEFAULT, 0, 262, 262
+ 0324	name 7, SHOW_LEFT
+ 0326	textcolor COLOR_BLUE
+ 0328	text "(I don\'t think that won me\nany points with the judge...)"
+ 0384	textcolor COLOR_WHITE
+ 0386	nextpage_button
+ 0387	hidetextbox 00001
+ 0389	wait 00030
+ 0391	cmd52 00018
+ 0393	text "{00497}\n"
+ 0395	hideperson
+ 0396	wait 00007
+ 0398	bg 34, BG_NOSHIFT
+ 0400	cmd5E 00018
+ 0402	text "Ò\n"
+ 0404	hideperson
+ 0405	return_to_testimony 00002
+ 0407	section_end
+ENDSECTION
+SECTION 41
+ 0000	section_setup
+ 0001	name 0, SHOW_LEFT
+ 0003	nextpage_button
+ 0004	cmd41
+ 0005	hidetextbox 00003
+ 0007	halt
+ 0008	section_end
+ENDSECTION
+SECTION 42
+ 0000	section_setup
+ 0001	name 7, SHOW_LEFT
+ 0003	hidetextbox 00003
+ 0005	halt
+ 0006	section_end
+ENDSECTION
