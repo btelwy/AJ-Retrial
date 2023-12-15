@@ -94,7 +94,7 @@ I did remember you being{newLine}
 much shorter.{textboxEnd}
 {name:ema}
 {textColor:blue}
-({sound:shock}This is Phoenix Wright...{wait:normal}!?){textboxEnd}
+({sound:shock}This is Phoenix Wright...!?){textboxEnd}
 (It's been about seven{newLine}
 years since I last{newLine}
 saw him.){textboxEnd}
@@ -279,7 +279,7 @@ In fact,{wait:short} when I brought{newLine}
 out my forged evidence,{wait:short} he{newLine}
 caught on faster than anyone.{textboxEnd}
 {name:none}
-{textSpeed:F}...{textboxEnd}{textSpeed:3}{musicFade:10}
+{textSpeed:F}{musicFade:10}...{textboxEnd}{textSpeed:3}
 {name:ema}
 Mr. Wright.{textboxEnd}
 {textbox:hide}
