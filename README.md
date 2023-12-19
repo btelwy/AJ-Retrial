@@ -8,6 +8,8 @@ Guide to folders:
 
 Added assets: assets not originally in AJ
 
+Documentation: documentation for various aspects of AJ romhacking
+
 Extracted materials: rips of AJ's file structure, all taken by me except for SFX (from Sounds Resource) and the soundfont (from iteachvader on YouTube at https://www.youtube.com/watch?v=_UL8lE-daMM)
 
 Helper programs: tools I've written tailored to making romhacking AJ easier

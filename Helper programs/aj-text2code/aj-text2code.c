@@ -8,12 +8,14 @@ int main() {
     FILE *fptrRead;
     FILE *fptrWrite;
 
-    fptrRead = fopen("C:\\Users\\ben\\projects\\aj-text2code\\script.txt","r"); //open script.txt for reading from
+    fptrRead = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\script.txt","r"); 
+    //open script.txt for reading from
 
     int bufferSize = 100; //default value
     char readBuffer[300]; //the array of chars used to store what's read from the file each line
 
-    fptrWrite = fopen("C:\\Users\\ben\\projects\\aj-text2code\\code.bin","wb"); //open code.txt for writing to
+    fptrWrite = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\code.bin","wb"); 
+    //open code.txt for writing to
 
     int lineCount = countLines(fptrRead);
 
