@@ -1,0 +1,250 @@
+{sectionStart}
+{initialize}
+{courtRecordButton:hide}
+{background:black}
+{wait:1E}
+{textbox:show}
+{centerText:on}
+{textColor:green}
+{typewriter}
+{textSpeed:A}
+Date: ??? Time: ???{newLine}
+High Prosecutor's Office{newLine}
+Room 1202{textboxEnd}
+{centerText:off}
+{textSpeed:3}
+
+
+
+(Bzzzzzzzt)
+
+(We open on a scene of the HIGH PROSECUTOR’S OFFICE, looking remarkably similar to its appearance in Rise from the Ashes.)
+
+{name:none}
+Mr. Edgeworth,{wait:short} you have a{newLine}
+visitor!{textboxEnd}
+
+{name:edgeworth}
+I have a feeling I know{newLine}
+who it is.{wait:normal} Send him in.{textboxEnd}
+
+{sound:door}
+{name:gumshoe}
+Mr. Edgeworth, sir!{textboxEnd}
+
+{name:edgeworth}
+Good afternoon,{wait:short} Detective.{newLine}
+What brings you to my office?{textboxEnd}
+Again.{textboxEnd}
+
+{name:gumshoe}
+Well...{wait:normal} Er...{textboxEnd}
+There's something I'd like to{newLine}
+show you,{wait:normal} sir.{textboxEnd}
+
+EDGEWORTH:
+Is it related to that evidence I asked you to look into?
+GUMSHOE:
+No, sir. It's a letter.
+EDGEWORTH:
+A letter? From whom?
+GUMSHOE:
+...I think you should read it yourself.
+EDGEWORTH:
+(What could this be?)
+Meet me at the Wright & Co. Law Offices tonight at 5 PM. You can bring "him" too. Signed, Phoenix Wright
+!?
+
+(Fade to black)
+
+EDGEWORTH:
+(The last time I heard from Wright was several years ago. He congratulated me on solving one of the most challenging cases of my career. But after that... Nothing. I've been trying to reach out to him for years now. I've called and sent letters, each with no response. Why would he reach out now of all times? And to Detective Gumshoe of all people!?)
+
+(Fade in)
+
+GUMSHOE:
+What're we gonna do, sir?
+EDGEWORTH:
+Isn't it obvious? We'll accept his request. Do you have any objections?
+GUMSHOE:
+Of course not! Let's go, sir!
+
+Date: ???
+Wright & Co. Law Offices
+
+(EDGEWORTH and GUMSHOE arrive at the WRIGHT & CO. LAW OFFICES, or at least what was the Wright & Co Law Offices. The place is a mess. Papers are strewn everywhere, trinkets litter the ground, and what appears to be equipment for a magic show is tucked in a corner.)
+
+EDGEWORTH:
+What the-- Are you sure this is the right place, Detective?
+GUMSHOE:
+That's what the address book said, sir.
+EDGEWORTH:
+I know Wright was a bit all over the place, but I would never have expected him to live in such... clutter.
+GUMSHOE:
+That's what I’m saying! Even my apartment looks better than this!
+EDGEWORTH:
+(Somehow, I doubt that that's possible.)
+???:
+Do I come into your office and start insulting the place?
+EDGEWORTH:
+!
+GUMSHOE:
+M-M... Mr. Wright!
+
+(PHOENIX WRIGHT enters the scene. He’s in his usual “Hobo Nick” attire, complete with an unshaven face and a gray jacket.)
+
+PHOENIX:
+Evening, Detective. And to you as well, Mr. Prosecutor.
+EDGEWORTH:
+...Hello to you too, Wright.
+PHOENIX:
+This is a bit of a cold welcome. I figured you'd be itching to see me.
+EDGEWORTH:
+Ordinarily, that would be the case. But circumstances change.
+GUMSHOE:
+I still can't believe that you lost your badge, pal! I mean... People who messed with evidence, you were always exposing them!
+PHOENIX:
+We live in a pretty harsh world. Sometimes, you make decisions you don't think through. I'm sure you're familiar with that concept. Right, Detective?
+GUMSHOE:
+Wh-what are you talking about!?
+PHOENIX:
+Oh, you know... Frequently leaking investigative reports to defense attorneys, allowing civilians into restricted areas... The kind of thing that got you fired. Twice.
+GUMSHOE:
+!
+PHOENIX:
+But that's not the point of this conversation. I'm sure you have a few things to ask me, Edgeworth.
+EDGEWORTH:
+(I've been waiting for this opportunity for years. I mustn't waste it!) Tell me the truth, Wright. What happened at that trial?
+PHOENIX:
+Straightforward as usual. Don't you already know a bit about that? You're a smart man, and your subordinate was at the trial. You could've asked him.
+EDGEWORTH:
+I want to hear the truth from you, Wright, without any biases. I know all too well what it's like to have rumors spread about you.
+PHOENIX:
+If you want to know that badly, it's simple. I presented forged evidence at a trial. The prosecutor in charge of the case found out and exposed me. As a result, I was disbarred. That's the truth.
+EDGEWORTH:
+...
+PHOENIX:
+Why so quiet? You got exactly what you asked for.
+EDGEWORTH:
+Wright. I'm not going to keep going back and forth with you.
+PHOENIX:
+Then stop. You don’t need to like the answer, Edgeworth. The truth isn't always pretty. Weren't you the one who taught me that? A bit after you "came back from the dead"?
+EDGEWORTH:
+Th-that's true. But, I know you, Wright. Better than most. You wouldn't forge evidence. It would go against everything your mentor taught you.
+PHOENIX:
+(quiet laughing)
+GUMSHOE:
+What're you laughing at, pal?! Mr. Edgeworth's only trying to look out for you! I'm sure he could help you get your badge back if you told him what really happened!
+PHOENIX:
+Sorry, Detective. It's just that... I feel a bit of a sense of deja vu.
+GUMSHOE:
+What do you mean?
+PHOENIX:
+I remember having a close friend who did something that completely betrayed their upbringing and repeatedly ignored any attempts I made to contact them. Sound a bit familiar, Edgeworth? Or should I say, "the Demon Prosecutor"?
+EDGEWORTH:
+You... You don't mean...
+PHOENIX:
+Those who don't learn from history will repeat more than a bit of it.
+EDGEWORTH:
+Is that really what this is about?! I thought you wouldn't still hold a grudge, Wright, but I suppose I was wrong. Detective, we're leaving.
+GUMSHOE:
+But sir! You--
+EDGEWORTH:
+I'm not going to repeat myself. Unless you want your string of pay raises to end abruptly.
+GUMSHOE:
+...I'm sorry, pal.
+PHOENIX:
+No hard feelings, Detective. It's a bit out of your hands.
+GUMSHOE:
+I just have one more question.
+PHOENIX:
+...We should have a bit of time for that.
+GUMSHOE:
+You didn't forge any evidence, did you?
+EDGEWORTH:
+(What kind of question is that?! He’s most definitely getting a salary reduction when we return...)
+PHOENIX:
+Why ask that?
+GUMSHOE:
+You've never directly said if you’ve forged anything, pal! All you said was that you've "presented forged evidence"!
+
+(Background fades to black)
+
+EDGEWORTH:
+(I can’t believe it... Detective Gumshoe is right! What does this mean, though? Has Wright been living a lie these past few years?)
+
+(Background fades in)
+
+PHOENIX:
+...Very astute, Detective. I'm surprised Mr. Edgeworth didn't figure it out.
+EDGEWORTH:
+(Thin ice, Wright. Thin. Ice.)
+PHOENIX:
+Whoa, no need for the death glare, Edgeworth. It was just a joke.
+EDGEWORTH:
+I'd appreciate it if you left comedy out of this conversation. Regardless, now that you've told me the truth about your "forged" evidence, we can develop a plan to have you reinstated.
+PHOENIX:
+There's no need for that.
+GUMSHOE:
+Huh? What do you mean, pal? Mr. Edgeworth's always helped you out whenever you've needed it!
+PHOENIX:
+I made this mess, it's mine to deal with. You don't need to do anything but sit back and watch, Detective.
+GUMSHOE:
+!
+...Whatever you say, pal.
+PHOENIX:
+Now that that's out of the way, I don't believe there's anything else we need to discuss. I'll be sure to keep in touch, Detective Gumshoe.
+GUMSHOE:
+But what about Mr. Edgeworth?
+PHOENIX:
+The fact that you're here means you showed Edgeworth the letter. That should be more than enough to stay in contact. Not to mention, given my position, becoming close with the Prosecutor's Office would be a questionable choice.
+GUMSHOE:
+That makes sense.
+PHOENIX:
+I knew if I reached out, Edgeworth would try and solve the case for me.
+EDGEWORTH:
+(He's not entirely wrong. But still...)
+PHOENIX:
+I trust you. But there are reasons I can't let anyone else get involved. Not this time.
+EDGEWORTH:
+...I understand. But...
+Wright.
+PHOENIX:
+Yes?
+EDGEWORTH:
+Is there something else you need from me?
+PHOENIX:
+H-huh? Why do you ask?
+EDGEWORTH:
+I haven't heard from you in nearly seven years. And if what you told me before was true, then you had every intention of keeping it that way. Why would you suddenly want to reconnect?
+PHOENIX:
+...*sigh* I guess I can't keep all of my secrets forever. There is something I need your help with. Right after I lost my badge, I adopted a little girl.
+GUMSHOE:
+WHAAAAAAAAAAAAAT?!
+PHOENIX:
+Keep your voice down! She's sleeping in the back room.
+GUMSHOE:
+Oh. Sorry, pal...
+PHOENIX:
+Her name's Trucy. She's, let's say... wise beyond her years. Most of the stuff around here is her magic equipment.
+EDGEWORTH:
+...
+...Of all your ridiculous escapades, Wright--
+(This is perhaps the most irresponsible thing I've ever known you to do, Wright!)
+PHOENIX:
+Still don't know how she got that spaghetti to stay standing… But that’s a bit beside the point.
+Recently, I've come across some... hard times, so to speak. The money I've been getting from my job has hardly been enough to keep the lights on.
+EDGEWORTH:
+So you're asking for financial aid.
+PHOENIX:
+I didn't want to do this, Edgeworth. But you're the only person I could think of. Think of it like... a bit of lunch money.
+EDGEWORTH:
+(It would take hours to unpack everything wrong with that statement.)
+Very well, Wright. It's the least I can do to repay you for all that you’ve done for me in the past. But, despite any reservations you may have, you should know that I am determined to thoroughly investigate that case. Your innocence will be brought to light.
+PHOENIX:
+...If that's what you want, Prosecutor Edgeworth.
+
+(Fade to black)
+
+EDGEWORTH:
+(Phoenix Wright. I'll never know what goes on inside that head of yours. But ever since I met you, I've learned that things have a way of working out for the best. Hopefully, once this nightmare is over, we'll be able to do battle in court again. And maybe I'll meet your daughter as well.)
