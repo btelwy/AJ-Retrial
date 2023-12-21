@@ -1,7 +1,7 @@
 from PIL import Image as im
 from PIL import ImageDraw as imDraw
 
-fileName = "979" #or whatever the name of the .bin file is
+fileName = "99" #or whatever the name of the .bin file is
 fileLoc = fileName + ".bin"
 bpp4 = True
 #whether it's 4 or 8bpp
@@ -9,8 +9,8 @@ bpp4 = True
 #adjust this as needed to get the right size for the resulting .png
 #may require some experimentation
 #so check likely factors of the image size, as shown in the header
-width = 128
-height = 16
+width = 256
+height = 32
 
 file = open(fileLoc, "rb") #open binary file
 headerLength = 20
