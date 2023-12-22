@@ -1,0 +1,93 @@
+from PIL import Image
+import math
+
+#converts a .png into AJ's raw image format, found in cpac2d.bin/subarc-01
+#in this format, there is no palette in the file, and no header
+#this program assumes that the raw image format was converted to a .png for editing
+#and so the .png is already compatible with the format, not a random .png
+
+#put name of file to be converted in here
+fileName = "names"
+source = Image.open(fileName + ".png")
+
+#always use palette from subarc-00 at offset 0x1000, at least for 4bpp images
+#4bpp palette, so has 16 colors
+#first color is transparent, so the original last color, 2308, was removed
+#always set transparency to 1 when decoding the raw image files to .png
+palette = ['0000', '1042', '9456', '586B', 'CE10', 'F214', '3519', '4504', 'CA10', '0E19', 'B521',\
+           'F825', '5A2E', '9D36', 'FE42', 'C15E']
+
+paletteRGB = []
+
+for color in palette:
+    flippedColor = bytearray.fromhex(color)[::-1] #change endianness of two-byte color
+    flippedColor = int(flippedColor.hex(), base=16) #convert it to decimal
+
+    #separate the number into R, G, B
+    #each color is then between 0 and 31, so convert to a 0-255 scale
+    red = round(((flippedColor & 0b11111) << 0) * (255/31))
+    green = round(((flippedColor & 0b1111100000) >> 5) * (255/31))
+    blue = round(((flippedColor & 0b111110000000000) >> 10) * (255/31))
+
+    paletteRGB.append((red, green, blue))
+
+#print(paletteRGB)
+
+width, height = source.size #image dimensions
+startWidth, startHeight = 0, 0 #the coordinates to start iterating at for each tile
+tilesPerRow = width / 8
+
+pixels = source.load() #get a view object of the pixel color values
+currentPixel = ()
+
+tempList = []
+
+buffer = []
+
+with open("convertedImage.bin", "wb") as convertedImage: #create .bin file
+
+    for tiles in range(0, round(width*height/64)):
+        startWidth = (tiles % tilesPerRow) * 8
+        startHeight = ((tiles - (tiles % tilesPerRow))/tilesPerRow)*8 #lower to nearest start of row, then multiply by tile height
+            
+        for y in range (0, 8):
+            for x in range (0, 8): #iterate through each tile row to row, top to bottom
+                currentPixel = pixels[startWidth+x, startHeight+y]
+
+                tempList = list(currentPixel)
+                del tempList[3] #remove alpha value, leaving RGB
+                
+                currentPixel = tuple(tempList)
+                #print(currentPixel)
+
+                #due to rounding and stuff the current pixel won't exactly match anything in the palette
+                #so use a similarity metric to find the closest match: distance in a 3D plane
+                similarity = math.inf
+                match = 0
+
+                for index, item in enumerate(paletteRGB):
+                    distance = (item[0]-currentPixel[0])**2 + (item[1]-currentPixel[1])**2 + \
+                        (item[2]-currentPixel[2])**2
+                    distance = math.sqrt(distance)
+
+                    if (distance < similarity):
+                        similarity = distance
+
+                        match = index
+
+                        #don't know what bug requires this, but each nybble is one greater than should be
+                        if (match > 1):
+                            match -= 1
+
+                buffer.append(match)
+
+                #write one nybble per pixel by waiting until you have two nybbles to write both at once
+                if (len(buffer) == 2):
+                    pixel = hex(buffer[1])[2:] + hex(buffer[0])[2:] #concatenate the two nybbles
+                    pixel = int.to_bytes(int(pixel, base=16)) #convert into a bytes object
+                    
+                    convertedImage.write(pixel)
+
+                    buffer = [] #empty buffer
+
+    print("Finished.")
