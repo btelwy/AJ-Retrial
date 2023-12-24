@@ -671,6 +671,9 @@ void convertLine(char line[], int arrLength, FILE* pointer)
         else if (strcmp(shortCommand, "background") == 0)
             background(param, pointer);
 
+        else if (strcmp(shortCommand, "setFlag") == 0)
+            setFlag(param, pointer);
+
         return index; //update i in for loop of convertLine function
     }
 
@@ -1798,6 +1801,63 @@ void threeChoices(char parameter[], FILE* pointer)
     fwrite(&writeBuffer, 1, 1, pointer);
 }
 
+void setFlag(char parameter[], FILE* pointer)
+{
+    //an example is that 10 00 02 80 sets the four bit (the third one)
+    //not sure what the 35 does, and it can change, but I'll just leave it
+    //the parameter is the bit number, like "1" is setting the second-lowest bit
+
+    long writeBuffer = 0x0010;
+    fwrite(&writeBuffer, 2, 1, pointer);
+
+    if (strcmp(parameter, "0") == 0)
+    {
+        writeBuffer = 0x8000;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+    else if (strcmp(parameter, "1") == 0)
+    {
+        writeBuffer = 0x8001;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+    else if (strcmp(parameter, "2") == 0)
+    {
+        writeBuffer = 0x8002;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+    else if (strcmp(parameter, "3") == 0)
+    {
+        writeBuffer = 0x8003;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+    else if (strcmp(parameter, "4") == 0)
+    {
+        writeBuffer = 0x8004;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+    else if (strcmp(parameter, "5") == 0)
+    {
+        writeBuffer = 0x8005;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+    else if (strcmp(parameter, "6") == 0)
+    {
+        writeBuffer = 0x8006;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+    else if (strcmp(parameter, "7") == 0)
+    {
+        writeBuffer = 0x8007;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    /*
+    this 35 is actually a separate jump command that can go to arbitrary offsets of any section
+    writeBuffer = 0x0035; //treating this as a constant, though it's not
+    fwrite(&writeBuffer, 2, 1, pointer);
+    writeBuffer = 0x0000;
+    fwrite(&writeBuffer, 2, 1, pointer);*/
+}
 
 void music(char parameter[], FILE* pointer)
 {

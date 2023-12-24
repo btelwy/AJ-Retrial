@@ -28,6 +28,7 @@ void sound(char[], FILE*);
 void musicFade(char[], FILE*);
 void voiceSFX(char[], FILE*);
 void background(char[], FILE*);
+void setFlag(char[], FILE*);
 
 
 #endif //end of include guard
