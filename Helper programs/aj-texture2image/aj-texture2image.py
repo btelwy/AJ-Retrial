@@ -1,7 +1,7 @@
 from PIL import Image as im
 from PIL import ImageDraw as imDraw
 
-fileName = "99" #or whatever the name of the .bin file is
+fileName = "117" #or whatever the name of the .bin file is
 fileLoc = fileName + ".bin"
 bpp4 = True
 #whether it's 4 or 8bpp

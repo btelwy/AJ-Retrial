@@ -4,6 +4,11 @@
 #include <windows.h>
 #include "aj-text2code.h"
 
+boolean includeHeader = TRUE; //determines whether to do the extra step of adding the header
+int sectionCount = 0; //global variable to count number of sections
+int sectionOffsets[1000]; //global array to hold offsets of sections, of arbitrary size
+int offsetIndex = 0; //index to keep track of position in array
+
 int main() {
     FILE *fptrRead;
     FILE *fptrWrite;
@@ -14,7 +19,7 @@ int main() {
     int bufferSize = 100; //default value
     char readBuffer[300]; //the array of chars used to store what's read from the file each line
 
-    fptrWrite = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\code.bin","wb"); 
+    fptrWrite = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\code.bin","rb+"); 
     //open code.txt for writing to
 
     int lineCount = countLines(fptrRead);
@@ -51,10 +56,15 @@ int main() {
     else
         printf("File to be read couldn't be opened.");
     
+    if (includeHeader)
+    {
+        addHeader(fptrWrite);
+    }
 
     fclose(fptrRead);
     fclose(fptrWrite);
 
+    printf("\nEverything finished.");
     return 0;
 }
 
@@ -546,6 +556,13 @@ void convertLine(char line[], int arrLength, FILE* pointer)
         //for commands that take a parameter, make a function and pass it the command and parameter strings
         if(strcmp(command, "sectionStart") == 0)
         {
+            if (includeHeader) //if header will be added at end, collect data for it
+            {
+                sectionOffsets[offsetIndex] = ftell(pointer);
+                offsetIndex++;
+                sectionCount++;
+            }
+
             writeBuffer = 0x0000;
             fwrite(&writeBuffer, 2, 1, pointer);
         }
@@ -595,6 +612,12 @@ void convertLine(char line[], int arrLength, FILE* pointer)
 
         else if(strcmp(command, "guiltyReset") == 0) //courtroom doors close, returns to title screen
         {
+            //adding this first part just because it works for the other reset and is harmless anyway
+            writeBuffer = 0x0062;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x000F0004;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
             writeBuffer = 0x0024;
             fwrite(&writeBuffer, 2, 1, pointer);
         }
@@ -1363,6 +1386,14 @@ void flash(char parameter[], FILE* pointer)
             fwrite(&writeBuffer, 4, 1, pointer);
         }
 
+        else if (strcmp(parameter, "judgeNormalS") == 0)
+        {
+            writeBuffer = 0x000A;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01030103;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
         else if (strcmp(parameter, "judgeStern") == 0)
         {
             writeBuffer = 0x000A;
@@ -1571,9 +1602,9 @@ void twoChoices(char parameter[], FILE* pointer)
     int arrayLength = strlen(parameter);
     int previousComma = -1; //if there were a hypothetical 0th comma, it'd be at -1
     char* ptr;
-    char substring1[1];
-    char substring2[2];
-    char substring3[3];
+    char substring1[2];
+    char substring2[3];
+    char substring3[4];
 
     //not sure if the three-digit parameter functionality works, but also not sure it's needed
 
@@ -1687,9 +1718,9 @@ void threeChoices(char parameter[], FILE* pointer)
     int arrayLength = strlen(parameter);
     int previousComma = -1; //if there were a hypothetical 0th comma, it'd be at -1
     char* ptr;
-    char substring1[1];
-    char substring2[2];
-    char substring3[3];
+    char substring1[2];
+    char substring2[3];
+    char substring3[4];
 
     //not sure if the three-digit parameter functionality works, but also not sure it's needed
 
@@ -1708,7 +1739,7 @@ void threeChoices(char parameter[], FILE* pointer)
                         strncpy(substring3, parameter+i-3, 3);
                         paramList[count] = strtol(substring3, &ptr, 16);
                     }
-                    else if (i - 1 - previousComma == 2) //if the value is two digits digits long
+                    else if (i - 1 - previousComma == 2) //if the value is two digits long
                     {
                         strncpy(substring2, parameter+i-2, 2);
                         paramList[count] = strtol(substring2, &ptr, 16);
@@ -2262,4 +2293,44 @@ void background(char parameter[], FILE* pointer)
 
     //add more
     //seems to have a set number of fade-in frames; those might be a third argument
+}
+
+void addHeader(FILE* fptrOriginal)
+{
+    //the number of bytes to append to the start of the file
+    int headerNumBytes = (sectionCount + 1) * 4;
+
+    //the file that will contain the final result of the header plus the code
+    FILE* fptrMerge = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\codeHeader.bin","wb"); 
+
+    fseek(fptrMerge, 0, SEEK_SET);
+
+    long writeBuffer = sectionCount;
+    fwrite(&writeBuffer, 4, 1, fptrMerge); //currently only works if section count < 255, i.e., is one byte
+
+    //now write the rest of the header, with the section offsets
+    for (int i = 0; i < sectionCount; i++)
+    {
+        //the size of the header needs to be added to the offset, since it's absolute, not relative
+        int currentOffset = sectionOffsets[i] + headerNumBytes;
+
+        writeBuffer = currentOffset;
+        fwrite(&writeBuffer, 4, 1, fptrMerge);
+    }
+    
+    //then write all of the original .bin file into this one after the header
+    char* fileBuffer[250000]; //buffer of arbitrary large size; if too large, seg faults
+    
+    fseek(fptrOriginal, 0, SEEK_SET); //return to beginning of file
+
+    while(!feof(fptrOriginal))
+    {
+        fread(fileBuffer, sizeof(fileBuffer), 1, fptrOriginal);
+    }
+
+    //write the original .bin file to the new one
+    fwrite(&fileBuffer, ftell(fptrOriginal), 1, fptrMerge);
+
+    printf("\nAdded header.");
+    fclose(fptrMerge);
 }

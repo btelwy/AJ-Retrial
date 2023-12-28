@@ -1,24 +1,37 @@
 import os
+import pathlib
+from pprint import pprint as pprint
 
-#search through a folder of binary files to find the one with a specific sequence of bytes
+#search through a folder of binary files,
+#recursively searching any folders within,
+#to find the one(s) with a specific sequence of bytes
 
 #the desired sequence of bytes to be searched for
-sequence = b'\x23\x52\x66\x66\x66\x64'
+sequence = b'\x22\x72\x44\x27\x22'
 
 #choose the folder of binary files
-workingDir = os.chdir(path="C:\\Users\\ben\\Desktop\\AJ-Retrial\\Extracted materials\\cpac2d.bin\\subarc01")
+folder = "C:\\Users\\ben\\Desktop\\AJ-Retrial"
 
-#list for the files that have the sequence
+#the list that will contain the matching files
 matches = []
 
-#iterate through each file in the folder
-for file in os.listdir(workingDir):
-    with open(file, 'rb') as f:
-        #read the entire file into a string of bytes
-        s = f.read()
-        
-        #and check that string of bytes for the byte sequence
-        if (s.find(sequence) != -1):
-            matches.append(f.name)
+#iterate through each file in the folder recursively
+for (root, dirs, files) in os.walk(folder):
+    for item in files:
+        path = pathlib.Path(f'{root}/{item}') #get path of selected file
+        absolutePath = pathlib.Path.absolute(path)
 
-print(matches)
+        with open(absolutePath, 'rb') as f:
+            #read the entire file into a string of bytes
+            string = f.read() 
+            offset = string.find(sequence) #byte offset of match in file, or -1 if none
+            
+            #and check that string of bytes for the byte sequence
+            if (offset != -1):
+                matches.append((f.name, offset))
+
+
+if (len(matches) == 0): #if matches is empty
+    print("No matches found.")
+else:
+    pprint(matches)

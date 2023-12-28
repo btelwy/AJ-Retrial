@@ -1,10 +1,10 @@
 #ifndef HEADER_FILE //include guard
 #define HEADER_FILE
 
-#include <stdio.h>
-
 int countLines(FILE*);
 int* lineCharCount(FILE*, int);
+
+void addHeader(FILE*);
 
 void convertLine(char[], int, FILE*);
 int readCommand(char[], int, int, FILE*);
