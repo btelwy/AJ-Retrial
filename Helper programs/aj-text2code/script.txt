@@ -1,20 +1,24 @@
 {sectionStart}
 {initialize}
+{courtRecordButton:hide}
 {textSpeed:4}
 {background:judgePOV}
 {name:judge}
 {charAnimation:judgeNormalS}
 {textbox:show}
 {charAnimation:judgeNormal}
-Welcome to "Extras."{wait:normal} Would you{newLine}
-like,{wait:short} erm,{wait:short} "chapter select" or{newLine}
-the "secret files"?
+Welcome to "Extras."{wait:normal}{newLine}
+Would you like,{wait:short} erm...{textboxEnd}
+{charAnimation:judgeStern}
+...this "Chapter Select" doodad{newLine}
+or these newfangled,{wait:short} er,{wait:short}{newLine}
+"Secret Files"?
 {threeChoices:9D,A4,9C,2,23,1}
 {sectionEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{charAnimation:judgeNormal} Be safe.{textboxEnd}
 {reset}
 {sectionEnd}
 {sectionStart}
@@ -71,8 +75,8 @@ Day 2 are you after?
 {name:judge}
 {charAnimation:judgeNormal}
 Here are the options I was told{newLine}
-to give you for Turnabout Serenade,{wait:short}{newLine}
-Day 2.
+to give you for Turnabout{newLine}
+Serenade,{wait:short} Day 2.
 {twoChoices:A8,A2,16,17}
 {sectionEnd}
 {sectionStart}
@@ -102,10 +106,11 @@ seven years ago...{wait:normal} Very well.{wait:normal}{newLine}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Trump,{wait:short} Trial Former."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:7}
 {wait:normal}
 {guiltyReset}
@@ -113,10 +118,11 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Trump,{wait:short} Trial Latter."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:0}
 {setFlag:7}
 {wait:normal}
@@ -125,11 +131,12 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Corner,{wait:short} Day 1,{wait:short}{newLine}
 Investigation."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:1}
 {setFlag:7}
 {wait:normal}
@@ -138,11 +145,12 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Corner,{wait:short} Day 2,{wait:short}{newLine}
 Trial Former."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:0}
 {setFlag:1}
 {setFlag:7}
@@ -152,11 +160,12 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Corner,{wait:short} Day 2,{wait:short}{newLine}
 Trial Latter."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:2}
 {setFlag:7}
 {wait:normal}
@@ -165,11 +174,12 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Corner,{wait:short} Day 2,{wait:short}{newLine}
 Investigation."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:0}
 {setFlag:2}
 {setFlag:7}
@@ -179,11 +189,12 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Corner,{wait:short} Day 3,{wait:short}{newLine}
 Trial."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:1}
 {setFlag:2}
 {setFlag:7}
@@ -193,11 +204,12 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Serenade,{wait:short} Day 1,{wait:short}{newLine}
 Investigation."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:0}
 {setFlag:1}
 {setFlag:2}
@@ -208,11 +220,12 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Serenade,{wait:short} Day 2,{wait:short}{newLine}
 Trial."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:3}
 {setFlag:7}
 {wait:normal}
@@ -221,11 +234,12 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Serenade,{wait:short} Day 2,{wait:short}{newLine}
 Investigation."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:0}
 {setFlag:3}
 {setFlag:7}
@@ -235,11 +249,12 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Serenade,{wait:short} Day 3,{wait:short}{newLine}
 Trial Former."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:1}
 {setFlag:3}
 {setFlag:7}
@@ -249,11 +264,12 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Serenade,{wait:short} Day 3,{wait:short}{newLine}
 Trial Latter."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:0}
 {setFlag:1}
 {setFlag:3}
@@ -264,11 +280,12 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Succession,{wait:short} Day 1,{wait:short}{newLine}
 Investigation."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:2}
 {setFlag:3}
 {setFlag:7}
@@ -279,18 +296,19 @@ Very well.{textboxEnd}
 {name:judge}
 {charAnimation:judgeStern}
 Ah,{wait:short} Turnabout Succession,{wait:short}{newLine}
-Succession,{wait:short} Day 3...{wait:normal} the finale.{wait:normal}{newLine}
-{charAnimation:judgeNormal}Well then,{wait:short} the trial or epilogue?
+Day 3...{wait:normal} the finale.{wait:normal}{charAnimation:judgeNormal} Well then,{wait:short}{newLine}
+the trial or the epilogue?
 {twoChoices:A8,A1,21,22}
 {sectionEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Succession,{wait:short} Day 2,{wait:short}{newLine}
 Trial Former."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:0}
 {setFlag:2}
 {setFlag:3}
@@ -301,24 +319,29 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Succession,{wait:short} Day 2,{wait:short}{newLine}
 Trial Latter."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}
+start."{textboxEnd}
 {setFlag:1}
 {setFlag:2}
 {setFlag:3}
 {setFlag:7}
+{wait:normal}
+{guiltyReset}
 {sectionEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Succession,{wait:short}{newLine}
 Seven Years Ago,{wait:short} Trial Former."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:0}
 {setFlag:1}
 {setFlag:2}
@@ -330,11 +353,12 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Succession,{wait:short}{newLine}
 Seven Years Ago,{wait:short} Trial Latter."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:4}
 {setFlag:7}
 {wait:normal}
@@ -343,11 +367,12 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Succession,{wait:short}{newLine}
 Seven Years Ago,{wait:short} MASON System."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:0}
 {setFlag:4}
 {setFlag:7}
@@ -357,24 +382,27 @@ Very well.{textboxEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Succession,{wait:short} Day 3,{wait:short}{newLine}
 Trial."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:1}
 {setFlag:4}
+{setFlag:7}
 {wait:normal}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
 {name:judge}
 {charAnimation:judgeNormal}
-You have chosen,{wait:short} erm,{wait:short}{newLine}
+You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Succession,{wait:short} Day 3,{wait:short}{newLine}
 Epilogue."{textboxEnd}
 {charAnimation:judgeStern}
-Very well.{textboxEnd}
+Very well.{wait:normal}{newLine}
+Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:0}
 {setFlag:1}
 {setFlag:4}

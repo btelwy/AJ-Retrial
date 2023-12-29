@@ -6,7 +6,7 @@
 
 boolean includeHeader = TRUE; //determines whether to do the extra step of adding the header
 int sectionCount = 0; //global variable to count number of sections
-int sectionOffsets[1000]; //global array to hold offsets of sections, of arbitrary size
+int sectionOffsets[500]; //global array to hold offsets of sections, of arbitrary size
 int offsetIndex = 0; //index to keep track of position in array
 
 int main() {
@@ -19,7 +19,7 @@ int main() {
     int bufferSize = 100; //default value
     char readBuffer[300]; //the array of chars used to store what's read from the file each line
 
-    fptrWrite = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\code.bin","rb+"); 
+    fptrWrite = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\code.bin","wb+"); 
     //open code.txt for writing to
 
     int lineCount = countLines(fptrRead);
@@ -54,7 +54,7 @@ int main() {
     }
 
     else
-        printf("File to be read couldn't be opened.");
+        printf("\nFile to be read couldn't be opened.");
     
     if (includeHeader)
     {
@@ -558,7 +558,14 @@ void convertLine(char line[], int arrLength, FILE* pointer)
         {
             if (includeHeader) //if header will be added at end, collect data for it
             {
-                sectionOffsets[offsetIndex] = ftell(pointer);
+                //pointer refers to the writing file, but it's the same result as the reading file would be
+                
+                if (pointer == NULL)
+                {
+                    printf("oops");
+                }
+
+                sectionOffsets[offsetIndex] = ftello(pointer);
                 offsetIndex++;
                 sectionCount++;
             }
@@ -2308,28 +2315,27 @@ void addHeader(FILE* fptrOriginal)
     long writeBuffer = sectionCount;
     fwrite(&writeBuffer, 4, 1, fptrMerge); //currently only works if section count < 255, i.e., is one byte
 
+    int currentOffset;
     //now write the rest of the header, with the section offsets
     for (int i = 0; i < sectionCount; i++)
     {
         //the size of the header needs to be added to the offset, since it's absolute, not relative
-        int currentOffset = sectionOffsets[i] + headerNumBytes;
+        currentOffset = sectionOffsets[i] + headerNumBytes;
 
         writeBuffer = currentOffset;
         fwrite(&writeBuffer, 4, 1, fptrMerge);
     }
     
     //then write all of the original .bin file into this one after the header
-    char* fileBuffer[250000]; //buffer of arbitrary large size; if too large, seg faults
+    char* fileBuffer[200000]; //buffer of arbitrary large size; if too large, seg faults
     
     fseek(fptrOriginal, 0, SEEK_SET); //return to beginning of file
 
-    while(!feof(fptrOriginal))
-    {
-        fread(fileBuffer, sizeof(fileBuffer), 1, fptrOriginal);
-    }
+    //read all of the original file into a buffer; stops when EOF is reached
+    fread(fileBuffer, sizeof(fileBuffer), 1, fptrOriginal);
 
-    //write the original .bin file to the new one
-    fwrite(&fileBuffer, ftell(fptrOriginal), 1, fptrMerge);
+    //then write the original .bin file from the buffer to the new one
+    fwrite(fileBuffer, ftell(fptrOriginal), 1, fptrMerge);
 
     printf("\nAdded header.");
     fclose(fptrMerge);

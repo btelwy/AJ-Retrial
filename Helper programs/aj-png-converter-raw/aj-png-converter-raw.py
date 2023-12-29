@@ -10,7 +10,7 @@ import math
 drawTilewise = False
 
 #put name of file to be converted in here
-fileName = "extras_case"
+fileName = "next_option"
 source = Image.open(fileName + ".png")
 
 #always use palette from subarc-00 at offset 0x1000, at least for 4bpp images
