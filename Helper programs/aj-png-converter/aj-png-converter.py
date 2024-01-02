@@ -129,6 +129,9 @@ def writePixelData(binFile, imageLoc, colorList):
     im = image.open(imageLoc)
     pixels = im.load()
 
+    width = im.size[0]
+    height = im.size[1]
+
     startWidth = 0 #the coordinates to start iterating at for each tile
     startHeight = 0
 
@@ -136,9 +139,11 @@ def writePixelData(binFile, imageLoc, colorList):
     tempList = []
     hexString = ''
     
-    for tiles in range (0, 768): #768 tiles total in 256 by 192 pixel image, 32 by 24 tiles
-        startWidth = (tiles % 32) * 8 #32 tiles per row, each tile is 8 pixels wide
-        startHeight = ((tiles - (tiles % 32))/32)*8 #lower to nearest start of row, then multiply by tile height
+    tilesPerRow = width / 8
+
+    for tiles in range(0, round(width*height/64)): #768 tiles total in 256 by 192 pixel image, 32 by 24 tiles
+        startWidth = (tiles % tilesPerRow) * 8 #32 tiles per row, each tile is 8 pixels wide
+        startHeight = ((tiles - (tiles % tilesPerRow))/tilesPerRow)*8 #lower to nearest start of row, then multiply by tile height
         
         for y in range (0, 8):
             for x in range (0, 8): #iterate through each tile row to row, top to bottom
@@ -164,10 +169,10 @@ def writePixelData(binFile, imageLoc, colorList):
 
 #########################################################################################################
 
-imageLocation = 'lana.png'
+imageLocation = 'trucy1.png'
 reducedImageLocation = 'reducedImage.png'
 
-targetNumColors = 210
+targetNumColors = 16
 reducedNumColors = 0 #initialize variable
 
 numColors = countColors(imageLocation)

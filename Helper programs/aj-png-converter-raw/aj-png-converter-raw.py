@@ -10,7 +10,7 @@ import math
 drawTilewise = False
 
 #put name of file to be converted in here
-fileName = "next_option"
+fileName = "trucy2Reduced"
 source = Image.open(fileName + ".png")
 
 #always use palette from subarc-00 at offset 0x1000, at least for 4bpp images
@@ -24,7 +24,10 @@ subarc00Palette = ['0000', '1042', '9456', '586B', 'CE10', 'F214', '3519', '4504
 optionPalette = ['E003', '1863', 'DE7B', 'FF7F', '9D73', '5C6B', '3B63', 'FA5A', 'B84E', '5742', '1532',\
                  'B425', '9321', '3111', 'F008', 'AF00']
 
-palette = optionPalette
+#or,
+trucyPalette = ['E720', 'A610', '2835', 'EF39', '0D56', 'AB49', '6F62', 'FF7B' '356B', 'D32D', '5736', 'EC14', 'FC4A', '9A3E', 'B220', 'DD24']
+
+palette = trucyPalette
 
 paletteRGB = []
 
@@ -39,8 +42,6 @@ for color in palette:
     blue = round(((flippedColor & 0b111110000000000) >> 10) * (255/31))
 
     paletteRGB.append((red, green, blue))
-
-#print(paletteRGB)
 
 width, height = source.size #image dimensions
 startWidth, startHeight = 0, 0 #the coordinates to start iterating at for each tile
@@ -64,10 +65,8 @@ with open(fileName + "Converted.bin", "wb") as convertedImage: #create .bin file
                     currentPixel = pixels[startWidth+x, startHeight+y]
 
                     tempList = list(currentPixel)
-                    #del tempList[3] #remove alpha value, leaving RGB
                     
                     currentPixel = tuple(tempList)
-                    #print(currentPixel)
 
                     #due to rounding and stuff the current pixel won't exactly match anything in the palette
                     #so use a similarity metric to find the closest match: distance in a 3D plane
@@ -85,8 +84,8 @@ with open(fileName + "Converted.bin", "wb") as convertedImage: #create .bin file
                             match = index
 
                             #don't know what bug requires this, but each nybble is one greater than should be
-                            if (match > 1):
-                                match -= 1
+                            #if (match > 1):
+                                #match -= 1
 
                     buffer.append(match)
 
@@ -106,11 +105,6 @@ with open(fileName + "Converted.bin", "wb") as convertedImage: #create .bin file
                 #really should use a function here to increase readability, but too lazy
 
                 currentPixel = pixels[x, y]
-
-                tempList = list(currentPixel)
-                #del tempList[3] #remove alpha value, leaving RGB
-                    
-                currentPixel = tuple(tempList)
                 
 
                 #due to rounding and stuff the current pixel won't exactly match anything in the palette

@@ -1,7 +1,7 @@
 from PIL import Image as im
 from PIL import ImageDraw as imDraw
 
-fileName = "117" #or whatever the name of the .bin file is
+fileName = "trucy2ReducedConverted" #or whatever the name of the .bin file is
 fileLoc = fileName + ".bin"
 bpp4 = True
 #whether it's 4 or 8bpp
@@ -9,12 +9,12 @@ bpp4 = True
 #adjust this as needed to get the right size for the resulting .png
 #may require some experimentation
 #so check likely factors of the image size, as shown in the header
-width = 256
-height = 32
+width = 64
+height = 64
 
 file = open(fileLoc, "rb") #open binary file
-headerLength = 20
-header = list(bytearray(file.read(20))) #read the first 0x14 bytes, the header, converting to decimal
+headerLength = 0x14
+header = list(bytearray(file.read(headerLength))) #read the first 0x14 bytes, the header, converting to decimal
 
 #offset where the image data itself starts
 imageOffset = header[4]
@@ -31,9 +31,9 @@ file.seek(paletteOffset, 0)
 paletteData = []
 
 if bpp4:
-    paletteData = file.read(32).hex() #read the first palette
+    paletteData = file.read(0x20).hex() #read the first palette
 else:
-    paletteData = file.read(512).hex() #read the entire palette
+    paletteData = file.read(0x200).hex() #read the entire palette
 
 palette = []
 RGB = [0, 0, 0]

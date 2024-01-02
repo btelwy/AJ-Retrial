@@ -4,7 +4,7 @@
 #include <windows.h>
 #include "aj-text2code.h"
 
-boolean includeHeader = TRUE; //determines whether to do the extra step of adding the header
+boolean includeHeader = FALSE; //determines whether to do the extra step of adding the header
 int sectionCount = 0; //global variable to count number of sections
 int sectionOffsets[500]; //global array to hold offsets of sections, of arbitrary size
 int offsetIndex = 0; //index to keep track of position in array
@@ -464,6 +464,11 @@ void convertLine(char line[], int arrLength, FILE* pointer)
                 fwrite(&writeBuffer, 2, 1, pointer);
                 break;
 
+                case '&':
+                writeBuffer = 0x018C;
+                fwrite(&writeBuffer, 2, 1, pointer);
+                break;
+
                 case '*':
                 writeBuffer = 0x0182;
                 fwrite(&writeBuffer, 2, 1, pointer);
@@ -837,9 +842,15 @@ void flash(char parameter[], FILE* pointer)
         long writeBuffer = 0x000E;
         fwrite(&writeBuffer, 2, 1, pointer);
 
-        if (strcmp(parameter, "none") == 0)
+        if (strcmp(parameter, "noneMale") == 0)
         {
             writeBuffer = 0x0000;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "noneFemale") == 0)
+        {
+            writeBuffer = 0x0100;
             fwrite(&writeBuffer, 2, 1, pointer);
         }
 
