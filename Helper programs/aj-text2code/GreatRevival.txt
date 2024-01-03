@@ -1,0 +1,433 @@
+{sectionStart}
+{screenFadeOut}
+{screenFadeIn:edgeworthOffice}
+{centerText:on}
+{textSpeed:A}{textColor:green}{typewriter}{wait:1E}
+July 16, 12:04 PM{newLine}
+High Prosecutor's Office{newLine}
+Room 1202{textboxEnd}
+{centerText:off}{textSpeed:3}{textColor:white}
+
+(Bzzzzzzzt)
+
+{name:officer}
+Mr. Edgeworth,{wait:short} you have a visitor!{textboxEnd}
+
+{name:edgeworth}
+I have a feeling I know who{newLine}
+it is.{wait:normal} Send him in.{textboxEnd}
+
+{name:gumshoe}
+Good afternoon,{wait:short} Mr. Edgeworth!{textboxEnd}
+
+{name:edgeworth}
+Good afternoon,{wait:short} Detective.{wait:normal}{newLine}
+What brings you to my office?{wait:normal}{newLine}
+Again.{textboxEnd}
+
+{name:gumshoe}
+Well...{wait:normal} Er...{textboxEnd}
+There's something I'd like{newLine}
+to show you,{wait:short} sir.{textboxEnd}
+
+{name:edgeworth}
+Is it related to that{newLine}
+evidence I asked you to{newLine}
+look into?{textboxEnd}
+
+{name:gumshoe}
+No,{wait:short} sir.{wait:normal}{newLine}
+It's a letter.{textboxEnd}
+
+{name:edgeworth}
+A letter?{wait:normal} From whom?{textboxEnd}
+
+{name:gumshoe}
+...I think you should read it{newLine}
+yourself.{textboxEnd}
+
+{name:edgeworth}
+{textColor:blue}
+(What could this be?){textboxEnd}{textColor:green}
+Meet me at the Wright & Co.{newLine}
+Law Offices tonight at 5 PM.{textboxEnd}
+I want to catch up.{wait:normal}{newLine}
+Make sure you bring "him" too.{textboxEnd}
+Signed,{wait:short}{newLine}
+Phoenix Wright{textboxEnd}{textColor:white}
+!?{wait:short}{textboxEnd}
+
+{screenFadeOut}
+
+{name:edgeworth}{textColor:blue}
+(The last time I heard from Wright{newLine}
+was about a year ago.){textboxEnd}
+(We had kept in contact for{newLine}
+a while,{wait:short} but suddenly,{wait:short} he{newLine}
+disappeared.){textboxEnd}
+(I've been trying to reach out{newLine}
+to him for all this time.){textboxEnd}
+(I've called and sent letters,{wait:short}{newLine}
+each with no response.){textboxEnd}
+(Why would he reach out now{newLine}
+of all times?{wait:normal} And to Detective{newLine}
+Gumshoe,{wait:short} of all people!?){textboxEnd}{textColor:white}
+
+{screenFadeIn:edgeworthOffice}
+
+{name:gumshoe}
+What're we gonna do,{wait:short} sir?{textboxEnd}
+
+{name:edgeworth}
+Isn't it obvious?{wait:normal}{newLine}
+We'll accept his request.{textboxEnd}
+Do you have any objections?{textboxEnd}
+
+{name:gumshoe}
+Of course not!{wait:normal} Let's go,{wait:short} sir!{textboxEnd}
+
+{screenFadeOut}
+
+
+{centerText:on}
+{textSpeed:A}{textColor:green}{typewriter}{wait:1E}
+4:55 PM{newLine}
+Wright & Co. Law Offices{textboxEnd}
+{centerText:off}{textSpeed:3}{textColor:white}
+
+{name:edgeworth}
+What the--{newLine}
+Are you sure this is the right{newLine}
+place?{textboxEnd}
+
+{screenFadeIn:waa}
+
+{name:gumshoe}
+That's what the address book said,{wait:short} sir.{textboxEnd}
+
+{name:edgeworth}
+This office used to look{newLine}
+presentable,{wait:short} at the least.{textboxEnd}
+Now it bears resemblance to{newLine}
+your apartment,{wait:short} Detective.{textboxEnd}
+
+{name:gumshoe}
+...!{wait:normal}{newLine}
+C-C'mon,{wait:short} sir!{wait:normal}{newLine}
+It's not that bad.{textboxEnd}
+
+{name:edgeworth}
+{textColor:blue}(I beg to differ.){textboxEnd}{textColor:white}
+
+{name:???Male}
+You know it's rude to speak{newLine}
+about people in their presence.{textboxEnd}
+
+{name:edgeworth}
+!{sound:ding}{wait:short}{textboxEnd}
+
+{name:gumshoe}
+M-M...{wait:normal} Mr. Wright!{textboxEnd}
+
+{name:phoenix}
+Good evening,{wait:short} Detective.{wait:normal}{newLine}
+And to you as well,{wait:short} Mr. Edgeworth.{textboxEnd}
+
+{name:edgeworth}
+Hello to you too,{wait:short} Wright.{textboxEnd}
+
+{name:phoenix}
+What's with the cold welcome?{wait:normal}{newLine}
+I figured you'd be itching to{newLine}
+see me.{textboxEnd}
+
+{name:edgeworth}
+Make no mistake,{wait:short} I am glad{newLine}
+to see you.{wait:normal} But there are...{wait:normal}{newLine}
+other things that are on my mind.{textboxEnd}
+
+{name:phoenix}
+Oh,{wait:short} really?{wait:normal} Such as?{textboxEnd}
+
+{name:edgeworth}
+{textColor:blue}(Where do I even begin!?){wait:normal}{newLine}{textColor:white}
+Well...{wait:normal} You've...{wait:normal} redecorated.{textboxEnd}
+
+{name:phoenix}
+A ha ha,{wait:short} yes.{wait:normal}{newLine}
+You can thank Trucy for that.{textboxEnd}
+She needed room to practice{newLine}
+her magic,{wait:short} and this is how it{newLine}
+ended up.{textboxEnd}
+
+{name:gumshoe}
+Aww...{wait:normal} That's nice,{wait:short} pal.{textboxEnd}
+I've been trying to get Mr. Edgeworth{newLine}
+to come to one of her shows.{textboxEnd}
+But he doesn't wan--{textboxEnd}
+
+{name:edgeworth}
+But my schedule's been tight.{textboxEnd}
+I'm in the running for the{newLine}
+next district Chief Prosecutor.{textboxEnd}
+I can't afford to slack off{newLine}
+and see amateur magic acts.{textboxEnd}
+
+{name:phoenix}
+I'm telling you,{wait:short} she's no amateur.{textboxEnd}
+I would have her show you some{newLine}
+tricks,{wait:short} but she's asleep right now.{textboxEnd}
+Though that plate of spaghetti{newLine}
+should be all you need to{newLine}
+see she's the real deal.{textboxEnd}
+
+{name:edgeworth}
+What plate of--{wait:normal}
+{sound:shock}O-Oh!{textboxEnd}{textColor:blue}
+(How in the world is that{newLine}
+fork levitating!?){textboxEnd}
+(There must be some sort{newLine}
+of string--){textboxEnd}{textColor:white}
+
+{name:phoenix}
+Nothing's holding it up.{textboxEnd}
+I've been trying to figure that{newLine}
+trick out for years and{newLine}
+gotten nowhere.{textboxEnd}
+Maybe you could use that "Logic"{newLine}
+you're so proud of to{newLine}
+figure it out.{textboxEnd}
+
+{name:edgeworth}{textColor:blue}
+(Did Wright learn to read minds{newLine}
+over the last year!?){textboxEnd}
+{textColor:white}
+
+{name:phoenix}
+Maybe I did,{wait:short} maybe I didn't.{textboxEnd}
+
+{name:edgeworth}{textColor:blue}
+(What!?{wait:normal} How!?{wait:normal}{newLine}
+Am I dreaming!?{wait:normal} Surely not!){textboxEnd}
+(Very well then.{wait:normal}{newLine}
+The first step is to regain{newLine}
+my composure...){textboxEnd}{textColor:white}
+...I need to step out for{newLine}
+a moment.{textboxEnd}
+
+{name:phoenix}
+Eh?{wait:normal} What was that,{wait:short} Edgeworth?{textboxEnd}
+
+{name:edgeworth}{textColor:blue}
+(Ngooh!{wait:normal} Wright is one move ahead{newLine}
+of me,{wait:short} it seems.){textboxEnd}
+(Change of plan:{wait:normal}{newLine}
+act like nothing is wrong,{wait:short} and{newLine}
+solve this mystery later.){textboxEnd}{textColor:white}
+Nothing,{wait:short} Wright.{wait:normal} What else have{newLine}
+you been getting up to?{textboxEnd}
+Besides harboring a magician.{textboxEnd}
+
+{name:phoenix}
+Well...{wait:normal} I started working at a{newLine}
+small jazz club as a pianist.{textboxEnd}
+I need to start practicing more{newLine}
+songs,{wait:short} though.{wait:normal} I can only{newLine}
+play one.{textboxEnd}
+
+{name:edgeworth}
+Oh,{wait:short} really?{wait:normal} What song?{textboxEnd}
+
+{name:phoenix}
+{textColor:red}Man of the Piano{textColor:white} by William John.{textboxEnd}
+
+{name:edgeworth}
+(I've seen experts struggle with that song. Wright must be quite talented.)
+
+{name:phoenix}
+I also decided to take after the Detective and get a jacket.
+I think it fits with the beanie.
+
+{name:gumshoe}
+Hey,{wait:short} pal! This coat was handcrafted by Maggey!
+Not something bought at a thrift store!
+
+{name:phoenix}
+A place I'm sure you're familiar with.
+
+{name:gumshoe}
+Not anymore,{wait:short} pal! Mr. Edgeworth's given me plenty of salary raises!
+
+{name:phoenix}
+Really! It only took over ten years.
+
+{name:edgeworth}
+Again with the jabs,{wait:short} Wright?
+
+{name:phoenix}
+Relax,{wait:short} Edgeworth. You don't need any more wrinkles on your forehead.
+
+{name:edgeworth}
+...What's happened to you?
+
+{name:phoenix}
+Huh? Where'd that come from?
+
+{name:edgeworth}
+You've changed,{wait:short} Wright.
+I remember when you always looked on the bright side.
+Trying to find the best out of desperate situations.
+But now... you've grown cold. Even your smile lacks its customary warmth.
+
+{name:phoenix}
+...Heh.
+
+{name:gumshoe}
+What're you laughing at,{wait:short} pal!? Mr. Edgeworth's pouring his heart out to you!
+
+{name:phoenix}
+I'm sorry,{wait:short} I'm sorry. Just... That's rich coming from you,{wait:short} Edgeworth.
+
+{name:edgeworth}
+!
+
+{name:phoenix}
+I never thought I'd be lectured about attitude by the moodiest person on Earth.
+I guess my life has some surprises left.
+
+{name:edgeworth}
+You're acting like a completely different person!
+What could've possibly happened to spark such a change?
+
+{name:phoenix}
+You really want to know?
+
+{name:gumshoe}
+'Course,{wait:short} pal! I want to help you,{wait:short} and I know Mr. Edgeworth does too.
+
+{name:phoenix}
+Thanks,{wait:short} Detective Gumshoe.
+The truth is... life happened.
+
+{name:gumshoe}
+...
+
+{name:edgeworth}
+...That's it?
+
+{name:phoenix}
+That's the truth,{wait:short} Edgeworth.
+
+{name:edgeworth}
+Wright,{wait:short} it's been nearly three years since that trial.
+I've known of your disbarment for ages.
+
+{name:phoenix}
+Yes,{wait:short} Edgeworth. You have. But that's just it.
+I've spent the past three years trying to raise a daughter.
+With a little help,{wait:short} I've kept the lights on and Trucy fed. But it hasn't been easy. 
+It was devastating walking around town every day,{wait:short} seeing people who looked up to me.
+Quickly,{wait:short} rumors broke out. Small things at first.
+Yet there was enough truth in them that every gaze stung.
+So I... decided to ditch the blue suit,{wait:short} bury that part of myself inside.
+
+{name:edgeworth}
+...
+
+{name:phoenix}
+Once people stopped recognizing me,{wait:short} I knew my ruse had worked.
+That's the truth. I'm doing everything I can,{wait:short} every night,{wait:short} every day.
+But I'm not "Mr. Wright" anymore. Just "Phoenix."
+An ordinary guy,{wait:short} like he always was...
+And now one who can barely even protect his own daughter.
+What kind of life is that?
+Sure,{wait:short} you know "of" my disbarment. But you'll never,{wait:short} ever know "about" it.
+
+{name:edgeworth}
+W-Wright,{wait:short} I... I had no idea.
+
+{name:phoenix}
+I'm... I'm sorry. It all came out,{wait:short} all of a sudden.
+Three years of "if only I could do more."
+"If only I could protect those I love."
+"If only I could be me."
+I meant what I said... but you have to understand,{wait:short} I also didn't.
+
+{name:gumshoe}
+No problem,{wait:short} pal!
+
+{name:edgeworth}
+Very well,{wait:short} Wright. I understand.
+While it is true that I am tempted to reprimand you for disappearing...
+I have the impression that I did something similar,{wait:short} once.
+
+{name:phoenix}
+So you did. So you did.
+
+{name:edgeworth}
+Indeed. Life happens,{wait:short} yes,{wait:short} and so do matters of emotion.
+Then,{wait:short} you are forgiven. Now never do it again,{wait:short} do you hear me?
+
+{name:phoenix}
+Loud and clear,{wait:short} Edgeworth.
+
+{name:gumshoe}
+So what're you going to do now,{wait:short} pal?
+
+{name:phoenix}
+Honestly,{wait:short} I don't know.
+I've been content with letting the winds of life carry me wheresoever they choose.
+
+{name:gumshoe}
+C'mon,{wait:short} pal! You have to do something!
+
+{name:phoenix}
+Believe me,{wait:short} I'm doing all I can. But I'm a civilian now.
+I don't have access to any information related to the case.
+...Well,{wait:short} besides the personal records I'm keeping.
+I'm investigating thoroughly,{wait:short} but as long as I'm a civilian...
+...and as long as I'm a father,{wait:short} I have other priorities.
+To see Trucy smile.
+I want to be "Mr. Wright,{wait:short} attorney at law" again. I really do.
+But deep down,{wait:short} I know her smile is more radiant than any badge.
+And her calling me "Daddy"... is the most fulfilling title I could ever hope for.
+
+{name:gumshoe}
+Aww,{wait:short} y-you're gonna make me tear up,{wait:short} here!
+*sniff* *sob* *bawl*
+
+{name:edgeworth}
+(Wright does have a point.)
+Wha— Detective! Why are you looking at me like that!? Clean up those tears!
+You look like a starved dog.
+
+{name:gumshoe}
+O-Oh! S-Sorry,{wait:short} s-sir!
+
+{name:phoenix}
+The good detective must want you to pull in a favor for me.
+
+{name:edgeworth}
+I figured as much. You can rest easy,{wait:short} Detective.
+I already planned to reopen the investigation.
+I'm unsure if any new information will surface,{wait:short} but it's worth trying.
+
+{name:phoenix}
+I— Thanks,{wait:short} Edgeworth.
+
+{name:edgeworth}
+No need to remain so stoic,{wait:short} Wright.
+
+{name:phoenix}
+Practice what you preach.
+
+(The two share a laugh.)
+
+(Fade to black.)
+
+{name:edgeworth}
+(Phoenix Wright.
+I'll never know what goes on inside that head of yours.
+But ever since I met you,{wait:short} I've learned that things have a way of working out for the best.
+Hopefully,{wait:short} once this nightmare is over,{wait:short} we'll be able to do battle in court again.)
+{sectionEnd}

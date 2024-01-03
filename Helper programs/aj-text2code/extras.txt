@@ -2,9 +2,9 @@
 {initialize}
 {courtRecordButton:hide}
 {textSpeed:4}
-{background:judgePOV}
-{name:judge}
 {charAnimation:judgeNormalS}
+{screenFadeIn:judgePOV}
+{name:judge}
 {textbox:show}
 {charAnimation:judgeNormal}
 Welcome to "Extras."{wait:normal}{newLine}
@@ -13,7 +13,7 @@ Would you like,{wait:short} erm...{textboxEnd}
 ...this "Chapter Select" doodad{newLine}
 or these newfangled,{wait:short} er,{wait:short}{newLine}
 "Secret Files"?
-{threeChoices:9D,A4,9C,2,23,1}
+{threeChoices:9D,A4,9C,25,23,1}
 {sectionEnd}
 {sectionStart}
 {name:judge}
@@ -23,14 +23,10 @@ Very well.{wait:normal}{charAnimation:judgeNormal} Be safe.{textboxEnd}
 {sectionEnd}
 {sectionStart}
 {name:judge}
-{charAnimation:judgeStern}
-Now I believe I'm supposed{newLine}
-to ask,{wait:short} "Which case would you{newLine}
-like to play?"
 {threeChoices:A9,AA,9B,4,5,3}
 {sectionEnd}
 {sectionStart}
-{threeChoices:AB,AC,9C,6,7,2}
+{threeChoices:AB,AC,9C,6,24,2}
 {sectionEnd}
 {sectionStart}
 {name:judge}
@@ -55,10 +51,6 @@ is most to your liking?
 {threeChoices:9E,9F,A0,15,A,B}
 {sectionEnd}
 {sectionStart}
-{name:judge}
-{charAnimation:judgeNormal}
-Which part of Turnabout{newLine}
-Succession are you looking for?
 {threeChoices:9E,9F,9B,1A,C,8}
 {sectionEnd}
 {sectionStart}
@@ -113,6 +105,7 @@ Very well.{wait:normal}{newLine}
 Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -126,6 +119,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:0}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -140,6 +134,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:1}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -155,6 +150,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:1}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -169,6 +165,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:2}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -184,6 +181,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:2}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -199,6 +197,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:2}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -215,6 +214,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:2}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -229,6 +229,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:3}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -244,6 +245,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:3}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -259,6 +261,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:3}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -275,6 +278,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:3}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -290,6 +294,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:3}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -314,6 +319,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:3}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -331,6 +337,7 @@ start."{textboxEnd}
 {setFlag:3}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -348,6 +355,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:3}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -362,6 +370,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:4}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -377,6 +386,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:4}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -392,6 +402,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:4}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -408,6 +419,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {setFlag:4}
 {setFlag:7}
 {wait:normal}
+{spriteFade:out}
 {guiltyReset}
 {sectionEnd}
 {sectionStart}
@@ -416,4 +428,19 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 I apologize,{wait:short} but this section{newLine}
 is not ready at this time.{textboxEnd}
 {reset}
+{sectionEnd}
+{sectionStart}
+{name:judge}
+{charAnimation:judgeNormal}
+Which part of Turnabout{newLine}
+Succession are you looking for?{textboxEnd}
+{jump:7}
+{sectionEnd}
+{sectionStart}
+{name:judge}
+{charAnimation:judgeStern}
+Now I believe I'm supposed{newLine}
+to ask,{wait:short} "Which case would you{newLine}
+like to play?"{textboxEnd}
+{jump:2}
 {sectionEnd}

@@ -1,6 +1,6 @@
-{sectionStart}{initialize}{background:waa}
+{sectionStart}{initialize}{screenFadeIn:waa}
 (Klavier Gavin...{wait:normal} lead singer for{newLine}
 the megahit band,{wait:short}{newLine}
 the Gavinners.){textboxEnd}
-(Hope you're ready, rockstar.){textboxEnd}
+(Hope you're ready, rockstar.){textboxEnd}{screenFadeOut}
 {reset}{sectionEnd}

@@ -7,15 +7,16 @@ import math
 #and so the .png is already compatible with the format, not a random .png
 
 #if true, draws pixels in order of tiles; if false, draws linearly, left to right
-drawTilewise = False
+drawTilewise = True
 
 #put name of file to be converted in here
-fileName = "trucy2Reduced"
+fileName = "names_clay_edgeworth_maya"
 source = Image.open(fileName + ".png")
 
-#always use palette from subarc-00 at offset 0x1000, at least for 4bpp images
-#4bpp palette, so has 16 colors
-#first color is transparent, so the original last color, 2308, was removed
+#always use palette from subarc-00 at offset 0x1000 (in original subarc-00 file),
+#at least for 4bpp images
+#this is a 4bpp palette, so has 16 colors
+#first color is transparent, so the original last color, '2308', was removed
 #always set transparency to 1 when decoding the raw image files to .png
 subarc00Palette = ['0000', '1042', '9456', '586B', 'CE10', 'F214', '3519', '4504', 'CA10', '0E19', 'B521',\
            'F825', '5A2E', '9D36', 'FE42', 'C15E']
@@ -27,7 +28,7 @@ optionPalette = ['E003', '1863', 'DE7B', 'FF7F', '9D73', '5C6B', '3B63', 'FA5A',
 #or,
 trucyPalette = ['E720', 'A610', '2835', 'EF39', '0D56', 'AB49', '6F62', 'FF7B' '356B', 'D32D', '5736', 'EC14', 'FC4A', '9A3E', 'B220', 'DD24']
 
-palette = trucyPalette
+palette = subarc00Palette
 
 paletteRGB = []
 
@@ -55,6 +56,7 @@ tempList = []
 buffer = []
 
 with open(fileName + "Converted.bin", "wb") as convertedImage: #create .bin file
+    #if drawing tile by tile
     if drawTilewise:
         for tiles in range(0, round(width*height/64)):
             startWidth = (tiles % tilesPerRow) * 8
@@ -84,8 +86,8 @@ with open(fileName + "Converted.bin", "wb") as convertedImage: #create .bin file
                             match = index
 
                             #don't know what bug requires this, but each nybble is one greater than should be
-                            #if (match > 1):
-                                #match -= 1
+                            if (match > 1):
+                                match -= 1
 
                     buffer.append(match)
 

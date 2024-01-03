@@ -1,9 +1,6 @@
 {sectionStart}
-{initialize}
-{wait:1E}
-{textbox:show}
-{background:solitaryConfinement}
-{courtRecordButton:hide}
+{screenFadeOut}
+{screenFadeIn:solitaryConfinement}
 {centerText:on}
 {textSpeed:A}{textColor:green}{typewriter}{wait:1E}
 April 27, 9:35 AM{newLine}
@@ -369,7 +366,7 @@ so Justice is done with you.){textboxEnd}
 {textbox:hide}
 {spriteFade:out}
 {wait:20}
-{flash:black}{background:black}
+{screenFadeOut}
 {textbox:show}
 {textColor:blue}
 (And so I discovered that{newLine}

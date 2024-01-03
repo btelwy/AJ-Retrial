@@ -4,7 +4,7 @@
 #include <windows.h>
 #include "aj-text2code.h"
 
-boolean includeHeader = FALSE; //determines whether to do the extra step of adding the header
+boolean includeHeader = TRUE; //determines whether to do the extra step of adding the header
 int sectionCount = 0; //global variable to count number of sections
 int sectionOffsets[500]; //global array to hold offsets of sections, of arbitrary size
 int offsetIndex = 0; //index to keep track of position in array
@@ -13,7 +13,7 @@ int main() {
     FILE *fptrRead;
     FILE *fptrWrite;
 
-    fptrRead = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\script.txt","r"); 
+    fptrRead = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\chapter_select.txt","r"); 
     //open script.txt for reading from
 
     int bufferSize = 100; //default value
@@ -709,6 +709,15 @@ void convertLine(char line[], int arrLength, FILE* pointer)
         else if (strcmp(shortCommand, "setFlag") == 0)
             setFlag(param, pointer);
 
+        else if (strcmp(shortCommand, "screenFadeIn") == 0)
+            screenFadeIn(param, pointer);
+
+        else if (strcmp(shortCommand, "screenFadeOut") == 0)
+            screenFadeOut(pointer);
+
+        else if (strcmp(shortCommand, "jump") == 0)
+            jump(param, pointer);
+
         return index; //update i in for loop of convertLine function
     }
 
@@ -876,7 +885,8 @@ void flash(char parameter[], FILE* pointer)
             writeBuffer = 0x0500;
             fwrite(&writeBuffer, 2, 1, pointer);
         }
-        else if (strcmp(parameter, "klavier") == 0) //note that Klavier probably has a separate value for in court
+        //originally a Kristoph name
+        else if (strcmp(parameter, "edgeworth") == 0)
         {
             writeBuffer = 0x0600;
             fwrite(&writeBuffer, 2, 1, pointer);
@@ -901,12 +911,223 @@ void flash(char parameter[], FILE* pointer)
             writeBuffer = 0x0A00;
             fwrite(&writeBuffer, 2, 1, pointer);
         }
+        else if (strcmp(parameter, "payne") == 0)
+        {
+            writeBuffer = 0x0B00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "orly") == 0)
+        {
+            writeBuffer = 0x0C00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "alita") == 0)
+        {
+            writeBuffer = 0x0D00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "wocky") == 0)
+        {
+            writeBuffer = 0x0E00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "eldoon") == 0)
+        {
+            writeBuffer = 0x0F00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "plum") == 0)
+        {
+            writeBuffer = 0x1000;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "bigWins") == 0)
+        {
+            writeBuffer = 0x1100;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "hickfield") == 0)
+        {
+            writeBuffer = 0x1200;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "vera") == 0)
+        {
+            writeBuffer = 0x1300;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
         else if (strcmp(parameter, "brushel") == 0)
         {
             writeBuffer = 0x1400;
             fwrite(&writeBuffer, 2, 1, pointer);
         }
-        //add others
+        else if (strcmp(parameter, "phoenix2") == 0)
+        {
+            writeBuffer = 0x1500;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "gumshoe") == 0)
+        {
+            writeBuffer = 0x1600;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        //originally a Kristoph name
+        else if (strcmp(parameter, "clay") == 0)
+        {
+            writeBuffer = 0x1700;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "maya") == 0)
+        {
+            writeBuffer = 0x1800;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "valant") == 0)
+        {
+            writeBuffer = 0x1900;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "drew") == 0)
+        {
+            writeBuffer = 0x1A00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "childTrucy") == 0)
+        {
+            writeBuffer = 0x1B00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "childVera") == 0)
+        {
+            writeBuffer = 0x1C00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "meekins") == 0)
+        {
+            writeBuffer = 0x1D00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "stickler") == 0)
+        {
+            writeBuffer = 0x1E00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "zak") == 0)
+        {
+            writeBuffer = 0x1F00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "smith") == 0)
+        {
+            writeBuffer = 0x2000;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "valant2") == 0)
+        {
+            writeBuffer = 0x2100;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "lamiroir") == 0)
+        {
+            writeBuffer = 0x2200;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "machi") == 0)
+        {
+            writeBuffer = 0x2300;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "letouse") == 0)
+        {
+            writeBuffer = 0x2400;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "daryan") == 0)
+        {
+            writeBuffer = 0x2500;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        //all the values in between 25 and 2B are dummy values
+        else if (strcmp(parameter, "bailiff") == 0)
+        {
+            writeBuffer = 0x2B00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "officer") == 0)
+        {
+            writeBuffer = 0x2C00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "announcer") == 0)
+        {
+            writeBuffer = 0x2D00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "mrhat") == 0)
+        {
+            writeBuffer = 0x2E00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "meraktis") == 0)
+        {
+            writeBuffer = 0x2F00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "enigmar") == 0)
+        {
+            writeBuffer = 0x3000;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "public") == 0)
+        {
+            writeBuffer = 0x3100;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "magnifi") == 0)
+        {
+            writeBuffer = 0x3200;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "no6") == 0)
+        {
+            writeBuffer = 0x3300;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "guard") == 0)
+        {
+            writeBuffer = 0x3400;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "klavier") == 0)
+        {
+            writeBuffer = 0x3500;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "thalassa") == 0)
+        {
+            writeBuffer = 0x3600;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "staff") == 0)
+        {
+            writeBuffer = 0x3700;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "oldLady") == 0)
+        {
+            writeBuffer = 0x3800;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "kristoph3") == 0)
+        {
+            writeBuffer = 0x3900;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+        else if (strcmp(parameter, "tv") == 0)
+        {
+            writeBuffer = 0x3A00;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
     }
 
 //--------------------------------------------------------------------------------
@@ -1609,6 +1830,93 @@ void courtRecordButton(char parameter[], FILE* pointer)
 }
 
 
+void screenFadeIn(char parameter[], FILE* pointer)
+{
+    //standard form:
+    //12 00 01 02 00 00 1F 00 0C 00 01 00 0C 00 28 00
+    //change background using 1B command
+    //12 00 04 01 01 00 1F 00 0C 00 19 00 0C 00 3C 00
+
+    //the string argument is the background to fade in to from black
+
+    long writeBuffer = 0x02010012;
+    fwrite(&writeBuffer, 4, 1, pointer);
+
+    writeBuffer = 0x001F0000;
+    fwrite(&writeBuffer, 4, 1, pointer);
+
+    writeBuffer = 0x0001000C;
+    fwrite(&writeBuffer, 4, 1, pointer);
+
+    writeBuffer = 0x003C000C;
+    fwrite(&writeBuffer, 4, 1, pointer);
+
+    //now change the background
+    background(parameter, pointer);
+
+    //now write the rest of the flashes
+    writeBuffer = 0x01040012;
+    fwrite(&writeBuffer, 4, 1, pointer);
+
+    writeBuffer = 0x001F0001;
+    fwrite(&writeBuffer, 4, 1, pointer);
+
+    writeBuffer = 0x0019000C;
+    fwrite(&writeBuffer, 4, 1, pointer);
+
+    writeBuffer = 0x003C000C;
+    fwrite(&writeBuffer, 4, 1, pointer);
+}
+
+
+void screenFadeOut(FILE* pointer)
+{
+    //standard form:
+    //12 00 04 02 01 00 1F 00 0C 00 19 00
+    //set background to black using 1B command: 1B 00 FF 0F 
+    //12 00 01 01 01 00 1F 00 0C 00 07 00
+
+    long writeBuffer = 0x02040012;
+    fwrite(&writeBuffer, 4, 1, pointer);
+
+    writeBuffer = 0x001F0001;
+    fwrite(&writeBuffer, 4, 1, pointer);
+
+    writeBuffer = 0x0001900C;
+    fwrite(&writeBuffer, 4, 1, pointer);
+
+    //now change the background
+    background("black", pointer);
+
+    //now write the rest of the flashes
+    writeBuffer = 0x01010012;
+    fwrite(&writeBuffer, 4, 1, pointer);
+
+    writeBuffer = 0x001F0001;
+    fwrite(&writeBuffer, 4, 1, pointer);
+
+    writeBuffer = 0x0007000C;
+    fwrite(&writeBuffer, 4, 1, pointer);
+}
+
+
+void jump(char parameter[], FILE* pointer)
+{
+    //jumps to the start of a section
+
+    char* ptr;
+    
+    //the section to jump to, displayed as signed hex
+    int sectionNum = strtol(parameter, &ptr, 16) + 0x80;
+
+    int writeBuffer = 0x002C;
+    fwrite(&writeBuffer, 2, 1, pointer);
+
+    writeBuffer = sectionNum;
+    fwrite(&writeBuffer, 2, 1, pointer);
+}
+
+
 void twoChoices(char parameter[], FILE* pointer)
 {
     //requires four parameters separated with commas like 80,7F,2,3
@@ -2194,6 +2502,36 @@ void sound(char parameter[], FILE* pointer)
     else if (strcmp(parameter, "punctuate") == 0)
     {
         writeBuffer = 0x0035;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "door") == 0)
+    {
+        writeBuffer = 0x003A;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "glassShattering") == 0)
+    {
+        writeBuffer = 0x0052;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "barking") == 0)
+    {
+        writeBuffer = 0x005E;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "rain") == 0)
+    {
+        writeBuffer = 0x005F;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "gulp") == 0)
+    {
+        writeBuffer = 0x0061;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
