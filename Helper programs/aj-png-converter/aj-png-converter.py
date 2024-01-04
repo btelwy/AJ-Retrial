@@ -63,15 +63,10 @@ def getUniqueColorsList(imageLoc):
     height = im.size[1]
 
     uniqueColorsList = []
-    tempList = []
     unique = True
 
     for x in range(0, width): #iterate through every pixel in image, column to column, left to right
         for y in range (0, height):
-            tempList = list(pixels[x, y])
-            tempList[3] = 255 #set alpha to 255 regardless, since it was fluctuating slightly
-            pixels[x, y] = tuple(tempList)
-
             for element in range (0, len(uniqueColorsList)): #check that the color isn't already in the list
                 
                 if (uniqueColorsList[element] == pixels[x, y]):
@@ -99,7 +94,6 @@ def createColorDict(colorList):
 
 def convertRGBToAJ(RGBATuple):
     RGBList = list(RGBATuple)
-    del RGBList[3] #remove alpha element, leaving RGB
 
     for element in range(0, 3):
         RGBList[element] = round((RGBList[element]*31)/255) #make RGB value in range 0, 31
@@ -136,7 +130,6 @@ def writePixelData(binFile, imageLoc, colorList):
     startHeight = 0
 
     currentPixel = ()
-    tempList = []
     hexString = ''
     
     tilesPerRow = width / 8
@@ -148,9 +141,6 @@ def writePixelData(binFile, imageLoc, colorList):
         for y in range (0, 8):
             for x in range (0, 8): #iterate through each tile row to row, top to bottom
                 currentPixel = pixels[startWidth+x, startHeight+y]
-                tempList = list(currentPixel)
-                tempList[3] = 255 #set alpha to 255
-                currentPixel = tuple(tempList)
 
                 for element in range (0, len(colorList)):
                     if (currentPixel == colorList[element]):
@@ -169,10 +159,10 @@ def writePixelData(binFile, imageLoc, colorList):
 
 #########################################################################################################
 
-imageLocation = 'trucy1.png'
+imageLocation = 'edgeworthOffice.png'
 reducedImageLocation = 'reducedImage.png'
 
-targetNumColors = 16
+targetNumColors = 900
 reducedNumColors = 0 #initialize variable
 
 numColors = countColors(imageLocation)

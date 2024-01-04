@@ -1,0 +1,255 @@
+April 20, 4:43 PM
+Apollo's Apartment
+
+{sound:door}
+{name:apollo}
+Home sweet home. Well, that's what they say, anyway.
+Feels like a lie right now. Not your fault, though, apartment. Everything does.
+
+Surprised I didn't crash my bike riding over here. I was squeezing that thing like a vise.
+Would've been the cherry on top of the mess I'd always dreamed would be a cake.
+
+Alright, here's the plan. I lie down, and when I wake up...
+(...when I wake up, maybe the pit in my chest will be gone. Maybe I can still dream.)
+
+(he lies down)
+
+...
+{name:apollo}
+(Maybe I should call Clay. He'd know what to do… but…)
+(...geez, I'm zonked out.)
+
+...
+
+(there's a ringing noise)
+
+{name:apollo}
+(His telepathy strikes again.)
+
+(phone is answered)
+
+{name:clay}
+Heya Pollo, what's down? I really wanted to call earlier to check in about how it went, but Director Cosmos needed some help with one of the robots, well, uh, still needs, ‘cuz I sorta dropped ten screws inside it. So he said—
+
+{name:apollo}
+Whoa, whoa, hold up there! Can't I get a word or two in?
+
+{name:clay}
+Ha ha ha, forgot myself again, Pollo. My bad, my bad.
+
+{name:apollo}
+“My bad” my behind. We both know perfectly well that you do it just to be annoying.
+
+{name:clay}
+Then it sounds like it's doing its job! Unlike me!
+
+{name:apollo}
+(I can just imagine his sheepish grin. And... oh, darn it, now I'm smiling too.)
+And we both know perfectly well that you ace your job, so no need to make fun of yourself for my sake.
+I mean, how long until you go into space? December of next year?
+
+{name:clay}
+Yep, just about eighteen months from now.
+But no joke, Pollo, I gotta tell you the rest of this story, it's pretty epic.
+
+{name:apollo}
+Fine, fine.
+
+{name:clay}
+So, look, Director Cosmos has this huge drawer of screws that only he can tell apart.
+And, I mean, he did document which is which, but he did it on paper.
+In this day and age! And his handwriting looks like that time I made you do your math homework blindfolded!
+How could I have known which one to use? How in the ever-expanding universe could I have known, Pollo?
+
+{name:apollo}
+Allow me to translate: "I grabbed them all at once to figure out which one fit."
+"Shockingly, I was unable to hold seventy-two screws."
+
+{name:clay}
+Hey, efficiency is proficiency. It's just that I didn't expect gravity to betray me like that. 
+I swear, this is why I'm going to space.
+
+{name:apollo}
+More like your brain betrayed you. Are you getting a new one in space?
+
+{name:clay}
+Who knows? The possibilities are endless.
+More importantly, how did it go today?
+One more time, I'm so sorry I couldn't be there. I just can't miss training.
+
+{name:apollp}
+Honestly, I'm glad you weren't there.
+
+{name:clay}
+Something wrong, Pollo?
+
+{name:apollo}
+Yeah... speaking of "betraying."
+
+{name:clay}
+Huh?
+
+{name:apollo}
+What if I tell you that...
+That the two people I looked up to the most of anyone betrayed me today?
+That Mr. Wright gave me forged evidence that could have gotten me disbarred?
+That the rumors about him forging evidence in his last trial are probably true?
+
+{name:clay}
+...
+
+{name:apollo}
+What if I tell you that I lost my job and all of my trust in the people I trusted most?
+That I was so furious I punched Mr. Wright in the face?
+That... that...
+That in my very first trial, Mr. Gavin turned out to be a real, live murderer?!
+
+{name:clay}
+...
+It's okay, Pollo. I'm here.
+
+...
+
+{name:apollo}
+*sob* *sniff* *bawl* *sob*
+(So much for staying cool.)
+Sorry for losing it there. I didn't mean to take it out on you.
+
+{name:clay}
+Pollo... I can't believe they did that to you.
+...
+...
+
+{name:apollo}
+Clay?
+
+{name:clay}
+Sorry, I'm not mad. I mean, I'm furious, too. But not at you. For you.
+
+{name:apollo}
+For some reason, that actually makes me feel better. Thanks, Clay.
+
+{name:clay}
+No prob. Seriously, are you okay though?
+
+{name:apollo}
+You'd think after a few hours it would process...
+But judging by my tears, I'd give it another week or so.
+
+{name:clay}
+And that's alright.
+
+{name:apollo}
+It isn't even the first time someone has betrayed my trust.
+So why am I sad that it happened again?
+
+{name:clay}
+Because it's sad every time, Pollo. Life is pretty sad, isn't it?
+That's why I'm here to brighten it up for you.
+
+{name:apollo}
+(I don't know where I'd be without you, Clay.)
+And I'm here to remind you to be responsible, since you have a few screws loose.
+
+{name:clay}
+Yeah, that generally does happen when you drop them.
+Changing subject.
+
+{name:apollo}
+Can you not think of any better transition?
+
+{name:clay}
+Nope.
+What are you gonna do now that you're unemployed? Need any help?
+
+{name:apollo}
+Oh, I appreciate it, but luckily I have some emergency cash and... well, an offer...
+
+{name:clay}
+Nice, where's the offer at?
+
+{name:apollo}
+I don't think I'm ready to tell you, honestly. I've got to... think through some things first.
+But I will. I promise.
+(I'm just too ashamed to say it out loud.)
+
+{name:clay}
+Roger that.
+
+{name:apollo}
+Hey.
+
+{name:clay}
+Now what kind of transition is that?
+
+{name:apollo}
+You knew, didn't you? That the trial didn't go well.
+Because if it had, I would've called you immediately.
+That's why you started off with that story. To make me feel better.
+I'm right, aren't I? You can admit it.
+
+{name:clay}
+I don't know, admitting that you're right? I'd rather take off my hat.
+But uh, maybe. Yeah.
+You're one smart cookie, Pollo.
+
+{name:apollo}
+Clay...
+(What does being smart count for, really, when everything's falling apart?
+What can all my studying even accomplish?)
+
+{name:clay}
+Apollo.
+Our lives are just beginning. Our stories are just starting.
+Whatever happens, wherever we go...
+You'll be a star. I just know it.
+
+{name:apollo}
+And we'll be a binary system, right?
+
+{name:clay}
+Right. Two stars, connected in orbit by each other's gravity.
+Because even in the depths of space, gravity can still reach.
+
+{name:apollo}
+...Then there's nothing left to do but shine.
+
+{name:clay}
+There's nothing left to do but shine!
+Just like that badge pinned on your lapel.
+
+{name:apollo}
+You're right. I still have my badge.
+I still have everything I've worked for.
+And people to believe in?
+Well, I'm still struggling with that.
+But for now I have you, Clay, and that's enough.
+
+{name:clay}
+Bingo. Back at you.
+I trust you, I believe in you, and, uh, I don't really think I've killed anyone.
+
+{name:apollo}
+Filling me with confidence here.
+
+{name:clay}
+And, uh, Pollo?
+
+{name:apollo}
+Yeah?
+
+{name:clay}
+You'll let me see Mr. Gavin in prison, won't you?
+I'd love to slug him. You know, just bruise him up a teeny-tiny bit.
+It's not fair that Mr. Wright gets all the attention.
+
+{name:apollo}
+I'm honored, but I'm not sure I could acquit you from that one.
+
+{name:clay}
+Nonsense.
+Oops, gotta go, Pollo. Talk later, okay?
+
+{name:apollo}
+No problem. I should be off too.
+After all... the world is waiting.

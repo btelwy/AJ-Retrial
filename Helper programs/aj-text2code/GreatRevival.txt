@@ -1,51 +1,49 @@
 {sectionStart}
+{initialize}
 {screenFadeOut}
 {screenFadeIn:edgeworthOffice}
 {centerText:on}
+{textbox:show}
 {textSpeed:A}{textColor:green}{typewriter}{wait:1E}
 July 16, 12:04 PM{newLine}
 High Prosecutor's Office{newLine}
 Room 1202{textboxEnd}
 {centerText:off}{textSpeed:3}{textColor:white}
-
-(Bzzzzzzzt)
-
 {name:officer}
-Mr. Edgeworth,{wait:short} you have a visitor!{textboxEnd}
-
+Mr. Edgeworth,{wait:short} you have a{newLine}
+visitor!{textboxEnd}
 {name:edgeworth}
 I have a feeling I know who{newLine}
 it is.{wait:normal} Send him in.{textboxEnd}
-
+{spriteFade:in}
+{wait:3B}
+{charAnimation:gumshoeNormal}
 {name:gumshoe}
 Good afternoon,{wait:short} Mr. Edgeworth!{textboxEnd}
-
 {name:edgeworth}
 Good afternoon,{wait:short} Detective.{wait:normal}{newLine}
 What brings you to my office?{wait:normal}{newLine}
 Again.{textboxEnd}
-
+{charAnimation:gumshoeThinking}
 {name:gumshoe}
 Well...{wait:normal} Er...{textboxEnd}
-There's something I'd like{newLine}
+{charAnimation:gumshoeConfident}There's something I'd like{newLine}
 to show you,{wait:short} sir.{textboxEnd}
-
 {name:edgeworth}
 Is it related to that{newLine}
 evidence I asked you to{newLine}
 look into?{textboxEnd}
-
+{charAnimation:gumshoeNormal}
 {name:gumshoe}
 No,{wait:short} sir.{wait:normal}{newLine}
 It's a letter.{textboxEnd}
-
 {name:edgeworth}
 A letter?{wait:normal} From whom?{textboxEnd}
-
+{charAnimation:gumshoeSideLook}
 {name:gumshoe}
 ...I think you should read it{newLine}
 yourself.{textboxEnd}
-
+{spriteFade:out}
 {name:edgeworth}
 {textColor:blue}
 (What could this be?){textboxEnd}{textColor:green}
@@ -56,12 +54,11 @@ Make sure you bring "him" too.{textboxEnd}
 Signed,{wait:short}{newLine}
 Phoenix Wright{textboxEnd}{textColor:white}
 !?{wait:short}{textboxEnd}
-
 {screenFadeOut}
-
 {name:edgeworth}{textColor:blue}
-(The last time I heard from Wright{newLine}
-was about a year ago.){textboxEnd}
+(The last time I heard from{newLine}
+Wright was about a{newLine}
+year ago.){textboxEnd}
 (We had kept in contact for{newLine}
 a while,{wait:short} but suddenly,{wait:short} he{newLine}
 disappeared.){textboxEnd}
@@ -72,140 +69,153 @@ each with no response.){textboxEnd}
 (Why would he reach out now{newLine}
 of all times?{wait:normal} And to Detective{newLine}
 Gumshoe,{wait:short} of all people!?){textboxEnd}{textColor:white}
-
 {screenFadeIn:edgeworthOffice}
-
+{spriteFade:in}
+{charAnimation:gumshoeThinking}
 {name:gumshoe}
 What're we gonna do,{wait:short} sir?{textboxEnd}
-
 {name:edgeworth}
 Isn't it obvious?{wait:normal}{newLine}
 We'll accept his request.{textboxEnd}
 Do you have any objections?{textboxEnd}
-
+{charAnimation:gumshoeSmiling}
 {name:gumshoe}
 Of course not!{wait:normal} Let's go,{wait:short} sir!{textboxEnd}
-
+{spriteFade:out}
+{textbox:hide}
 {screenFadeOut}
-
-
+{wait:3B}
+{textbox:show}
 {centerText:on}
 {textSpeed:A}{textColor:green}{typewriter}{wait:1E}
 4:55 PM{newLine}
 Wright & Co. Law Offices{textboxEnd}
 {centerText:off}{textSpeed:3}{textColor:white}
-
 {name:edgeworth}
 What the--{newLine}
 Are you sure this is the right{newLine}
 place?{textboxEnd}
-
 {screenFadeIn:waa}
-
+{charAnimation:gumshoeConfident}
 {name:gumshoe}
-That's what the address book said,{wait:short} sir.{textboxEnd}
-
+That's what the address book{newLine}
+said,{wait:short} sir.{textboxEnd}
 {name:edgeworth}
 This office used to look{newLine}
 presentable,{wait:short} at the least.{textboxEnd}
 Now it bears resemblance to{newLine}
 your apartment,{wait:short} Detective.{textboxEnd}
-
+{charAnimation:gumshoeSadS}
 {name:gumshoe}
 ...!{wait:normal}{newLine}
-C-C'mon,{wait:short} sir!{wait:normal}{newLine}
+{charAnimation:gumshoeSad}C-C'mon,{wait:short} sir!{wait:normal}{newLine}
 It's not that bad.{textboxEnd}
-
 {name:edgeworth}
 {textColor:blue}(I beg to differ.){textboxEnd}{textColor:white}
-
+{spriteFade:out}
+{charAnimation:phoenixSideLookS}
+{spriteFade:in}
+{sound:realization}
+{wait:3B}
 {name:???Male}
+{charAnimation:phoenixSideLook}
 You know it's rude to speak{newLine}
 about people in their presence.{textboxEnd}
-
 {name:edgeworth}
 !{sound:ding}{wait:short}{textboxEnd}
-
+{spriteFade:out}
+{charAnimation:gumshoeAngry}
+{spriteFade:in}
 {name:gumshoe}
 M-M...{wait:normal} Mr. Wright!{textboxEnd}
-
+{spriteFade:out}
+{charAnimation:phoenixNormal}
+{spriteFade:in}
 {name:phoenix}
 Good evening,{wait:short} Detective.{wait:normal}{newLine}
-And to you as well,{wait:short} Mr. Edgeworth.{textboxEnd}
-
+I'm glad you received my letter.{textboxEnd}
+{charAnimation:phoenixStraightLook}
+And good evening to you as{newLine}
+well,{wait:short} Mr. Edgeworth.{textboxEnd}
 {name:edgeworth}
 Hello to you too,{wait:short} Wright.{textboxEnd}
-
+{charAnimation:phoenixSideLook}
 {name:phoenix}
 What's with the cold welcome?{wait:normal}{newLine}
 I figured you'd be itching to{newLine}
 see me.{textboxEnd}
-
 {name:edgeworth}
 Make no mistake,{wait:short} I am glad{newLine}
 to see you.{wait:normal} But there are...{wait:normal}{newLine}
-other things that are on my mind.{textboxEnd}
-
+other things on my mind.{textboxEnd}
+{charAnimation:phoenixSideLook}
 {name:phoenix}
 Oh,{wait:short} really?{wait:normal} Such as?{textboxEnd}
-
 {name:edgeworth}
 {textColor:blue}(Where do I even begin!?){wait:normal}{newLine}{textColor:white}
 Well...{wait:normal} You've...{wait:normal} redecorated.{textboxEnd}
-
+{charAnimation:phoenixLaughing}
 {name:phoenix}
 A ha ha,{wait:short} yes.{wait:normal}{newLine}
-You can thank Trucy for that.{textboxEnd}
-She needed room to practice{newLine}
+{charAnimation:phoenixSmiling}You can thank Trucy for that.{textboxEnd}
+{charAnimation:phoenixSmiling}She needed room to practice{newLine}
 her magic,{wait:short} and this is how it{newLine}
 ended up.{textboxEnd}
-
+{spriteFade:out}
+{charAnimation:gumshoeSmiling}
+{spriteFade:in}
 {name:gumshoe}
 Aww...{wait:normal} That's nice,{wait:short} pal.{textboxEnd}
-I've been trying to get Mr. Edgeworth{newLine}
-to come to one of her shows.{textboxEnd}
+I've been trying to get Mr.{newLine}
+Edgeworth to come to one{newLine}
+of her shows.{textboxEnd}
+{charAnimation:gumshoeSad}
 But he doesn't wan--{textboxEnd}
-
 {name:edgeworth}
 But my schedule's been tight.{textboxEnd}
 I'm in the running for the{newLine}
 next district Chief Prosecutor.{textboxEnd}
 I can't afford to slack off{newLine}
 and see amateur magic acts.{textboxEnd}
-
+{spriteFade:out}
+{charAnimation:phoenixLaughing}
+{spriteFade:in}
 {name:phoenix}
-I'm telling you,{wait:short} she's no amateur.{textboxEnd}
+I'm telling you,{wait:short} she's{newLine}
+no amateur.{textboxEnd}
+{charAnimation:phoenixNormal}
 I would have her show you some{newLine}
-tricks,{wait:short} but she's asleep right now.{textboxEnd}
+tricks,{wait:short} but she's asleep{newLine}
+right now.{textboxEnd}
+{charAnimation:phoenixNormal}
 Though that plate of spaghetti{newLine}
 should be all you need to{newLine}
 see she's the real deal.{textboxEnd}
-
 {name:edgeworth}
-What plate of--{wait:normal}
+What plate of--{wait:normal}{newLine}
 {sound:shock}O-Oh!{textboxEnd}{textColor:blue}
 (How in the world is that{newLine}
 fork levitating!?){textboxEnd}
 (There must be some sort{newLine}
 of string--){textboxEnd}{textColor:white}
-
+{charAnimation:phoenixSideLook}
 {name:phoenix}
 Nothing's holding it up.{textboxEnd}
+{charAnimation:phoenixNormal}
 I've been trying to figure that{newLine}
 trick out for years and{newLine}
 gotten nowhere.{textboxEnd}
-Maybe you could use that "Logic"{newLine}
-you're so proud of to{newLine}
-figure it out.{textboxEnd}
-
+{charAnimation:phoenixSideLook}
+Maybe you could use that{newLine}
+"Logic" you're so proud of{newLine}
+to figure it out.{textboxEnd}
 {name:edgeworth}{textColor:blue}
 (Did Wright learn to read minds{newLine}
 over the last year!?){textboxEnd}
 {textColor:white}
-
+{charAnimation:phoenixSmiling}
 {name:phoenix}
 Maybe I did,{wait:short} maybe I didn't.{textboxEnd}
-
 {name:edgeworth}{textColor:blue}
 (What!?{wait:normal} How!?{wait:normal}{newLine}
 Am I dreaming!?{wait:normal} Surely not!){textboxEnd}
@@ -214,220 +224,428 @@ The first step is to regain{newLine}
 my composure...){textboxEnd}{textColor:white}
 ...I need to step out for{newLine}
 a moment.{textboxEnd}
-
+{charAnimation:phoenixStraightLook}
 {name:phoenix}
 Eh?{wait:normal} What was that,{wait:short} Edgeworth?{textboxEnd}
-
 {name:edgeworth}{textColor:blue}
-(Ngooh!{wait:normal} Wright is one move ahead{newLine}
-of me,{wait:short} it seems.){textboxEnd}
+(Ngooh!{wait:normal} Wright is one move{newLine}
+ahead of me,{wait:short} it seems.){textboxEnd}
 (Change of plan:{wait:normal}{newLine}
 act like nothing is wrong,{wait:short} and{newLine}
 solve this mystery later.){textboxEnd}{textColor:white}
 Nothing,{wait:short} Wright.{wait:normal} What else have{newLine}
 you been getting up to?{textboxEnd}
 Besides harboring a magician.{textboxEnd}
-
+{charAnimation:phoenixSideLook}
 {name:phoenix}
 Well...{wait:normal} I started working at a{newLine}
 small jazz club as a pianist.{textboxEnd}
+{charAnimation:phoenixNormal}
 I need to start practicing more{newLine}
 songs,{wait:short} though.{wait:normal} I can only{newLine}
 play one.{textboxEnd}
-
 {name:edgeworth}
 Oh,{wait:short} really?{wait:normal} What song?{textboxEnd}
-
+{charAnimation:phoenixSmiling}
 {name:phoenix}
-{textColor:red}Man of the Piano{textColor:white} by William John.{textboxEnd}
-
-{name:edgeworth}
-(I've seen experts struggle with that song. Wright must be quite talented.)
-
+{textColor:red}Man of the Piano{textColor:white} by{newLine}
+William John.{textboxEnd}
+{name:edgeworth}{textColor:blue}
+(I've seen experts struggle with{newLine}
+that song.{wait:normal} Wright must be quite{newLine}
+talented.){textboxEnd}{textColor:white}
+{charAnimation:phoenixNormal}
 {name:phoenix}
-I also decided to take after the Detective and get a jacket.
-I think it fits with the beanie.
-
+I also decided to take after the{newLine}
+Detective and get a jacket.{textboxEnd}
+{charAnimation:phoenixNormal}
+I think it fits with the beanie.{textboxEnd}
+{spriteFade:out}
+{charAnimation:gumshoeAngry}
+{spriteFade:in}
 {name:gumshoe}
-Hey,{wait:short} pal! This coat was handcrafted by Maggey!
-Not something bought at a thrift store!
-
+Hey,{wait:short} pal!{wait:normal} This coat was{newLine}
+handcrafted by Maggey!{wait:normal} Not{newLine}
+bought at a thrift store!{textboxEnd}
+{spriteFade:out}
+{charAnimation:phoenixSideLook}
+{spriteFade:in}
 {name:phoenix}
-A place I'm sure you're familiar with.
-
+A place I'm sure you're{newLine}
+familiar with.{textboxEnd}
+{spriteFade:out}
+{charAnimation:gumshoeLaughing}
+{spriteFade:in}
 {name:gumshoe}
-Not anymore,{wait:short} pal! Mr. Edgeworth's given me plenty of salary raises!
-
+Not anymore,{wait:short} pal!{wait:normal} Mr.{newLine}
+Edgeworth's given me plenty{newLine}
+of salary raises!{textboxEnd}
+{spriteFade:out}
+{charAnimation:phoenixSmiling}
+{spriteFade:in}
 {name:phoenix}
-Really! It only took over ten years.
-
+Really!{wait:normal} It only took over{newLine}
+five years.{textboxEnd}
 {name:edgeworth}
-Again with the jabs,{wait:short} Wright?
-
+Again with the jabs,{wait:short} Wright?{textboxEnd}
+{charAnimation:phoenixNormal}
 {name:phoenix}
-Relax,{wait:short} Edgeworth. You don't need any more wrinkles on your forehead.
-
+Relax,{wait:short} Edgeworth.{wait:normal} You don't need{newLine}
+any more wrinkles on your{newLine}
+forehead.{textboxEnd}
 {name:edgeworth}
-...What's happened to you?
-
+...What's happened to you?{textboxEnd}
+{charAnimation:phoenixNormal}
 {name:phoenix}
-Huh? Where'd that come from?
-
+Huh?{wait:normal}{newLine}
+Where'd that come from?{textboxEnd}
 {name:edgeworth}
-You've changed,{wait:short} Wright.
-I remember when you always looked on the bright side.
-Trying to find the best out of desperate situations.
-But now... you've grown cold. Even your smile lacks its customary warmth.
-
+You've changed,{wait:short} Wright.{textboxEnd}
+I remember when you always{newLine}
+looked on the bright side.{textboxEnd}
+Trying to find the best out{newLine}
+of desperate situations.{textboxEnd}
+But now...{wait:normal} you've grown cold.{wait:normal}{newLine}
+Even your smile lacks its{newLine}
+customary warmth.{textboxEnd}
+{charAnimation:phoenixHeadDownS}
 {name:phoenix}
-...Heh.
-
+...{wait:normal}{charAnimation:phoenixHeadDown}Heh.{textboxEnd}
+{spriteFade:out}
+{charAnimation:gumshoeAngry}
+{spriteFade:in}
 {name:gumshoe}
-What're you laughing at,{wait:short} pal!? Mr. Edgeworth's pouring his heart out to you!
-
+What're you laughing at,{wait:short} pal!?{wait:normal}{newLine}
+Mr. Edgeworth's pouring his{newLine}
+heart out to you!{textboxEnd}
+{spriteFade:out}
+{charAnimation:phoenixSmiling}
+{spriteFade:in}
 {name:phoenix}
-I'm sorry,{wait:short} I'm sorry. Just... That's rich coming from you,{wait:short} Edgeworth.
-
+I'm sorry,{wait:short} I'm sorry.{wait:normal}{newLine}
+Just...{wait:normal} That's rich coming{newLine}
+from you,{wait:short} Edgeworth.{textboxEnd}
 {name:edgeworth}
-!
-
+{sound:ding}!{textboxEnd}
+{charAnimation:phoenixSideLook}
 {name:phoenix}
-I never thought I'd be lectured about attitude by the moodiest person on Earth.
-I guess my life has some surprises left.
-
+I never thought I'd be lectured{newLine}
+about attitude by the moodiest{newLine}
+person on Earth.{textboxEnd}
+{charAnimation:phoenixSideLook}
+I guess my life has some{newLine}
+surprises left.{textboxEnd}
 {name:edgeworth}
-You're acting like a completely different person!
-What could've possibly happened to spark such a change?
-
+You're acting like a completely{newLine}
+different person!{textboxEnd}
+What could've possibly happened{newLine}
+to spark such a change?{textboxEnd}
+{charAnimation:phoenixHeadDown}
 {name:phoenix}
-You really want to know?
-
+You really want to know?{textboxEnd}
+{spriteFade:out}
+{charAnimation:gumshoeNormal}
+{spriteFade:in}
 {name:gumshoe}
-'Course,{wait:short} pal! I want to help you,{wait:short} and I know Mr. Edgeworth does too.
-
+'Course,{wait:short} pal!{wait:normal}{newLine}
+I want to help you,{wait:short} and I{newLine}
+know Mr. Edgeworth does too.{textboxEnd}
+{charAnimation:phoenixNormal}
 {name:phoenix}
-Thanks,{wait:short} Detective Gumshoe.
-The truth is... life happened.
-
+Thanks,{wait:short} Detective Gumshoe.{textboxEnd}
+{charAnimation:phoenixSideLook}
+If you want to know{newLine}
+what happened...{wait:normal}{newLine}
+{charAnimation:phoenixNormal}The truth is...{wait:normal} life happened.{textboxEnd}
+{spriteFade:out}
+{charAnimation:gumshoeThinkingS}
+{spriteFade:in}
+{name:gumshoe}{textSpeed:A}
+...{textboxEnd}
+{textSpeed:5}
+{name:edgeworth}
+...That's it?{textboxEnd}
+{textSpeed:3}
+{spriteFade:out}
+{charAnimation:phoenixStraightLook}
+{spriteFade:in}
+{name:phoenix}
+That's the truth,{wait:short} Edgeworth.{textboxEnd}
+{name:edgeworth}
+Wright,{wait:short} it's been nearly three{newLine}
+years since that trial.{textboxEnd}
+I've known of your{newLine}
+disbarment for ages.{textboxEnd}
+{charAnimation:phoenixStraightLook}
+{name:phoenix}
+Yes,{wait:short} Edgeworth.{wait:normal} You have.{wait:normal}{newLine}
+But that's just it.{textboxEnd}
+{charAnimation:phoenixHeadDown}
+I've spent the past three years{newLine}
+struggling to raise a daughter.{textboxEnd}
+{charAnimation:phoenixSideLook}
+With a little help,{wait:short} I've kept{newLine}
+the lights on and Trucy fed.{wait:normal}{newLine}
+But it hasn't been easy.{textboxEnd}
+{charAnimation:phoenixHeadDown}
+It...{wait:normal} was devastating walking{newLine}
+around town every day,{wait:short} seeing{newLine}
+people who looked up to me.{textboxEnd}
+{charAnimation:phoenixHeadDown}
+Quickly,{wait:short} rumors broke out.{wait:normal} Small things{newLine}
+at first.{textboxEnd}
+Yet there was enough truth in{newLine}
+them that every gaze stung.{textboxEnd}
+{charAnimation:phoenixHeadDown}
+And eventually I...{wait:normal}{newLine}
+I ditched the blue suit,{wait:short} buried that{newLine}
+part of myself inside.{textboxEnd}
+{name:edgeworth}
+...{wait:normal}{newLine}
+{textColor:blue}(I don't know what to say.){textboxEnd}{textColor:white}
+{charAnimation:phoenixStraightLook}
+{name:phoenix}
+Once people stopped recognizing{newLine}
+me,{wait:short} I was free.{textboxEnd}
+{charAnimation:phoenixHeadDown}
+So be it,{wait:short} if that was{newLine}
+the price to cast off the{newLine}
+chains of my past.{textboxEnd}
+{name:edgeworth}
+{textColor:blue}(The chains of his past...){textboxEnd}{textColor:white}
+{charAnimation:phoenixStraightLook}
+{name:phoenix}
+That's the truth.{wait:normal}{newLine}
+I'm doing everything I can,{wait:short}{newLine}
+every night,{wait:short} every day.{textboxEnd}
+{charAnimation:phoenixStraightLook}
+But I'm not "Mr. Wright"{newLine}
+anymore.{wait:normal} Just "Phoenix."{textboxEnd}
+{charAnimation:phoenixStraightLook}
+An ordinary guy,{wait:short} like he{newLine}
+always was...{textboxEnd}
+{charAnimation:phoenixHeadDown}
+And now one who can barely{newLine}
+even protect his own daughter.{textboxEnd}
+{charAnimation:phoenixHeadDown}
+What kind of life am I leading?{textboxEnd}
+{charAnimation:phoenixHeadDown}
+Sure,{wait:short} you know "of" my{newLine}
+disbarment.{wait:normal} But you'll never,{wait:short}{newLine}
+{charAnimation:phoenixGlaring} ever know "about" it.{textboxEnd}
+{name:edgeworth}
+W-Wright,{wait:short} I...{wait:normal}{newLine}
+I had no idea.{textboxEnd}
+{charAnimation:phoenixHeadDown}
+{name:phoenix}
+I'm...{wait:normal} I'm sorry.{textboxEnd}
+{charAnimation:phoenixHeadDown}
+It all came out,{wait:short} all of{newLine}
+a sudden.{wait:normal} Three years of{newLine}
+"If only I could do more."{textboxEnd}
+{charAnimation:phoenixHeadDown}
+Of "If only I could protect{newLine}
+those I love."{textboxEnd}
+{charAnimation:phoenixHeadDown}
+"If only I could be me."{textboxEnd}
+{charAnimation:phoenixSmiling}
+I meant what I said...{wait:normal}{newLine}
+but you have to understand,{wait:short}{newLine}
+I also didn't.{textboxEnd}
+{spriteFade:out}
+{charAnimation:gumshoeSmiling}
+{spriteFade:in}
 {name:gumshoe}
-...
-
+It's alright.{wait:normal} No problem,{wait:short} pal!{textboxEnd}
 {name:edgeworth}
-...That's it?
-
+Very well,{wait:short} Wright.{wait:normal}{newLine}
+I understand.{textboxEnd}
+While it is true that I am{newLine}
+tempted to reprimand you{newLine}
+for disappearing...{textboxEnd}
+I have the impression that I{newLine}
+did something similar,{wait:short} once.{textboxEnd}
+{spriteFade:out}
+{charAnimation:phoenixSideLook}
+{spriteFade:in}
 {name:phoenix}
-That's the truth,{wait:short} Edgeworth.
-
+...So you did, Edgeworth.{wait:normal}{newLine}
+So you did.{textboxEnd}
 {name:edgeworth}
-Wright,{wait:short} it's been nearly three years since that trial.
-I've known of your disbarment for ages.
-
+Indeed.{wait:normal} Life happens,{wait:short} yes,{wait:short} and{newLine}
+so do matters of emotion.{textboxEnd}
+Then,{wait:short} you are forgiven. Now{newLine}
+never do it again,{wait:short} do{newLine}
+you hear me?{textboxEnd}
+{charAnimation:phoenixSmiling}
 {name:phoenix}
-Yes,{wait:short} Edgeworth. You have. But that's just it.
-I've spent the past three years trying to raise a daughter.
-With a little help,{wait:short} I've kept the lights on and Trucy fed. But it hasn't been easy. 
-It was devastating walking around town every day,{wait:short} seeing people who looked up to me.
-Quickly,{wait:short} rumors broke out. Small things at first.
-Yet there was enough truth in them that every gaze stung.
-So I... decided to ditch the blue suit,{wait:short} bury that part of myself inside.
-
-{name:edgeworth}
-...
-
-{name:phoenix}
-Once people stopped recognizing me,{wait:short} I knew my ruse had worked.
-That's the truth. I'm doing everything I can,{wait:short} every night,{wait:short} every day.
-But I'm not "Mr. Wright" anymore. Just "Phoenix."
-An ordinary guy,{wait:short} like he always was...
-And now one who can barely even protect his own daughter.
-What kind of life is that?
-Sure,{wait:short} you know "of" my disbarment. But you'll never,{wait:short} ever know "about" it.
-
-{name:edgeworth}
-W-Wright,{wait:short} I... I had no idea.
-
-{name:phoenix}
-I'm... I'm sorry. It all came out,{wait:short} all of a sudden.
-Three years of "if only I could do more."
-"If only I could protect those I love."
-"If only I could be me."
-I meant what I said... but you have to understand,{wait:short} I also didn't.
-
+Loud and clear.{textboxEnd}
+{spriteFade:out}
+{charAnimation:gumshoeThinking}
+{spriteFade:in}
 {name:gumshoe}
-No problem,{wait:short} pal!
-
-{name:edgeworth}
-Very well,{wait:short} Wright. I understand.
-While it is true that I am tempted to reprimand you for disappearing...
-I have the impression that I did something similar,{wait:short} once.
-
+So what're you going to{newLine}
+do now,{wait:short} pal?{textboxEnd}
+{spriteFade:out}
+{charAnimation:phoenixNormal}
+{spriteFade:in}
 {name:phoenix}
-So you did. So you did.
-
-{name:edgeworth}
-Indeed. Life happens,{wait:short} yes,{wait:short} and so do matters of emotion.
-Then,{wait:short} you are forgiven. Now never do it again,{wait:short} do you hear me?
-
-{name:phoenix}
-Loud and clear,{wait:short} Edgeworth.
-
+Honestly,{wait:short} I don't know.{textboxEnd}
+{charAnimation:phoenixNormal}
+I've been content with letting{newLine}
+the winds of life carry me{newLine}
+wheresoever they choose.{textboxEnd}
+{spriteFade:out}
+{charAnimation:gumshoeAngry}
+{spriteFade:in}
 {name:gumshoe}
-So what're you going to do now,{wait:short} pal?
-
+C'mon,{wait:short} pal!{wait:normal}{newLine}
+You have to do something!{textboxEnd}
+{spriteFade:out}
+{charAnimation:phoenixHeadDown}
+{spriteFade:in}
 {name:phoenix}
-Honestly,{wait:short} I don't know.
-I've been content with letting the winds of life carry me wheresoever they choose.
-
+Believe me,{wait:short} I'm doing all I{newLine}
+can.{wait:normal} But I'm a civilian now.{textboxEnd}
+{charAnimation:phoenixStraightLook}
+I don't have access to any{newLine}
+information related to the case.{textboxEnd}
+{charAnimation:phoenixSideLook}
+...{wait:normal}Well,{wait:short} besides the personal{newLine}
+records I'm keeping.{textboxEnd}
+{charAnimation:phoenixNormal}
+I'm investigating,{wait:short} but as long{newLine}
+as I'm a civilian...{textboxEnd}
+And as long as I'm a{newLine}
+{charAnimation:phoenixSmiling}father,{wait:short} I have{newLine}
+other priorities.{textboxEnd}
+{charAnimation:phoenixSmiling}To see Trucy smile.{textboxEnd}
+{charAnimation:phoenixHeadDown}
+I want to be "Mr. Wright,{wait:short}{newLine}
+attorney{newLine} at law" again.{wait:normal}{newLine}
+I really do.{textboxEnd}
+{charAnimation:phoenixNormal}
+But from deep down to up top,{wait:short} I{newLine}
+{charAnimation:phoenixSmiling}know her smile is more radiant{newLine}
+than any badge.{textboxEnd}
+{charAnimation:phoenixHeadDown}
+And her calling me "Daddy"...{wait:normal}{newLine}
+{charAnimation:phoenixSmiling}is the most fulfilling title{newLine}
+I could ever hope for.{textboxEnd}
+{spriteFade:out}
+{charAnimation:gumshoeSad}
+{spriteFade:in}
 {name:gumshoe}
-C'mon,{wait:short} pal! You have to do something!
-
-{name:phoenix}
-Believe me,{wait:short} I'm doing all I can. But I'm a civilian now.
-I don't have access to any information related to the case.
-...Well,{wait:short} besides the personal records I'm keeping.
-I'm investigating thoroughly,{wait:short} but as long as I'm a civilian...
-...and as long as I'm a father,{wait:short} I have other priorities.
-To see Trucy smile.
-I want to be "Mr. Wright,{wait:short} attorney at law" again. I really do.
-But deep down,{wait:short} I know her smile is more radiant than any badge.
-And her calling me "Daddy"... is the most fulfilling title I could ever hope for.
-
+Aww,{wait:short} y-you're gonna make me{newLine}
+tear up,{wait:short} here!{textboxEnd}
+{charAnimation:gumshoeSideLookS}
+*sniff*{wait:normal} *sob*{wait:normal} *bawl*{textboxEnd}
+{name:edgeworth}
+{textColor:blue}(I understand Wright's{newLine}
+position.){textboxEnd}{textColor:white}
+{charAnimation:gumshoeSadS}Wha--{wait:normal} Detective!{newLine}
+Why are you looking at me{newLine}
+like that!?{textboxEnd}
+Clean up those tears!{wait:normal} You look{newLine}
+like a starved dog.{textboxEnd}
+{charAnimation:gumshoeSad}
 {name:gumshoe}
-Aww,{wait:short} y-you're gonna make me tear up,{wait:short} here!
-*sniff* *sob* *bawl*
-
-{name:edgeworth}
-(Wright does have a point.)
-Wha— Detective! Why are you looking at me like that!? Clean up those tears!
-You look like a starved dog.
-
-{name:gumshoe}
-O-Oh! S-Sorry,{wait:short} s-sir!
-
+O-Oh!{wait:normal} S-Sorry,{wait:short} s-sir!{textboxEnd}
+{charAnimation:gumshoeSideLookS}
+*sniff*{wait:normal} *sniff*{textboxEnd}
+{spriteFade:out}
+{charAnimation:phoenixSmiling}
+{spriteFade:in}
 {name:phoenix}
-The good detective must want you to pull in a favor for me.
-
+The good detective must want{newLine}
+you to pull in a favor for me.{textboxEnd}
 {name:edgeworth}
-I figured as much. You can rest easy,{wait:short} Detective.
-I already planned to reopen the investigation.
-I'm unsure if any new information will surface,{wait:short} but it's worth trying.
-
+I figured as much.{wait:normal} You can rest{newLine}
+easy,{wait:short} Detective.{textboxEnd}
+I already planned to reopen{newLine}
+the investigation.{textboxEnd}
+I'm unsure if any new details{newLine}
+will surface,{wait:short} but it's worth{newLine}
+trying.{textboxEnd}
+{charAnimation:phoenixWideEyed}
 {name:phoenix}
-I— Thanks,{wait:short} Edgeworth.
-
+I--{wait:normal}{newLine}
+{charAnimation:phoenixSmiling}Thanks,{wait:short} Edgeworth.{textboxEnd}
 {name:edgeworth}
-No need to remain so stoic,{wait:short} Wright.
-
+Don't thank me yet, Wright.{wait:normal}{newLine}
+For I've found a fatal flaw{newLine}
+in your reasoning.{textboxEnd}
+{charAnimation:phoenixSideLook}
 {name:phoenix}
-Practice what you preach.
-
-(The two share a laugh.)
-
-(Fade to black.)
-
+Huh?{wait:normal} What reasoning?{textboxEnd}
 {name:edgeworth}
-(Phoenix Wright.
-I'll never know what goes on inside that head of yours.
-But ever since I met you,{wait:short} I've learned that things have a way of working out for the best.
-Hopefully,{wait:short} once this nightmare is over,{wait:short} we'll be able to do battle in court again.)
+You stated that I will "never,{wait:short}{newLine}
+ever" understand what you're{newLine}
+going through.{textboxEnd}
+{charAnimation:phoenixSmiling}
+{name:phoenix}
+Yeah,{wait:short} sorry about that one.{textboxEnd}
+{name:edgeworth}
+It may be so.{wait:normal} However, if you'd{newLine}
+given it an ounce of thought...{textboxEnd}
+...you would see that you{newLine}
+are mistaken on one point:{textboxEnd}
+I too walk under the weight{newLine}
+of my past,{wait:short} chains I have yet{newLine}
+to fully cast off.{textboxEnd}
+{charAnimation:phoenixHeadDown}
+{name:phoenix}
+Yeah,{wait:short} not sure how that one{newLine}
+slipped my mind.{textboxEnd}
+{name:edgeworth}
+Listen here,{wait:short} Wright.{textboxEnd}
+{charAnimation:phoenixNormalS}
+One cannot escape what they{newLine}
+cannot see,{wait:short} and cannot see that{newLine}
+which they do not wish to see.{textboxEnd}
+{charAnimation:phoenixSmiling}
+{name:phoenix}
+...{wait:normal}As blunt and to the point{newLine}
+as ever.{textboxEnd}
+{name:edgeworth}
+As long as you deny that you{newLine}
+are "Mr. Wright",{wait:short} your ghosts{newLine}
+will always haunt you.{textboxEnd}
+{charAnimation:phoenixWideEyed}
+{name:phoenix}
+Emotionally intelligent advice{newLine}
+from the Demon Prosecutor?{textboxEnd}
+{charAnimation:phoenixWideEyed}
+My life really does have{newLine}
+surprises left.{textboxEnd}
+{charAnimation:phoenixSmiling}
+...Thank you,{wait:short} Edgeworth.{wait:normal}{newLine}
+No matter how I may seem, I'll{newLine}
+never let go of myself.{textboxEnd}
+{charAnimation:phoenixHeadDown}I--{wait:normal}{newLine}
+{charAnimation:phoenixStraightLook}I promise.{textboxEnd}
+{name:edgeworth}
+No need to remain so{newLine}
+stoic,{wait:short} Wright.{textboxEnd}
+{charAnimation:phoenixSmiling}
+{name:phoenix}
+Practice what you preach.{textboxEnd}
+{charAnimation:phoenixLaughingS}
+{textbox:hide}
+{wait:3B}
+{screenFadeOut}
+{textbox:show}
+{name:edgeworth}
+{textColor:blue}
+(Phoenix Wright.{newLine}
+I'll never know what goes on{newLine}
+inside that head of yours.){textboxEnd}
+(But ever since I met you,{wait:short} I've{newLine}
+learned that things have a way{newLine}
+of working out for the best.){textboxEnd}
+(Hopefully,{wait:short} once this nightmare{newLine}
+is over...){textboxEnd}
+(...We'll be able to do battle{newLine}
+in court, once again.){textboxEnd}{textColor:white}
+{reset}
 {sectionEnd}

@@ -1,6 +1,3 @@
-{sectionStart}{initialize}{screenFadeIn:waa}
-(Klavier Gavin...{wait:normal} lead singer for{newLine}
-the megahit band,{wait:short}{newLine}
-the Gavinners.){textboxEnd}
-(Hope you're ready, rockstar.){textboxEnd}{screenFadeOut}
-{reset}{sectionEnd}
+Your overconfidence played in{newLine}
+my favor,{wait:short} Prosecutor{newLine}
+Gavin.

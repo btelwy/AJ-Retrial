@@ -4,7 +4,7 @@
 #include <windows.h>
 #include "aj-text2code.h"
 
-boolean includeHeader = TRUE; //determines whether to do the extra step of adding the header
+boolean includeHeader = FALSE; //determines whether to do the extra step of adding the header
 int sectionCount = 0; //global variable to count number of sections
 int sectionOffsets[500]; //global array to hold offsets of sections, of arbitrary size
 int offsetIndex = 0; //index to keep track of position in array
@@ -13,7 +13,7 @@ int main() {
     FILE *fptrRead;
     FILE *fptrWrite;
 
-    fptrRead = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\chapter_select.txt","r"); 
+    fptrRead = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\script.txt","r");
     //open script.txt for reading from
 
     int bufferSize = 100; //default value
@@ -1629,7 +1629,7 @@ void flash(char parameter[], FILE* pointer)
         {
             writeBuffer = 0x000A;
             fwrite(&writeBuffer, 2, 1, pointer);
-            writeBuffer = 0x01030103;
+            writeBuffer = 0x01020102;
             fwrite(&writeBuffer, 4, 1, pointer);
         }
 
@@ -1761,6 +1761,133 @@ void flash(char parameter[], FILE* pointer)
             fwrite(&writeBuffer, 4, 1, pointer);
         }
 
+        else if (strcmp(parameter, "gumshoeNormalS") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01EB01EB;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "gumshoeNormal") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01EB01EC;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "gumshoeSadS") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01F701F7;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "gumshoeSad") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01F701F8;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "gumshoeAngryS") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01F501F5;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "gumshoeAngry") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01F501F6;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "gumshoeSmilingS") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01F901F9;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "gumshoeSmiling") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01F901FA;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "gumshoeThinkingS") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01ED01ED;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "gumshoeThinking") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01ED01EE;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "gumshoeLaughingS") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01EF01EF;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "gumshoeLaughing") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01EF01F0;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "gumshoeConfidentS") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01F101F1;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "gumshoeConfident") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01F101F2;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "gumshoeSideLookS") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01F301F3;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "gumshoeSideLook") == 0) //not sure this exists
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01F301F4;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
     }
 
 //------------------------------------------------------------------------------------------------
@@ -2641,9 +2768,21 @@ void background(char parameter[], FILE* pointer)
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
-    else if (strcmp(parameter, "lanaScene") == 0) //has a visual glitch?
+    else if (strcmp(parameter, "borschtBowlClub") == 0) //has a visual glitch?
+    {
+        writeBuffer = 0x0114;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "lanaScene") == 0)
     {
         writeBuffer = 0x012A;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "edgeworthOffice") == 0)
+    {
+        writeBuffer = 0x012B;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
