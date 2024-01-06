@@ -29,8 +29,7 @@ void musicFade(char[], FILE*);
 void voiceSFX(char[], FILE*);
 void background(char[], FILE*);
 void setFlag(char[], FILE*);
-void screenFadeIn(char[], FILE*);
-void screenFadeOut(FILE*);
+void screenFade(char[], FILE*);
 void jump(char[], FILE*);
 
 #endif //end of include guard

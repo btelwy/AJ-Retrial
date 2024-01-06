@@ -4,7 +4,7 @@
 #include <windows.h>
 #include "aj-text2code.h"
 
-boolean includeHeader = FALSE; //determines whether to do the extra step of adding the header
+boolean includeHeader = TRUE; //determines whether to do the extra step of adding the header
 int sectionCount = 0; //global variable to count number of sections
 int sectionOffsets[500]; //global array to hold offsets of sections, of arbitrary size
 int offsetIndex = 0; //index to keep track of position in array
@@ -13,7 +13,7 @@ int main() {
     FILE *fptrRead;
     FILE *fptrWrite;
 
-    fptrRead = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\script.txt","r");
+    fptrRead = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\GreatRevival.txt","r");
     //open script.txt for reading from
 
     int bufferSize = 100; //default value
@@ -709,11 +709,8 @@ void convertLine(char line[], int arrLength, FILE* pointer)
         else if (strcmp(shortCommand, "setFlag") == 0)
             setFlag(param, pointer);
 
-        else if (strcmp(shortCommand, "screenFadeIn") == 0)
-            screenFadeIn(param, pointer);
-
-        else if (strcmp(shortCommand, "screenFadeOut") == 0)
-            screenFadeOut(pointer);
+        else if (strcmp(shortCommand, "screenFade") == 0)
+            screenFade(param, pointer);
 
         else if (strcmp(shortCommand, "jump") == 0)
             jump(param, pointer);
@@ -1957,7 +1954,7 @@ void courtRecordButton(char parameter[], FILE* pointer)
 }
 
 
-void screenFadeIn(char parameter[], FILE* pointer)
+void screenFade(char parameter[], FILE* pointer)
 {
     //standard form:
     //12 00 01 02 00 00 1F 00 0C 00 01 00 0C 00 28 00
@@ -1992,37 +1989,6 @@ void screenFadeIn(char parameter[], FILE* pointer)
     fwrite(&writeBuffer, 4, 1, pointer);
 
     writeBuffer = 0x003C000C;
-    fwrite(&writeBuffer, 4, 1, pointer);
-}
-
-
-void screenFadeOut(FILE* pointer)
-{
-    //standard form:
-    //12 00 04 02 01 00 1F 00 0C 00 19 00
-    //set background to black using 1B command: 1B 00 FF 0F 
-    //12 00 01 01 01 00 1F 00 0C 00 07 00
-
-    long writeBuffer = 0x02040012;
-    fwrite(&writeBuffer, 4, 1, pointer);
-
-    writeBuffer = 0x001F0001;
-    fwrite(&writeBuffer, 4, 1, pointer);
-
-    writeBuffer = 0x0001900C;
-    fwrite(&writeBuffer, 4, 1, pointer);
-
-    //now change the background
-    background("black", pointer);
-
-    //now write the rest of the flashes
-    writeBuffer = 0x01010012;
-    fwrite(&writeBuffer, 4, 1, pointer);
-
-    writeBuffer = 0x001F0001;
-    fwrite(&writeBuffer, 4, 1, pointer);
-
-    writeBuffer = 0x0007000C;
     fwrite(&writeBuffer, 4, 1, pointer);
 }
 
@@ -2541,6 +2507,18 @@ void music(char parameter[], FILE* pointer)
     else if (strcmp(parameter, "detentionCenter2001") == 0) //another name for darkness
     {
         writeBuffer = 0x0039;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "greatRevival") == 0) //another name for darkness
+    {
+        writeBuffer = 0x005D;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "turnaboutSisters") == 0) //another name for darkness
+    {
+        writeBuffer = 0x005E;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
