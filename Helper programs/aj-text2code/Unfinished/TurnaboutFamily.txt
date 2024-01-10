@@ -1,0 +1,361 @@
+{sectionStart}{initialize}
+{screenFade:borschtBowlClub}
+{centerText:on}
+{textbox:show}
+{textSpeed:A}{textColor:green}{typewriter}{wait:1E}
+May 4, 7:11 AM{newLine}
+Wright & Co. Law Offices{textboxEnd}
+{centerText:off}
+{textSpeed:3}{textColor:blue}
+{name:maya}
+(Oh,{wait:short} man. What a mess. OK,{wait:short} Maya. Take a breath. It won't help Nick if you're flustered.)
+(Here we are. The Wright & Co. Law Offices.)
+(What's left of them,{wait:short} anyway. Open the door,{wait:short} and...)
+{sound:door}
+(It's just like I remember. There's just more of a mess. Cards,{wait:short} a hat,{wait:short} a... hula hoop?)
+(Wait.)
+(Did I read that sign right? Wright... Talent Agency?)
+
+{name:???Male}
+Hey!
+
+{name:maya}
+...Hi. (Do I know this guy? Was he one of Nick's clients?)
+
+{name:???Male}
+I'm glad you're here. It's good to see you.
+
+{name:maya}(Maybe a distant family member? A cousin I never met? Unfair! You got to meet Pearly!)
+(And Aunt Morgan! And Sis! Even Dahlia and Iris!)
+(Ooh,{wait:short} maybe he's a long lost twin brother he only just now reconnected with,{wait:short} like the Gunmetal Samurai in Episode 936...)
+
+{name:???Male}
+You alright? You seem kind of out of it.
+
+{name:maya}
+Hm? Oh,{wait:short} I'm fine! I'm just wondering,{wait:short} where's Nick... I mean,{wait:short} where's Phoenix?
+Mr. Wright?
+I'm an associate of his.
+(Smooth...)
+
+{name:???Male}
+...Oh. It's the hoodie,{wait:short} isn't it?
+That's what I get for trying something new.
+
+{name:maya}
+Riiight.
+(I think this guy might be a little nuts...)
+
+{name:???Male}
+Maya,{wait:short} it's me.
+Here,{wait:short} let me take the hat off,{wait:short} too...
+{spriteFade:out}
+{spriteFade:in}
+
+{name:maya}
+Ah.{textboxEnd}
+...Ahhhhhh! Nick! You can't trick me like that!
+
+
+{name:phoenix}
+Calm down,{wait:short} calm down. I wasn't trying to trick you.
+
+{name:maya}
+(Spike-faced liar! Speaking of spiky faces,{wait:short} actually... oof.)
+When was the last time you shaved?
+
+{name:phoenix}
+The last time I had shaving cream,{wait:short} so... the 19th,{wait:short} funnily enough. 
+Had to look good for the big day.
+
+{name:maya}
+(I hope he's doing alright... he seems to be taking it pretty bad.
+Which makes sense,{wait:short} but still.)
+(He's gotten a lot more sarcastic. He's got bags under his eyes,{wait:short} too. Is he sleeping?)
+
+{name:phoenix}
+Oh,{wait:short} hold on. There's somebody I want you to meet.
+Trucy? It's alright. You can come out!
+
+{name:maya}
+(Hm? Trucy? Please be a cat,{wait:short} please be a cat,{wait:short} please be a cat...)
+
+
+(placeholder sprite until angry baby is real)
+
+{name:phoenix}
+Trucy,{wait:short} this is your Aunt Maya. Maya,{wait:short} this is my daughter,{wait:short} Trucy.
+
+{name:maya}
+W-what?! DAUGHTER?! You never told me you had a daughter! 
+(She looks nothing like him,{wait:short} too! Their eyes are completely different! They have a different hair color,{wait:short} too!)
+(Why have I never met her mom? Who IS her mom?! That's an important question!)
+(She looks older than I thought she would,{wait:short} too...)
+If you don't mind me asking... how old is she?
+
+{name:phoenix}
+She turned eight this year.{textboxEnd}
+It is eight,{wait:short} right...?
+
+{name:maya}
+(Nick! How do you forget your own kid's age?!)
+Wait. If she's eight,{wait:short} and you're...
+(...Please don't tell me this means what I think it means.)
+
+{name:phoenix}
+It's a long story,{wait:short} and not in the way you think. 
+Come on,{wait:short} Trucy. Introduce yourself.
+
+{name:trucy}
+...
+
+{name:maya}
+(She just inched a little bit behind Nick.)
+It's no problem! I'll go first.
+Hi,{wait:short} Trucy! It's nice to meet you. My name is Maya!
+Erm... I like your clothes! That's a really cool cape. Where'd you get it?
+
+{name:trucy}
+...
+
+{name:maya}
+(She's just staring at me... it's a little menacing,{wait:short} honestly.)
+Uh... how do you like living with your dad?
+(She moved a little more behind Nick. Talk about being shy!)
+
+
+{name:maya}
+She doesn't seem to be too excited to meet me.
+
+{name:phoenix}
+It's no problem. Knowing you,{wait:short} you'll find a way to open her up.
+Seriously,{wait:short} though. It's really good to see you,{wait:short} Maya.
+
+{name:maya}
+It's good to see you too. I heard about your badge. What they're saying on TV... it's not true,{wait:short} right?
+I mean,{wait:short} forged evidence? No way! Not the Nick I know!
+What happened?
+
+{name:phoenix}
+It's a long story. To start off,{wait:short} no. I didn't forge anything.
+I don't know who made it. I don't even know why the page existed.
+
+{name:maya}
+Hm...
+You don't think you were set up,{wait:short} do you? That's the only thing I can think of!
+
+{name:phoenix}
+I don't know what to think. Yet.
+I've had half a month to think about this. I've got theories,{wait:short} but nothing concrete.
+...You know,{wait:short} I have a question.
+
+{name:maya}
+Huh?
+
+{name:phoenix}
+Well,{wait:short} it's bugged me for years. Is spirit channeling technically magic?
+
+{name:maya}
+I... guess so? It's supernatural. That technically makes me a magician.
+
+{name:phoenix}
+Hear that,{wait:short} Trucy? Aunt Maya's a magician,{wait:short} too!
+
+{name:trucy}
+...
+
+{name:trucy}
+Are you really?!
+
+{name:maya}
+Something like that,{wait:short} yeah! It's a bit more complicated than sleight of hand,{wait:short} though...
+(Hah! That got her to smile!)
+
+
+{name:trucy}
+Sleight of hand. Well,{wait:short} I never!
+I'll have you know that magic is way more than that!
+Now... watch and be amazed by the great Trucy Wright!
+
+
+{name:maya}
+Ooh! Amaze me with what?
+
+
+{name:trucy}
+Well,{wait:short} for my first trick...
+
+
+{name:maya
+}Eeeeeeeeek! (W-What is THAT?!)
+(How was she even hiding it?!)
+
+{name:trucy}
+Introducing the Incredible Mr. Hat! Say hi,{wait:short} Mr. Hat!
+
+{name:mrhat}
+Hi,{wait:short} Mr. Hat!
+
+{name:maya}
+I-It talks?! I mean... what a lovely voice you've got,{wait:short} Mr. Hat!
+
+{name:mrhat}
+Yours isn't too bad either,{wait:short} dahling!
+
+{name:maya}
+Hee-hee! Cool!
+What can he do? Sing? Dance?
+
+{name:mrhat}
+Dancing,{wait:short} no. Singing,{wait:short} maybe... but I can definitely do this!
+
+{name:maya}
+Huh? Ah! My necklace!
+...Now it's BIRDS?! How?! How do you do that?!
+
+
+{name:trucy}
+Well,{wait:short} a magician never reveals her secrets. Right,{wait:short} Mr. Hat?
+
+{name:mrhat}
+Yessir,{wait:short} Daddy-o!
+
+{name:maya}
+(...Can I at least have my necklace back?)
+
+{name:trucy}
+Here you are.
+
+{name:trucy}
+What kind of magic do you do,{wait:short} Aunt Maya?
+
+{name:maya}
+Oh! It's,{wait:short} uh,{wait:short} complicated. (How do I even begin to explain spirit channeling to an 8 year old...?)
+(Oh,{wait:short} that's an idea.)
+Hey,{wait:short} Trucy! Do you know what the Steel Samurai is?
+
+{name:trucy}
+The old cartoon?
+
+{name:maya}
+Old? (Is this what it feels like? I'm so sorry,{wait:short} Nick.)
+Uh,{wait:short} yeah. You know in that one episode,{wait:short} the Ghostly Guardian shows up and he can summon the ghosts of people?
+
+{name:trucy}
+Nope!
+
+{name:maya}
+...Never mind.
+(I'm gonna culture this kid someday. Mark my words!)
+I'll show you my magic another time.
+
+{name:trucy}
+Yay! I can't wait!
+
+{name:phoenix}
+Trucy,{wait:short} could you give me and Aunt Maya some privacy?
+
+{name:trucy}
+Aww. OK.
+
+(fade away)
+
+
+There's something special about her. I've only known her for a month,{wait:short} but it feels like it's been years.
+
+{name:maya}
+I can tell! You're really good with kids,{wait:short} Nick.
+
+
+{name:phoenix}
+Maya...
+
+{name:maya}
+What is it?
+
+{name:phoenix}
+If there's something deeper here...
+If I ever tell you that I think I might be in danger... Promise me that you'll keep Trucy safe.
+Please,{wait:short} just keep an eye on her.
+
+{name:maya}
+(Now I get it. The look in those eyes... I've seen that look before.)
+(Right after Sis... the Edgeworth case... Engarde and Mom,{wait:short} too...)
+(He's tired.)
+!
+This doesn't mean...
+(Four years ago...)
+
+{name:phoenix}
+I hope not. I don't think so,{wait:short} but I'd rather be prepared.
+If people feel cornered,{wait:short} they'll strike back. I might have to risk that. 
+I know I'm just being paranoid,{wait:short} but I feel like I have to be.
+Even if this is just a mistake or something. Heck,{wait:short} it might just be someone really petty.
+It's not a high chance it comes to this,{wait:short} but if it does...
+
+...Well,{wait:short} I'd rather be prepared than unprepared.
+
+{name:maya}
+Don't worry,{wait:short} Nick. I promise.
+(I can't fail you again. I won't.)
+
+{name:phoenix}
+Thank you.
+
+{name:maya}
+Who else have you talked to?
+
+{name:phoenix}
+Just you,{wait:short} Larry,{wait:short} and Edgeworth.
+
+{name:maya}
+Hm. I know what'll cheer you up! You need to talk more.
+Be more gregarious,{wait:short} Nick!
+
+{name:phoenix}
+I'm plenty gregarious.
+
+{name:maya}
+Pfft,{wait:short} as if! I think we need somebody to... whip you into shape.
+
+
+You mean like a speech therapist?
+
+{name:maya}
+No. That's just... foolish.
+
+
+{name:phoenix}
+Maya.
+
+{name:maya}Don't worry about it! I'm sure Franziska can take a break for a day.
+
+{name:phoenix}
+You know what? Sure.
+
+{name:maya}
+Wait,{wait:short} really?
+
+{name:phoenix}
+But only if she gets to meet Trucy.
+
+{name:maya}
+Deal! (I've GOTTA see this!)
+
+
+{name:trucy}
+If who gets to meet me?
+
+
+That's a surprise. You'll see later.
+
+
+{name:trucy}
+OK!
+
+(fade to black)
+
+(It was good to see Nick smiling and laughing again. He was obviously taking it hard,{wait:normal} but with Trucy...)
+(...Well, I should've known it was all gonna turn out alright.)
+(And me? I'm gonna be the best aunt ever! Speaking of which,{wait:short} I've already missed a few birthdays...)
+(Hm. What would Trucy want from abroad...?)

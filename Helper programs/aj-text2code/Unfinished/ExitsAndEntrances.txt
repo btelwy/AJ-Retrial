@@ -1,0 +1,546 @@
+{sectionStart}{initialize}
+{screenFade:courtLobby}
+{centerText:on}
+{textbox:show}
+{textSpeed:A}{textColor:green}{typewriter}{wait:1E}
+October 8,{wait:short} 1:32 PM{newLine}
+District Court{newLine}
+Defendant Lobby No. 6{textboxEnd}
+{centerText:off}
+{textSpeed:3}{textColor:blue}
+{name:apollo}
+(I can't believe it...{wait:normal}{newLine}
+Vera,{wait:short} poisoned right in front{newLine}
+of our eyes...!){textboxEnd}
+(And the "Devil"...{wait:normal} if only{newLine}
+we knew who they were.){textboxEnd}
+(The medics diagnosed her with{newLine}
+acute poisoning and rushed{newLine}
+her away.){textboxEnd}
+(There was nothing I could{newLine}
+do but watch from the{newLine}
+sidelines.){textboxEnd}
+(Everything is deathly still,{wait:short}{newLine}
+making the panic all the{newLine}
+louder.){textboxEnd}
+(And Trucy...{wait:normal} she's just a{newLine}
+little kid,{wait:short} after all,{wait:short}{newLine}
+I guess.){textboxEnd}
+(She's wrapped around me so{newLine}
+tightly my ribs are about{newLine}
+to snap.){textboxEnd}{textColor:white}
+Trucy...{wait:normal} if it's okay,{wait:short} could you{newLine}
+let go just a little bit?{textboxEnd}
+Otherwise I'm going to wake{newLine}
+up tomorrow all black and blue.{textboxEnd}
+
+{name:trucy}
+{sound:shock}Ah!{textboxEnd}
+
+{name:apollo}
+{textColor:blue}
+(My suit is damp where her{newLine}
+face was pressed against it...){textboxEnd}{textColor:white}
+
+{name:trucy}
+...{textboxEnd}
+...{textboxEnd}
+
+{name:apollo}
+Vera's going to be just fine.{wait:normal}{newLine}
+I--{textboxEnd}{textColor:blue}
+(...{wait:normal}If I lie,{wait:short} she could tell.){textboxEnd}{textColor:white}
+I...{wait:normal} think.{textboxEnd}
+
+{name:trucy}
+...{wait:normal}
+
+{name:apollo}
+{textColor:blue}
+(Score one for you,{wait:short} Justice.{wait:normal}{newLine}
+Look how well you{newLine}
+comforted her.){textboxEnd}{textColor:white}
+
+{name:trucy}
+...{textboxEnd}
+{sound:ding}Please don't worry about me,{wait:short}{newLine}
+Apollo.{wait:normal} I'm OK!{textboxEnd}
+
+{textColor:blue}
+{name:apollo}
+(Nervous tics from head to{newLine}
+toe.{wait:normal} But she's trying so{newLine}
+hard...){textboxEnd}
+(...{wait:normal}For her own sake,{wait:short} and for{newLine}
+mine,{wait:short} too.){textboxEnd}
+(It makes me feel even more{newLine}
+powerless,{wait:short} but it's sweet.){textboxEnd}
+(If...{wait:normal} if I break out{newLine}
+sobbing,{wait:short} it's this{newLine}
+15 year-old's fault.){textboxEnd}
+{textColor:white}
+Alright,{wait:short} Trucy.{textboxEnd}
+But *sniff* don't push yourself{newLine}
+too hard,{wait:short} got it?{textboxEnd}
+
+{name:trucy}
+{sound:ding}OK!{textboxEnd}
+Now then,{wait:short} Apollo!{wait:normal}{newLine}
+We need to do something!{wait:normal}{newLine}
+For Vera!{textboxEnd}
+Case this joint!{wait:normal} Inspect every{newLine}
+suspicious-looking nook and{newLine}
+cranny!{wait:normal} Whatever it takes!{textboxEnd}
+
+{name:apollo}
+As much as I agree with{newLine}
+your enthusiasm for once...{wait:normal}{newLine}
+we can't.{textboxEnd}
+The courtroom is taped off{newLine}
+as the scene of the{newLine}
+poisoning.{textboxEnd}
+
+{name:trucy}
+So what,{wait:short} we're going to sit{newLine}
+here and idle until the{newLine}
+investigation is done?{textboxEnd}
+At this very moment,{wait:short} Vera{newLine}
+is fighting for her life.{textboxEnd}
+In situations like these,{wait:short}{newLine}
+rules are meant to be{newLine}
+broken!{textboxEnd}
+
+{name:apollo}
+{textColor:blue}
+(Another parenting gem from{newLine}
+Mr. Wright,{wait:short} I wouldn't{newLine}
+be shocked.){textboxEnd}
+{textColor:white}
+
+{name:trucy}
+Here's the plan:{wait:normal} we borrow{newLine}
+a badge from--{wait:3B}{textboxEndForced}
+
+{name:apollo}
+We are not {wait:normal}"borrowing"{wait:normal}{newLine}
+any badge from anyone.{textboxEnd}
+Look,{wait:short} I understand how you{newLine}
+feel,{wait:short} but getting arrested{newLine}
+isn't going to--{wait:3B}{textboxEndForced}
+
+(Apollo's phone rings)
+
+{name:apollo}
+...Hello?
+
+{name:???Male}
+How mundane a greeting in return for the munificent grace I impart unto you!
+
+{name:apollo}
+(...This guy. Now?)
+(Look,{wait:short} if you tell me magic is involved in this case too,{wait:short} I'm disappearing.)
+
+{name:valant}
+For it is I,{wait:short} Valant,{wait:short} teleporting his voice directly from his own lips to thine own ears!
+Free of charge.
+
+{name:apollo}
+(So you're going to pay my phone bill?)
+
+{name:trucy}
+Who is it?
+
+{name:apollo}
+Mr. Valant.
+
+{name:trucy}
+Whaaaaat? Put it on speaker!
+
+{name:apollo}
+Alright.
+
+(beep sound)
+
+{name:trucy}
+Uncle Valant,{wait:short} it's me! Trucy!
+
+{name:valant}
+Miss Trucy! Of all people,{wait:short} you are the Trucy I wished not to miss.
+
+{name:trucy}
+Yippee!
+
+{name:apollo}
+(From crying to jumping for joy. And you just saw him yesterday!)
+(No way this isn't an act.)
+So,{wait:short} Mr. Valant,{wait:short} why are you calling? You see,{wait:short} it's really not the best time...
+
+{name:valant}
+The putrid poisoning of the forger of fakes,{wait:short} that girl gilded with guilt?
+Of course,{wait:short} this all Valant knows,{wait:short} for Valant knows all.
+I watched the news.
+
+{name:apollo}
+(Very magical,{wait:short} Mr. Valant.)
+
+{name:valant}
+...I'm truly sorry to hear of it.
+
+{name:apollo}
+(I wasn't expecting such sincerity. This is new.)
+
+{name:trucy}
+Yes,{wait:short} Uncle Valant,{wait:short} it's terrible! She collapsed right in front of us!
+
+{name:valant}
+Indeed,{wait:short} 'tis tragic.
+Now,{wait:short} as for why I ring...
+it is that I might ring in an era of magic reborn,{wait:short} wrought by Valant's own hands.
+To witness this new stage,{wait:short} I ask that you ascend to the stage,{wait:short} in the Sunshine Coliseum.
+
+{name:trucy}
+A new era of magic? And we get to see it? I can't wait!
+
+{name:valant}
+...
+
+{name:apollo}
+Mr. Valant,{wait:short} how do we get inside? Not just any average Joe can prance in.
+
+{name:valant}
+Worry your weary old heart not,{wait:short} unravel the knot beneath your navel.
+I told the staff about you.
+
+{name:apollo}
+O-Old!?
+
+{name:trucy}
+We'll be there as soon as we can!
+And by the time we get back,{wait:short} we'll be able to investigate the courtroom.
+
+{name:apollo}
+Er,{wait:short} Mr. Valant,{wait:short} may I ask one question?
+
+{name:valant}
+You already have.
+
+{name:apollo}
+(I'll take that as a yes.)
+...How did you get my phone number?
+
+{name:valant}
+...
+...
+...A magician never reveals his secrets.
+
+{name:trucy}
+You're incredible,{wait:short} Uncle Valant!
+
+{name:apollo}
+(...Great. Now I need to redo all my passwords.)
+
+(fade to black,{wait:short} then fade in inside the Coliseum hallway)
+
+
+{name:???Male}
+Well met,{wait:short} and welcome!
+
+{name:trucy}
+Uncle Valant!
+
+(Valant appears)
+
+{name:apollo}
+Weren't we going up to the stage?
+
+{name:valant}
+Is it not a miraculous maneuver of magic to exchange expectation for the exhilerating and exotic?
+The door was locked.
+
+{name:trucy}
+I can open the door for you,{wait:short} Uncle Valant.
+
+{name:apollo}
+(Reminder: never trust Trucy around locks.)
+
+{name:valant}
+It is unnecessary.
+
+{name:trucy}
+So,{wait:short} what's this new era of magic you were talking about,{wait:short} Uncle Valant?
+
+{name:valant}
+...
+
+{name:apollo}
+(He looks... sad,{wait:short} somehow.)
+
+{name:valant}
+In this hallway where we after seven years met,{wait:short} Miss Trucy...
+I shall haul away my hallowed hoard and grant it... to you.
+
+{name:apollo}
+You're giving her money? Because she pays my salary,{wait:short} so I'd really appreciate that.
+
+{name:trucy}
+Polly,{wait:short} shush!
+
+{name:valant}
+I bequeath nothing so trivial,{wait:short} nothing so mean.
+But that I entrust my future to you,{wait:short} Miss Trucy,{wait:short} I mean.
+
+{name:trucy}
+...What?
+
+{name:valant}
+Recall my show happening in two days.
+Now forget it. For I have canceled it.
+
+{name:trucy}
+...
+
+{name:apollo}
+W-What? Why?
+(She looks like she's in shock...)
+
+{name:valant}
+Because I'm turning myself in to the police.
+
+{name:apollo}
+...
+
+{name:trucy}
+...
+
+{name:valant}
+Long ago,{wait:short} I committed a crime more treacherous than murder.
+Yes... Miss Trucy,{wait:short} I am the reason your father needed to vanish.
+
+{name:trucy}
+That trial back then... you...?
+
+{name:apollo}
+Trial? What trial?
+
+{name:trucy}
+...I know you're kidding,{wait:short} Uncle Valant.
+
+{name:valant}
+Sadly,{wait:short} Miss Trucy,{wait:short} it is true,{wait:short} you must see.
+
+{name:trucy}
+Without you,{wait:short} Daddy would still be here...?
+
+{name:valant}
+I can't deny it. I don't deserve to apologize,{wait:short} but I apologize nevertheless.
+
+{name:trucy}
+...
+
+{name:valant}
+I trust you will hear the story in due course.
+So,{wait:short} of course,{wait:short} I must do what is due:
+Repent,{wait:short} however I may -- vanish into prison,{wait:short} until a future day.
+The new era of magic I envision... is a stage with me nowhere in sight.
+With you,{wait:short} dazzling on-site.
+...You're the next Gramarye,{wait:short} after all!
+
+{name:trucy}
+...!
+...
+...
+
+{name:apollo}
+(This jerk...!)
+Look,{wait:short} Mr. Valant. I have no idea what you're talking about.
+This trial,{wait:short} or your crime,{wait:short} or your history,{wait:short} or whatever.
+If you commit a crime,{wait:short} you need to turn yourself in.
+That's just how it works.
+But dropping all of this on Trucy out of the blue?
+I don't care if you're some accomplished,{wait:short} hotshot magician.
+Look at her! She's frozen!
+
+{name:valant}
+My business is not with you.
+I merely called you as a means to contact Miss Trucy.
+
+{name:apollo}
+So what? I'm here now,{wait:short} and you have to deal with it.
+All the world's a stage,{wait:short} but not your stage. You're a player too!
+Refusing to talk about your illusion during a murder investigation...
+Trying to open Trucy's envelope...
+Doing whatever you're doing right now!
+Try using that magic of yours to think about somebody else for once!
+
+{name:valant}
+...
+
+{name:apollo}
+(I... I just went off on him. I almost can't believe it.)
+(But when I saw Trucy like that,{wait:short} I acted without thinking.)
+
+{name:trucy}
+...Thank you,{wait:short} Apollo. I appreciate it,{wait:short} really.
+
+{name:valant}
+Miss Trucy?
+
+{name:trucy}
+...
+...You're one of Daddy's best friends,{wait:short} Uncle Valant.
+
+{name:valant}
+...Indeed.
+
+{name:trucy}
+And you're an incredible magician! I always wanted to be your assistant.
+So I trusted you.
+
+{name:valant}
+!
+
+{name:trucy}
+But it seems like... that trust was your most powerful illusion of all.
+...
+
+{name:valant}
+Once more,{wait:short} I apologize,{wait:short} as prodigiously and profusely as I can.
+I didn't mean to upset you,{wait:short} Miss Trucy.
+I only wished to secure the future of our treasured Troupe Gramarye.
+
+{name:trucy}
+...
+
+{name:apollo}
+Do you realize what you're doing,{wait:short} using her to assuage your own guilt?
+Passing your legacy onto her to convince yourself you're not a failure?
+You're just going to decide her life for her,{wait:short} just like that!?
+
+{name:trucy}
+Apollo...
+
+{name:valant}
+As I said,{wait:short} and as I reluctantly repeat:
+"I only wished to secure the future of our treasured Troupe Gramarye."
+Deciding her life,{wait:short} I have done nothing of the sort.
+
+{name:trucy}
+So... you never trusted me,{wait:short} did you?
+
+{name:valant}
+What do you mean,{wait:short} Miss Trucy?
+
+{name:trucy}
+If you had,{wait:short} you would've already known...
+I would never let Troupe Gramarye fade away.
+Troupe Gramarye is my family. My first home.
+It's me.
+
+{name:valant}
+I only thought to bid you farewell on your journey before turning myself in.
+Nor,{wait:short} Miss Trucy,{wait:short} did I aim to afflict you with anathema through my absence.
+For once I return,{wait:short} I will return to magic.
+My status as a Grand Magician doubtlessly diminished,{wait:short} my reputation ruined...
+I will return to the stage. Of this,{wait:short} you can be certain.
+Perhaps,{wait:short} fickle Fate's tables turned,{wait:short} I will become your assistant!
+Ah ha ha ha ha ha!
+
+{name:apollo}
+(Can I deck him? Can I call Clay over so we can both deck him?)
+
+{name:trucy}
+...Uncle Valant. You don't get it.
+All the world wanted... all we wanted... was you!
+Your magic. Your wonder. The smiles you brought to our faces.
+Not your status. Not your fame. That's not what Troupe Gramarye is about.
+
+{name:apollo}
+(She's quiet,{wait:short} almost whispering,{wait:short} but her voice commands attention.)
+
+{name:trucy}
+And now you tell me that you're the reason Daddy disappeared...
+And the reason my other Daddy has suffered ever since that trial.
+That you're turning yourself in for who knows who long.
+...
+I'm done.
+I'm done!
+I'm done! I'm done with people disappearing on me!
+Vera... D-Daddy... You. I'm done.
+You hear me? I'm done!
+
+(fade to black,{wait:short} then fade back in to represent a minute passing)
+
+
+Valant (now sad):
+I am Valant Gramarye,{wait:short} he who suffers no mystery not grasped tightly twixt his fingers.
+Yet when I arrived to meet you on the stage,{wait:short} for my final performance...
+The door was locked.
+The door should've been open! It was supposed to be open!
+The staff told me it'd be open!
+And nothing -- nothing! -- in my Grand Grimoire of magical mastery could open it.
+
+{name:apollo}
+(He's behaving like a completely different person.)
+
+{name:valant}
+Mr. Justice.
+
+{name:apollo}
+(Huh? He knows my name?)
+
+{name:valant}
+You are correct. I realize now more than ever.
+I am a failure,{wait:short} verily void of virtuosity.
+
+{name:apollo}
+...That's not true,{wait:short} Mr. Valant. You're a jerk,{wait:short} but that's just not true.
+I've seen your magic. It's incredible.
+
+{name:valant}
+Ah ha ha ha ha.
+I'd expect nothing less from Mr. Wright's apprentice.
+
+{name:apollo}
+(Drop the "apprentice" part and I'll reconsider decking you.)
+
+{name:valant}
+...Recently,{wait:short} I decided that I'd never again live life in thrall to the dead.
+And yet here I am,{wait:short} Miss Trucy,{wait:short} forcing you under the thrall of the living.
+
+{name:trucy}
+I'm going to do it. Keep Troupe Gramarye alive in everyone's hearts.
+Not for you. Not for Daddy. Not for Troupe Gramarye.
+Because this is the path that I,{wait:short} Trucy Wright,{wait:short} Magician Extraordinaire,{wait:short} choose.
+My journey is set. If the door is closed,{wait:short} I'll open it.
+And you,{wait:short} Uncle Valant... it's time for you to step into the audience.
+
+{name:valant}
+...!
+
+{name:trucy}
+I'll visit you... one day.
+And I'll be a better magician than you ever were.
+
+{name:valant}
+Yes,{wait:short} you will,{wait:short} Miss Trucy. I'm certain of it.
+...It seems that trust,{wait:short} unlike so many pieces of paper,{wait:short} cannot be as easily reformed.
+But before I betake myself,{wait:short} let it be known...
+...That in my bosom now blossoms a blessed belief:
+"Is it not the most miraculous maneuver of magic to face forward?"
+For the first time,{wait:short} with your aid,{wait:short} I behold the stage... and I'm filled with pride.
+Miss Trucy. Mr. Justice.
+...
+Until we meet again.
+
+
+(Fade to black)
+
+(And so Valant slowly spun and vanished from sight.)
+(No sooner had all traces of yellow disappeared than I got hit by a truck.)
+(And this time...)
+(I don't care if my whole body becomes black and blue.)
+(Because I was crying too.)
+(All the panic of Vera's poisoning,{wait:short} and the stress of the day yet to come...)
+(All the hopelessness,{wait:short} all the struggling with the past I'd witnessed since April.)
+(The dam burst,{wait:short} and in that moment... I was thankful Trucy was my friend.)
+(And two players on a stage,{wait:short} we turned towards the exit.)

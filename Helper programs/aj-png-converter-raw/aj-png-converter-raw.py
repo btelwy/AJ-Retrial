@@ -7,10 +7,10 @@ import math
 #and so the .png is already compatible with the format, not a random .png
 
 #if true, draws pixels in order of tiles; if false, draws linearly, left to right
-drawTilewise = True
+drawTilewise = False
 
 #put name of file to be converted in here
-fileName = "names_clay_edgeworth_maya"
+fileName = "trucy1Reduced"
 source = Image.open(fileName + ".png")
 
 #always use palette from subarc-00 at offset 0x1000 (in original subarc-00 file),
@@ -125,8 +125,8 @@ with open(fileName + "Converted.bin", "wb") as convertedImage: #create .bin file
                         match = index
 
                         #don't know what bug requires this, but each nybble is one greater than should be
-                        #if (match > 1):
-                            #match -= 1
+                        if (match > 1):
+                            match -= 1
 
                 buffer.append(match)
 

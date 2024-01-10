@@ -13,7 +13,7 @@ int main() {
     FILE *fptrRead;
     FILE *fptrWrite;
 
-    fptrRead = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\GreatRevival.txt","r");
+    fptrRead = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\Unfinished\\CirceAndTheSwine.txt","r");
     //open script.txt for reading from
 
     int bufferSize = 100; //default value
@@ -501,6 +501,9 @@ void convertLine(char line[], int arrLength, FILE* pointer)
                 default: //if no match
                 break;
             }
+
+            if (i == -1)
+                break;
         }
     }
 
@@ -512,7 +515,7 @@ void convertLine(char line[], int arrLength, FILE* pointer)
         int startIndex = index + 1; //location right after opening brace
         
         //find closing brace; since this function is called upon reading an opening brace
-        while (line[index] != '}')
+        while (line[index] != '}' && index < arrLength && line[index] != EOF)
             index++;
         
         //index is now set to location of closing brace, startIndex to opening
@@ -634,10 +637,25 @@ void convertLine(char line[], int arrLength, FILE* pointer)
             fwrite(&writeBuffer, 2, 1, pointer);
         }
 
+        else if(strcmp(command, "musicResume") == 0)
+        {
+            long writeBuffer = 0x00000023;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            //FF probably stands for the previously playing song
+            music("previous", pointer);
+        }
+
         else if(strcmp(command, "typewriter") == 0) //only applies to the next textbox
         {
             writeBuffer = 0x00020030;
             fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if(strcmp(command, "hideBox") == 0)
+        {
+            writeBuffer = 0x0014;
+            fwrite(&writeBuffer, 2, 1, pointer);
         }
 
         else if(strcmp(command, "initialize") == 0) //to be used after section start
@@ -693,8 +711,11 @@ void convertLine(char line[], int arrLength, FILE* pointer)
 
         else if (strcmp(shortCommand, "sound") == 0)
             sound(param, pointer);
+
+        else if (strcmp(shortCommand, "flash") == 0)
+            flash(param, pointer);
         
-        if (strcmp(shortCommand, "shake") == 0)
+        else if (strcmp(shortCommand, "shake") == 0)
             shake(param, pointer);
 
         else if (strcmp(shortCommand, "voiceSFX") == 0)
@@ -715,7 +736,23 @@ void convertLine(char line[], int arrLength, FILE* pointer)
         else if (strcmp(shortCommand, "jump") == 0)
             jump(param, pointer);
 
-        return index; //update i in for loop of convertLine function
+        else if (strcmp(shortCommand, "monochrome") == 0)
+            monochrome(param, pointer);
+
+        else if (strcmp(shortCommand, "showBox") == 0)
+            showBox(param, pointer);
+
+        else if (strcmp(shortCommand, "psycheLocks") == 0)
+            psycheLocks(param, pointer);
+
+        if (line[index] != EOF)
+        {
+            return index; //update i in for loop of convertLine function
+        }
+        else
+        {
+            return -1;
+        }
     }
 
 
@@ -830,11 +867,11 @@ void flash(char parameter[], FILE* pointer)
 
     if (strcmp(parameter, "white") == 0)
     {
-        writeBuffer = 0x00010402;
+        writeBuffer = 0x00080901;
         fwrite(&writeBuffer, 4, 1, pointer);
         writeBuffer = 0x001F;
         fwrite(&writeBuffer, 2, 1, pointer);
-        writeBuffer = 0x000F000C; //followed by wait F
+        writeBuffer = 0x0000001C;
         fwrite(&writeBuffer, 4, 1, pointer);
     }
 
@@ -1329,6 +1366,97 @@ void flash(char parameter[], FILE* pointer)
             //followed by wait 46
         }
 
+        else if (strcmp(parameter, "kristophBadgeNormalS") == 0)
+        {
+            writeBuffer = 0x0008;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x00C900C9;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "kristophBadgeNormal") == 0)
+        {
+            writeBuffer = 0x0008;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x00C900CA;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "kristophBadgeSmilingS") == 0)
+        {
+            writeBuffer = 0x0008;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x00CB00CB;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "kristophBadgeSmiling") == 0)
+        {
+            writeBuffer = 0x0008;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x00CB00CC;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "kristophBadgeArrogantS") == 0)
+        {
+            writeBuffer = 0x0008;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x00CD00CD;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "kristophBadgeArrogant") == 0)
+        {
+            writeBuffer = 0x0008;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x00CD00CE;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "kristophBadgeScowlingS") == 0)
+        {
+            writeBuffer = 0x0008;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x00CF00CF;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "kristophBadgeScowling") == 0)
+        {
+            writeBuffer = 0x0008;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x00CF00D0;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "kristophBadgeHeadShake") == 0)
+        {
+            writeBuffer = 0x0008;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x00D100D1;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x00B4000C;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            //usually followed by wait B4
+        }
+
+        else if (strcmp(parameter, "kristophBadgeAngryS") == 0)
+        {
+            writeBuffer = 0x0008;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x00D200D2;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "kristophBadgeAngry") == 0)
+        {
+            writeBuffer = 0x0008;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x00D200D3;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
         else if (strcmp(parameter, "kristophNormal") == 0) //note: Kristoph sprites are badgeless
         {
             writeBuffer = 0x0008;
@@ -1345,11 +1473,27 @@ void flash(char parameter[], FILE* pointer)
             fwrite(&writeBuffer, 4, 1, pointer);
         }
 
+        else if (strcmp(parameter, "kristophSmilingS") == 0)
+        {
+            writeBuffer = 0x0008;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02150215;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
         else if (strcmp(parameter, "kristophSmiling") == 0)
         {
             writeBuffer = 0x0008;
             fwrite(&writeBuffer, 2, 1, pointer);
             writeBuffer = 0x02150216;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "kristophScowlingS") == 0)
+        {
+            writeBuffer = 0x0008;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x022F022F;
             fwrite(&writeBuffer, 4, 1, pointer);
         }
 
@@ -1373,7 +1517,23 @@ void flash(char parameter[], FILE* pointer)
         {
             writeBuffer = 0x0008;
             fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02310231;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "kristophArrogant") == 0)
+        {
+            writeBuffer = 0x0008;
+            fwrite(&writeBuffer, 2, 1, pointer);
             writeBuffer = 0x02310232;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "kristophAngryS") == 0)
+        {
+            writeBuffer = 0x0008;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x021D021D;
             fwrite(&writeBuffer, 4, 1, pointer);
         }
 
@@ -1481,6 +1641,14 @@ void flash(char parameter[], FILE* pointer)
             writeBuffer = 0x0005;
             fwrite(&writeBuffer, 2, 1, pointer);
             writeBuffer = 0x00450045;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "trucyGrinningS") == 0)
+        {
+            writeBuffer = 0x0005;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x00460046;
             fwrite(&writeBuffer, 4, 1, pointer);
         }
 
@@ -1870,7 +2038,7 @@ void flash(char parameter[], FILE* pointer)
             fwrite(&writeBuffer, 4, 1, pointer);
         }
 
-        else if (strcmp(parameter, "gumshoeSideLookS") == 0) //not sure this exists
+        else if (strcmp(parameter, "gumshoeSideLookS") == 0)
         {
             writeBuffer = 0x0016;
             fwrite(&writeBuffer, 2, 1, pointer);
@@ -1878,13 +2046,182 @@ void flash(char parameter[], FILE* pointer)
             fwrite(&writeBuffer, 4, 1, pointer);
         }
 
-        else if (strcmp(parameter, "gumshoeSideLook") == 0) //not sure this exists
+        else if (strcmp(parameter, "gumshoeSideLook") == 0)
         {
             writeBuffer = 0x0016;
             fwrite(&writeBuffer, 2, 1, pointer);
             writeBuffer = 0x01F301F4;
             fwrite(&writeBuffer, 4, 1, pointer);
         }
+
+        else if (strcmp(parameter, "olgaNormalS") == 0)
+        {
+            writeBuffer = 0x000C;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01140114;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "olgaNormal") == 0)
+        {
+            writeBuffer = 0x000C;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01140115;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "olgaSnap") == 0)
+        {
+            writeBuffer = 0x000C;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01170116;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            //unknown what the 63 command does
+            //but the screen stays white forever after the flash without it
+            writeBuffer = 0x0063;
+            fwrite(&writeBuffer, 2, 1, pointer);
+
+            //sound effect
+            writeBuffer = 0x0006;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x0001002D;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            //and then there's 27001E000100, but not sure what it's for
+            //another time 6300
+        }
+
+        else if (strcmp(parameter, "olgaCameraS") == 0)
+        {
+            writeBuffer = 0x000C;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01170117;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "olgaCamera") == 0)
+        {
+            writeBuffer = 0x000C;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01170118;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "olgaWorriedS") == 0)
+        {
+            writeBuffer = 0x000C;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01190119;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "olgaWorried") == 0)
+        {
+            writeBuffer = 0x000C;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x0119011A;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "olgaCoweringS") == 0)
+        {
+            writeBuffer = 0x000C;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x011B011B;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "olgaCowering") == 0)
+        {
+            writeBuffer = 0x000C;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x011B011C;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "childTrucyNormalS") == 0)
+        {
+            writeBuffer = 0x001B;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x025F025F;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "childTrucyNormal") == 0)
+        {
+            writeBuffer = 0x001B;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x025F0260;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "childTrucySmiling") == 0)
+        {
+            writeBuffer = 0x001B;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02650266;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "childTrucyThinking") == 0)
+        {
+            writeBuffer = 0x0005; //I think it's 05, not 1B?
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02630264;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "childTrucySadS") == 0)
+        {
+            writeBuffer = 0x001B; //I think it's not 1B?
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02610261;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "childTrucySad") == 0)
+        {
+            writeBuffer = 0x001B; //I think it's not 1B?
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02610262;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        //Mr. Hat. This one is rough.
+        //Getting him to appear:
+        //1C000100
+        //8E001B006B020600
+        //BA0001006300
+        //8E001B006C026300
+        //8E001B006D026300
+        //8E001B006E026300
+        //8E001B006F026300
+        //8E001B0070026300
+        //8E001B0071026300
+        //8E001B0072026300
+        //8E001B0073026300
+        //8E001B0076026300
+        //8E001B0077026300
+        //8E001B0078026300
+        //8E001B0079026300
+        //8E001B007A026300
+        //8E001B007B026300
+        //8E001B007C026300
+        //8E001B007D026300
+        //8E001B007E026300
+        //8E001B007F026300
+        //8E001B0080026300
+        //8E001B0081026300
+        //8E001B0082026300
+        //88E01B0083026300
+        //8E001B0069026300
+        //22000000050016000000
+        //1E001B006A026702
+        //0E00002E1C000000060034000100
+        //1200010908001F0042000000
+        //0B000400
+        //03000300
     }
 
 //------------------------------------------------------------------------------------------------
@@ -2386,6 +2723,12 @@ void music(char parameter[], FILE* pointer)
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
+    else if (strcmp(parameter, "guiltyLoveRingtone") == 0)
+    {
+        writeBuffer = 0x000F;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
     //add others
 
     else if (strcmp(parameter, "childOfMagic") == 0)
@@ -2412,15 +2755,17 @@ void music(char parameter[], FILE* pointer)
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
-    //add others
-
-    else if (strcmp(parameter, "guiltyLove") == 0)
+    else if (strcmp(parameter, "kitakiFamily") == 0)
     {
-        writeBuffer = 0x0013;
+        writeBuffer = 0x0014;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
-    //add others
+    else if (strcmp(parameter, "troupeGramarye") == 0)
+    {
+        writeBuffer = 0x0016;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
 
     else if (strcmp(parameter, "jingle") == 0)
     {
@@ -2452,45 +2797,57 @@ void music(char parameter[], FILE* pointer)
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
-    else if (strcmp(parameter, "solitaryConfinement") == 0) //another name for darkness
+    else if (strcmp(parameter, "hurtFox") == 0)
     {
-        writeBuffer = 0x001B;
+        writeBuffer = 0x001C;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "fatedSmeared") == 0)
+    {
+        writeBuffer = 0x001D;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
     //add others
 
-    else if (strcmp(parameter, "investigationCore") == 0) //another name for darkness
+    else if (strcmp(parameter, "investigationCore") == 0)
     {
         writeBuffer = 0x0021;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
-    else if (strcmp(parameter, "forgottenLegend") == 0) //another name for darkness
+    else if (strcmp(parameter, "forgottenLegend") == 0)
     {
         writeBuffer = 0x0022;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
-    else if (strcmp(parameter, "victory2007") == 0) //another name for darkness
+    else if (strcmp(parameter, "thrill") == 0)
+    {
+        writeBuffer = 0x0023;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "victory2007") == 0)
     {
         writeBuffer = 0x0024;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
-    else if (strcmp(parameter, "ending") == 0) //another name for darkness
+    else if (strcmp(parameter, "ending") == 0)
     {
         writeBuffer = 0x0025;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
-    else if (strcmp(parameter, "eccentricPeople") == 0) //another name for darkness
+    else if (strcmp(parameter, "eccentricPeople") == 0)
     {
         writeBuffer = 0x0026;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
-    else if (strcmp(parameter, "scientificDetective") == 0) //another name for darkness
+    else if (strcmp(parameter, "scientificDetective") == 0)
     {
         writeBuffer = 0x0029;
         fwrite(&writeBuffer, 2, 1, pointer);
@@ -2498,27 +2855,45 @@ void music(char parameter[], FILE* pointer)
 
     //add others
 
-    else if (strcmp(parameter, "birdsChirping") == 0) //another name for darkness
+    else if (strcmp(parameter, "objection2001") == 0)
+    {
+        writeBuffer = 0x0036;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "birdsChirping") == 0)
     {
         writeBuffer = 0x0038;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
-    else if (strcmp(parameter, "detentionCenter2001") == 0) //another name for darkness
+    else if (strcmp(parameter, "detentionCenter2001") == 0)
     {
         writeBuffer = 0x0039;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
-    else if (strcmp(parameter, "greatRevival") == 0) //another name for darkness
+    else if (strcmp(parameter, "previous") == 0)
+    {
+        writeBuffer = 0x00FF;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "greatRevival") == 0)
     {
         writeBuffer = 0x005D;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
-    else if (strcmp(parameter, "turnaboutSisters") == 0) //another name for darkness
+    else if (strcmp(parameter, "turnaboutSisters") == 0)
     {
         writeBuffer = 0x005E;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+     else if (strcmp(parameter, "jingle2001") == 0)
+    {
+        writeBuffer = 0x005F;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
@@ -2746,6 +3121,12 @@ void background(char parameter[], FILE* pointer)
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
+    else if (strcmp(parameter, "backstageHallway") == 0) //has a visual glitch?
+    {
+        writeBuffer = 0x00F7;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
     else if (strcmp(parameter, "borschtBowlClub") == 0) //has a visual glitch?
     {
         writeBuffer = 0x0114;
@@ -2765,7 +3146,68 @@ void background(char parameter[], FILE* pointer)
     }
 
     //add more
-    //seems to have a set number of fade-in frames; those might be a third argument
+}
+
+void showBox(char parameter[], FILE* pointer)
+{
+    //parameter is written like "magatama,left"
+
+    int writeBuffer = 0x0013;
+    fwrite(&writeBuffer, 2, 1, pointer);
+
+    char* ptr;
+    writeBuffer = strtol(parameter, &ptr, 16); //param is one-byte ID
+    fwrite(&writeBuffer, 2, 1, pointer);
+
+    //think about "left" and "right" later
+}
+
+void psycheLocks(char parameter[], FILE* pointer)
+{
+    //the parameter, written as "1" through "5", is the number of locks to appear
+    //it can also be "hide"
+    //note that the Psyche-Lock command seems to hide the textbox automatically
+
+    int writeBuffer;
+
+    if (strcmp(parameter, "hide") == 0)
+    {
+        writeBuffer = 0x0089;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else
+    {
+        writeBuffer = 0x0088;
+        fwrite(&writeBuffer, 2, 1, pointer);
+
+        char* ptr;
+        long numLocks = strtol(parameter, &ptr, 10);
+
+        writeBuffer = numLocks;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+}
+
+void monochrome(char parameter[], FILE* pointer)
+{
+    long writeBuffer = 0x005F;
+    fwrite(&writeBuffer, 2, 1, pointer);
+
+    if (strcmp(parameter, "on") == 0)
+    {
+        writeBuffer = 0x00010003;
+        fwrite(&writeBuffer, 4, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "off") == 0)
+    {
+        writeBuffer = 0x001F0004;
+        fwrite(&writeBuffer, 4, 1, pointer);
+    }
+
+    //5F00 03000100 (might be a 02 at the end instead?)
+    //5F00 04001F00
 }
 
 void addHeader(FILE* fptrOriginal)

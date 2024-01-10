@@ -378,7 +378,7 @@ Please "continue from chapter{newLine}start."{textboxEnd}
 {charAnimation:judgeNormal}
 You have chosen,{wait:short} ahem,{wait:short}{newLine}
 "Turnabout Succession,{wait:short}{newLine}
-Seven Years Ago,{wait:short} MASON System."{textboxEnd}
+MASON System."{textboxEnd}
 {charAnimation:judgeStern}
 Very well.{wait:normal}{newLine}
 Please "continue from chapter{newLine}start."{textboxEnd}

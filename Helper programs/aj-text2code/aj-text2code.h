@@ -31,5 +31,8 @@ void background(char[], FILE*);
 void setFlag(char[], FILE*);
 void screenFade(char[], FILE*);
 void jump(char[], FILE*);
+void psycheLocks(char[], FILE*);
+void showBox(char[], FILE*);
+void monochrome(char[], FILE*);
 
 #endif //end of include guard

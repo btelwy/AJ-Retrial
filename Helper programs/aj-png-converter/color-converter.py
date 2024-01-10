@@ -34,15 +34,15 @@ def convertRGBToBGRA5551(RGBATuple):
     
     hexString = hexString[2 : 4] + hexString[0 : 2] #flip endianness
 
-    colorBytes = bytes.fromhex(hexString)
+    colorBytes = bytes.fromhex(hexString).hex()
 
     return colorBytes
 #--------------------------------------------------------------------------
 #true if the inputted color(s) is RGB and should be converted to BGRA5551
 #false if the inputted color(s) is BGRA5551 and should be converted to RGB
-isRGB = False
+isRGB = True
 
-colors = ["FF7F", "0000"]
+colors = [(197, 172, 98)]
 
 if (isRGB):
     #alpha is assumed to be 0, could be changed if needed though
