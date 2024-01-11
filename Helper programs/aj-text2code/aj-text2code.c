@@ -13,7 +13,7 @@ int main() {
     FILE *fptrRead;
     FILE *fptrWrite;
 
-    fptrRead = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\Unfinished\\CirceAndTheSwine.txt","r");
+    fptrRead = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\Unfinished\\ExitsAndEntrances.txt","r");
     //open script.txt for reading from
 
     int bufferSize = 100; //default value
@@ -597,7 +597,7 @@ void convertLine(char line[], int arrLength, FILE* pointer)
         else if(strcmp(command, "textboxEnd") == 0)
         {
             writeBuffer = 0x002D;
-            fwrite(&writeBuffer, 2, 1, pointer); //check about 0200
+            fwrite(&writeBuffer, 2, 1, pointer); //check difference with 0200
         }
 
         else if(strcmp(command, "textboxEndForced") == 0)
@@ -1169,6 +1169,37 @@ void flash(char parameter[], FILE* pointer)
     void charAnimation(char parameter[], FILE* pointer)
     {
         long writeBuffer = 0x001E;
+
+        //Valant's shocked animation uses a completely different command
+        //with no 1E
+        if (strcmp(parameter, "valantShocked") == 0)
+        {
+            //0C002800 2E002F00E400
+            wait("28", pointer);
+
+            writeBuffer = 0x002E;
+            fwrite(&writeBuffer, 2, 1, pointer);
+
+            writeBuffer = 0x00E4002F;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x0001;
+            fwrite(&writeBuffer, 2, 1, pointer);
+
+            //also a flash in here, but not included
+
+            //sound effect
+            writeBuffer = 0x002C0006;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x0001;
+            fwrite(&writeBuffer, 2, 1, pointer);
+
+            return;
+            //don't get to the rest of the function
+            //which will write a 1E
+        }
+
         fwrite(&writeBuffer, 2, 1, pointer);
 
         if (strcmp(parameter, "phoenixNormalS") == 0)
@@ -1644,11 +1675,19 @@ void flash(char parameter[], FILE* pointer)
             fwrite(&writeBuffer, 4, 1, pointer);
         }
 
-        else if (strcmp(parameter, "trucyGrinningS") == 0)
+        else if (strcmp(parameter, "trucyGrinning") == 0)
         {
             writeBuffer = 0x0005;
             fwrite(&writeBuffer, 2, 1, pointer);
             writeBuffer = 0x00460046;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "trucySmilingEyesShut") == 0)
+        {
+            writeBuffer = 0x0005;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x00470047;
             fwrite(&writeBuffer, 4, 1, pointer);
         }
 
@@ -1779,6 +1818,18 @@ void flash(char parameter[], FILE* pointer)
             writeBuffer = 0x00530053;
             fwrite(&writeBuffer, 4, 1, pointer);
         }
+
+        else if (strcmp(parameter, "trucyBonk") == 0)
+        {
+            writeBuffer = 0x0005;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x005E005E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            wait("10", pointer);
+        }
+
+
 
         //add other Trucy animations and variations
 
@@ -2156,11 +2207,27 @@ void flash(char parameter[], FILE* pointer)
             fwrite(&writeBuffer, 4, 1, pointer);
         }
 
+        else if (strcmp(parameter, "childTrucySmilingS") == 0)
+        {
+            writeBuffer = 0x001B;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02650265;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
         else if (strcmp(parameter, "childTrucySmiling") == 0)
         {
             writeBuffer = 0x001B;
             fwrite(&writeBuffer, 2, 1, pointer);
             writeBuffer = 0x02650266;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "childTrucyThinkingS") == 0)
+        {
+            writeBuffer = 0x0005; //I think it's 05, not 1B?
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02630263;
             fwrite(&writeBuffer, 4, 1, pointer);
         }
 
@@ -2174,7 +2241,7 @@ void flash(char parameter[], FILE* pointer)
 
         else if (strcmp(parameter, "childTrucySadS") == 0)
         {
-            writeBuffer = 0x001B; //I think it's not 1B?
+            writeBuffer = 0x001B;
             fwrite(&writeBuffer, 2, 1, pointer);
             writeBuffer = 0x02610261;
             fwrite(&writeBuffer, 4, 1, pointer);
@@ -2182,46 +2249,210 @@ void flash(char parameter[], FILE* pointer)
 
         else if (strcmp(parameter, "childTrucySad") == 0)
         {
-            writeBuffer = 0x001B; //I think it's not 1B?
+            writeBuffer = 0x001B;
             fwrite(&writeBuffer, 2, 1, pointer);
             writeBuffer = 0x02610262;
             fwrite(&writeBuffer, 4, 1, pointer);
         }
 
-        //Mr. Hat. This one is rough.
-        //Getting him to appear:
-        //1C000100
-        //8E001B006B020600
-        //BA0001006300
-        //8E001B006C026300
-        //8E001B006D026300
-        //8E001B006E026300
-        //8E001B006F026300
-        //8E001B0070026300
-        //8E001B0071026300
-        //8E001B0072026300
-        //8E001B0073026300
-        //8E001B0076026300
-        //8E001B0077026300
-        //8E001B0078026300
-        //8E001B0079026300
-        //8E001B007A026300
-        //8E001B007B026300
-        //8E001B007C026300
-        //8E001B007D026300
-        //8E001B007E026300
-        //8E001B007F026300
-        //8E001B0080026300
-        //8E001B0081026300
-        //8E001B0082026300
-        //88E01B0083026300
-        //8E001B0069026300
-        //22000000050016000000
-        //1E001B006A026702
-        //0E00002E1C000000060034000100
-        //1200010908001F0042000000
-        //0B000400
-        //03000300
+        else if (strcmp(parameter, "childTrucyMrHat") == 0)
+        {
+            //Getting him to appear:
+            //8E001B006B020600
+            //BA0001006300
+            //8E001B006C026300
+            //8E001B006D026300
+            //8E001B006E026300
+            //8E001B006F026300
+            //8E001B0070026300
+            //8E001B0071026300
+            //8E001B0072026300
+            //8E001B0073026300
+            //8E001B0076026300
+            //8E001B0077026300
+            //8E001B0078026300
+            //8E001B0079026300
+            //8E001B007A026300
+            //8E001B007B026300
+            //8E001B007C026300
+            //8E001B007D026300
+            //8E001B007E026300
+            //8E001B007F026300
+            //8E001B0080026300
+            //8E001B0081026300
+            //8E001B0082026300
+            //88E01B0083026300
+            //8E001B0069026300
+            //22000000050016000000
+            //1E001B006A026702
+            //060034000100
+            //1200010908001F0042000000
+            textSpeed("4", pointer);
+        }
+
+        else if (strcmp(parameter, "valantNormalS") == 0)
+        {
+            writeBuffer = 0x0021;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02D302D3;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "valantNormal") == 0)
+        {
+            writeBuffer = 0x0021;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02D302D4;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "valantLaughing") == 0)
+        {
+            writeBuffer = 0x0021;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02D302D9;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "valantSurprisedS") == 0)
+        {
+            writeBuffer = 0x0021;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02D702D7;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "valantSurprised") == 0)
+        {
+            writeBuffer = 0x0021;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02D702D8;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "valantThinkingS") == 0)
+        {
+            writeBuffer = 0x0021;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02DC02DC;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "valantThinking") == 0)
+        {
+            writeBuffer = 0x0021;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02DC02DD;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "valantPointingS") == 0)
+        {
+            writeBuffer = 0x0021;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02D502D5;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "valantPointing") == 0)
+        {
+            writeBuffer = 0x0021;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02D502D6;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "valantWorriedS") == 0)
+        {
+            writeBuffer = 0x0021;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02DA02DA;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "valantWorried") == 0)
+        {
+            writeBuffer = 0x0021;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x02DA02DB;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        }
+
+        else if (strcmp(parameter, "valantStaffTwirl") == 0)
+        {
+            writeBuffer = 0x0021;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x2D302D3;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            sound("staffTwirl", pointer);
+            wait("A", pointer);
+
+            writeBuffer = 0x0021001E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x2D302E2;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            
+            wait("F", pointer);
+
+            writeBuffer = 0x0021001E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x2D302E2;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            wait("4", pointer);
+
+            writeBuffer = 0x0021001E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x2D302E8;
+            fwrite(&writeBuffer, 4, 1, pointer);
+        
+            wait("2", pointer);
+
+            writeBuffer = 0x0021001E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x2D302E3;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            
+            wait("6", pointer);
+
+            writeBuffer = 0x0021001E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x2D302E4;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            
+            wait("7", pointer);
+
+            writeBuffer = 0x0021001E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x2D302E5;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            
+            wait("7", pointer);
+
+            writeBuffer = 0x0021001E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x2D302E6;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            
+            wait("3", pointer);
+
+            writeBuffer = 0x0021001E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x2D302E7;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            
+            wait("4", pointer);
+
+            writeBuffer = 0x0021001E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x2D302E8;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            
+            wait("1E", pointer);
+
+            charAnimation("valantNormalS", pointer);
+        }
     }
 
 //------------------------------------------------------------------------------------------------
@@ -2300,33 +2531,33 @@ void screenFade(char parameter[], FILE* pointer)
 
     //the string argument is the background to fade in to from black
 
-    long writeBuffer = 0x02010012;
+    long writeBuffer = 0x0012;
+    fwrite(&writeBuffer, 2, 1, pointer);
+
+    writeBuffer = 0x00000201;
     fwrite(&writeBuffer, 4, 1, pointer);
 
-    writeBuffer = 0x001F0000;
-    fwrite(&writeBuffer, 4, 1, pointer);
+    writeBuffer = 0x001F;
+    fwrite(&writeBuffer, 2, 1, pointer);
 
-    writeBuffer = 0x0001000C;
-    fwrite(&writeBuffer, 4, 1, pointer);
-
-    writeBuffer = 0x003C000C;
-    fwrite(&writeBuffer, 4, 1, pointer);
+    wait("1", pointer);
+    wait("3C", pointer);
 
     //now change the background
     background(parameter, pointer);
 
     //now write the rest of the flashes
-    writeBuffer = 0x01040012;
+    writeBuffer = 0x0012;
+    fwrite(&writeBuffer, 2, 1, pointer);
+
+    writeBuffer = 0x00010104;
     fwrite(&writeBuffer, 4, 1, pointer);
 
-    writeBuffer = 0x001F0001;
-    fwrite(&writeBuffer, 4, 1, pointer);
+    writeBuffer = 0x001F;
+    fwrite(&writeBuffer, 2, 1, pointer);
 
-    writeBuffer = 0x0019000C;
-    fwrite(&writeBuffer, 4, 1, pointer);
-
-    writeBuffer = 0x003C000C;
-    fwrite(&writeBuffer, 4, 1, pointer);
+    wait("19", pointer);
+    wait("3C", pointer);
 }
 
 
@@ -2803,7 +3034,7 @@ void music(char parameter[], FILE* pointer)
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
-    else if (strcmp(parameter, "fatedSmeared") == 0)
+    else if (strcmp(parameter, "fateSmeared") == 0)
     {
         writeBuffer = 0x001D;
         fwrite(&writeBuffer, 2, 1, pointer);
@@ -2870,6 +3101,12 @@ void music(char parameter[], FILE* pointer)
     else if (strcmp(parameter, "detentionCenter2001") == 0)
     {
         writeBuffer = 0x0039;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "serenadeRingtone") == 0) //streamed, added
+    {
+        writeBuffer = 0x0059;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
@@ -2991,6 +3228,12 @@ void sound(char parameter[], FILE* pointer)
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
+    else if (strcmp(parameter, "phoneBeep") == 0)
+    {
+        writeBuffer = 0x00C2;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
     else if (strcmp(parameter, "glassShattering") == 0)
     {
         writeBuffer = 0x0052;
@@ -3012,6 +3255,12 @@ void sound(char parameter[], FILE* pointer)
     else if (strcmp(parameter, "gulp") == 0)
     {
         writeBuffer = 0x0061;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "staffTwirl") == 0)
+    {
+        writeBuffer = 0x0093;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 

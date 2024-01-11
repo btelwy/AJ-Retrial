@@ -89,7 +89,7 @@ I hope my presence{newLine}
 ameliorates that pain.{textboxEnd}
 {name:phoenix}
 Oh,{wait:short} it does.{wait:normal}{newLine}
-{textColor:blue}(And I feel guilty about it.){textboxEnd}{textColor:white}
+{textColor:blue}(And I don't like it.){textboxEnd}{textColor:white}
 But more importantly,{wait:short} I'm{newLine}
 {shake:0}starved.{wait:normal} Want me to{newLine}
 get us some dinner?{textboxEnd}
@@ -157,7 +157,8 @@ which you are wanting.{textboxEnd}
 Ah,{wait:short} payment for picture in{newLine}
 paper money only,{wait:normal} please!{textboxEnd}
 {charAnimation:olgaNormalS}
-{name:phoenix}{textColor:blue}
+{name:phoenix}
+{textColor:blue}
 (From unvalued employee to{newLine}
 unvalued customer.){textboxEnd}
 (Remind me {sound:ding}again why{newLine}
