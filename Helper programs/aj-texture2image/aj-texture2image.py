@@ -1,7 +1,7 @@
 from PIL import Image as im
 from PIL import ImageDraw as imDraw
 
-fileName = "trucy1ReducedConverted" #or whatever the name of the .bin file is
+fileName = "attempt2" #or whatever the name of the .bin file is
 fileLoc = fileName + ".bin"
 bpp4 = True
 #whether it's 4 or 8bpp

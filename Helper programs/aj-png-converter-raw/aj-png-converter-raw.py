@@ -25,10 +25,10 @@ subarc00Palette = ['0000', '1042', '9456', '586B', 'CE10', 'F214', '3519', '4504
 optionPalette = ['E003', '1863', 'DE7B', 'FF7F', '9D73', '5C6B', '3B63', 'FA5A', 'B84E', '5742', '1532',\
                  'B425', '9321', '3111', 'F008', 'AF00']
 
-#or,
-trucyPalette = ['E720', 'A610', '2835', 'EF39', '0D56', 'AB49', '6F62', 'FF7B' '356B', 'D32D', '5736', 'EC14', 'FC4A', '9A3E', 'B220', 'DD24']
+#or, (removed E720 from the first element)
+trucyPalette = ['0000', 'A610', '2835', 'EF39', '0D56', 'AB49', '6F62', 'FF7B' '356B', 'D32D', '5736', 'EC14', 'FC4A', '9A3E', 'B220', 'DD24']
 
-palette = subarc00Palette
+palette = trucyPalette
 
 paletteRGB = []
 
@@ -125,8 +125,8 @@ with open(fileName + "Converted.bin", "wb") as convertedImage: #create .bin file
                         match = index
 
                         #don't know what bug requires this, but each nybble is one greater than should be
-                        if (match > 1):
-                            match -= 1
+                        #if (match > 1):
+                            #match -= 1
 
                 buffer.append(match)
 

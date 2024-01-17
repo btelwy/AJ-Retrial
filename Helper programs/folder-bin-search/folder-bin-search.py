@@ -7,7 +7,7 @@ from pprint import pprint as pprint
 #to find the one(s) with a specific sequence of bytes
 
 #the desired sequence of bytes to be searched for
-sequence = b'\xC3\x00\xBB\x00\xC2\x00\xC1\x00\xB8\x00\x8F\x01\xB9\x00'
+sequence = b'\x10\x86\x01\x00\x00\x18\x00\x1F\x00\x23\x00\x27'
 
 #choose the folder of binary files
 folder = "C:\\Users\\ben\\Desktop\\AJ-Retrial\\Extracted materials"

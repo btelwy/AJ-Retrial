@@ -177,10 +177,10 @@ def writePixelData(binFile, imageLoc, colorList):
 
 #########################################################################################################
 
-imageLocation = "trucyimage4.png"
+imageLocation = "trucy_mason.png"
 reducedImageLocation = "reducedImage.png"
 
-targetNumColors = 40
+targetNumColors = 200
 reducedNumColors = 0 #initialize variable
 
 numColors = countColors(imageLocation)

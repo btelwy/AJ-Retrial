@@ -11,6 +11,7 @@ int readCommand(char[], int, int, FILE*);
 
 void textColor(char[], FILE*);
 void wait(char[], FILE*);
+void waitNoAnim(char[], FILE*);
 void textSpeed(char[], FILE*);
 void spriteFade(char[], FILE*);
 void flash(char[], FILE*);

@@ -658,6 +658,18 @@ void convertLine(char line[], int arrLength, FILE* pointer)
             fwrite(&writeBuffer, 2, 1, pointer);
         }
 
+        else if(strcmp(command, "halt") == 0)
+        {
+            writeBuffer = 0x0015;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+
+        else if(strcmp(command, "saveScreen") == 0)
+        {
+            writeBuffer = 0x0016;
+            fwrite(&writeBuffer, 2, 1, pointer);
+        }
+
         else if(strcmp(command, "initialize") == 0) //to be used after section start
         {
             //print 620004000100740002000000
@@ -678,6 +690,9 @@ void convertLine(char line[], int arrLength, FILE* pointer)
         
         else if (strcmp(shortCommand, "wait") == 0)
             wait(param, pointer);
+
+        else if (strcmp(shortCommand, "waitNoAnim") == 0)
+            waitNoAnim(param, pointer);
         
         else if (strcmp(shortCommand, "textSpeed") == 0)
             textSpeed(param, pointer);
@@ -808,6 +823,19 @@ void convertLine(char line[], int arrLength, FILE* pointer)
             writeBuffer = strtol(parameter, &ptr, 16);
             fwrite(&writeBuffer, 2, 1, pointer);
         }
+    }
+
+
+    void waitNoAnim(char parameter[], FILE* pointer)
+    {
+        //same as wait, but no character animation while waiting
+
+        long writeBuffer = 0x004E;
+        fwrite(&writeBuffer, 2, 1, pointer);
+
+        char *ptr;
+        writeBuffer = strtol(parameter, &ptr, 16);
+        fwrite(&writeBuffer, 2, 1, pointer);
     }
 
 
@@ -1174,26 +1202,16 @@ void flash(char parameter[], FILE* pointer)
         //with no 1E
         if (strcmp(parameter, "valantShocked") == 0)
         {
-            //0C002800 2E002F00E400
-            wait("28", pointer);
-
-            writeBuffer = 0x002E;
-            fwrite(&writeBuffer, 2, 1, pointer);
-
             writeBuffer = 0x00E4002F;
             fwrite(&writeBuffer, 4, 1, pointer);
 
             writeBuffer = 0x0001;
             fwrite(&writeBuffer, 2, 1, pointer);
 
-            //also a flash in here, but not included
-
-            //sound effect
-            writeBuffer = 0x002C0006;
-            fwrite(&writeBuffer, 4, 1, pointer);
-
-            writeBuffer = 0x0001;
-            fwrite(&writeBuffer, 2, 1, pointer);
+            //things that go along with the animation
+            flash("white", pointer);
+            sound("damage", pointer);
+            shake("1", pointer);
 
             return;
             //don't get to the rest of the function
@@ -1865,6 +1883,16 @@ void flash(char parameter[], FILE* pointer)
             fwrite(&writeBuffer, 4, 1, pointer);
         }
 
+        else if (strcmp(parameter, "judgeHeadShake") == 0)
+        {
+            writeBuffer = 0x000A;
+            fwrite(&writeBuffer, 2, 1, pointer);
+            writeBuffer = 0x01050105;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            wait("46", pointer);
+        }
+
         else if (strcmp(parameter, "brushelNormal") == 0)
         {
             writeBuffer = 0x0014;
@@ -2258,36 +2286,165 @@ void flash(char parameter[], FILE* pointer)
         else if (strcmp(parameter, "childTrucyMrHat") == 0)
         {
             //Getting him to appear:
-            //8E001B006B020600
-            //BA0001006300
-            //8E001B006C026300
-            //8E001B006D026300
-            //8E001B006E026300
-            //8E001B006F026300
-            //8E001B0070026300
-            //8E001B0071026300
-            //8E001B0072026300
-            //8E001B0073026300
-            //8E001B0076026300
-            //8E001B0077026300
-            //8E001B0078026300
-            //8E001B0079026300
-            //8E001B007A026300
-            //8E001B007B026300
-            //8E001B007C026300
-            //8E001B007D026300
-            //8E001B007E026300
-            //8E001B007F026300
-            //8E001B0080026300
-            //8E001B0081026300
-            //8E001B0082026300
-            //88E01B0083026300
-            //8E001B0069026300
-            //22000000050016000000
-            //1E001B006A026702
-            //060034000100
-            //1200010908001F0042000000
-            textSpeed("4", pointer);
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x0006026B;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x000100BA;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x0063;
+            fwrite(&writeBuffer, 2, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x0063026C;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x0063026D;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x0063026E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x0063026F;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x00630270;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x00630271;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x00630272;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x00630273;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x00630276;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x00630277;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x00630278;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x00630279;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x0063027A;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x0063027B;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x0063027C;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x0063027D;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x0063027E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x0063027F;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x00630280;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x00630281;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x00630282;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x00630283;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B008E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x00630269;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            writeBuffer = 0x001B001E;
+            fwrite(&writeBuffer, 4, 1, pointer);
+            writeBuffer = 0x0267026A;
+            fwrite(&writeBuffer, 4, 1, pointer);
+
+            //8E001B00 6B020600.
+            //BA000100 6300.
+            //8E001B00 6C026300.
+            //8E001B00 6D026300.
+            //8E001B00 6E026300.
+            //8E001B00 6F026300.
+            //8E001B00 70026300.
+            //8E001B00 71026300.
+            //8E001B00 72026300.
+            //8E001B00 73026300.
+            //8E001B00 76026300.
+            //8E001B00 77026300.
+            //8E001B00 78026300.
+            //8E001B00 79026300.
+            //8E001B00 7A026300.
+            //8E001B00 7B026300.
+            //8E001B00 7C026300.
+            //8E001B00 7D026300.
+            //8E001B00 7E026300.
+            //8E001B00 7F026300.
+            //8E001B00 80026300.
+            //8E001B00 81026300.
+            //8E001B00 82026300.
+            //88E01B00 83026300.
+            //8E001B00 69026300.
+            //1E001B00 6A026702.
+            //1200 01090800 1F0042000000
+            
+            //uses text speed 4
         }
 
         else if (strcmp(parameter, "valantNormalS") == 0)
@@ -2563,7 +2720,8 @@ void screenFade(char parameter[], FILE* pointer)
 
 void jump(char parameter[], FILE* pointer)
 {
-    //jumps to the start of a section
+    //jumps to the start of a section within the same text file
+    //note: there needs to be a sectionEnd() right after for it to work
 
     char* ptr;
     
@@ -2868,13 +3026,6 @@ void setFlag(char parameter[], FILE* pointer)
         writeBuffer = 0x8007;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
-
-    /*
-    this 35 is actually a separate jump command that can go to arbitrary offsets of any section
-    writeBuffer = 0x0035; //treating this as a constant, though it's not
-    fwrite(&writeBuffer, 2, 1, pointer);
-    writeBuffer = 0x0000;
-    fwrite(&writeBuffer, 2, 1, pointer);*/
 }
 
 void music(char parameter[], FILE* pointer)
@@ -3104,6 +3255,12 @@ void music(char parameter[], FILE* pointer)
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
+    else if (strcmp(parameter, "newCredits") == 0)
+    {
+        writeBuffer = 0x0058;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
     else if (strcmp(parameter, "serenadeRingtone") == 0) //streamed, added
     {
         writeBuffer = 0x0059;
@@ -3128,7 +3285,7 @@ void music(char parameter[], FILE* pointer)
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
-     else if (strcmp(parameter, "jingle2001") == 0)
+    else if (strcmp(parameter, "jingle2001") == 0)
     {
         writeBuffer = 0x005F;
         fwrite(&writeBuffer, 2, 1, pointer);
@@ -3355,6 +3512,12 @@ void background(char parameter[], FILE* pointer)
     else if (strcmp(parameter, "courtLobby") == 0) //has a visual glitch?
     {
         writeBuffer = 0x001E;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
+    else if (strcmp(parameter, "wright&Co") == 0) //has a visual glitch?
+    {
+        writeBuffer = 0x0028;
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 

@@ -42,7 +42,7 @@ def convertRGBToBGRA5551(RGBATuple):
 #false if the inputted color(s) is BGRA5551 and should be converted to RGB
 isRGB = True
 
-colors = [(197, 172, 98)]
+colors = [(177, 13, 9), (192, 20, 19), (206, 30, 31), (219, 42, 43)]
 
 if (isRGB):
     #alpha is assumed to be 0, could be changed if needed though
