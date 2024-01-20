@@ -5,7 +5,7 @@ Unfortunately... you have not managed to prove your case.
 If the trial should end here, I'm unsure how the verdict would be rendered.
 
 Apollo:
-(After everything, the jurists are still undecided!?)
+(After everything, even with the MASON System, the jurists are still undecided!?)
 (Justice is at stake, Justice! Think of something!)
 
 Kristoph:
@@ -728,24 +728,131 @@ Defense, did you forget you're supposed to do your job?
 
 Apollo:
 Uh...
-(I guess Mr. Gavin still has influence over me, after all.)
-(Changing tack.)
+(I guess Mr. Gavin still has some influence over me after all...)
+(Changing tack here.)
 Witness! What do you mean by Ms. Wright "corrupting" me?
 
 Kristoph:
+To begin with, she provided you with that fraudulent evidence, Justice.
+I'm not dense.
 
+Judge:
+Fraudulent evidence!? Where!?
+
+Apollo:
+Wh-Which fraudulent evidence, Mr. Gavin?
+(No no no! Not this! Not now!)
+
+Trucy:
+I don't know of any fraudulent evidence.
+
+Klavier:
+Ah, yes... the "forged ace." The virus that should've withered Herr Forehead's career...
+...Before it even fluttered out of its nest.
+Or so Kristoph told me, at the time.
+But now, I know what weight his words regarding forgery carry.
+Certainly less heavy than my heart... but equal to my belief in his claim.
+
+Apollo:
+(Phew. That was a close shave.)
+(...But now I feel even guiltier. I gotta have a stern talk with Trucy later.)
+
+Kristoph:
+...Regardless.
+Wright and his "daughter" are twin poisons devouring your intellect from within.
+Chasing fairytales? Fraternizing with the rabble and the refuse?
+All while displaying flagrant disregard for duty and procedure.
+At least your badge remains polished enough to serve as a mirror.
+Looking into it would do you some good, I believe.
+
+Apollo:
+If you'd like to talk about poison, look no further than yourself.
+The atroquinine that took the victim's life...
+And the venom that plunged those involved in the Gramarye trial into a long darkness.
+Poison that I'm here to purge.
+
+Kristoph:
+I'd be more interested in evidence than a heroic monologue about good and evil.
+Of course, you have nothing to prove Ms. Misham innocent... or me guilty.
+
+Apollo:
+(So he says, but is that really true?)
+(Should I ask for that statement to be added to the testimony?)
+Your Honor, the defense requests that statement be added to the testimony.
+
+Judge:
+Very well. Request accepted.
 
 ---------------------
 Yet here he is, dragged along by the horns into this unprofessional farce.
+
+Press:
+On what grounds do you call this an "unprofessional farce"?
+It sounds to me like you're lashing out because you see you're in a corner.
+
+Kristoph:
+All I see, in this moment...
+Is the defense conspiring to upset me to justify a pointless cross-examination.
+Surely you recognize this as a breach of decorum, Your Honor?
+
+Judge:
+Indeed, I recognize it.
+I suggest the defense wrap up its cross-examination... before I do.
+
+Apollo:
+(Ack!)
+This cross-examination is vitally important for establishing the witness' character!
+
+Kristoph:
+And now I see a bluff. The fruit of my teaching has been undone, I see.
+
+Apollo:
+I'm the same lawyer you mentored, Mr. Gavin.
+The one who never holds back. Who places trust in the courtroom above all else.
+But in my six-month journey, I've discovered so much.
+And I refuse to lose everything again!
+
+Trucy:
+Apollo...
+
+Klavier:
+Good show, Herr Forehead. Time for us to protect what we have left, ja?
+
+Kristoph:
+As for what I wish to see:
+If you can still call yourself a lawyer, Justice, I'd like to see you prove it.
+
+Trucy:
+Do you see a possibility of that statement helping us out?
+
+Apollo:
+(I se--
+Er, anyway. What should I do?)
+The defense requests that the witness add that statement to the testimony!
+
+Judge:
+Very well. I see.
+
 ---------------------
 Extra statement 1:
 Once the verdict is handed down, only then may a lawyer feel.
+
+Press:
+
+
 ---------------------
 Extra statement 2:
-
+Of course, you have nothing to prove Ms. Misham innocent... or me guilty.
 ---------------------
 Extra statement 3:
 If you can still call yourself a lawyer, Justice, I'd like to see you prove it.
+
+
+
+
+Judge:
+Witness! Please add that statement to your testimony.
+
 ---------------------
 Extra statement 4:
 Right or wrong, 
@@ -753,15 +860,47 @@ Right or wrong,
 Hint conversation:
 ---------------------
 
+Trucy:
+We need something -- anything -- to cast Mr. Gavin in a bad light.
 
+Apollo:
+And us and Prosecutor Gavin, in a good one.
+But it won't be easy.
 
+Trucy:
+Something that will definitely open the jurists' eyes to the truth.
+
+Apollo:
+They've already seen the MASON System and all our evidence, though.
+I'm struggling to think of what more to do.
+
+Trucy:
+That's exactly it, Apollo. They've seen the MASON System and all our evidence.
+They're teetering on the ledge. We just have to give 'em a good shove!
+
+Apollo:
+(Not the metaphor I'd have chosen, but...)
+Something that rips away the veneer of Mr. Gavin's persausiveness.
+In other words, we've powered on the igniter, but we need to set it full blast.
+
+Trucy:
+This cross-examination is unique, but we pack the heat through contradictions...
+...Just like we always have.
+I believe in you, Apollo! So show the world your smile!
+
+Apollo:
+(Right! About to pass out from anxiety, but the jurists will only see my hope.)
+(This cross-examination is our final chance. We're already stretching it.)
+(The Wrights, Prosecutor Gavin, the Gramaryes, the Mishams...)
+(I don't know how I ended up here, but now that I'm here, I know what to do.)
+(The seven-year darkness... I'm here to end it!)
 
 
 
 
 I've learned that in this world, there's rarely black and white.
 But that doesn't mean there's no wrong or right.
-It doesn't mean that we should give up on following the passion in our heart.
+It doesn't mean that we should give up on following the fire in our heart.
 
 
 
@@ -785,14 +924,10 @@ So... Everything was leading to this. Of course... Right...
 I won't accept... I can't accept... This is no court!
 ...
 You'd let ignorant swine soil your courts?
-
-A lesson you fail to remember, Mr. Gavin.
-Excess yelling can damage the jurists' ears... and your case.
-
 No! No! No! If I'm convicted, I'll appeal! Again and again!
 
 And the people will convict you, again and again...
-As many times as you rear your ugly head in jealousy.
+As many times as you rear your ugly head in envy.
 
 Truth! There's only one, immutable truth!
 Truth can't be determined by this incoherent herd!
@@ -808,6 +943,11 @@ Wish granted, Mr. Gavin.
 Because Justice is right here, and just what you're about to get.
 
 I... but...!
+
+A lesson you fail to remember, Mr. Gavin.
+Excess yelling can damage the jurists' ears... and your case.
+
+Aaaaaaaaaaaaaarrrrrrrrrrrrggggggggghhhhhhh!
 
 (music fades out)
 Kristoph... It's over.
