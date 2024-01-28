@@ -1,7 +1,16 @@
 def convertBGRA5551ToRGB(colorString):
     colorString = colorString[2:] + colorString[:-2] #reverse endianness of the two-byte groups
-    colorString = bin(int(colorString, 16))[2:] #convert to binary
+    colorString = int(colorString, 16) #convert to binary
 
+    #did I get the transparency the wrong way around?
+    transparency = False
+    if colorString & 0b1000000000000000 != 0: #the alpha bit is the most significant one
+        transparency = True
+
+    colorString = bin(colorString)[2:] #convert to string
+
+    if (len(colorString) == 16):
+        colorString = colorString[1:] #take off the alpha bit
     while len(colorString) < 15: #make sure each item in the list is 15 digits long
         colorString = "0" + colorString
 
@@ -9,10 +18,10 @@ def convertBGRA5551ToRGB(colorString):
 
     for color in range(0, 3): #cycle through blue, green, red
         RGBList[color] = colorString[15-5*(color+1):(15-5*(color+1))+5] #divide it into groups of five bits in reverse
-        RGBList[color] = int(RGBList[color], 2)
+        RGBList[color] = int(RGBList[color], 2) #convert that color to binary
         RGBList[color] = round(RGBList[color]*255/31) #change the values to out of 255 instead of out of 31
 
-    return RGBList
+    return RGBList, transparency
 #-------------------------------------------------------------------
 def convertRGBToBGRA5551(RGBATuple):
     RGBList = list(RGBATuple)
@@ -40,12 +49,11 @@ def convertRGBToBGRA5551(RGBATuple):
 #--------------------------------------------------------------------------
 #true if the inputted color(s) is RGB and should be converted to BGRA5551
 #false if the inputted color(s) is BGRA5551 and should be converted to RGB
-isRGB = True
+isRGB = False
 
-colors = [(177, 13, 9), (192, 20, 19), (206, 30, 31), (219, 42, 43)]
+colors = ["E71C"]
 
 if (isRGB):
-    #alpha is assumed to be 0, could be changed if needed though
     for color in colors:
         print(f'{color} converts to {convertRGBToBGRA5551(color)}')
 else:

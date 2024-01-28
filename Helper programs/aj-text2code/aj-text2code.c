@@ -4,7 +4,7 @@
 #include <windows.h>
 #include "aj-text2code.h"
 
-boolean includeHeader = TRUE; //determines whether to do the extra step of adding the header
+boolean includeHeader = FALSE; //determines whether to do the extra step of adding the header
 int sectionCount = 0; //global variable to count number of sections
 int sectionOffsets[500]; //global array to hold offsets of sections, of arbitrary size
 int offsetIndex = 0; //index to keep track of position in array
@@ -13,7 +13,7 @@ int main() {
     FILE *fptrRead;
     FILE *fptrWrite;
 
-    fptrRead = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\Unfinished\\ExitsAndEntrances.txt","r");
+    fptrRead = fopen("C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-text2code\\Unfinished\\credits.txt","r");
     //open script.txt for reading from
 
     int bufferSize = 100; //default value
