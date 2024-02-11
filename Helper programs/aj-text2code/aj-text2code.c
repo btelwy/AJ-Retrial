@@ -3255,6 +3255,12 @@ void music(char parameter[], FILE* pointer)
         fwrite(&writeBuffer, 2, 1, pointer);
     }
 
+    else if (strcmp(parameter, "titleTheme") == 0)
+    {
+        writeBuffer = 0x0057;
+        fwrite(&writeBuffer, 2, 1, pointer);
+    }
+
     else if (strcmp(parameter, "newCredits") == 0)
     {
         writeBuffer = 0x0058;
