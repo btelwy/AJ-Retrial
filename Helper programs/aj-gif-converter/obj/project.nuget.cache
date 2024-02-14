@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "lHRZDIaRQSxxSoqZ6+Jy6gXVuDJffwKXC9eM36xIRp5pETqXJ02mZOy0tj3LWxHUmgi8sBy8k67xNf/HK2kyig==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ben\\Desktop\\AJ-Retrial\\Helper programs\\aj-gif-converter\\aj-gif-converter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ben\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\ben\\.nuget\\packages\\system.drawing.common\\8.0.0\\system.drawing.common.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
