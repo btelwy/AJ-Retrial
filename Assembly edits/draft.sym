@@ -1,0 +1,26 @@
+;this is a comment
+
+;reserved labels, from no$gba website:
+;.arm          ;following code is in 32bit/ARM format
+;.thumb        ;following code is in 16bit/THUMB format
+;.byt:NNNN     ;next NNNN bytes are 8bit data (dcb lines)
+;.wrd:NNNN     ;next NNNN bytes are 16bit data (dcw lines)
+;.dbl:NNNN     ;next NNNN bytes are 32bit data (dcd lines)
+;.asc:NNNN     ;next NNNN bytes are ascii data (quoted dcb lines)
+;.pool         ;dummy label (indicates that following is literal pool)
+
+08000000 .arm
+080000C0 start
+08000124 mainloop
+080001EC .thumb
+080001EC init_video
+08000210 .arm
+08000210 irq_handler
+
+08000228 jumplist
+08000228 .dbl:0010
+08000414 text_array
+08000414 .asc:0017
+0800042B .asc:000F
+0800043A .asc:0012
+06000000 vram_base

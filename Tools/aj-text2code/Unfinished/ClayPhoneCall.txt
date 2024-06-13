@@ -1,0 +1,416 @@
+April 20,{wait:short} 4:43 PM
+Apollo's Apartment
+
+{sound:door}
+{name:apollo}
+Home sweet home.{wait:normal} Well,{wait:short} that's{newLine}
+what they say,{wait:short} anyway.{textboxEnd}
+Feels like a lie right now.{wait:normal}{newLine}
+Not your fault,{wait:short} though,{wait:short}{newLine}
+apartment. Everything does.{textboxEnd}
+Surprised I didn't crash my bike{newLine}
+riding over here.{wait:normal} I was squeezing{newLine}
+that thing like a vise.{textboxEnd}
+Would've been the cherry on{newLine}
+top of the mess I'd always{newLine}
+dreamed would be a cake.{textboxEnd}
+Alright,{wait:short} here's the plan.{wait:normal}{newLine}
+I lie down,{wait:short} and when I{newLine}
+wake up...{textboxEnd}
+{textColor:blue}
+(...when I wake up,{wait:short} maybe the{newLine}
+pit in my chest will be{newLine}
+gone.){textboxEnd}
+(Maybe I can still dream.){textboxEnd}
+
+(he lies down)
+
+{textbox:hide}
+{wait:3B}
+{wait:3B}
+{textbox:show}
+
+(Maybe I should call Clay.{wait:normal}{newLine}
+He'd know what to do...{wait:normal}{newLine}
+but...){textboxEnd}
+(...geez,{wait:short} I'm zonked out.){textboxEnd}
+
+{textbox:hide}
+{wait:3B}
+{wait:3B}
+{music:jingle2001}
+{wait:3B}
+{wait:3B}
+{music:jingle2001}
+{wait:3B}
+{textbox:show}
+(His telepathy strikes again.){textboxEnd}{textColor:white}
+{textbox:show}
+{music:jingle2001}
+{wait:3B}
+{musicFade:1}
+
+(phone is answered)
+{wait:20}
+
+{name:clay}
+{sound:outburst}Heya Pollo,{wait:short} what's down?{wait:3B}{wait:3B}{textboxEndForced}
+I really wanted to call earlier{newLine}
+to check in about how it{newLine}
+went,{wait:short} but,{wait:short} uh--{wait:3B}{wait:3B}{textboxEndForced}
+Director Cosmos needed some help{newLine}
+with one of the robots,{wait:short} well,{wait:short}{newLine}
+uh,{wait:short} still kinda needs.{wait:3B}{wait:3B}{textboxEndForced}
+Y'know, 'cuz I sorta dropped ten{newLine}
+screws inside the solar panel.{wait:normal}{newLine}
+So he said--{textboxEnd}
+
+{name:apollo}
+{sound:punctuate}Whoa,{wait:short} {sound:punctuate}whoa,{wait:short} hold up there!{wait:normal}{newLine}
+Can't I get a word or two in?{textboxEnd}
+
+{name:clay}
+Ha ha ha,{wait:short} forgot myself again,{wait:short}{newLine}
+Pollo.{wait:normal} My bad,{wait:short} my bad.{textboxEnd}
+
+{name:apollo}
+"My bad" my behind.{wait:normal} We both{newLine}
+know perfectly well that you{newLine}
+do it just to be annoying.{textboxEnd}
+
+{name:clay}
+Then it sounds like it's{newLine}
+doing its job!{wait:normal} Unlike me!{textboxEnd}
+
+{name:apollo}{textColor:blue}
+(I can just imagine his{newLine}
+sheepish grin.){textboxEnd}
+(And... oh,{wait:short} darn it.{wait:normal}{newLine}
+Now I'm smiling too.){textColor:white}
+And we both know perfectly{newLine}
+well that you ace your job.(textboxEnd)
+So no need to make fun{newLine}
+of yourself for my sake.{textboxEnd}
+I mean,{wait:short} how long until you go{newLine}
+into space?{wait:normal} December of{newLine}
+next year?{textboxEnd}
+
+{name:clay}
+Yep,{wait:short} just about eighteen{newLine}
+months from now.{textboxEnd}
+But no joke,{wait:short} Pollo,{wait:short} I gotta{newLine}
+tell you the rest of{newLine}
+this story.{textboxEnd}
+Excuse my language, but it's{newLine}
+epic as heck.{textboxEnd}
+
+{name:apollo}
+Fine,{wait:short} fine.{textboxEnd}
+
+{name:clay}
+So,{wait:short} look,{wait:short} Director Cosmos has this{newLine}
+huge drawer of screws that{newLine}
+only he can tell apart.{textboxEnd}
+And,{wait:short} I mean,{wait:short} he did document{newLine}
+which is which,{wait:short} but get this!{wait:normal}{newLine}
+He did it on {sound:punctuate}paper.{textboxEnd}
+Paper!{wait:normal} In this day and age!{textboxEnd}
+And his handwriting looks like{newLine}
+that time I made you do{newLine}
+your math homework blindfolded!{textboxEnd}
+How could I have known{newLine}
+which one to use?{textboxEnd}
+How in the ever-expanding{newLine}
+universe could I have{newLine}
+known,{wait:short} Pollo?{textboxEnd}
+
+{name:apollo}
+Allow me to translate:{wait:normal} "I grabbed{newLine}
+them all at once to figure{newLine}
+out which one fit."{textboxEnd}
+"Shockingly,{wait:short} I was unable to{newLine}
+hold seventy-two screws."{textboxEnd}
+
+{name:clay}
+Hey,{wait:short} efficiency is{newLine}
+proficiency.{textboxEnd}
+It's just that I didn't expect{newLine}
+gravity to betray me like that.{textboxEnd}
+I swear,{wait:short} this is why{newLine}
+I'm going to space.{textboxEnd}
+
+{name:apollo}
+More like your brain betrayed{newLine}
+you.{wait:normal} Are you getting a{newLine}
+new one in space?{textboxEnd}
+
+{name:clay}
+Who knows?{wait:normal} The possibilities{newLine}
+are endless.{textboxEnd}
+More importantly,{wait:short} how did it{newLine}
+go today?{textboxEnd}
+Hey, one more time,{wait:short} I'm{newLine}
+so sorry I couldn't be there.{wait:normal}{newLine}
+I just can't miss training.{textboxEnd}
+
+{name:apollp}
+Honestly...{wait:normal}{newLine}
+I'm glad you weren't there.{textboxEnd}
+
+{name:clay}
+Something wrong,{wait:short} Pollo?{textboxEnd}
+
+{name:apollo}
+Yeah...{wait:normal} speaking of "betraying."{textboxEnd}
+
+{name:clay}
+{sound:ding}Huh?{textboxEnd}
+
+{name:apollo}
+What if I tell you that...{textboxEnd}
+{sound:punctuate}That the two people I looked{newLine}
+up to the most of anyone{newLine}
+betrayed me today?{textboxEnd}
+{sound:punctuate}That Mr. Wright gave me forged{newLine}
+evidence that could've gotten{newLine}
+me disbarred?{textboxEnd}
+{sound:punctuate}That the rumors about him{newLine}
+forging evidence in his last{newLine}
+trial are probably true?{textboxEnd}
+
+{name:clay}{textSpeed:F}
+...{textboxEnd}{textSpeed:3}
+
+{name:apollo}
+What if I tell you that{newLine}
+I lost my job?{textboxEnd}
+{sound:punctuate}That I was so furious I{newLine}
+punched Mr. Wright in the face?{textboxEnd}
+{sound:punctuate}That...{wait:normal} {sound:punctuate}that...{textboxEnd}
+{sound:outburst}That in my very first trial,{wait:short}{newLine}
+Mr. Gavin turned out to be{newLine}
+a real,{wait:short} live murderer?!{textboxEnd}
+{name:clay}
+...{textboxEnd}
+{textbox:hide}
+{wait:3B}
+{textbox:show}
+It's OK,{wait:short} Pollo.{newLine}
+I'm here.{textboxEnd}
+{textbox:hide}
+{wait:3B}
+{wait:3B}
+{wait:3B}
+{textbox:show}
+{name:apollo}
+*sob* *sniff* *bawl* *sob*{textboxEnd}
+{textbox:hide}
+{wait:3B}
+{textbox:show}
+{textColor:blue}(So much for staying cool.){textboxEnd}{textColor:white}
+S-Sorry for l-losing it there.{wait:normal}{newLine}
+I didn't mean to take{newLine}
+it out on you.{textboxEnd}
+{name:clay}
+Pollo...{wait:normal} I can't believe they{newLine}
+did that to you.{textSpeed:F}
+.........{textboxEnd}
+.........{textboxEnd}
+
+{name:apollo}{textSpeed:3}
+C-Clay?{textboxEnd}
+
+{name:clay}
+Bless your heart,{wait:short} Pollo,{wait:short} I'm not mad.{textboxEnd}
+I mean,{wait:short} I'm furious,{wait:short} too.{wait:normal}{newLine}
+But not at you.{wait:normal} For you.{textboxEnd}
+
+{name:apollo}
+For some reason,{wait:short} that actually{newLine}
+makes me feel better.{textboxEnd}
+Thanks,{wait:short} Clay.{textboxEnd}
+
+{name:clay}
+No prob.{wait:normal}{newLine}
+Seriously,{wait:short} are you OK though?{textboxEnd}
+
+{name:apollo}
+You'd think after a few hours{newLine}
+it would process...{textboxEnd}
+But judging by my tears,{wait:short} I'd{newLine}
+give it another week or so.{textboxEnd}
+
+{name:clay}
+And that's alright.{textboxEnd}
+
+{name:apollo}
+It isn't even the first time{newLine}
+someone has betrayed my trust.{textboxEnd}
+So why am I sad that{newLine}
+it happened again?{textboxEnd}
+
+{name:clay}
+Because it's sad every time,{wait:short}{newLine}
+Pollo.{wait:normal} Life is pretty sad,{wait:short}{newLine}
+isn't it?{textboxEnd}
+That's why I'm here to{newLine}
+brighten it up for you.{textboxEnd}
+
+{name:apollo}{textColor:blue}
+(I don't know where I'd{newLine}
+be without you,{wait:short} Clay.){textboxEnd}{textColor:white}
+And I'm here to remind{newLine}
+you to be responsible,{wait:short} since{newLine}
+you have a few screws loose.{textboxEnd}
+
+{name:clay}
+Yeah,{wait:short} that generally does happen{newLine}
+when you drop them.{textboxEnd}
+Changing subject.{textboxEnd}
+
+{name:apollo}
+Can you not think of a{newLine}
+better transition?{textboxEnd}
+
+{name:clay}
+Nope.{textboxEnd}
+What are you gonna do now that{newLine}
+you're unemployed?{wait:normal} Need any{newLine}
+help?{wait:normal} You're welcome to crash.{textboxEnd}
+
+{name:apollo}
+I appreciate it,{wait:short} but luckily{newLine}
+I have some emergency cash{newLine}
+and...{wait:normal} well,{wait:short} an offer.{textboxEnd}
+
+{name:clay}
+Nice,{wait:short} where's the offer at?{textboxEnd}
+
+{name:apollo}
+I don't think I'm ready to{newLine}
+tell you,{wait:short} honestly. I've got to...{wait:normal}{newLine}
+think through some things first.{textboxEnd}
+But I will.{wait:normal}I {sound:punctuate}promise.{textboxEnd}
+{textColor:blue}(I'm just too ashamed to{newLine}
+say it out loud.){textboxEnd}{textColor:white}
+
+{name:clay}
+Roger that.{textboxEnd}
+
+{name:apollo}
+Hey.{textboxEnd}
+
+{name:clay}
+Now what kind of transition{newLine}
+is that?{textboxEnd}
+
+{name:apollo}
+You knew,{wait:short} didn't you?{wait:normal} That{newLine}
+the trial didn't go well.{textboxEnd}
+Because if it had,{wait:short} I{newLine}
+would've called you immediately.{textboxEnd}
+That's why you started off{newLine}
+with that story.{wait:normal} To make{newLine}
+me feel better.{textboxEnd}
+I'm right,{wait:short} aren't I?{wait:normal}{newLine}
+You can admit it.{textboxEnd}
+
+{name:clay}
+I don't know,{wait:short} admitting that{newLine}
+you're right?{wait:normal} I'd rather take{newLine}
+off my hat.{textboxEnd}
+But uh,{wait:short} maybe.{wait:normal} Yeah.{textboxEnd}
+You're one smart cookie,{wait:short} Pollo.{textboxEnd}
+
+{name:apollo}
+Clay...{wait:normal}{textboxEnd}{textColor:blue}
+(What does being smart count for,{wait:short}{newLine}
+really,{wait:short} when everything's{newLine}
+falling apart?){textboxEnd}
+(What is all my studying{newLine}
+even worth?){textboxEnd}{textColor:white}
+
+{name:clay}
+Apollo.{textboxEnd}
+Our lives are just beginning.{wait:normal}{newLine}
+Our stories are just starting.{textboxEnd}
+Whatever happens,{wait:short} wherever we go...{wait:normal}{newLine}
+You'll be a star.{wait:normal}{newLine}
+I just know it.{textboxEnd}
+
+{name:apollo}
+And we'll be a binary{newLine}
+system,{wait:short} right?{textboxEnd}
+
+{name:clay}
+Right.{wait:normal} Two stars,{wait:short} connected in{newLine}
+orbit by each other's gravity.{textboxEnd}
+Because even in the depths of{newLine}
+space,{wait:short} gravity can still reach.{textboxEnd}
+
+{name:apollo}
+...{wait:normal}Then there's nothing left to{newLine}
+do but shine.{textboxEnd}
+
+{name:clay}
+There's nothing left to do{newLine}
+but shine!{textboxEnd}
+Just like that badge pinned{newLine}
+on your lapel.{textboxEnd}
+
+{name:apollo}
+You're right.{wait:normal} I still have{newLine}
+my badge.{wait:normal} I still have{newLine}
+everything I've worked for.{textboxEnd}
+And people to believe in?{textboxEnd}
+Well,{wait:short} I'm at a loss with that.{textboxEnd}
+But for now I have you,{wait:short}{newLine}
+Clay,{wait:short} and that's more{newLine}
+than enough.{textboxEnd}
+
+{name:clay}
+Bingo.{wait:normal} Back at you.{textboxEnd}
+I trust you,{wait:short} I believe{newLine}
+in you,{wait:short} and,{wait:short} uh,{wait:short} I don't{newLine}
+really think I've killed anyone.{textboxEnd}
+
+{name:apollo}
+Filling me with confidence here.{textboxEnd}
+
+{name:clay}
+I sure as heck haven't{newLine}
+killed anyone!{textboxEnd}
+
+{name:apollo}
+Better.
+
+{name:clay}
+And,{wait:short} uh,{wait:short} Pollo?{textboxEnd}
+
+{name:apollo}
+Yeah?{textboxEnd}
+
+{name:clay}
+You'll let me see Mr. Gavin{newLine}
+in prison,{wait:short} won't you?{textboxEnd}
+I'd love to slug him.{wait:normal} You{newLine}
+know,{wait:short} just bruise him up{newLine}
+a teeny-tiny bit.{textboxEnd}
+It's not fair that{newLine}
+Mr. Wright gets all the attention.{textboxEnd}
+
+{name:apollo}
+I'm honored,{wait:short} but I'm not{newLine}
+sure I could acquit you from{newLine}
+that one.{textboxEnd}
+
+{name:clay}
+Phooey.{textboxEnd}
+Oops,{wait:short} gotta go,{wait:short} Pollo.{wait:normal}{newLine}
+Talk later,{wait:short} OK?{textboxEnd}
+
+{name:apollo}
+No problem.{wait:normal} I should{newLine}
+be off too.{textboxEnd}
+After all...{wait:normal}{newLine}
+the world is waiting.{textboxEnd}
