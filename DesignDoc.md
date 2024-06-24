@@ -69,8 +69,8 @@ With the exception of Clay's inclusion, *Retrial* will be written from the persp
 ## Tools
 Since no known romhacking work has been done before on the DS version of *Apollo Justice*, some tools need to be developed to facilitate the development process. These include:
 
-- text to *Apollo Justice* text encoding converter
-- .gif to animation file converter
+- [] plain text to *Apollo Justice*'s text encoding converter
+- [] .gif to animation file converter
 
 
 ## Documentation

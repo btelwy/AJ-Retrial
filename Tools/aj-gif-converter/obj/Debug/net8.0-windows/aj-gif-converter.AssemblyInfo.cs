@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("aj-gif-converter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0499afc5f55c00b7ed7fc2b99d578c7a8a4084d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d287a1b5cc86bb0c31fdacc3ddaae41fcb38c37")]
 [assembly: System.Reflection.AssemblyProductAttribute("aj-gif-converter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("aj-gif-converter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
