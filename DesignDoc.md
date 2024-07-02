@@ -30,11 +30,12 @@ As a romhack of *Apollo Justice: Ace Attorney*, *Retrial* will follow the standa
 
 ## Additions
 ### Features
-- [ ] Add title screen music, where there was previously silence
-- [ ] Make investigation cursor change color based on whether an object has already been examined
+- [x] Add title screen music, where there was previously silence
+- [x] Make investigation cursor change color based on whether an object has already been examined
 - [ ] Add option to skip the Serenade video playback
 - [ ] Add *Trials and Tribulations* music toggle for the flashback sections
-- [ ] Add text backlog, activated with the Select button 
+- [ ] Add accessibility features
+- [ ] Add text backlog, activated with the Select button
 
 
 ### Characters
@@ -43,7 +44,7 @@ As a romhack of *Apollo Justice: Ace Attorney*, *Retrial* will follow the standa
 
 ### Story and Dialogue
 - [ ] A fifth case, titled **Truth and Justice**
-- [ ] A comedic "Asinine Attorney" case, in which Phoenix is accused of murdering Charley the houseplant (worked on: Midnight)
+- [ ] A comedic "Asinine Attorney" case titled The Uprooted Turnabout, in which Phoenix is accused of murdering Charley the houseplant (worked on: Midnight)
   
 As listed below, there will also be:
 - About fifteen mini-episodes, called Secret Files, that focus on character dynamics and are accessed from the main menu
@@ -55,7 +56,7 @@ As listed below, there will also be:
 
 **Turnabout Corner:**
 - [x] Ema and Phoenix’s first conversation in a long time
-- [ ] Apollo, Trucy, Ema, and Wocky hanging out (worked on: @OnYourRight)
+- [ ] Apollo, Trucy, Ema, and Wocky hanging out (worked on: OnYourRight)
 - [x] Edgeworth and Gumshoe visiting Wright and Co. Law Offices
 
 **Turnabout Serenade:**
