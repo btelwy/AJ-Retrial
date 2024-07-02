@@ -1,4 +1,4 @@
-# *Apollo Justice: Ace Attorney: Retrial* Design Document
+# *Apollo Justice: Ace Attorney: Retrial* Design Document (WIP)
 ---
 ![Retrial project logo](./Added%20assets/Images/titleLogo.png)
 ---
@@ -38,14 +38,44 @@ As a romhack of *Apollo Justice: Ace Attorney*, *Retrial* will follow the standa
 
 
 ### Characters
-- [] Clay, from *Phoenix Wright: Dual Destinies*, is an astronaut who will serve as Apollo's best friend, as retroactively described in that game
+- [] Clay, as retroactively described in *Phoenix Wright: Dual Destinies*, is an astronaut who will serve as Apollo's best friend
 
 
 ### Story and Dialogue
 - [] A fifth case, titled **Truth and Justice**
-- [] A comedic "Asinine Attorney" case, in which Phoenix is accused of murdering Charley the houseplant
-- [] About ten mini-episodes, called Secret Files, that focus on character dynamics and are accessed from the main menu
-- [] Additional new scenes that are integrated directly into the main cases
+- [] A comedic "Asinine Attorney" case, in which Phoenix is accused of murdering Charley the houseplant (worked on: Midnight)
+  
+As listed below, there will also be:
+- About fifteen mini-episodes, called Secret Files, that focus on character dynamics and are accessed from the main menu
+- Additional new scenes that are similar to the Secret Files but that are integrated directly into the main cases
+
+**Turnabout Trump:**
+- [x] Phoenix and Kristoph’s dinner conversation before 4-1
+- [x] Apollo visiting Kristoph in prison right after 4-1, where as a retcon he sees Klavier for the first time
+
+**Turnabout Corner:**
+- [x] Ema and Phoenix’s first conversation in a long time
+- [] Apollo, Trucy, Ema, and Wocky hanging out (worked on: @OnYourRight)
+- [x] Edgeworth and Gumshoe visiting Wright and Co. Law Offices
+
+**Turnabout Serenade:**
+- [] Apollo, Trucy, and Lamiroir visiting Machi after 4-3 (worked on: AWD)
+- [] Klavier inviting Apollo to his office after 4-3 to talk (worked on: Kringle)
+- [] Apollo, Trucy, and Phoenix at the agency cooking (needs to be put into a scene)
+
+**Turnabout Succession:**
+- [] Klavier and Kristoph talking after Gramarye trial (worked on: piyo)
+- [x] Valant before turning himself in
+- [] Maya meeting Trucy (needs to be put into a scene)
+
+**Truth and Justice:**
+- [] *to be filled in later*
+
+**Scenes inserted directly into the main game:**
+- [] Apollo having a phone call with Clay right after 4-1 (needs to be put into a scene)
+- [] The off-camera scene where Phoenix finally tells Apollo what happened (worked on: Matt)
+- [] Apollo and Trucy talking in the hospital after the final 4-4 trial (needs to be put into a scene)
+- [] Klavier apologizing to Phoenix (part of 4-5)
 
 With the exception of Clay's inclusion, *Retrial* will be written from the perspective of 2007, as if *Apollo Justice: Ace Attorney*'s sequels, *Phoenix Wright: Dual Destinies* and *Phoenix Wright: Spirit of Justice*, had not yet released. *Retrial* is intended to address *Apollo Justice* as a game, not the *Apollo Justice* trilogy of games.
 
@@ -63,18 +93,21 @@ With the exception of Clay's inclusion, *Retrial* will be written from the persp
 - [] Change Trucy's skin color to a darker shade to correct the planning error from the original game
 - [] Fix typos
 - [] Correct logical errors to the extent that is feasible
-- [] Change particularly out-of-character lines
+- [] Edit particularly out-of-character lines
 
 
 ## Tools
 Since no known romhacking work has been done before on the DS version of *Apollo Justice*, some tools need to be developed to facilitate the development process. These include:
 
 - [] plain text to *Apollo Justice*'s text encoding converter
+- [] *Apollo Justice*'s raw image format to .png converter
 - [] .gif to animation file converter
 
 
 ## Documentation
-Documentation will be a core part of the *Retrial* project.
+Documentation will be a core part of the *Retrial* project. It will take two forms:
+- Documentation of our own methods for all relevant tasks
+- Documentation of the game's internal workings, function of important addresses in RAM, etc.
 
 
 ---
