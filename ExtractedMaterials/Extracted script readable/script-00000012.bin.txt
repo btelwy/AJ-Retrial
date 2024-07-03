@@ -1,0 +1,411 @@
+SECTION 0
+ 0000	section_setup
+ 0001	cmd62
+ 0002	pause
+ 0003	newline
+ 0004	cmd6B 00001, 00000, 00031
+ 0008	bganim 00098, 00626
+ 0011	cmd6B 00003, 00000, 00000
+ 0015	bganim 00098, 00625
+ 0018	wait 00001
+ 0020	cmd6B 00004, 00001, 00031
+ 0024	bganim 00098, 00627
+ 0027	bganim 00000, 08192
+ 0030	hide_court_record_button 00001
+ 0032	togglevoicesfx 00000
+ 0034	bg 4095, BG_NOSHIFT
+ 0036	hidetextbox 00001
+ 0038	bganim 01024, 00000
+ 0041	cmd30 00255
+ 0043	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0047	name 0, SHOW_LEFT
+ 0049	hidetextbox 00000
+ 0051	speed 00005
+ 0053	text "..."
+ 0056	wait 00016
+ 0058	text "And that is the whole truth\nof this case."
+ 0099	wait 00090
+ 0101	nextpage_nobutton
+ 0102	hidetextbox 00001
+ 0104	bganim 01025, 00000
+ 0107	bganim 01027, 00000
+ 0110	halt
+ 0111	section_end
+ENDSECTION
+SECTION 1
+ 0000	section_setup
+ 0001	bganim 00000, 08192
+ 0004	cmd30 00255
+ 0006	hidetextbox 00000
+ 0008	name 0, SHOW_LEFT
+ 0010	speed 00005
+ 0012	text "In order to understand it\nmyself"
+ 0044	speed 00008
+ 0046	text "..."
+ 0049	wait 00080
+ 0051	nextpage_nobutton
+ 0052	speed 00004
+ 0054	text "..."
+ 0057	wait 00012
+ 0059	text "I had to know the story of\nthese last seven long years."
+ 0114	wait 00090
+ 0116	nextpage_nobutton
+ 0117	hidetextbox 00001
+ 0119	hidetextbox 00003
+ 0121	halt
+ 0122	section_end
+ENDSECTION
+SECTION 2
+ 0000	section_setup
+ 0001	bganim 01029, 00000
+ 0004	sound 00045, 00001
+ 0007	shake 00030, 00001
+ 0010	screen_fade 02305, 00008, 00031
+ 0014	wait 00003
+ 0016	screen_fade 02305, 00008, 00031
+ 0020	wait 00003
+ 0022	wait 00080
+ 0024	bganim 01038, 00000
+ 0027	halt
+ 0028	section_end
+ENDSECTION
+SECTION 3
+ 0000	section_setup
+ 0001	bganim 00000, 08192
+ 0004	cmd30 00255
+ 0006	hidetextbox 00000
+ 0008	name 0, SHOW_LEFT
+ 0010	text "Nothing happens by chance..."
+ 0038	wait 00030
+ 0040	newline
+ 0041	speed 00005
+ 0043	text "All is connected."
+ 0060	wait 00080
+ 0062	nextpage_nobutton
+ 0063	hidetextbox 00001
+ 0065	hidetextbox 00003
+ 0067	halt
+ 0068	section_end
+ENDSECTION
+SECTION 4
+ 0000	section_setup
+ 0001	bganim 01030, 00000
+ 0004	bganim 01031, 00000
+ 0007	halt
+ 0008	section_end
+ENDSECTION
+SECTION 5
+ 0000	section_setup
+ 0001	bganim 00000, 08192
+ 0004	cmd30 00255
+ 0006	hidetextbox 00000
+ 0008	name 0, SHOW_LEFT
+ 0010	text "And now..."
+ 0020	wait 00060
+ 0022	nextpage_nobutton
+ 0023	speed 00004
+ 0025	text "..."
+ 0028	wait 00010
+ 0030	text "you stand ready to begin\nthe final chapter of this\nstory."
+ 0087	wait 00060
+ 0089	nextpage_nobutton
+ 0090	cmd30 00002
+ 0092	hidetextbox 00001
+ 0094	hidetextbox 00003
+ 0096	halt
+ 0097	section_end
+ENDSECTION
+SECTION 6
+ 0000	section_setup
+ 0001	bganim 01032, 00000
+ 0004	wait 00090
+ 0006	hidetextbox 00000
+ 0008	name 0, SHOW_LEFT
+ 0010	speed 00005
+ 0012	text "Will the defendant be found\nguilty,"
+ 0047	wait 00006
+ 0049	text " or innocent?"
+ 0062	wait 00060
+ 0064	nextpage_nobutton
+ 0065	speed 00003
+ 0067	text "The decision is yours."
+ 0089	wait 00060
+ 0091	nextpage_nobutton
+ 0092	hidetextbox 00001
+ 0094	bganim 01033, 00000
+ 0097	bganim 01034, 00000
+ 0100	cmd6B 00001, 00000, 00031
+ 0104	bganim 00098, 00626
+ 0107	screen_fade 4, FADE_TO_BLACK, 1, 31
+ 0111	wait 00025
+ 0113	bganim 00000, 04096
+ 0116	bg 4095, BG_NOSHIFT
+ 0118	flagctl 3, 0, 1
+ 0120	cmd7D
+ 0121	section_setup
+ 0122	hidetextbox 00003
+ 0124	halt
+ 0125	section_end
+ENDSECTION
+SECTION 7
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	paragraph
+ 0007	cmd62
+ 0008	pause
+ 0009	newline
+ 0010	flagctl 3, 0, 1
+ 0012	fadetoblack 00000
+ 0014	hidetextbox 00003
+ 0016	halt
+ 0017	section_end
+ENDSECTION
+SECTION 8
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	newline
+ 0007	paragraph
+ 0008	cmd62
+ 0009	pause
+ 0010	newline
+ 0011	flagctl 3, 0, 1
+ 0013	flagctl 3, 1, 1
+ 0015	setmovelocations 0, 1, 9, 255, 255
+ 0021	psychelock_itemchallenge 0, 1, 4294967180, 127
+ 0026	text "ò"
+ 0027	cmd61 00000, 00025, 00014
+ 0031	text "òò"
+ 0033	setmovelocations 1, 0, 255, 255, 255
+ 0039	psychelock_itemchallenge 1, 0, 127, 127
+ 0044	text "ò"
+ 0045	cmd61 00001, 00000, 00255
+ 0049	text "òò"
+ 0051	newevidence 194, EVIDENCE, 0
+ 0053	fadetoblack 00001
+ 0055	hidetextbox 00003
+ 0057	halt
+ 0058	section_end
+ENDSECTION
+SECTION 9
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	newline
+ 0007	paragraph
+ 0008	cmd62
+ 0009	pause
+ 0010	newline
+ 0011	flagctl 3, 0, 1
+ 0013	flagctl 3, 1, 1
+ 0015	flagctl 3, 7, 1
+ 0017	flagctl 3, 8, 1
+ 0019	setmovelocations 0, 1, 9, 10, 255
+ 0025	psychelock_itemchallenge 0, 1, 4294967180, 4294967179
+ 0030	text "ò"
+ 0031	cmd61 00000, 00025, 00014
+ 0035	pagebreak_section 127
+ 0037	setmovelocations 1, 0, 10, 255, 255
+ 0043	psychelock_itemchallenge 1, 0, 4294967179, 127
+ 0048	text "ò"
+ 0049	cmd61 00001, 00000, 00010
+ 0053	text "òò"
+ 0055	setmovelocations 9, 0, 10, 255, 255
+ 0061	psychelock_itemchallenge 9, 0, 4294967179, 127
+ 0066	text "ò"
+ 0067	cmd61 00009, 00000, 00010
+ 0071	text "òò"
+ 0073	newevidence 194, EVIDENCE, 0
+ 0075	fadetoblack 00001
+ 0077	hidetextbox 00003
+ 0079	halt
+ 0080	section_end
+ENDSECTION
+SECTION 10
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	newline
+ 0007	paragraph
+ 0008	cmd62
+ 0009	pause
+ 0010	newline
+ 0011	flagctl 3, 0, 1
+ 0013	flagctl 3, 1, 1
+ 0015	flagctl 3, 7, 1
+ 0017	flagctl 3, 8, 1
+ 0019	flagctl 3, 17, 1
+ 0021	flagctl 3, 18, 1
+ 0023	flagctl 3, 23, 1
+ 0025	setmovelocations 0, 1, 9, 10, 255
+ 0031	psychelock_itemchallenge 0, 1, 4294967180, 4294967179
+ 0036	text "ò"
+ 0037	cmd61 00000, 00025, 00014
+ 0041	pagebreak_section 127
+ 0043	setmovelocations 1, 0, 10, 255, 255
+ 0049	psychelock_itemchallenge 1, 0, 4294967179, 127
+ 0054	text "ò"
+ 0055	cmd61 00001, 00000, 00010
+ 0059	text "òò"
+ 0061	setmovelocations 9, 0, 10, 255, 255
+ 0067	psychelock_itemchallenge 9, 0, 4294967179, 127
+ 0072	text "ò"
+ 0073	cmd61 00009, 00000, 00010
+ 0077	text "òò"
+ 0079	newevidence 194, EVIDENCE, 0
+ 0081	fadetoblack 00001
+ 0083	hidetextbox 00003
+ 0085	halt
+ 0086	section_end
+ENDSECTION
+SECTION 11
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	newline
+ 0007	paragraph
+ 0008	cmd62
+ 0009	pause
+ 0010	newline
+ 0011	flagctl 3, 0, 1
+ 0013	flagctl 3, 1, 1
+ 0015	setmovelocations 0, 1, 9, 255, 255
+ 0021	psychelock_itemchallenge 0, 1, 4294967180, 127
+ 0026	text "ò"
+ 0027	cmd61 00000, 00025, 00014
+ 0031	text "òò"
+ 0033	setmovelocations 1, 0, 255, 255, 255
+ 0039	psychelock_itemchallenge 1, 0, 127, 127
+ 0044	text "ò"
+ 0045	cmd61 00001, 00000, 00255
+ 0049	text "òò"
+ 0051	newevidence 194, EVIDENCE, 0
+ 0053	newevidence 196, EVIDENCE, 0
+ 0055	fadetoblack 00009
+ 0057	hidetextbox 00003
+ 0059	halt
+ 0060	section_end
+ENDSECTION
+SECTION 12
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	newline
+ 0007	paragraph
+ 0008	cmd62
+ 0009	pause
+ 0010	newline
+ 0011	flagctl 3, 0, 1
+ 0013	flagctl 3, 1, 1
+ 0015	flagctl 3, 7, 1
+ 0017	flagctl 3, 8, 1
+ 0019	flagctl 3, 17, 1
+ 0021	flagctl 3, 18, 1
+ 0023	flagctl 3, 23, 1
+ 0025	setmovelocations 0, 1, 9, 10, 255
+ 0031	psychelock_itemchallenge 0, 1, 4294967180, 4294967179
+ 0036	text "ò"
+ 0037	cmd61 00000, 00025, 00014
+ 0041	pagebreak_section 127
+ 0043	setmovelocations 1, 0, 10, 255, 255
+ 0049	psychelock_itemchallenge 1, 0, 4294967179, 127
+ 0054	text "ò"
+ 0055	cmd61 00001, 00000, 00010
+ 0059	text "òò"
+ 0061	setmovelocations 9, 0, 10, 255, 255
+ 0067	psychelock_itemchallenge 9, 0, 4294967179, 127
+ 0072	text "ò"
+ 0073	cmd61 00009, 00000, 00010
+ 0077	text "òò"
+ 0079	newevidence 194, EVIDENCE, 0
+ 0081	fadetoblack 00009
+ 0083	hidetextbox 00003
+ 0085	halt
+ 0086	section_end
+ENDSECTION
+SECTION 13
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	newline
+ 0007	paragraph
+ 0008	cmd62
+ 0009	pause
+ 0010	newline
+ 0011	flagctl 3, 0, 1
+ 0013	flagctl 3, 1, 1
+ 0015	flagctl 3, 7, 1
+ 0017	setmovelocations 0, 1, 9, 10, 255
+ 0023	psychelock_itemchallenge 0, 1, 4294967180, 4294967179
+ 0028	text "ò"
+ 0029	cmd61 00000, 00025, 00014
+ 0033	pagebreak_section 127
+ 0035	setmovelocations 1, 0, 10, 255, 255
+ 0041	psychelock_itemchallenge 1, 0, 4294967179, 127
+ 0046	text "ò"
+ 0047	cmd61 00001, 00000, 00010
+ 0051	text "òò"
+ 0053	setmovelocations 9, 0, 10, 255, 255
+ 0059	psychelock_itemchallenge 9, 0, 4294967179, 127
+ 0064	text "ò"
+ 0065	cmd61 00009, 00000, 00010
+ 0069	text "òò"
+ 0071	newevidence 194, EVIDENCE, 0
+ 0073	fadetoblack 00010
+ 0075	hidetextbox 00003
+ 0077	halt
+ 0078	section_end
+ENDSECTION
+SECTION 14
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	newline
+ 0007	paragraph
+ 0008	cmd62
+ 0009	pause
+ 0010	newline
+ 0011	flagctl 3, 0, 1
+ 0013	flagctl 3, 1, 1
+ 0015	flagctl 3, 7, 1
+ 0017	flagctl 3, 8, 1
+ 0019	flagctl 3, 41, 1
+ 0021	flagctl 3, 12, 1
+ 0023	flagctl 3, 17, 1
+ 0025	flagctl 3, 18, 1
+ 0027	flagctl 3, 52, 1
+ 0029	flagctl 3, 23, 1
+ 0031	flagctl 3, 30, 1
+ 0033	flagctl 3, 33, 1
+ 0035	flagctl 3, 32, 1
+ 0037	flagctl 3, 25, 1
+ 0039	flagctl 3, 26, 1
+ 0041	flagctl 3, 13, 1
+ 0043	cmd37 00009, 00000
+ 0046	cmd37 00011, 00001
+ 0049	setmovelocations 0, 1, 9, 10, 255
+ 0055	psychelock_itemchallenge 0, 1, 4294967180, 4294967179
+ 0060	text "ò"
+ 0061	cmd61 00000, 00025, 00014
+ 0065	pagebreak_section 127
+ 0067	setmovelocations 1, 0, 10, 255, 255
+ 0073	psychelock_itemchallenge 1, 0, 4294967179, 127
+ 0078	text "ò"
+ 0079	cmd61 00001, 00000, 00010
+ 0083	text "òò"
+ 0085	setmovelocations 9, 0, 10, 255, 255
+ 0091	psychelock_itemchallenge 9, 0, 4294967179, 127
+ 0096	text "ò"
+ 0097	cmd61 00009, 00000, 00010
+ 0101	text "òò"
+ 0103	newevidence 194, EVIDENCE, 0
+ 0105	newevidence 201, EVIDENCE, 0
+ 0107	newevidence 198, EVIDENCE, 0
+ 0109	newevidence 199, EVIDENCE, 0
+ 0111	newevidence 200, EVIDENCE, 0
+ 0113	fadetoblack 00010
+ 0115	hidetextbox 00003
+ 0117	halt
+ 0118	section_end
+ENDSECTION

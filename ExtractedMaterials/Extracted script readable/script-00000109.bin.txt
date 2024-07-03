@@ -1,0 +1,734 @@
+SECTION 0
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "There\'s a number inscribed on\nthe back of the badge."
+ 0059	paragraph
+ 0060	text "There are many numbers like\nit,"
+ 0091	wait 00010
+ 0093	text " but this one is mine."
+ 0115	wait 00016
+ 0117	newline
+ 0118	text "Proof that I\'m an attorney."
+ 0145	paragraph
+ 0146	speed 00004
+ 0148	text "To tell the truth,"
+ 0166	wait 00012
+ 0168	text " "
+ 0169	speed 00003
+ 0171	text "I get a\nhappy feeling inside just\nlooking at it."
+ 0219	paragraph
+ 0220	cmd74 00005, 00000
+ 0223	halt
+ 0224	section_end
+ENDSECTION
+SECTION 1
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "There are three keys on\nthis heart{DASH}shaped key ring."
+ 0058	paragraph
+ 0059	sound 00051, 00001
+ 0062	screen_fade 02305, 00008, 00031
+ 0066	text "Hmm?"
+ 0070	wait 00012
+ 0072	text " This middle key is\nshaped like..."
+ 0106	wait 00016
+ 0108	text " a guitar?"
+ 0118	nextpage_button
+ 0119	cmd76 00000, 00003
+ 0122	name 5, SHOW_LEFT
+ 0124	speed 00003
+ 0126	text "I get it!"
+ 0135	wait 00020
+ 0137	text " "
+ 0138	speed 00002
+ 0140	text "It must be the\n"
+ 0155	cmd76 00000, 00001
+ 0158	screen_fade 02305, 00008, 00031
+ 0162	text "key to a guitar case!"
+ 0183	nextpage_button
+ 0184	name 4, SHOW_LEFT
+ 0186	speed 00004
+ 0188	text "A "
+ 0190	wait 00006
+ 0192	text "guitar case key..."
+ 0210	paragraph
+ 0211	speed 00003
+ 0213	textcolor COLOR_BLUE
+ 0215	text "(I\'ll bet I know who this\nbelongs to.)"
+ 0253	nextpage_button
+ 0254	textcolor COLOR_WHITE
+ 0256	bganim 00098, 00579
+ 0259	cmd74 00005, 00000
+ 0262	halt
+ 0263	section_end
+ENDSECTION
+SECTION 2
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "There are three keys on\nthis heart{DASH}shaped key ring."
+ 0058	paragraph
+ 0059	speed 00003
+ 0061	text "And this guitar{DASH}shaped key\nwas the key to a guitar case."
+ 0117	nextpage_button
+ 0118	cmd76 00000, 00003
+ 0121	name 5, SHOW_LEFT
+ 0123	text "Wasn\'t he saying he had to\nbreak his case because he\ncouldn\'t get it unlocked?"
+ 0201	paragraph
+ 0202	cmd76 00000, 00001
+ 0205	speed 00003
+ 0207	text "I could open a lock like\n"
+ 0232	cmd76 00000, 00006
+ 0235	sound 00051, 00001
+ 0238	screen_fade 02305, 00008, 00031
+ 0242	text "that in 10 seconds,"
+ 0261	wait 00008
+ 0263	text " easy!"
+ 0269	paragraph
+ 0270	cmd76 00000, 00003
+ 0273	text "He should have given me\na call."
+ 0304	nextpage_button
+ 0305	name 4, SHOW_LEFT
+ 0307	speed 00004
+ 0309	text "...So he could slap handcuffs\n"
+ 0339	screen_fade 02305, 00008, 00031
+ 0343	text "on you after you opened it?"
+ 0370	nextpage_button
+ 0371	cmd76 00000, 00001
+ 0374	name 5, SHOW_LEFT
+ 0376	speed 00003
+ 0378	text "Handcuffs?"
+ 0388	wait 00020
+ 0390	text " 20 seconds,"
+ 0402	wait 00008
+ 0404	text " tops!"
+ 0410	nextpage_button
+ 0411	name 4, SHOW_LEFT
+ 0413	speed 00004
+ 0415	textcolor COLOR_BLUE
+ 0417	text "(I\'m glad she\'s on my side.)"
+ 0445	textcolor COLOR_WHITE
+ 0447	nextpage_button
+ 0448	speed 00255
+ 0450	bganim 00098, 00579
+ 0453	cmd74 00005, 00000
+ 0456	halt
+ 0457	section_end
+ENDSECTION
+SECTION 3
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "The middle of the weapon is\na revolving chamber."
+ 0055	paragraph
+ 0056	speed 00003
+ 0058	text "That\'s where you load the\nbullets."
+ 0092	wait 00016
+ 0094	text " A revolver,"
+ 0106	wait 00006
+ 0108	text " see?"
+ 0113	nextpage_button
+ 0114	cmd76 00000, 00001
+ 0117	name 5, SHOW_LEFT
+ 0119	speed 00004
+ 0121	text "Revolver..."
+ 0132	wait 00008
+ 0134	text " "
+ 0135	speed 00003
+ 0137	text "Revolver..."
+ 0148	wait 00016
+ 0150	newline
+ 0151	cmd76 00000, 00004
+ 0154	sound 00051, 00001
+ 0157	screen_fade 02305, 00008, 00031
+ 0161	shake 00030, 00000
+ 0164	speed 00003
+ 0166	text "That sounds a bit like"
+ 0188	wait 00008
+ 0190	newline
+ 0191	text "{00385}Wonder Bar{00385}!"
+ 0204	nextpage_button
+ 0205	screen_fade 02305, 00008, 00031
+ 0209	shake 00030, 00000
+ 0212	speed 00002
+ 0214	text "Especially if you say it\nreally fast!"
+ 0251	nextpage_button
+ 0252	name 4, SHOW_LEFT
+ 0254	speed 00004
+ 0256	text "Uh..."
+ 0261	wait 00008
+ 0263	text " I guess."
+ 0272	paragraph
+ 0273	name 5, SHOW_LEFT
+ 0275	cmd76 00000, 00003
+ 0278	text "You know what I always used\nto think?"
+ 0315	nextpage_button
+ 0316	cmd76 00000, 00004
+ 0319	sound 00052, 00001
+ 0322	screen_fade 02305, 00008, 00031
+ 0326	speed 00003
+ 0328	text "I used to think the closest\nsound to"
+ 0364	wait 00008
+ 0366	text " {00385}Wonder Bar{00385} was"
+ 0383	wait 00010
+ 0385	newline
+ 0386	text "{00385}One Liver{00385}!"
+ 0398	nextpage_button
+ 0399	cmd76 00000, 00001
+ 0402	text "There\'s just so many words\nin the world,"
+ 0442	wait 00008
+ 0444	text " Apollo!"
+ 0452	wait 00016
+ 0454	text " Isn\'t\nit amazing!?"
+ 0473	nextpage_button
+ 0474	name 4, SHOW_LEFT
+ 0476	speed 00008
+ 0478	text "......"
+ 0484	nextpage_button
+ 0485	speed 00003
+ 0487	text "So many different words,"
+ 0511	wait 00008
+ 0513	text " so\nmany different people."
+ 0539	wait 00020
+ 0541	newline
+ 0542	textcolor COLOR_BLUE
+ 0544	speed 00004
+ 0546	text "(...People like Trucy.)"
+ 0569	textcolor COLOR_WHITE
+ 0571	nextpage_button
+ 0572	speed 00255
+ 0574	bganim 00098, 00579
+ 0577	cmd74 00005, 00000
+ 0580	halt
+ 0581	section_end
+ENDSECTION
+SECTION 4
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	screen_fade 02305, 00008, 00031
+ 0009	sound 00045, 00001
+ 0012	shake 00030, 00001
+ 0015	speed 00002
+ 0017	text "Yikes!"
+ 0023	wait 00012
+ 0025	text " Don\'t point that thing\n"
+ 0049	shake 00030, 00000
+ 0052	text "at me!"
+ 0058	paragraph
+ 0059	name 5, SHOW_LEFT
+ 0061	cmd76 00000, 00001
+ 0064	speed 00003
+ 0066	text "Don\'t worry!"
+ 0078	wait 00016
+ 0080	text " I\'m an old hand\nwith firearms."
+ 0111	paragraph
+ 0112	cmd76 00000, 00006
+ 0115	text "I have one that shoots"
+ 0137	wait 00006
+ 0139	newline
+ 0140	screen_fade 02305, 00008, 00031
+ 0144	text "{00385}Bullets{00385}."
+ 0154	paragraph
+ 0155	name 4, SHOW_LEFT
+ 0157	screen_fade 02305, 00008, 00031
+ 0161	sound 00053, 00001
+ 0164	shake 00030, 00001
+ 0167	speed 00002
+ 0169	text "I don\'t want it shooting\nany bullets,"
+ 0206	wait 00008
+ 0208	text " thank you!"
+ 0219	nextpage_button
+ 0220	name 5, SHOW_LEFT
+ 0222	cmd76 00000, 00004
+ 0225	sound 00051, 00001
+ 0228	screen_fade 02305, 00008, 00031
+ 0232	shake 00030, 00000
+ 0235	text "Not those bullets,"
+ 0253	wait 00006
+ 0255	text " silly!"
+ 0262	wait 00020
+ 0264	newline
+ 0265	text "My gun shoots"
+ 0278	wait 00006
+ 0280	text " {00385}Bullets,"
+ 0290	wait 00006
+ 0292	text " the\nMagic Cat{00385}."
+ 0308	nextpage_button
+ 0309	name 4, SHOW_LEFT
+ 0311	text "A cat"
+ 0316	speed 00008
+ 0318	text "..."
+ 0321	speed 00003
+ 0323	wait 00040
+ 0325	sound 00052, 00001
+ 0328	screen_fade 02305, 00008, 00031
+ 0332	text " comes out of a gun?"
+ 0352	nextpage_button
+ 0353	cmd76 00000, 00001
+ 0356	name 5, SHOW_LEFT
+ 0358	speed 00003
+ 0360	text "I can tell by your expression\nyou\'ve never heard of that\ntrick."
+ 0423	wait 00016
+ 0425	text " It\'s a great one!"
+ 0443	paragraph
+ 0444	name 4, SHOW_LEFT
+ 0446	textcolor COLOR_BLUE
+ 0448	text "(Honestly,"
+ 0458	wait 00012
+ 0460	text " that one sounds\nhalfway interesting.)"
+ 0498	textcolor COLOR_WHITE
+ 0500	nextpage_button
+ 0501	bganim 00098, 00579
+ 0504	cmd74 00005, 00000
+ 0507	halt
+ 0508	section_end
+ENDSECTION
+SECTION 5
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "A sort of pin{DASH}fastener for\nattaching things to clothes."
+ 0062	wait 00016
+ 0064	newline
+ 0065	speed 00004
+ 0067	text "Not a safety pin{DASH}type,"
+ 0089	wait 00008
+ 0091	text " though."
+ 0099	paragraph
+ 0100	name 5, SHOW_LEFT
+ 0102	cmd76 00000, 00001
+ 0105	screen_fade 02305, 00008, 00031
+ 0109	speed 00002
+ 0111	text "So if it\'s not a safety\n"
+ 0135	cmd76 00000, 00002
+ 0138	screen_fade 02305, 00008, 00031
+ 0142	sound 00053, 00001
+ 0145	shake 00030, 00001
+ 0148	text "pin..."
+ 0154	paragraph
+ 0155	cmd76 00000, 00005
+ 0158	speed 00003
+ 0160	text "..."
+ 0163	speed 00002
+ 0165	text "is it a "
+ 0173	shake 00030, 00000
+ 0176	screen_fade 02305, 00008, 00031
+ 0180	text "danger pin!?"
+ 0192	nextpage_button
+ 0193	name 4, SHOW_LEFT
+ 0195	speed 00003
+ 0197	text "I suppose if you stuck it in\nyour eye,"
+ 0235	wait 00008
+ 0237	text " then yeah,"
+ 0248	wait 00008
+ 0250	text " sure."
+ 0256	nextpage_button
+ 0257	text "But you could do that with a\nsafety pin,"
+ 0297	wait 00012
+ 0299	text " too,"
+ 0304	wait 00012
+ 0306	text " for that\nmatter."
+ 0323	nextpage_button
+ 0324	cmd76 00000, 00008
+ 0327	name 5, SHOW_LEFT
+ 0329	speed 00008
+ 0331	text "......"
+ 0337	nextpage_button
+ 0338	cmd76 00000, 00001
+ 0341	sound 00052, 00001
+ 0344	screen_fade 02305, 00008, 00031
+ 0348	speed 00003
+ 0350	text "Thanks for taking the fun out\nof my danger pin."
+ 0397	nextpage_button
+ 0398	name 4, SHOW_LEFT
+ 0400	textcolor COLOR_BLUE
+ 0402	text "(Aw,"
+ 0406	wait 00008
+ 0408	text " you\'re driving a danger\npin through my heart here.)"
+ 0460	nextpage_button
+ 0461	textcolor COLOR_WHITE
+ 0463	bganim 00098, 00579
+ 0466	cmd74 00005, 00000
+ 0469	halt
+ 0470	section_end
+ENDSECTION
+SECTION 6
+ 0000	section_setup
+ 0001	name 5, SHOW_LEFT
+ 0003	cmd76 00000, 00005
+ 0006	hidetextbox 00000
+ 0008	screen_fade 02305, 00008, 00031
+ 0012	shake 00030, 00001
+ 0015	speed 00003
+ 0017	text "10{DASH}"
+ 0020	wait 00008
+ 0022	text "4 that,"
+ 0029	wait 00012
+ 0031	text " little buddy,"
+ 0045	wait 00010
+ 0047	text " this\nis Trucy reporting in,"
+ 0075	wait 00012
+ 0077	text " over."
+ 0083	nextpage_button
+ 0084	cmd76 00000, 00003
+ 0087	speed 00008
+ 0089	text "......"
+ 0095	nextpage_button
+ 0096	name 4, SHOW_LEFT
+ 0098	speed 00003
+ 0100	text "Why the sudden silence?"
+ 0123	nextpage_button
+ 0124	name 5, SHOW_LEFT
+ 0126	cmd76 00000, 00008
+ 0129	sound 00052, 00001
+ 0132	screen_fade 02305, 00008, 00031
+ 0136	speed 00004
+ 0138	text "No one answered."
+ 0154	paragraph
+ 0155	name 4, SHOW_LEFT
+ 0157	text "Don\'t be silly..."
+ 0174	nextpage_button
+ 0175	name 5, SHOW_LEFT
+ 0177	speed 00004
+ 0179	text "What good is a receiver that\ndoesn\'t receive?"
+ 0224	nextpage_button
+ 0225	cmd76 00000, 00009
+ 0228	screen_fade 02305, 00008, 00031
+ 0232	sound 00053, 00001
+ 0235	shake 00030, 00001
+ 0238	speed 00003
+ 0240	text "That\'s like Ema not performing\nforensic investigations!"
+ 0295	nextpage_button
+ 0296	name 4, SHOW_LEFT
+ 0298	text "You make her sound like she\'s\nsome kind of forensic\ninvestigation machine!"
+ 0372	nextpage_button
+ 0373	cmd76 00000, 00001
+ 0376	text "Which is just silly."
+ 0396	wait 00020
+ 0398	nextpage_button
+ 0399	text "Unless..."
+ 0408	wait 00007
+ 0410	text " she\'s a super\nhi{DASH}tech android that runs on\nSnackoos!"
+ 0463	wait 00015
+ 0465	text " Hmm..."
+ 0472	paragraph
+ 0473	bganim 00098, 00579
+ 0476	cmd74 00005, 00000
+ 0479	halt
+ 0480	section_end
+ENDSECTION
+SECTION 7
+ 0000	section_setup
+ 0001	name 5, SHOW_LEFT
+ 0003	cmd76 00000, 00003
+ 0006	hidetextbox 00000
+ 0008	speed 00003
+ 0010	text "This switch,"
+ 0022	wait 00008
+ 0024	text " sitting here,"
+ 0038	wait 00008
+ 0040	newline
+ 0041	cmd76 00000, 00005
+ 0044	text "tempting me to push it"
+ 0066	speed 00008
+ 0068	text "..."
+ 0071	paragraph
+ 0072	name 4, SHOW_LEFT
+ 0074	speed 00003
+ 0076	text "Don\'t."
+ 0082	wait 00016
+ 0084	text " You might blow up the\nwhole coliseum."
+ 0122	nextpage_button
+ 0123	cmd76 00000, 00010
+ 0126	name 5, SHOW_LEFT
+ 0128	shake 00030, 00000
+ 0131	screen_fade 02305, 00008, 00031
+ 0135	speed 00005
+ 0137	text "Apollo,"
+ 0144	wait 00008
+ 0146	text " please..."
+ 0156	nextpage_button
+ 0157	speed 00003
+ 0159	text "To think that every strange\nswitch triggers a bomb..."
+ 0212	nextpage_button
+ 0213	cmd76 00000, 00005
+ 0216	speed 00003
+ 0218	text "That kind of old{DASH}fashioned\ncrime drama thinking doesn\'t\ncut it in our busy times!"
+ 0299	nextpage_button
+ 0300	name 4, SHOW_LEFT
+ 0302	text "Alright,"
+ 0310	wait 00008
+ 0312	text " Trucy P.I.,"
+ 0324	wait 00008
+ 0326	text " please\nenlighten me."
+ 0347	wait 00016
+ 0349	text " What do you\nthink this switch does?"
+ 0385	nextpage_button
+ 0386	cmd76 00000, 00003
+ 0389	name 5, SHOW_LEFT
+ 0391	text "Hmm"
+ 0394	speed 00005
+ 0396	text "..."
+ 0399	nextpage_button
+ 0400	cmd76 00000, 00004
+ 0403	speed 00003
+ 0405	text "Maybe it turns on the electric\nrazor in Prosecutor Gavin\'s\ndressing room?"
+ 0478	nextpage_button
+ 0479	name 4, SHOW_LEFT
+ 0481	text "...A switch as big as a razor\nto turn on a razor?"
+ 0530	wait 00016
+ 0532	text " OK..."
+ 0538	nextpage_button
+ 0539	bganim 00098, 00579
+ 0542	cmd74 00005, 00000
+ 0545	halt
+ 0546	section_end
+ENDSECTION
+SECTION 8
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "This switch triggers an\nigniter."
+ 0039	nextpage_button
+ 0040	name 5, SHOW_LEFT
+ 0042	cmd76 00000, 00006
+ 0045	text "Too bad,"
+ 0053	wait 00008
+ 0055	text " I was hoping it\nwas for a bomb that would\nblow up the whole coliseum."
+ 0125	nextpage_button
+ 0126	name 4, SHOW_LEFT
+ 0128	text "You\'re scaring me."
+ 0146	nextpage_button
+ 0147	text "If Ema hears you talking like\nthat she\'ll arrest you."
+ 0200	nextpage_button
+ 0201	cmd76 00000, 00001
+ 0204	name 5, SHOW_LEFT
+ 0206	sound 00051, 00001
+ 0209	screen_fade 02305, 00008, 00031
+ 0213	text "And then she\'ll do all sorts of\nscientific tests!"
+ 0262	nextpage_button
+ 0263	text "Like splitting your hairdo\ninto three separate spikes."
+ 0317	nextpage_button
+ 0318	cmd76 00000, 00004
+ 0321	text "While she stands by,"
+ 0341	wait 00012
+ 0343	newline
+ 0344	text "laughing and laughing in\nher high{DASH}pitched voice."
+ 0392	nextpage_button
+ 0393	cmd76 00000, 00002
+ 0396	name 4, SHOW_LEFT
+ 0398	sound 00052, 00001
+ 0401	screen_fade 02305, 00008, 00031
+ 0405	speed 00004
+ 0407	text "..."
+ 0410	wait 00008
+ 0412	speed 00003
+ 0414	text "I said she\'d arrest you,"
+ 0438	wait 00008
+ 0440	newline
+ 0441	text "not me."
+ 0448	wait 00016
+ 0450	text " And she\'s not some\nkind of mad scientist."
+ 0492	nextpage_button
+ 0493	cmd76 00000, 00003
+ 0496	name 5, SHOW_LEFT
+ 0498	speed 00006
+ 0500	text "......"
+ 0506	nextpage_button
+ 0507	cmd76 00000, 00007
+ 0510	speed 00003
+ 0512	text "Did you just hear someone\nlaughing?"
+ 0547	nextpage_button
+ 0548	bganim 00098, 00579
+ 0551	cmd74 00005, 00000
+ 0554	halt
+ 0555	section_end
+ENDSECTION
+SECTION 9
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "There\'s lightly scorched,"
+ 0032	wait 00008
+ 0034	newline
+ 0035	text "and then there\'s this..."
+ 0059	paragraph
+ 0060	cmd76 00000, 00003
+ 0063	name 5, SHOW_LEFT
+ 0065	speed 00002
+ 0067	text "It\'s "
+ 0072	screen_fade 02305, 00008, 00031
+ 0076	shake 00030, 00000
+ 0079	text "burned clean through!"
+ 0100	nextpage_button
+ 0101	name 4, SHOW_LEFT
+ 0103	text "Yep."
+ 0107	wait 00016
+ 0109	text " It\'s pretty much a\nuseless piece of junk."
+ 0151	nextpage_button
+ 0152	cmd76 00000, 00004
+ 0155	name 5, SHOW_LEFT
+ 0157	sound 00051, 00001
+ 0160	screen_fade 02305, 00008, 00031
+ 0164	speed 00003
+ 0166	text "...It\'s kind of like you after\na trial,"
+ 0205	wait 00008
+ 0207	text " Apollo!"
+ 0215	nextpage_button
+ 0216	name 4, SHOW_LEFT
+ 0218	speed 00004
+ 0220	textcolor COLOR_BLUE
+ 0222	text "(Which part?"
+ 0234	wait 00012
+ 0236	text " The burned clean\nthrough,"
+ 0262	wait 00008
+ 0264	text " or the useless\npiece of junk?)"
+ 0295	paragraph
+ 0296	bganim 00098, 00579
+ 0299	cmd74 00005, 00000
+ 0302	halt
+ 0303	section_end
+ENDSECTION
+SECTION 10
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "{00385}Sample{00385}, huh?"
+ 0021	wait 00016
+ 0023	text " Think they put\na big enough label on it?"
+ 0064	paragraph
+ 0065	cmd76 00000, 00003
+ 0068	name 5, SHOW_LEFT
+ 0070	speed 00003
+ 0072	text "Maybe it\'s to keep people from\neating it by mistake."
+ 0124	paragraph
+ 0125	name 4, SHOW_LEFT
+ 0127	text "Yes,"
+ 0131	wait 00008
+ 0133	text " they might think it was\nan otherwise tasty, white\nlump of plastic."
+ 0200	nextpage_button
+ 0201	cmd76 00000, 00004
+ 0204	name 5, SHOW_LEFT
+ 0206	text "Maybe it\'s the manufacturer?"
+ 0234	wait 00016
+ 0236	newline
+ 0237	text "{00385}Sample Toys: When you can\'t\nafford the real thing!{00385}"
+ 0289	nextpage_button
+ 0290	name 4, SHOW_LEFT
+ 0292	text "Sounds like a company\nMr. Wright would like."
+ 0336	nextpage_button
+ 0337	bganim 00098, 00579
+ 0340	cmd74 00005, 00000
+ 0343	halt
+ 0344	section_end
+ENDSECTION
+SECTION 11
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "All these little parts... It\'s\npretty complex."
+ 0053	paragraph
+ 0054	text "I\'m guessing this is where\nthe fire comes out."
+ 0100	wait 00016
+ 0102	text " Other than\nthat..."
+ 0121	nextpage_button
+ 0122	cmd76 00000, 00006
+ 0125	name 5, SHOW_LEFT
+ 0127	text "Good thing machines run even\nif we don\'t know how they\nwork!"
+ 0187	nextpage_button
+ 0188	cmd76 00000, 00004
+ 0191	text "..."
+ 0194	wait 00016
+ 0196	text "That\'s what Daddy always\nsays."
+ 0226	nextpage_button
+ 0227	name 4, SHOW_LEFT
+ 0229	speed 00004
+ 0231	text "Not really a saying you want\nto go around repeating,"
+ 0283	wait 00008
+ 0285	text " Trucy."
+ 0292	nextpage_button
+ 0293	bganim 00098, 00579
+ 0296	cmd74 00005, 00000
+ 0299	halt
+ 0300	section_end
+ENDSECTION
+SECTION 12
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	speed 00003
+ 0007	text "So"
+ 0009	speed 00008
+ 0011	text "..."
+ 0014	wait 00012
+ 0016	text " "
+ 0017	speed 00003
+ 0019	text "you think this was\nsome kind of firecracker?"
+ 0063	nextpage_button
+ 0064	cmd76 00000, 00001
+ 0067	name 5, SHOW_LEFT
+ 0069	text "Yeah,"
+ 0074	wait 00008
+ 0076	text " or one of those\nnoisemakers,"
+ 0105	wait 00012
+ 0107	text " like you shoot\noff on New Years!"
+ 0140	nextpage_button
+ 0141	name 4, SHOW_LEFT
+ 0143	text "Did you know that in China,"
+ 0170	wait 00012
+ 0172	newline
+ 0173	text "they use firecrackers on\nNew Years to scare off evil?"
+ 0226	paragraph
+ 0227	speed 00003
+ 0229	text "So,"
+ 0232	wait 00010
+ 0234	text " it\'s kind of the same\nthing."
+ 0263	nextpage_button
+ 0264	cmd76 00000, 00002
+ 0267	name 5, SHOW_LEFT
+ 0269	sound 00051, 00001
+ 0272	screen_fade 02305, 00008, 00031
+ 0276	shake 00030, 00001
+ 0279	speed 00002
+ 0281	text "Really!?"
+ 0289	wait 00016
+ 0291	text " I had no idea!"
+ 0306	paragraph
+ 0307	cmd76 00000, 00004
+ 0310	screen_fade 02305, 00008, 00031
+ 0314	speed 00003
+ 0316	text "Well did you know this?"
+ 0339	nextpage_button
+ 0340	speed 00002
+ 0342	text "It takes more than 500 peanuts\n"
+ 0373	cmd76 00000, 00006
+ 0376	text "to make one "
+ 0388	screen_fade 02305, 00008, 00031
+ 0392	text "12{DASH}ounce jar of\n"
+ 0408	shake 00030, 00000
+ 0411	text "peanut butter!"
+ 0425	nextpage_button
+ 0426	name 4, SHOW_LEFT
+ 0428	speed 00004
+ 0430	textcolor COLOR_BLUE
+ 0432	text "(At least my useless fact had\nsomething to do with the\nevidence...)"
+ 0499	nextpage_button
+ 0500	textcolor COLOR_WHITE
+ 0502	speed 00255
+ 0504	bganim 00098, 00579
+ 0507	cmd74 00005, 00000
+ 0510	halt
+ 0511	section_end
+ENDSECTION

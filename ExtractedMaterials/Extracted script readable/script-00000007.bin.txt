@@ -1,0 +1,2582 @@
+SECTION 0
+ 0000	section_setup
+ 0001	cmd62
+ 0002	textcolor COLOR_RED
+ 0004	cmd51 00001, 00107
+ 0007	newline
+ 0008	section_setup
+ 0009	hideperson
+ 0010	bganim 00098, 00626
+ 0013	cmd6B 00002, 00000, 00000
+ 0017	bganim 00098, 00625
+ 0020	wait 00001
+ 0022	cmd6B 00004, 00001, 00031
+ 0026	bganim 00098, 00627
+ 0029	bganim 00000, 08192
+ 0032	hide_court_record_button 00001
+ 0034	bg 4095, BG_NOSHIFT
+ 0036	cmd30 00255
+ 0038	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0042	name 0, SHOW_LEFT
+ 0044	hidetextbox 00000
+ 0046	sound 00026, 00001
+ 0049	speed 00002
+ 0051	screen_fade 02305, 00008, 00031
+ 0055	text "Let\'s"
+ 0060	wait 00010
+ 0062	text " "
+ 0063	screen_fade 02305, 00008, 00031
+ 0067	text "rock!!!"
+ 0074	wait 00060
+ 0076	speed 00255
+ 0078	nextpage_nobutton
+ 0079	fademusic 0, 5
+ 0082	section_end
+ 0083	section_setup
+ 0084	hidetextbox 00001
+ 0086	bganim 00768, 00000
+ 0089	bganim 00769, 00000
+ 0092	bganim 00770, 00000
+ 0095	bganim 00771, 00000
+ 0098	bganim 00772, 00000
+ 0101	hidetextbox 00000
+ 0103	name 53, SHOW_LEFT
+ 0105	text "We love you!"
+ 0117	wait 00080
+ 0119	nextpage_nobutton
+ 0120	hidetextbox 00001
+ 0122	bganim 00773, 00000
+ 0125	bganim 00774, 00000
+ 0128	hidetextbox 00000
+ 0130	name 53, SHOW_LEFT
+ 0132	screen_fade 02305, 00008, 00031
+ 0136	speed 00002
+ 0138	text "Rock on,"
+ 0146	wait 00008
+ 0148	text " everyone!"
+ 0158	wait 00020
+ 0160	newline
+ 0161	speed 00003
+ 0163	text "This party\'s not over yet!"
+ 0189	wait 00010
+ 0191	sound 00191, 00001
+ 0194	wait 00120
+ 0196	nextpage_nobutton
+ 0197	speed 00002
+ 0199	text "Get out your handkerchiefs for\n"
+ 0230	screen_fade 02305, 00008, 00031
+ 0234	text "our special guest!"
+ 0252	wait 00010
+ 0254	sound 00191, 00001
+ 0257	wait 00060
+ 0259	nextpage_nobutton
+ 0260	screen_fade 02305, 00008, 00031
+ 0264	speed 00002
+ 0266	text "That\'s right,"
+ 0279	wait 00008
+ 0281	text " baby!"
+ 0287	wait 00060
+ 0289	nextpage_nobutton
+ 0290	speed 00003
+ 0292	text "The night\'s just getting\n"
+ 0317	screen_fade 02305, 00008, 00031
+ 0321	text "started!"
+ 0329	wait 00060
+ 0331	nextpage_nobutton
+ 0332	hidetextbox 00001
+ 0334	wait 00060
+ 0336	name 1, SHOW_LEFT
+ 0338	hidetextbox 00000
+ 0340	speed 00005
+ 0342	text "Thank you for coming to the\nGavinners: {00385}Guilty As Charged{00385}\nTour!"
+ 0406	wait 00060
+ 0408	nextpage_nobutton
+ 0409	text "This ends the first part of\ntonight\'s show."
+ 0452	wait 00060
+ 0454	nextpage_nobutton
+ 0455	text "There will now be a 20{DASH}minute\nintermission."
+ 0498	wait 00060
+ 0500	nextpage_nobutton
+ 0501	hidetextbox 00001
+ 0503	wait 00060
+ 0505	cmd6B 00002, 00001, 00031
+ 0509	bganim 00098, 00626
+ 0512	screen_fade 2, FADE_TO_BLACK, 1, 31
+ 0516	wait 00015
+ 0518	bganim 00000, 04096
+ 0521	section_end
+ENDSECTION
+SECTION 1
+ 0000	section_setup
+ 0001	bg 247, BG_NOSHIFT
+ 0003	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0007	screen_fade 2, FADE_FROM_BLACK, 1, 31
+ 0011	wait 00015
+ 0013	hide_court_record_button 00000
+ 0015	name 0, SHOW_LEFT
+ 0017	wait 00030
+ 0019	speed 00010
+ 0021	cmd30 00002
+ 0023	cmd74 00002, 00000
+ 0026	toggle_center_text 00001
+ 0028	hidetextbox 00000
+ 0030	textcolor COLOR_GREEN
+ 0032	text "July 7,"
+ 0039	wait 00010
+ 0041	text " 8:05 PM\nBackstage Hallway"
+ 0067	textcolor COLOR_WHITE
+ 0069	nextpage_button
+ 0070	hidetextbox 00001
+ 0072	toggle_center_text 00000
+ 0074	speed 00255
+ 0076	wait 00030
+ 0078	person 5, PLACE_DEFAULT, 0, 72, 69
+ 0082	name 5, SHOW_LEFT
+ 0084	sound 00051, 00001
+ 0087	screen_fade 02305, 00008, 00031
+ 0091	fademusic 0, 5
+ 0094	flagctl 0, 0, 0
+ 0096	hidetextbox 00000
+ 0098	speed 00003
+ 0100	text "This is"
+ 0107	screen_fade 02305, 00008, 00031
+ 0111	text " so cool"
+ 0119	speed 00002
+ 0121	text "!"
+ 0122	cmd5A 00012
+ 0124	screen_fade 89, FADE_NONE, 399, 11
+ 0128	pause
+ 0129	text "Us,"
+ 0132	wait 00010
+ 0134	text " at a\nGavinners concert!"
+ 0158	nextpage_button
+ 0159	name 4, SHOW_LEFT
+ 0161	person 5, PLACE_DEFAULT, 0, 69, 69
+ 0165	speed 00004
+ 0167	text "Huh?"
+ 0171	wait 00016
+ 0173	text " "
+ 0174	speed 00003
+ 0176	text "Did you say something?"
+ 0198	wait 00018
+ 0200	newline
+ 0201	text "My ears are still ringing"
+ 0226	cmd5A 00011
+ 0228	finger_choice_2_args_jmp 241, 241
+ 0231	text "."
+ 0232	paragraph
+ 0233	speed 00003
+ 0235	text "The Gavinners: putting the\n"
+ 0262	speed 00004
+ 0264	text "{00385}sick{00385}"
+ 0270	wait 00008
+ 0272	speed 00003
+ 0274	text " back in"
+ 0282	wait 00008
+ 0284	text " "
+ 0285	speed 00003
+ 0287	text "{00385}music{00385}."
+ 0295	nextpage_button
+ 0296	person 5, PLACE_DEFAULT, 0, 72, 69
+ 0300	name 5, SHOW_LEFT
+ 0302	speed 00003
+ 0304	text "Well,"
+ 0309	wait 00008
+ 0311	text " I thought Mr. Gavin\nwas really nice!"
+ 0348	person 5, PLACE_DEFAULT, 0, 70, 70
+ 0352	paragraph
+ 0353	person 5, PLACE_DEFAULT, 0, 68, 67
+ 0357	text "Sending us those tickets"
+ 0381	shake 00030, 00000
+ 0384	screen_fade 02305, 00008, 00031
+ 0388	text " at\n20% off!"
+ 0400	paragraph
+ 0401	screen_fade 02305, 00008, 00031
+ 0405	speed 00002
+ 0407	text "They\'re hard to get ahold\nof,"
+ 0436	wait 00008
+ 0438	text " you know."
+ 0448	nextpage_button
+ 0449	person 5, PLACE_DEFAULT, 0, 67, 67
+ 0453	name 4, SHOW_LEFT
+ 0455	speed 00004
+ 0457	text "When you invite people to a\nconcert it\'s usually free."
+ 0511	nextpage_button
+ 0512	person 5, PLACE_DEFAULT, 0, 96, 95
+ 0516	name 5, SHOW_LEFT
+ 0518	screen_fade 02305, 00008, 00031
+ 0522	shake 00030, 00000
+ 0525	speed 00002
+ 0527	text "Let\'s head to his dressing\nroom,"
+ 0559	wait 00008
+ 0561	text " "
+ 0562	speed 00003
+ 0564	text "Apollo!"
+ 0571	paragraph
+ 0572	person 5, PLACE_DEFAULT, 0, 76, 75
+ 0576	speed 00003
+ 0578	text "You know,"
+ 0587	wait 00008
+ 0589	text " "
+ 0590	speed 00004
+ 0592	text "like we\'re a couple\nof VIPs."
+ 0620	paragraph
+ 0621	person 5, PLACE_DEFAULT, 0, 72, 69
+ 0625	screen_fade 02305, 00008, 00031
+ 0629	shake 00030, 00000
+ 0632	speed 00002
+ 0634	text "I\'ve always dreamed of being\na VIP at a Gavinners show!"
+ 0689	nextpage_button
+ 0690	name 4, SHOW_LEFT
+ 0692	speed 00004
+ 0694	text "Um,"
+ 0697	wait 00008
+ 0699	text " "
+ 0700	speed 00003
+ 0702	text "Trucy..."
+ 0710	nextpage_button
+ 0711	person 5, PLACE_DEFAULT, 0, 75, 75
+ 0715	fademusic 45, 6
+ 0718	fadetoblack 00001
+ 0720	screen_fade 02305, 00008, 00031
+ 0724	text "You didn\'t know who Prosecutor\nGavin was before that case."
+ 0782	nextpage_button
+ 0783	speed 00004
+ 0785	text "What kind of fan doesn\'t know"
+ 0814	wait 00012
+ 0816	newline
+ 0817	text "the lead vocalist\'s name?"
+ 0842	nextpage_button
+ 0843	hidetextbox 00001
+ 0845	name 5, SHOW_LEFT
+ 0847	screen_fade 1, FADE_TO_WHITE, 8, 31
+ 0851	wait 00001
+ 0853	cmd5F 00003, 00001, 00031
+ 0857	bg 229, BG_NOSHIFT
+ 0859	person 5, PLACE_DEFAULT, 0, 72, 69
+ 0863	cmd5A 00006
+ 0865	setmovelocations 1, 18, 769, 1, 31
+ 0871	wait 00007
+ 0873	hidetextbox 00000
+ 0875	shake 00030, 00000
+ 0878	screen_fade 02305, 00008, 00031
+ 0882	cmd59 00011
+ 0884	paragraph
+ 0885	text "Oh!"
+ 0888	wait 00016
+ 0890	text " "
+ 0891	speed 00003
+ 0893	text "This guy,"
+ 0902	wait 00008
+ 0904	text " well, he was"
+ 0917	wait 00016
+ 0919	newline
+ 0920	person 5, PLACE_DEFAULT, 0, 68, 67
+ 0924	text "more like a prince really."
+ 0950	wait 00020
+ 0952	newline
+ 0953	text "He let us in..."
+ 0968	nextpage_button
+ 0969	hidetextbox 00001
+ 0971	bg 226, BG_NOSHIFT
+ 0973	person 5, PLACE_DEFAULT, 0, 76, 75
+ 0977	cmd5A 00014
+ 0979	text "{01264}"
+ 0980	sound 00051, 00001
+ 0983	screen_fade 1, FADE_FROM_WHITE, 1, 31
+ 0987	wait 00007
+ 0989	cmd59 00028
+ 0991	section_setup
+ 0992	speed 00004
+ 0994	text "Klavier"
+ 1001	wait_noanim 00020
+ 1003	text "..."
+ 1006	wait 00020
+ 1008	text " "
+ 1009	person 5, PLACE_DEFAULT, 0, 72, 69
+ 1013	screen_fade 02305, 00008, 00031
+ 1017	shake 00030, 00000
+ 1020	speed 00003
+ 1022	text "What a lovely name!"
+ 1041	wait 00020
+ 1043	newline
+ 1044	text "He\'s so dreamy!"
+ 1059	nextpage_button
+ 1060	hidetextbox 00001
+ 1062	screen_fade 1, FADE_TO_BLACK, 1, 31
+ 1066	wait 00007
+ 1068	bg 247, BG_NOSHIFT
+ 1070	person 5, PLACE_DEFAULT, 0, 70, 70
+ 1074	cmd5F 00004, 00001, 00001
+ 1078	pausemusic 00000, 00005
+ 1081	text "ò"
+ 1082	cmd5A 00018
+ 1084	text "í\n"
+ 1086	hideperson
+ 1087	wait 00015
+ 1089	person 5, PLACE_DEFAULT, 0, 72, 69
+ 1093	hidetextbox 00000
+ 1095	screen_fade 02305, 00008, 00031
+ 1099	shake 00030, 00000
+ 1102	speed 00002
+ 1104	text "Yeah,"
+ 1109	wait 00008
+ 1111	text " "
+ 1112	speed 00003
+ 1114	text "but I\'m a girl!"
+ 1129	paragraph
+ 1130	person 5, PLACE_DEFAULT, 0, 68, 67
+ 1134	text "I\'m supposed to swoon over\ngods of rock!"
+ 1174	nextpage_button
+ 1175	person 5, PLACE_DEFAULT, 0, 94, 94
+ 1179	name 4, SHOW_LEFT
+ 1181	sound 00052, 00001
+ 1184	screen_fade 02305, 00008, 00031
+ 1188	speed 00005
+ 1190	text "God{DASH}awful,"
+ 1200	wait 00020
+ 1202	text " maybe."
+ 1209	nextpage_button
+ 1210	person 5, PLACE_DEFAULT, 0, 68, 67
+ 1214	name 5, SHOW_LEFT
+ 1216	speed 00003
+ 1218	text "I bought all their stuff on\nthe way home from the trial!"
+ 1274	nextpage_button
+ 1275	person 5, PLACE_DEFAULT, 0, 74, 73
+ 1279	sound 00026, 00001
+ 1282	screen_fade 02305, 00008, 00031
+ 1286	shake 00030, 00000
+ 1289	speed 00002
+ 1291	text "I got twelve Gavinners "
+ 1314	screen_fade 02305, 00008, 00031
+ 1318	text "albums,"
+ 1325	wait 00010
+ 1327	newline
+ 1328	text "and fifteen concert videos!"
+ 1355	nextpage_button
+ 1356	name 4, SHOW_LEFT
+ 1358	speed 00004
+ 1360	text "..."
+ 1363	wait 00020
+ 1365	text "That was quite a bit of\nimpulse shopping."
+ 1406	nextpage_button
+ 1407	person 5, PLACE_DEFAULT, 0, 72, 69
+ 1411	name 5, SHOW_LEFT
+ 1413	sound 00051, 00001
+ 1416	screen_fade 02305, 00008, 00031
+ 1420	speed 00003
+ 1422	text "I got an advance on my next\n15{DASH}years{DASH}worth of allowance."
+ 1478	nextpage_button
+ 1479	person 5, PLACE_DEFAULT, 0, 94, 94
+ 1483	name 4, SHOW_LEFT
+ 1485	speed 00004
+ 1487	text "..."
+ 1490	wait 00020
+ 1492	text "For Mr. Wright that sounds\nlike a real act of generosity."
+ 1549	nextpage_button
+ 1550	hidetextbox 00001
+ 1552	wait 00030
+ 1554	screen_fade 4, FADE_TO_BLACK, 1, 31
+ 1558	wait 00025
+ 1560	bg 4095, BG_NOSHIFT
+ 1562	person 0, PLACE_DEFAULT, 0, 0, 0
+ 1566	screen_fade 2, FADE_FROM_BLACK, 1, 31
+ 1570	wait 00015
+ 1572	name 4, SHOW_LEFT
+ 1574	hidetextbox 00000
+ 1576	speed 00003
+ 1578	textcolor COLOR_BLUE
+ 1580	text "(Who would have imagined me\nhere...)"
+ 1616	paragraph
+ 1617	text "(..."
+ 1621	wait 00020
+ 1623	text "at a "
+ 1628	textcolor COLOR_RED
+ 1630	text "Gavinners"
+ 1639	textcolor COLOR_BLUE
+ 1641	text " concert,"
+ 1650	wait 00008
+ 1652	newline
+ 1653	text "watching Prosecutor Gavin\n{00385}rock{00385}.)"
+ 1687	paragraph
+ 1688	speed 00004
+ 1690	text "(To be honest...)"
+ 1707	paragraph
+ 1708	speed 00003
+ 1710	text "(..."
+ 1714	wait 00020
+ 1716	text "he was kind of cool."
+ 1736	wait 00012
+ 1738	newline
+ 1739	text "And I\'m kind of envious.)"
+ 1764	paragraph
+ 1765	speed 00004
+ 1767	text "(Not that I\'d ever admit\nthat to Trucy.)"
+ 1807	textcolor COLOR_WHITE
+ 1809	nextpage_button
+ 1810	hidetextbox 00001
+ 1812	fademusic 60, 18
+ 1815	text "{00500}\n"
+ 1817	hideperson
+ 1818	wait 00025
+ 1820	section_end
+ENDSECTION
+SECTION 2
+ 0000	section_setup
+ 0001	bg 271, BG_NOSHIFT
+ 0003	screen_fade 2, FADE_FROM_BLACK, 1, 31
+ 0007	wait 00015
+ 0009	hide_court_record_button 00000
+ 0011	name 0, SHOW_LEFT
+ 0013	wait 00030
+ 0015	speed 00010
+ 0017	cmd30 00002
+ 0019	toggle_center_text 00001
+ 0021	hidetextbox 00000
+ 0023	textcolor COLOR_GREEN
+ 0025	text "July 7\nGavinners\'s Dressing Room"
+ 0057	textcolor COLOR_WHITE
+ 0059	nextpage_button
+ 0060	hidetextbox 00001
+ 0062	toggle_center_text 00000
+ 0064	speed 00255
+ 0066	wait 00030
+ 0068	personvanish 00003, 00002
+ 0071	person 6, PLACE_DEFAULT, 0, 138, 137
+ 0075	cmd5A 00012
+ 0077	cmd20 00014
+ 0079	text "{13552}"
+ 0080	hidetextbox 00000
+ 0082	cmd59 00006
+ 0084	setmovelocations 1, 18, 2305, 8, 31
+ 0090	fademusic 0, 5
+ 0093	showevidence 0, SHOW_LEFT
+ 0095	speed 00003
+ 0097	text "Ah,"
+ 0100	wait 00012
+ 0102	text " you made it."
+ 0115	nextpage_button
+ 0116	hidetextbox 00001
+ 0118	personvanish 00004, 00001
+ 0121	wait 00016
+ 0123	personvanish 00003, 00001
+ 0126	person 5, PLACE_DEFAULT, 0, 72, 69
+ 0130	cmd5A 00012
+ 0132	flagctl 0, 28, 0
+ 0134	section_setup
+ 0135	cmd59 00014
+ 0137	text "{01264}"
+ 0138	screen_fade 02305, 00008, 00031
+ 0142	text "Mr. Gavin!"
+ 0152	wait 00012
+ 0154	text " Thanks so much\nfor the tickets!"
+ 0186	speed 00002
+ 0188	person 5, PLACE_DEFAULT, 0, 71, 71
+ 0192	nextpage_button
+ 0193	name 4, SHOW_LEFT
+ 0195	speed 00003
+ 0197	text "..."
+ 0200	wait 00020
+ 0202	text "And the invoice you sent\nalong with them."
+ 0243	nextpage_button
+ 0244	person 5, PLACE_DEFAULT, 0, 72, 69
+ 0248	name 5, SHOW_LEFT
+ 0250	screen_fade 02305, 00008, 00031
+ 0254	shake 00030, 00000
+ 0257	speed 00002
+ 0259	text "You were incredible up on\n"
+ 0285	shake 00030, 00000
+ 0288	text "stage,"
+ 0294	wait 00012
+ 0296	text " Mr. Gavin!"
+ 0307	nextpage_button
+ 0308	hidetextbox 00001
+ 0310	personvanish 00004, 00001
+ 0313	wait 00016
+ 0315	personvanish 00003, 00001
+ 0318	person 6, PLACE_DEFAULT, 0, 142, 141
+ 0322	cmd5A 00012
+ 0324	flagctl 0, 28, 0
+ 0326	section_setup
+ 0327	cmd59 00014
+ 0329	text "{13552}"
+ 0330	speed 00003
+ 0332	text "Nothing like music to brighten\nthe mood after a trial,"
+ 0386	wait 00008
+ 0388	text " ja?"
+ 0392	paragraph
+ 0393	person 6, PLACE_DEFAULT, 0, 138, 137
+ 0397	speed 00005
+ 0399	cmd5A 00369
+ 0401	text ".."
+ 0403	cmd59 00012
+ 0405	removeevidence
+ 0406	speed 00003
+ 0408	text "And we\'re almost ready for\nour next act."
+ 0448	paragraph
+ 0449	speed 00003
+ 0451	text "I\'m looking forward to it\nmyself."
+ 0484	nextpage_button
+ 0485	hidetextbox 00001
+ 0487	personvanish 00004, 00001
+ 0490	wait 00016
+ 0492	personvanish 00003, 00001
+ 0495	person 5, PLACE_DEFAULT, 0, 72, 69
+ 0499	cmd5A 00012
+ 0501	flagctl 0, 28, 0
+ 0503	section_setup
+ 0504	cmd59 00014
+ 0506	text "{01264}"
+ 0507	sound 00051, 00001
+ 0510	screen_fade 02305, 00008, 00031
+ 0514	speed 00002
+ 0516	text "Lamiroir\'s singing,"
+ 0535	wait 00008
+ 0537	text " right!?"
+ 0545	wait 00016
+ 0547	newline
+ 0548	speed 00003
+ 0550	text "The"
+ 0553	wait 00008
+ 0555	text " {00385}"
+ 0557	textcolor COLOR_RED
+ 0559	text "Siren of the Ballad"
+ 0578	textcolor COLOR_WHITE
+ 0580	text "{00385}?"
+ 0582	nextpage_button
+ 0583	person 5, PLACE_DEFAULT, 0, 69, 69
+ 0587	name 4, SHOW_LEFT
+ 0589	speed 00005
+ 0591	text "Oh yeah"
+ 0598	cmd5A 00011
+ 0600	sound 00369, 00369
+ 0603	text "."
+ 0604	paragraph
+ 0605	speed 00003
+ 0607	text "That flyer said she flew all\nthe way over for this show."
+ 0663	nextpage_button
+ 0664	hidetextbox 00001
+ 0666	personvanish 00004, 00001
+ 0669	wait 00016
+ 0671	personvanish 00003, 00001
+ 0674	person 6, PLACE_DEFAULT, 0, 134, 133
+ 0678	cmd5A 00012
+ 0680	flagctl 0, 28, 0
+ 0682	section_setup
+ 0683	cmd59 00014
+ 0685	text "{13552}That\'s right."
+ 0699	wait 00012
+ 0701	text " "
+ 0702	speed 00003
+ 0704	text "I happened to\ncatch her show while overseas."
+ 0748	nextpage_button
+ 0749	person 6, PLACE_DEFAULT, 0, 140, 139
+ 0753	speed 00004
+ 0755	text "Her voice"
+ 0764	cmd5A 00369
+ 0766	text ".."
+ 0768	cmd59 00012
+ 0770	wait 00399
+ 0772	speed 00004
+ 0774	text "is"
+ 0776	wait 00008
+ 0778	text " "
+ 0779	textcolor COLOR_RED
+ 0781	text "divine"
+ 0787	textcolor COLOR_WHITE
+ 0789	text "."
+ 0790	paragraph
+ 0791	person 6, PLACE_DEFAULT, 0, 138, 137
+ 0795	speed 00003
+ 0797	text "I knew I had to invite her to\nperform with us."
+ 0843	nextpage_button
+ 0844	hidetextbox 00001
+ 0846	personvanish 00004, 00001
+ 0849	wait 00016
+ 0851	personvanish 00003, 00001
+ 0854	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0858	cmd5A 00012
+ 0860	flagctl 0, 28, 0
+ 0862	section_setup
+ 0863	cmd59 00014
+ 0865	text "{00496}"
+ 0866	sound 00052, 00001
+ 0869	screen_fade 02305, 00008, 00031
+ 0873	fademusic 120, 11
+ 0876	pause
+ 0877	text "Lamiroir says"
+ 0890	cmd5A 00011
+ 0892	sound 00369, 00369
+ 0895	text "."
+ 0896	cmd59 00002
+ 0898	speed 00004
+ 0900	text "{00385}You praise me too highly.{00385}"
+ 0927	nextpage_button
+ 0928	hidetextbox 00001
+ 0930	personvanish 00003, 00002
+ 0933	person 36, PLACE_DEFAULT, 0, 805, 805
+ 0937	wait 00032
+ 0939	sound 00051, 00001
+ 0942	screen_fade 02305, 00008, 00031
+ 0946	person 36, PLACE_DEFAULT, 0, 805, 805
+ 0950	name 4, SHOW_LEFT
+ 0952	hidetextbox 00000
+ 0954	screen_fade 02305, 00008, 00031
+ 0958	speed 00002
+ 0960	textcolor COLOR_BLUE
+ 0962	text "(Whoa!"
+ 0968	wait 00012
+ 0970	text " "
+ 0971	speed 00002
+ 0973	text "Who\'s this guy?"
+ 0988	wait 00018
+ 0990	text " "
+ 0991	speed 00003
+ 0993	text "He\'s\n"
+ 0998	speed 00003
+ 1000	text "huge!)"
+ 1006	textcolor COLOR_WHITE
+ 1008	nextpage_button
+ 1009	hidetextbox 00001
+ 1011	personvanish 00004, 00001
+ 1014	wait 00016
+ 1016	personvanish 00003, 00001
+ 1019	person 6, PLACE_DEFAULT, 0, 134, 133
+ 1023	cmd5A 00012
+ 1025	flagctl 0, 28, 0
+ 1027	section_setup
+ 1028	cmd59 00014
+ 1030	text "{13552}"
+ 1031	speed 00004
+ 1033	text "Ah,"
+ 1036	wait 00008
+ 1038	text " "
+ 1039	speed 00003
+ 1041	text "allow me to introduce\nMr. Romein LeTouse."
+ 1082	paragraph
+ 1083	text "..."
+ 1086	wait 00020
+ 1088	text "Lamiroir\'s manager."
+ 1107	wait 00012
+ 1109	text " And\nher interpreter,"
+ 1130	wait 00008
+ 1132	text " incidentally."
+ 1146	nextpage_button
+ 1147	hidetextbox 00001
+ 1149	personvanish 00004, 00001
+ 1152	wait 00016
+ 1154	personvanish 00003, 00001
+ 1157	person 36, PLACE_DEFAULT, 0, 806, 805
+ 1161	cmd5A 00012
+ 1163	flagctl 0, 28, 0
+ 1165	section_setup
+ 1166	cmd59 00014
+ 1168	text "{09200}"
+ 1169	speed 00003
+ 1171	text "It is a great honor for us\nto be here."
+ 1209	paragraph
+ 1210	speed 00003
+ 1212	text "And a great honor for Lamiroir\nto be heard in this country."
+ 1271	nextpage_button
+ 1272	newevidence 104, PROFILE, 0
+ 1274	hidetextbox 00001
+ 1276	personvanish 00004, 00001
+ 1279	wait 00016
+ 1281	personvanish 00003, 00001
+ 1284	person 0, PLACE_DEFAULT, 0, 0, 0
+ 1288	cmd5A 00012
+ 1290	flagctl 0, 28, 0
+ 1292	section_setup
+ 1293	cmd59 00014
+ 1295	text "{00752}"
+ 1296	sound 00052, 00001
+ 1299	screen_fade 02305, 00008, 00031
+ 1303	speed 00005
+ 1305	text "{01860}{01868}{01862}{01859}{01861}"
+ 1310	wait 00006
+ 1312	speed 00006
+ 1314	text "{01867}{01868}{01862}{01863}{01864}{01865}{01858}"
+ 1321	wait 00008
+ 1323	newline
+ 1324	speed 00004
+ 1326	text "{01872}{01869}{01871}{01856}{01857}‥‥"
+ 1333	nextpage_button
+ 1334	person 0, PLACE_DEFAULT, 0, 0, 0
+ 1338	name 4, SHOW_LEFT
+ 1340	textcolor COLOR_BLUE
+ 1342	text "(That voice"
+ 1353	speed 00006
+ 1355	text "..."
+ 1358	speed 00003
+ 1360	text ")"
+ 1361	paragraph
+ 1362	textcolor COLOR_BLUE
+ 1364	text "(I wish I could understand\nit..."
+ 1396	wait 00020
+ 1398	text " It\'s beautiful.)"
+ 1415	textcolor COLOR_WHITE
+ 1417	nextpage_button
+ 1418	person 0, PLACE_DEFAULT, 0, 0, 0
+ 1422	name 3, SHOW_LEFT
+ 1424	speed 00005
+ 1426	text "{01860}{01872}{01863}{01869}"
+ 1430	wait 00008
+ 1432	speed 00004
+ 1434	text "{01859}{01868}{01857}{01869}{01871}{01867}{01861}{01866}\n{01870}{01861}{01865}{01858}‥‥"
+ 1449	nextpage_button
+ 1450	hidetextbox 00001
+ 1452	personvanish 00003, 00004
+ 1455	person 34, PLACE_DEFAULT, 0, 745, 745
+ 1459	wait 00064
+ 1461	sound 00051, 00001
+ 1464	screen_fade 02305, 00008, 00031
+ 1468	wait 00040
+ 1470	person 34, PLACE_DEFAULT, 0, 747, 745
+ 1474	name 3, SHOW_LEFT
+ 1476	hidetextbox 00000
+ 1478	speed 00006
+ 1480	text "{01860}{01868}{01863}{01857}{01869}"
+ 1485	wait 00008
+ 1487	speed 00005
+ 1489	text "{01871}{01867}{01861}{01866}{01863}{01869}{01860}{01870}\n{01859}{01870}{01861}{01863}{01869}{01865}{01858}‥‥"
+ 1507	nextpage_button
+ 1508	hidetextbox 00001
+ 1510	personvanish 00004, 00001
+ 1513	wait 00016
+ 1515	personvanish 00003, 00001
+ 1518	person 5, PLACE_DEFAULT, 0, 72, 69
+ 1522	cmd5A 00012
+ 1524	flagctl 0, 28, 0
+ 1526	section_setup
+ 1527	cmd59 00014
+ 1529	text "{01264}"
+ 1530	hidetextbox 00000
+ 1532	screen_fade 02305, 00008, 00031
+ 1536	sound 00053, 00001
+ 1539	shake 00030, 00001
+ 1542	speed 00002
+ 1544	text "Ooooh!"
+ 1550	wait 00012
+ 1552	text " "
+ 1553	screen_fade 02305, 00008, 00031
+ 1557	shake 00030, 00000
+ 1560	text "It\'s Lamiroir!"
+ 1574	wait 00016
+ 1576	text " "
+ 1577	speed 00003
+ 1579	text "I\'m\n"
+ 1583	shake 00030, 00000
+ 1586	text "actually meeting Lamiroir!"
+ 1612	person 5, PLACE_DEFAULT, 0, 70, 70
+ 1616	nextpage_button
+ 1617	hidetextbox 00001
+ 1619	personvanish 00004, 00001
+ 1622	wait 00016
+ 1624	personvanish 00003, 00001
+ 1627	person 34, PLACE_DEFAULT, 0, 745, 745
+ 1631	cmd5A 00012
+ 1633	flagctl 0, 28, 0
+ 1635	section_setup
+ 1636	cmd59 00014
+ 1638	text "{01008}"
+ 1639	speed 00005
+ 1641	textcolor COLOR_BLUE
+ 1643	text "(Lamiroir"
+ 1652	speed 00006
+ 1654	text "..."
+ 1657	speed 00004
+ 1659	wait 00020
+ 1661	newline
+ 1662	text "Mysterious"
+ 1672	wait 00008
+ 1674	text " songstress"
+ 1685	speed 00006
+ 1687	text "..."
+ 1690	speed 00003
+ 1692	text ")"
+ 1693	paragraph
+ 1694	speed 00003
+ 1696	text "(Her quiet,"
+ 1707	wait 00008
+ 1709	text " deep song glides\nthrough the air"
+ 1742	speed 00006
+ 1744	text "..."
+ 1747	speed 00004
+ 1749	text ")"
+ 1750	paragraph
+ 1751	text "(Lilting above a sparse,"
+ 1775	wait 00008
+ 1777	text " but\nelegant piano accompaniment."
+ 1810	speed 00003
+ 1812	text ")"
+ 1813	paragraph
+ 1814	text "(Now"
+ 1818	wait 00008
+ 1820	text " this is music."
+ 1835	wait 00016
+ 1837	text " She\'s a"
+ 1845	wait 00008
+ 1847	newline
+ 1848	text "real artist"
+ 1859	wait 00008
+ 1861	text ".)"
+ 1863	textcolor COLOR_WHITE
+ 1865	nextpage_button
+ 1866	newevidence 107, PROFILE, 0
+ 1868	person 34, PLACE_DEFAULT, 0, 752, 750
+ 1872	name 34, SHOW_LEFT
+ 1874	speed 00005
+ 1876	text "{01869}{01868}{01864}{01862}{01857}{01865}"
+ 1882	wait 00008
+ 1884	person 34, PLACE_DEFAULT, 0, 747, 745
+ 1888	text "{01862}{01856}{01872}{01864}{01861}{01860}{01857}\n{01867}{01866}{01859}‥‥"
+ 1901	nextpage_button
+ 1902	hidetextbox 00001
+ 1904	personvanish 00004, 00001
+ 1907	wait 00016
+ 1909	personvanish 00003, 00001
+ 1912	person 36, PLACE_DEFAULT, 0, 806, 805
+ 1916	cmd5A 00012
+ 1918	flagctl 0, 28, 0
+ 1920	section_setup
+ 1921	cmd59 00014
+ 1923	text "{09200}"
+ 1924	speed 00003
+ 1926	text "Lamiroir says..."
+ 1942	paragraph
+ 1943	speed 00003
+ 1945	text "{00385}We have long looked forward\nto this joint performance.{00385}"
+ 2001	nextpage_button
+ 2002	hidetextbox 00001
+ 2004	personvanish 00004, 00001
+ 2007	wait 00016
+ 2009	personvanish 00003, 00001
+ 2012	person 6, PLACE_DEFAULT, 0, 134, 133
+ 2016	cmd5A 00012
+ 2018	flagctl 0, 28, 0
+ 2020	section_setup
+ 2021	cmd59 00014
+ 2023	text "{13552}"
+ 2024	speed 00004
+ 2026	text "Ah,"
+ 2029	wait 00008
+ 2031	text " Lamiroir..."
+ 2043	wait 00016
+ 2045	newline
+ 2046	speed 00003
+ 2048	text "Your voice..."
+ 2061	nextpage_button
+ 2062	person 6, PLACE_DEFAULT, 0, 138, 137
+ 2066	text "..."
+ 2069	wait 00020
+ 2071	text "It is art."
+ 2081	nextpage_button
+ 2082	hidetextbox 00001
+ 2084	personvanish 00004, 00001
+ 2087	wait 00016
+ 2089	personvanish 00003, 00001
+ 2092	person 34, PLACE_DEFAULT, 0, 752, 750
+ 2096	cmd5A 00012
+ 2098	flagctl 0, 28, 0
+ 2100	section_setup
+ 2101	cmd59 00014
+ 2103	text "{08688}"
+ 2104	speed 00005
+ 2106	text "{01872}{01861}{01857}{01862}{01856}{01857}{01866}{01867}{01870}{01872}{01861}{01871}{01856}{01867}{01868}{01869}\n{01857}{01858}{01859}‥‥\n"
+ 2129	person 34, PLACE_DEFAULT, 0, 745, 745
+ 2133	nextpage_button
+ 2134	hidetextbox 00001
+ 2136	personvanish 00004, 00001
+ 2139	wait 00016
+ 2141	personvanish 00003, 00001
+ 2144	person 36, PLACE_DEFAULT, 0, 806, 805
+ 2148	cmd5A 00012
+ 2150	flagctl 0, 28, 0
+ 2152	section_setup
+ 2153	cmd59 00014
+ 2155	text "{09200}"
+ 2156	speed 00003
+ 2158	text "{00385}Yet without his piano to\nguide me...{00385}"
+ 2196	paragraph
+ 2197	text "{00385}..."
+ 2201	wait 00020
+ 2203	text "it is but a voice.{00385}"
+ 2222	nextpage_button
+ 2223	hidetextbox 00001
+ 2225	personvanish 00003, 00004
+ 2228	person 42, PLACE_DEFAULT, 0, 771, 771
+ 2232	cmd6B 00001, 00000, 00000
+ 2236	bganim 00098, 00522
+ 2239	wait 00064
+ 2241	sound 00052, 00001
+ 2244	screen_fade 02305, 00008, 00031
+ 2248	wait 00060
+ 2250	name 2, SHOW_LEFT
+ 2252	person 42, PLACE_DEFAULT, 0, 771, 771
+ 2256	cmd6B 00001, 00000, 00000
+ 2260	bganim 00098, 00522
+ 2263	hidetextbox 00000
+ 2265	speed 00006
+ 2267	text "‥‥‥‥‥‥‥‥‥‥"
+ 2277	nextpage_button
+ 2278	name 4, SHOW_LEFT
+ 2280	speed 00004
+ 2282	textcolor COLOR_BLUE
+ 2284	text "(I\'ve seen this kid\nsomewhere before.)"
+ 2322	textcolor COLOR_WHITE
+ 2324	nextpage_button
+ 2325	hidetextbox 00001
+ 2327	personvanish 00004, 00001
+ 2330	wait 00016
+ 2332	personvanish 00003, 00001
+ 2335	person 5, PLACE_DEFAULT, 0, 68, 67
+ 2339	cmd5A 00012
+ 2341	flagctl 0, 28, 0
+ 2343	section_setup
+ 2344	cmd59 00014
+ 2346	text "{01264}"
+ 2347	screen_fade 02305, 00008, 00031
+ 2351	speed 00003
+ 2353	text "He plays piano at all of\nLamiroir\'s concerts!"
+ 2398	paragraph
+ 2399	person 5, PLACE_DEFAULT, 0, 72, 69
+ 2403	speed 00003
+ 2405	text "He\'s cute!"
+ 2415	wait 00016
+ 2417	text " "
+ 2418	speed 00002
+ 2420	text "And he\'s a really\ngood pianist."
+ 2451	nextpage_button
+ 2452	name 4, SHOW_LEFT
+ 2454	speed 00004
+ 2456	text "Good pianists are a dying\nbreed,"
+ 2488	wait 00008
+ 2490	text " I hear."
+ 2498	nextpage_button
+ 2499	hidetextbox 00001
+ 2501	personvanish 00004, 00001
+ 2504	wait 00016
+ 2506	personvanish 00003, 00001
+ 2509	person 36, PLACE_DEFAULT, 0, 806, 805
+ 2513	cmd5A 00012
+ 2515	flagctl 0, 28, 0
+ 2517	section_setup
+ 2518	cmd59 00014
+ 2520	text "{09200}"
+ 2521	speed 00003
+ 2523	text "Allow me to introduce Machi\nTobaye. "
+ 2559	speed 00006
+ 2561	text "..."
+ 2564	wait 00020
+ 2566	speed 00005
+ 2568	text "He is blind."
+ 2580	paragraph
+ 2581	hidetextbox 00001
+ 2583	personvanish 00004, 00001
+ 2586	wait 00016
+ 2588	personvanish 00003, 00001
+ 2591	person 42, PLACE_DEFAULT, 0, 771, 771
+ 2595	cmd6B 00001, 00000, 00000
+ 2599	bganim 00098, 00522
+ 2602	cmd5A 00012
+ 2604	flagctl 0, 28, 0
+ 2606	section_setup
+ 2607	cmd59 00011
+ 2609	pause
+ 2610	text "This is why he never strays\nfar from Lamiroir."
+ 2656	paragraph
+ 2657	speed 00004
+ 2659	text "They are always together."
+ 2684	nextpage_button
+ 2685	name 35, SHOW_LEFT
+ 2687	person 42, PLACE_DEFAULT, 0, 771, 771
+ 2691	cmd6B 00001, 00000, 00000
+ 2695	bganim 00098, 00522
+ 2698	speed 00006
+ 2700	text "‥‥‥‥‥‥‥‥‥‥"
+ 2710	nextpage_button
+ 2711	name 4, SHOW_LEFT
+ 2713	speed 00004
+ 2715	textcolor COLOR_BLUE
+ 2717	text "(They\'re like characters from\nsome fairy tale"
+ 2762	speed 00006
+ 2764	text "...)"
+ 2768	textcolor COLOR_WHITE
+ 2770	nextpage_button
+ 2771	newevidence 109, PROFILE, 0
+ 2773	hidetextbox 00001
+ 2775	personvanish 00004, 00001
+ 2778	wait 00016
+ 2780	personvanish 00003, 00001
+ 2783	person 5, PLACE_DEFAULT, 0, 76, 75
+ 2787	cmd5A 00012
+ 2789	flagctl 0, 28, 0
+ 2791	section_setup
+ 2792	cmd59 00014
+ 2794	text "{01264}"
+ 2795	speed 00003
+ 2797	text "Lamiroir\'s so,"
+ 2811	wait 00008
+ 2813	text " um,"
+ 2817	wait 00008
+ 2819	text " what\'s\nthat word"
+ 2836	wait_noanim 00010
+ 2838	text "..."
+ 2841	paragraph
+ 2842	person 5, PLACE_DEFAULT, 0, 68, 67
+ 2846	speed 00004
+ 2848	textcolor COLOR_RED
+ 2850	text "Exotic"
+ 2856	textcolor COLOR_WHITE
+ 2858	text "!"
+ 2859	paragraph
+ 2860	person 5, PLACE_DEFAULT, 0, 72, 69
+ 2864	speed 00003
+ 2866	text "..."
+ 2869	wait 00020
+ 2871	text "And mysterious!"
+ 2886	nextpage_button
+ 2887	person 5, PLACE_DEFAULT, 0, 69, 69
+ 2891	name 4, SHOW_LEFT
+ 2893	speed 00004
+ 2895	text "She does seem quite pretty."
+ 2922	wait 00008
+ 2924	newline
+ 2925	text "At least,"
+ 2934	wait 00008
+ 2936	text " her eyes do."
+ 2949	nextpage_button
+ 2950	hidetextbox 00001
+ 2952	personvanish 00004, 00001
+ 2955	wait 00016
+ 2957	personvanish 00003, 00001
+ 2960	person 6, PLACE_DEFAULT, 0, 134, 133
+ 2964	cmd5A 00012
+ 2966	flagctl 0, 28, 0
+ 2968	section_setup
+ 2969	cmd59 00014
+ 2971	text "{13552}"
+ 2972	speed 00004
+ 2974	text "Hers is a kind of {00385}"
+ 2993	textcolor COLOR_RED
+ 2995	text "sight{DASH}\nseeing musique"
+ 3016	textcolor COLOR_WHITE
+ 3018	text "{00385}..."
+ 3022	nextpage_button
+ 3023	hidetextbox 00001
+ 3025	personvanish 00004, 00001
+ 3028	wait 00016
+ 3030	personvanish 00003, 00001
+ 3033	person 5, PLACE_DEFAULT, 0, 76, 75
+ 3037	cmd5A 00012
+ 3039	flagctl 0, 28, 0
+ 3041	section_setup
+ 3042	cmd59 00014
+ 3044	text "{01264}"
+ 3045	sound 00052, 00001
+ 3048	screen_fade 02305, 00008, 00031
+ 3052	speed 00005
+ 3054	text "Huh?"
+ 3058	wait 00008
+ 3060	speed 00003
+ 3062	nextpage_button
+ 3063	hidetextbox 00001
+ 3065	personvanish 00004, 00001
+ 3068	wait 00016
+ 3070	personvanish 00003, 00001
+ 3073	person 6, PLACE_DEFAULT, 0, 134, 133
+ 3077	cmd5A 00012
+ 3079	flagctl 0, 28, 0
+ 3081	section_setup
+ 3082	cmd59 00014
+ 3084	text "{13552}"
+ 3085	speed 00003
+ 3087	text "She travels the globe,"
+ 3109	wait 00010
+ 3111	text " "
+ 3112	speed 00003
+ 3114	text "putting\nthe"
+ 3125	wait 00008
+ 3127	text " "
+ 3128	textcolor COLOR_RED
+ 3130	text "sights"
+ 3136	textcolor COLOR_WHITE
+ 3138	wait 00008
+ 3140	text " she sees into song."
+ 3160	paragraph
+ 3161	speed 00003
+ 3163	text "Even though her appearance\nand voice are exotic"
+ 3210	speed 00006
+ 3212	text "..."
+ 3215	nextpage_button
+ 3216	person 6, PLACE_DEFAULT, 0, 138, 137
+ 3220	speed 00004
+ 3222	text "..."
+ 3225	wait 00020
+ 3227	text "her songs remind us of\nsomething close,"
+ 3266	wait 00008
+ 3268	text " and warm."
+ 3278	nextpage_button
+ 3279	hidetextbox 00001
+ 3281	personvanish 00004, 00001
+ 3284	wait 00016
+ 3286	personvanish 00003, 00001
+ 3289	person 5, PLACE_DEFAULT, 0, 82, 81
+ 3293	cmd5A 00012
+ 3295	flagctl 0, 28, 0
+ 3297	section_setup
+ 3298	cmd59 00014
+ 3300	text "{01264}Sights into song"
+ 3317	wait 00008
+ 3319	speed 00006
+ 3321	text "..."
+ 3324	wait 00020
+ 3326	text " That\'s so\npoetic!"
+ 3344	nextpage_button
+ 3345	hidetextbox 00001
+ 3347	personvanish 00004, 00001
+ 3350	wait 00016
+ 3352	personvanish 00003, 00001
+ 3355	person 6, PLACE_DEFAULT, 0, 134, 133
+ 3359	cmd5A 00012
+ 3361	flagctl 0, 28, 0
+ 3363	section_setup
+ 3364	cmd59 00014
+ 3366	text "{13552}"
+ 3367	speed 00003
+ 3369	text "She was gracious enough to put\nmusic to my lyrics tonight."
+ 3427	paragraph
+ 3428	person 6, PLACE_DEFAULT, 0, 138, 137
+ 3432	speed 00004
+ 3434	text "{00385}"
+ 3435	textcolor COLOR_RED
+ 3437	text "The Guitar\'s Serenade"
+ 3458	textcolor COLOR_WHITE
+ 3460	text "{00385}."
+ 3462	wait 00012
+ 3464	newline
+ 3465	speed 00006
+ 3467	text "..."
+ 3470	wait 00016
+ 3472	speed 00004
+ 3474	text "I hope you enjoy it."
+ 3494	nextpage_button
+ 3495	person 5, PLACE_DEFAULT, 0, 72, 69
+ 3499	name 5, SHOW_LEFT
+ 3501	sound 00051, 00001
+ 3504	screen_fade 02305, 00008, 00031
+ 3508	speed 00002
+ 3510	text "I ca"
+ 3514	shake 00030, 00000
+ 3517	text "n\'t wait!"
+ 3526	wait 00012
+ 3528	person 5, PLACE_DEFAULT, 0, 71, 71
+ 3532	nextpage_button
+ 3533	hidetextbox 00001
+ 3535	personvanish 00004, 00001
+ 3538	wait 00016
+ 3540	personvanish 00003, 00001
+ 3543	person 6, PLACE_DEFAULT, 0, 134, 133
+ 3547	cmd5A 00012
+ 3549	flagctl 0, 28, 0
+ 3551	section_setup
+ 3552	cmd59 00014
+ 3554	text "{13552}"
+ 3555	speed 00005
+ 3557	text "..."
+ 3560	wait 00012
+ 3562	speed 00003
+ 3564	text "And now it is time."
+ 3583	paragraph
+ 3584	text "For the next part, we\'re\ngiving the Gavinners\'s hard\nrock a little rest."
+ 3656	nextpage_button
+ 3657	person 6, PLACE_DEFAULT, 0, 138, 137
+ 3661	speed 00004
+ 3663	text "Lamiroir,"
+ 3672	wait 00012
+ 3674	text " the stage is yours."
+ 3694	nextpage_button
+ 3695	hidetextbox 00001
+ 3697	personvanish 00004, 00001
+ 3700	wait 00016
+ 3702	personvanish 00003, 00001
+ 3705	person 42, PLACE_DEFAULT, 0, 772, 771
+ 3709	cmd6B 00001, 00000, 00000
+ 3713	bganim 00098, 00522
+ 3716	cmd5A 00012
+ 3718	flagctl 0, 28, 0
+ 3720	section_setup
+ 3721	cmd59 00014
+ 3723	text "{08688}"
+ 3724	speed 00005
+ 3726	text "{01861}{01867}{01866}{01861}{01868}{01869}{01860}{01862}{01863}{01864}"
+ 3736	wait 00006
+ 3738	newline
+ 3739	text "{01870}{01865}{01861}{01872}{01864}{01872}‥‥"
+ 3747	nextpage_button
+ 3748	hidetextbox 00001
+ 3750	personvanish 00004, 00001
+ 3753	wait 00016
+ 3755	personvanish 00003, 00001
+ 3758	person 36, PLACE_DEFAULT, 0, 806, 805
+ 3762	cmd5A 00012
+ 3764	flagctl 0, 28, 0
+ 3766	section_setup
+ 3767	cmd59 00014
+ 3769	text "{09200}"
+ 3770	speed 00003
+ 3772	text "The band members will not\nplay during Lamiroir\'s ballad."
+ 3828	paragraph
+ 3829	text "Only Machi\'s tender tones,"
+ 3855	wait 00008
+ 3857	text " and\nLamiroir\'s dulcet voice..."
+ 3888	nextpage_button
+ 3889	hidetextbox 00001
+ 3891	personvanish 00004, 00001
+ 3894	wait 00016
+ 3896	personvanish 00003, 00001
+ 3899	person 6, PLACE_DEFAULT, 0, 138, 137
+ 3903	cmd5A 00012
+ 3905	flagctl 0, 28, 0
+ 3907	section_setup
+ 3908	cmd59 00014
+ 3910	text "{13552}"
+ 3911	speed 00004
+ 3913	text "..."
+ 3916	wait 00020
+ 3918	speed 00003
+ 3920	text "And my guitar,"
+ 3934	wait 00012
+ 3936	text " of course."
+ 3947	nextpage_button
+ 3948	hidetextbox 00001
+ 3950	personvanish 00004, 00001
+ 3953	wait 00016
+ 3955	personvanish 00003, 00001
+ 3958	person 5, PLACE_DEFAULT, 0, 72, 69
+ 3962	cmd5A 00012
+ 3964	flagctl 0, 28, 0
+ 3966	section_setup
+ 3967	cmd59 00014
+ 3969	text "{01264}"
+ 3970	screen_fade 02305, 00008, 00031
+ 3974	sound 00053, 00001
+ 3977	shake 00030, 00001
+ 3980	speed 00002
+ 3982	text "Woo hoo!"
+ 3990	wait 00012
+ 3992	text " "
+ 3993	speed 00003
+ 3995	text "Nights like this make\n"
+ 4017	shake 00030, 00000
+ 4020	text "it all worthwhile,"
+ 4038	wait 00010
+ 4040	text " you know!"
+ 4050	person 5, PLACE_DEFAULT, 0, 71, 71
+ 4054	nextpage_button
+ 4055	person 5, PLACE_DEFAULT, 0, 71, 71
+ 4059	name 4, SHOW_LEFT
+ 4061	speed 00004
+ 4063	textcolor COLOR_BLUE
+ 4065	text "(I should have learned to\nplay the guitar.)"
+ 4108	paragraph
+ 4109	speed 00003
+ 4111	text "(There\'s not much romance in\nChords of Steel.)"
+ 4157	textcolor COLOR_WHITE
+ 4159	nextpage_button
+ 4160	hidetextbox 00001
+ 4162	personvanish 00004, 00001
+ 4165	wait 00016
+ 4167	personvanish 00003, 00001
+ 4170	person 6, PLACE_DEFAULT, 0, 138, 137
+ 4174	cmd5A 00012
+ 4176	flagctl 0, 28, 0
+ 4178	section_setup
+ 4179	cmd59 00014
+ 4181	text "{13552}"
+ 4182	sound 00051, 00001
+ 4185	screen_fade 02305, 00008, 00031
+ 4189	speed 00003
+ 4191	text "Shall we hit the stage,"
+ 4214	wait 00008
+ 4216	text " then?\n"
+ 4223	screen_fade 02305, 00008, 00031
+ 4227	shake 00030, 00000
+ 4230	nextpage_button
+ 4231	hidetextbox 00001
+ 4233	personvanish 00004, 00001
+ 4236	wait 00016
+ 4238	personvanish 00003, 00001
+ 4241	person 5, PLACE_DEFAULT, 0, 72, 69
+ 4245	cmd5A 00012
+ 4247	flagctl 0, 28, 0
+ 4249	section_setup
+ 4250	cmd59 00014
+ 4252	text "{01264}"
+ 4253	screen_fade 02305, 00008, 00031
+ 4257	shake 00030, 00000
+ 4260	text "Good luck,"
+ 4270	wait 00008
+ 4272	text " Mr. Gavin!"
+ 4283	nextpage_button
+ 4284	hidetextbox 00001
+ 4286	personvanish 00004, 00001
+ 4289	wait 00016
+ 4291	personvanish 00003, 00001
+ 4294	person 6, PLACE_DEFAULT, 0, 134, 133
+ 4298	cmd5A 00012
+ 4300	flagctl 0, 28, 0
+ 4302	section_setup
+ 4303	cmd59 00014
+ 4305	text "{13552}"
+ 4306	speed 00005
+ 4308	text "Take care your hearts aren\'t\n"
+ 4337	person 6, PLACE_DEFAULT, 0, 138, 137
+ 4341	screen_fade 02305, 00008, 00031
+ 4345	text "stolen away,"
+ 4357	wait 00008
+ 4359	text " ja?"
+ 4363	nextpage_button
+ 4364	hidetextbox 00001
+ 4366	fademusic 120, 49
+ 4369	pause
+ 4370	pause
+ 4371	wait 00064
+ 4373	wait 00060
+ 4375	name 5, SHOW_LEFT
+ 4377	person 5, PLACE_DEFAULT, 0, 96, 95
+ 4381	hidetextbox 00000
+ 4383	screen_fade 02305, 00008, 00031
+ 4387	sound 00053, 00001
+ 4390	shake 00030, 00001
+ 4393	speed 00003
+ 4395	text "Let\'s get back to the concert\nhall,"
+ 4430	wait_noanim 00016
+ 4432	text " "
+ 4433	person 5, PLACE_DEFAULT, 0, 72, 69
+ 4437	text "Polly!"
+ 4443	nextpage_button
+ 4444	hidetextbox 00001
+ 4446	wait 00060
+ 4448	cmd6B 00002, 00001, 00031
+ 4452	bganim 00098, 00626
+ 4455	screen_fade 2, FADE_TO_BLACK, 1, 31
+ 4459	wait 00015
+ 4461	cmd74 00003, 00000
+ 4464	wait 00010
+ 4466	section_end
+ENDSECTION
+SECTION 3
+ 0000	section_setup
+ 0001	cmd6B 00000, 00169, 00000
+ 0005	bganim 00098, 00269
+ 0008	bganim 00000, 08192
+ 0011	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0015	bg 4095, BG_NOSHIFT
+ 0017	cmd30 00255
+ 0019	hidetextbox 00000
+ 0021	cmd6B 00000, 00000, 00000
+ 0025	cmd7F
+ 0026	fullscreen_text
+ 0027	cmd7F
+ 0028	finger_choice_2_args_jmp 4294967202, 4294967168
+ 0031	music 00060, 00000
+ 0034	animation 212, ANIM_START
+ 0037	screen_fade 2, FADE_FROM_BLACK, 1, 31
+ 0041	wait 00015
+ 0043	cmd6B 00000, 00000, 00000
+ 0047	cmd7F
+ 0048	name 0, (null)
+ 0050	section_setup
+ 0051	toggle_center_text 00001
+ 0053	speed 00008
+ 0055	newline
+ 0056	text "Sugar, Sugar..."
+ 0071	wait 00015
+ 0073	newline
+ 0074	cmd6B 00080, 00000, 00000
+ 0078	cmd7F
+ 0079	name 0, ANIM_START
+ 0081	sound 00168, 00399
+ 0084	text "that night,"
+ 0095	wait 00020
+ 0097	text " in your embrace."
+ 0114	cmd6B 00185, 00000, 00000
+ 0118	cmd7F
+ 0119	name 0, (null)
+ 0121	speed 00008
+ 0123	newline
+ 0124	text "When you stole"
+ 0138	wait 00020
+ 0140	text " away the keys"
+ 0154	wait 00020
+ 0156	cmd6B 00264, 00000, 00000
+ 0160	cmd7F
+ 0161	name 0, ANIM_START
+ 0163	finger_choice_2_args_jmp 4294967169, 64
+ 0166	text "y heart"
+ 0173	wait 00020
+ 0175	text " held on to so tight."
+ 0196	cmd6B 00358, 00000, 00000
+ 0200	cmd7F
+ 0201	name 0, (null)
+ 0203	name 0, SHOW_LEFT
+ 0205	cmd6B 00420, 00000, 00000
+ 0209	cmd7F
+ 0210	name 0, ANIM_START
+ 0212	fullscreen_text
+ 0213	newline
+ 0214	text "Pleasure..."
+ 0225	wait 00050
+ 0227	newline
+ 0228	cmd6B 00460, 00000, 00000
+ 0232	cmd7F
+ 0233	name 0, ANIM_START
+ 0235	finger_choice_2_args_jmp 27, 72
+ 0238	text "t a fleeting"
+ 0250	wait 00045
+ 0252	text " melody"
+ 0259	cmd6B 00559, 00000, 00000
+ 0263	cmd7F
+ 0264	name 0, (null)
+ 0266	newline
+ 0267	wait 00020
+ 0269	text "It wraps "
+ 0278	wait 00010
+ 0280	text "itself around me,\n"
+ 0298	cmd6B 00640, 00000, 00000
+ 0302	cmd7F
+ 0303	name 0, ANIM_STOP
+ 0305	text "nd now through the air I fly."
+ 0334	cmd6B 00738, 00000, 00000
+ 0338	cmd7F
+ 0339	name 0, (null)
+ 0341	cmd6B 00770, 00000, 00000
+ 0345	cmd7F
+ 0346	name 0, ANIM_START
+ 0348	finger_choice_2_args_jmp 4294967180, 4294967198
+ 0351	newline
+ 0352	newline
+ 0353	text "Woh... "
+ 0360	wait 00030
+ 0362	text "Woh..."
+ 0368	cmd6B 00841, 00000, 00000
+ 0372	cmd7F
+ 0373	name 0, (null)
+ 0375	cmd6B 00855, 00000, 00000
+ 0379	cmd7F
+ 0380	name 0, (null)
+ 0382	section_setup
+ 0383	speed 00008
+ 0385	newline
+ 0386	text "Burning on in my heart."
+ 0409	wait 00024
+ 0411	text " Fire.\n"
+ 0418	cmd6B 00930, 00000, 00000
+ 0422	cmd7F
+ 0423	name 0, EVIDENCE
+ 0425	pagebreak_section 27
+ 0427	text "urn my love away."
+ 0444	wait 00015
+ 0446	text " All away."
+ 0456	wait 00060
+ 0458	cmd6B 01000, 00000, 00000
+ 0462	cmd7F
+ 0463	name 0, (null)
+ 0465	cmd6B 01014, 00000, 00000
+ 0469	cmd7F
+ 0470	name 0, ANIM_START
+ 0472	finger_choice_2_args_jmp 4294967169, 37
+ 0475	text "ike a bullet of"
+ 0490	wait 00030
+ 0492	text " love. Fire.\n"
+ 0505	cmd6B 01096, 00000, 00000
+ 0509	cmd7F
+ 0510	name 0, EVIDENCE
+ 0512	pagebreak_section 45
+ 0514	text "ake my life away."
+ 0531	wait 00012
+ 0533	text " All away."
+ 0543	cmd6B 01190, 00000, 00000
+ 0547	cmd7F
+ 0548	name 0, (null)
+ 0550	name 0, SHOW_LEFT
+ 0552	cmd6B 01200, 00000, 00000
+ 0556	cmd7F
+ 0557	name 0, SHOW_RIGHT
+ 0559	speed 00008
+ 0561	text "Guitar, Guitar..."
+ 0578	wait 00015
+ 0580	newline
+ 0581	cmd6B 01265, 00000, 00000
+ 0585	cmd7F
+ 0586	name 0, ANIM_START
+ 0588	text "{01254}"
+ 0589	section_setup
+ 0590	section_setup
+ 0591	cmd7F
+ 0592	name 0, ANIM_START
+ 0594	section_end
+ 0595	text "Up together"
+ 0606	wait 00025
+ 0608	text " to the sky."
+ 0620	cmd6B 01360, 00000, 00000
+ 0624	cmd7F
+ 0625	name 0, (null)
+ 0627	hidetextbox 00001
+ 0629	cmd7F
+ 0630	testimony_box 00018, 00516
+ 0633	newline
+ 0634	hideperson
+ 0635	wait 00025
+ 0637	bganim 00000, 04096
+ 0640	section_end
+ENDSECTION
+SECTION 4
+ 0000	section_setup
+ 0001	bg 247, BG_NOSHIFT
+ 0003	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0007	screen_fade 2, FADE_FROM_BLACK, 1, 31
+ 0011	wait 00015
+ 0013	hide_court_record_button 00000
+ 0015	name 0, SHOW_LEFT
+ 0017	wait 00030
+ 0019	speed 00010
+ 0021	cmd30 00002
+ 0023	cmd74 00002, 00000
+ 0026	toggle_center_text 00001
+ 0028	hidetextbox 00000
+ 0030	textcolor COLOR_GREEN
+ 0032	text "July 7, 9:05 PM\nBackstage Hallway"
+ 0065	textcolor COLOR_WHITE
+ 0067	nextpage_button
+ 0068	hidetextbox 00001
+ 0070	toggle_center_text 00000
+ 0072	speed 00255
+ 0074	wait 00030
+ 0076	name 5, SHOW_LEFT
+ 0078	hidetextbox 00000
+ 0080	person 5, PLACE_DEFAULT, 0, 72, 69
+ 0084	screen_fade 02305, 00008, 00031
+ 0088	shake 00030, 00000
+ 0091	speed 00003
+ 0093	text "Wow,"
+ 0097	wait 00008
+ 0099	text " wasn\'t Lamiroir amazing?\n"
+ 0125	person 5, PLACE_DEFAULT, 0, 71, 71
+ 0129	paragraph
+ 0130	person 5, PLACE_DEFAULT, 0, 68, 67
+ 0134	speed 00004
+ 0136	text "I "
+ 0138	speed 00002
+ 0140	text "*sniffle*"
+ 0149	speed 00004
+ 0151	text " I even cried a"
+ 0166	wait 00012
+ 0168	newline
+ 0169	screen_fade 02305, 00008, 00031
+ 0173	shake 00030, 00000
+ 0176	text "little!"
+ 0183	nextpage_button
+ 0184	person 5, PLACE_DEFAULT, 0, 67, 67
+ 0188	name 4, SHOW_LEFT
+ 0190	speed 00004
+ 0192	text "I was surprised Prosecutor\nGavin actually burned his\nguitar."
+ 0252	nextpage_button
+ 0253	person 5, PLACE_DEFAULT, 0, 74, 73
+ 0257	name 5, SHOW_LEFT
+ 0259	shake 00030, 00000
+ 0262	speed 00003
+ 0264	text "Yeah!"
+ 0269	wait 00010
+ 0271	text " That even surprised me,"
+ 0295	wait 00008
+ 0297	newline
+ 0298	text "and I\'m a magician!"
+ 0317	paragraph
+ 0318	person 5, PLACE_DEFAULT, 0, 72, 69
+ 0322	screen_fade 02305, 00008, 00031
+ 0326	shake 00030, 00000
+ 0329	speed 00004
+ 0331	text "What a production!\n"
+ 0350	nextpage_button
+ 0351	person 5, PLACE_DEFAULT, 0, 69, 69
+ 0355	name 4, SHOW_LEFT
+ 0357	speed 00005
+ 0359	text "What a destruction."
+ 0378	paragraph
+ 0379	speed 00004
+ 0381	textcolor COLOR_BLUE
+ 0383	text "(I don\'t think Prosecutor\nGavin was expecting it\neither,"
+ 0439	wait 00008
+ 0441	text " oddly.)"
+ 0449	paragraph
+ 0450	text "(He looked as surprised as\nI was.)"
+ 0484	textcolor COLOR_WHITE
+ 0486	nextpage_button
+ 0487	person 5, PLACE_DEFAULT, 0, 76, 75
+ 0491	name 5, SHOW_LEFT
+ 0493	speed 00003
+ 0495	text "Is that what they call\n{00385}risking life and limb\nfor art{00385}?"
+ 0550	nextpage_button
+ 0551	person 5, PLACE_DEFAULT, 0, 72, 69
+ 0555	screen_fade 02305, 00008, 00031
+ 0559	text "I think he\'s my new hero!"
+ 0584	nextpage_button
+ 0585	person 5, PLACE_DEFAULT, 0, 69, 69
+ 0589	name 4, SHOW_LEFT
+ 0591	speed 00004
+ 0593	text "I\'m not sure I\'d call that"
+ 0619	wait 00008
+ 0621	newline
+ 0622	text "{00385}art{00385}."
+ 0628	nextpage_button
+ 0629	person 5, PLACE_DEFAULT, 0, 74, 73
+ 0633	name 5, SHOW_LEFT
+ 0635	screen_fade 02305, 00008, 00031
+ 0639	sound 00053, 00001
+ 0642	shake 00030, 00001
+ 0645	speed 00002
+ 0647	text "Well,"
+ 0652	wait 00006
+ 0654	text " what are we doing here?"
+ 0678	cmd5A 00012
+ 0680	screen_fade 89, FADE_NONE, 11, 3
+ 0684	shake 00030, 00000
+ 0687	newline
+ 0688	text "Let\'s get going to Mr. Gavin\'s\ndressing room!"
+ 0733	paragraph
+ 0734	person 5, PLACE_DEFAULT, 0, 68, 67
+ 0738	speed 00003
+ 0740	text "There\'s twenty minutes till\n"
+ 0768	screen_fade 02305, 00008, 00031
+ 0772	shake 00030, 00000
+ 0775	text "the last part of the show!"
+ 0801	nextpage_button
+ 0802	person 5, PLACE_DEFAULT, 0, 67, 67
+ 0806	name 4, SHOW_LEFT
+ 0808	speed 00005
+ 0810	text "How many breaks does this\nband need?"
+ 0846	nextpage_button
+ 0847	hidetextbox 00001
+ 0849	cmd6B 00004, 00001, 00031
+ 0853	bganim 00098, 00626
+ 0856	cmd6B 00002, 00000, 00000
+ 0860	bganim 00098, 00615
+ 0863	screen_fade 4, FADE_TO_BLACK, 1, 31
+ 0867	wait 00025
+ 0869	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0873	bg 4095, BG_NOSHIFT
+ 0875	flagctl 1, 0, 1
+ 0877	fadetoblack 00021
+ 0879	hidetextbox 00003
+ 0881	halt
+ 0882	section_end
+ENDSECTION
+SECTION 5
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "{00518}{00519}{00520}ï{00436}{00814}{00433}éï1\n{00302}…ï{00446}{00447}Ö{00733}Î{00617}ÛÄ"
+ 0030	paragraph
+ 0031	cmd62
+ 0032	textcolor COLOR_RED
+ 0034	flagctl 1, 0, 1
+ 0036	flagctl 1, 3, 1
+ 0038	flagctl 1, 4, 1
+ 0040	flagctl 1, 14, 1
+ 0042	flagctl 1, 16, 1
+ 0044	flagctl 1, 21, 1
+ 0046	flagctl 1, 23, 1
+ 0048	flagctl 1, 17, 1
+ 0050	flagctl 1, 48, 1
+ 0052	flagctl 1, 49, 1
+ 0054	flagctl 1, 24, 1
+ 0056	flagctl 1, 50, 1
+ 0058	flagctl 1, 29, 1
+ 0060	flagctl 1, 32, 1
+ 0062	flagctl 1, 31, 1
+ 0064	flagctl 1, 30, 1
+ 0066	flagctl 1, 18, 1
+ 0068	flagctl 1, 33, 1
+ 0070	flagctl 1, 34, 1
+ 0072	flagctl 1, 35, 1
+ 0074	flagctl 1, 42, 1
+ 0076	flagctl 1, 41, 1
+ 0078	flagctl 1, 19, 1
+ 0080	flagctl 1, 5, 1
+ 0082	flagctl 1, 6, 1
+ 0084	flagctl 1, 7, 1
+ 0086	flagctl 1, 15, 1
+ 0088	flagctl 1, 20, 1
+ 0090	flagctl 1, 25, 1
+ 0092	flagctl 1, 36, 1
+ 0094	setmovelocations 21, 20, 255, 255, 255
+ 0100	psychelock_itemchallenge 21, 15, 127, 127
+ 0105	text "ò"
+ 0106	cmd61 00021, 00020, 00255
+ 0110	text "òò"
+ 0112	setmovelocations 20, 21, 22, 19, 255
+ 0118	psychelock_itemchallenge 20, 16, 4294967185, 4294967182
+ 0123	text "ò"
+ 0124	cmd61 00020, 00021, 00022
+ 0128	screen_fade 255, FADE_NONE, 50, 22
+ 0132	text "ì"
+ 0133	cmd32 00019, 00246
+ 0136	cmd37 00005, 00000
+ 0139	cmd37 00006, 00001
+ 0142	cmd61 00020, 00021, 00022
+ 0146	evidence_window_plain
+ 0147	text "ò"
+ 0148	newevidence 104, PROFILE, 0
+ 0150	newevidence 107, PROFILE, 0
+ 0152	newevidence 109, PROFILE, 0
+ 0154	newevidence 116, EVIDENCE, 0
+ 0156	newevidence 125, EVIDENCE, 0
+ 0158	newevidence 162, PROFILE, 0
+ 0160	newevidence 147, EVIDENCE, 0
+ 0162	newevidence 123, EVIDENCE, 0
+ 0164	newevidence 122, EVIDENCE, 0
+ 0166	newevidence 113, PROFILE, 0
+ 0168	newevidence 126, EVIDENCE, 0
+ 0170	newevidence 120, EVIDENCE, 0
+ 0172	fadetoblack 00000
+ 0174	hidetextbox 00003
+ 0176	halt
+ 0177	section_end
+ENDSECTION
+SECTION 6
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "ᵃ{00290}{00400}{00324}{00482}éï1\n{00479}æÀîÀ"
+ 0022	paragraph
+ 0023	cmd62
+ 0024	textcolor COLOR_RED
+ 0026	flagctl 1, 0, 1
+ 0028	flagctl 1, 3, 1
+ 0030	flagctl 1, 4, 1
+ 0032	flagctl 1, 14, 1
+ 0034	flagctl 1, 16, 1
+ 0036	flagctl 1, 21, 1
+ 0038	flagctl 1, 23, 1
+ 0040	flagctl 1, 17, 1
+ 0042	setmovelocations 21, 20, 255, 255, 255
+ 0048	psychelock_itemchallenge 21, 15, 127, 127
+ 0053	text "ò"
+ 0054	cmd61 00021, 00020, 00255
+ 0058	text "òò"
+ 0060	setmovelocations 20, 21, 22, 19, 255
+ 0066	psychelock_itemchallenge 20, 16, 4294967185, 4294967182
+ 0071	text "ò"
+ 0072	cmd61 00020, 00021, 00022
+ 0076	screen_fade 255, FADE_NONE, 23, 32872
+ 0080	newevidence 107, PROFILE, 0
+ 0082	newevidence 109, PROFILE, 0
+ 0084	newevidence 116, EVIDENCE, 0
+ 0086	newevidence 125, EVIDENCE, 0
+ 0088	newevidence 162, PROFILE, 0
+ 0090	newevidence 147, EVIDENCE, 0
+ 0092	fadetoblack 00019
+ 0094	hidetextbox 00003
+ 0096	halt
+ 0097	section_end
+ENDSECTION
+SECTION 7
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "ᵃ{00290}{00400}{00324}{00482}éï2\n{00318}{00311}{00349}{00400}ê{00328}➁➀{00317}"
+ 0026	paragraph
+ 0027	cmd62
+ 0028	textcolor COLOR_RED
+ 0030	flagctl 1, 0, 1
+ 0032	flagctl 1, 3, 1
+ 0034	flagctl 1, 4, 1
+ 0036	flagctl 1, 14, 1
+ 0038	flagctl 1, 16, 1
+ 0040	flagctl 1, 21, 1
+ 0042	flagctl 1, 23, 1
+ 0044	flagctl 1, 17, 1
+ 0046	flagctl 1, 48, 1
+ 0048	flagctl 1, 49, 1
+ 0050	flagctl 1, 24, 1
+ 0052	flagctl 1, 50, 1
+ 0054	flagctl 1, 29, 1
+ 0056	flagctl 1, 32, 1
+ 0058	flagctl 1, 31, 1
+ 0060	flagctl 1, 30, 1
+ 0062	setmovelocations 21, 20, 255, 255, 255
+ 0068	psychelock_itemchallenge 21, 15, 127, 127
+ 0073	text "ò"
+ 0074	cmd61 00021, 00020, 00255
+ 0078	text "òò"
+ 0080	setmovelocations 20, 21, 22, 19, 255
+ 0086	psychelock_itemchallenge 20, 16, 4294967185, 4294967182
+ 0091	text "ò"
+ 0092	cmd61 00020, 00021, 00022
+ 0096	screen_fade 255, FADE_NONE, 23, 32872
+ 0100	newevidence 107, PROFILE, 0
+ 0102	newevidence 109, PROFILE, 0
+ 0104	newevidence 116, EVIDENCE, 0
+ 0106	newevidence 125, EVIDENCE, 0
+ 0108	newevidence 162, PROFILE, 0
+ 0110	newevidence 147, EVIDENCE, 0
+ 0112	newevidence 123, EVIDENCE, 0
+ 0114	newevidence 121, EVIDENCE, 0
+ 0116	newevidence 119, EVIDENCE, 0
+ 0118	fadetoblack 00019
+ 0120	hidetextbox 00003
+ 0122	halt
+ 0123	section_end
+ENDSECTION
+SECTION 8
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "ᵃ{00290}{00400}{00324}{00482}éï3\n➁-{00317}{00291}îÜ"
+ 0023	paragraph
+ 0024	cmd62
+ 0025	textcolor COLOR_RED
+ 0027	flagctl 1, 0, 1
+ 0029	flagctl 1, 3, 1
+ 0031	flagctl 1, 4, 1
+ 0033	flagctl 1, 14, 1
+ 0035	flagctl 1, 16, 1
+ 0037	flagctl 1, 21, 1
+ 0039	flagctl 1, 23, 1
+ 0041	flagctl 1, 17, 1
+ 0043	flagctl 1, 48, 1
+ 0045	flagctl 1, 49, 1
+ 0047	flagctl 1, 24, 1
+ 0049	flagctl 1, 50, 1
+ 0051	flagctl 1, 29, 1
+ 0053	flagctl 1, 32, 1
+ 0055	flagctl 1, 31, 1
+ 0057	flagctl 1, 30, 1
+ 0059	flagctl 1, 18, 1
+ 0061	flagctl 1, 33, 1
+ 0063	flagctl 1, 34, 1
+ 0065	flagctl 1, 35, 1
+ 0067	flagctl 1, 42, 1
+ 0069	flagctl 1, 41, 1
+ 0071	setmovelocations 21, 20, 255, 255, 255
+ 0077	psychelock_itemchallenge 21, 15, 127, 127
+ 0082	text "ò"
+ 0083	cmd61 00021, 00020, 00255
+ 0087	text "òò"
+ 0089	setmovelocations 20, 21, 22, 19, 255
+ 0095	psychelock_itemchallenge 20, 16, 4294967185, 4294967182
+ 0100	text "ò"
+ 0101	cmd61 00020, 00021, 00022
+ 0105	screen_fade 255, FADE_NONE, 23, 32872
+ 0109	newevidence 107, PROFILE, 0
+ 0111	newevidence 109, PROFILE, 0
+ 0113	newevidence 116, EVIDENCE, 0
+ 0115	newevidence 125, EVIDENCE, 0
+ 0117	newevidence 162, PROFILE, 0
+ 0119	newevidence 147, EVIDENCE, 0
+ 0121	newevidence 123, EVIDENCE, 0
+ 0123	newevidence 121, EVIDENCE, 0
+ 0125	newevidence 113, PROFILE, 0
+ 0127	newevidence 126, EVIDENCE, 0
+ 0129	newevidence 120, EVIDENCE, 0
+ 0131	fadetoblack 00019
+ 0133	hidetextbox 00003
+ 0135	halt
+ 0136	section_end
+ENDSECTION
+SECTION 9
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "ᵃ{00290}{00400}{00324}{00482}éï4\n{00287}{00315}{00400}ì{00714}ì{00271}âÀÄ"
+ 0027	paragraph
+ 0028	cmd62
+ 0029	textcolor COLOR_RED
+ 0031	flagctl 1, 0, 1
+ 0033	flagctl 1, 3, 1
+ 0035	flagctl 1, 4, 1
+ 0037	flagctl 1, 14, 1
+ 0039	flagctl 1, 16, 1
+ 0041	flagctl 1, 21, 1
+ 0043	flagctl 1, 23, 1
+ 0045	flagctl 1, 17, 1
+ 0047	flagctl 1, 48, 1
+ 0049	flagctl 1, 49, 1
+ 0051	flagctl 1, 24, 1
+ 0053	flagctl 1, 50, 1
+ 0055	flagctl 1, 29, 1
+ 0057	flagctl 1, 32, 1
+ 0059	flagctl 1, 31, 1
+ 0061	flagctl 1, 30, 1
+ 0063	flagctl 1, 18, 1
+ 0065	flagctl 1, 33, 1
+ 0067	flagctl 1, 34, 1
+ 0069	flagctl 1, 35, 1
+ 0071	flagctl 1, 42, 1
+ 0073	flagctl 1, 41, 1
+ 0075	flagctl 1, 19, 1
+ 0077	flagctl 1, 5, 1
+ 0079	flagctl 1, 6, 1
+ 0081	flagctl 1, 7, 1
+ 0083	flagctl 1, 15, 1
+ 0085	flagctl 1, 20, 1
+ 0087	flagctl 1, 25, 1
+ 0089	setmovelocations 21, 20, 255, 255, 255
+ 0095	psychelock_itemchallenge 21, 15, 127, 127
+ 0100	text "ò"
+ 0101	cmd61 00021, 00020, 00255
+ 0105	text "òò"
+ 0107	setmovelocations 20, 21, 22, 19, 255
+ 0113	psychelock_itemchallenge 20, 16, 4294967185, 4294967182
+ 0118	text "ò"
+ 0119	cmd61 00020, 00021, 00022
+ 0123	screen_fade 255, FADE_NONE, 50, 22
+ 0127	text "ì"
+ 0128	cmd32 00019, 00246
+ 0131	cmd37 00004, 00000
+ 0134	cmd37 00006, 00001
+ 0137	newevidence 104, PROFILE, 0
+ 0139	newevidence 107, PROFILE, 0
+ 0141	newevidence 109, PROFILE, 0
+ 0143	newevidence 116, EVIDENCE, 0
+ 0145	newevidence 125, EVIDENCE, 0
+ 0147	newevidence 162, PROFILE, 0
+ 0149	newevidence 147, EVIDENCE, 0
+ 0151	newevidence 123, EVIDENCE, 0
+ 0153	newevidence 122, EVIDENCE, 0
+ 0155	newevidence 113, PROFILE, 0
+ 0157	newevidence 126, EVIDENCE, 0
+ 0159	newevidence 120, EVIDENCE, 0
+ 0161	fadetoblack 00019
+ 0163	hidetextbox 00003
+ 0165	halt
+ 0166	section_end
+ENDSECTION
+SECTION 10
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "{00872}{00657}{00482}ÆÈÊéï1\n{00690}{00561}{00403}ï{01497}ô{00635}È"
+ 0026	paragraph
+ 0027	cmd62
+ 0028	textcolor COLOR_RED
+ 0030	flagctl 1, 0, 1
+ 0032	flagctl 1, 3, 1
+ 0034	flagctl 1, 4, 1
+ 0036	flagctl 1, 14, 1
+ 0038	setmovelocations 21, 20, 255, 255, 255
+ 0044	psychelock_itemchallenge 21, 15, 127, 127
+ 0049	text "ò"
+ 0050	cmd61 00021, 00020, 00255
+ 0054	text "òò"
+ 0056	newevidence 104, PROFILE, 0
+ 0058	newevidence 107, PROFILE, 0
+ 0060	newevidence 109, PROFILE, 0
+ 0062	newevidence 116, EVIDENCE, 0
+ 0064	newevidence 125, EVIDENCE, 0
+ 0066	fadetoblack 00020
+ 0068	hidetextbox 00003
+ 0070	halt
+ 0071	section_end
+ENDSECTION
+SECTION 11
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "{00872}{00657}{00482}ÆÈÊéï2\n{00737}{00738}{00556}{00608}"
+ 0022	paragraph
+ 0023	cmd62
+ 0024	textcolor COLOR_RED
+ 0026	flagctl 1, 0, 1
+ 0028	flagctl 1, 3, 1
+ 0030	flagctl 1, 4, 1
+ 0032	flagctl 1, 14, 1
+ 0034	flagctl 1, 16, 1
+ 0036	flagctl 1, 21, 1
+ 0038	flagctl 1, 23, 1
+ 0040	setmovelocations 21, 20, 255, 255, 255
+ 0046	psychelock_itemchallenge 21, 15, 127, 127
+ 0051	text "ò"
+ 0052	cmd61 00021, 00020, 00255
+ 0056	text "òò"
+ 0058	newevidence 104, PROFILE, 0
+ 0060	newevidence 107, PROFILE, 0
+ 0062	newevidence 109, PROFILE, 0
+ 0064	newevidence 116, EVIDENCE, 0
+ 0066	newevidence 125, EVIDENCE, 0
+ 0068	newevidence 162, PROFILE, 0
+ 0070	fadetoblack 00020
+ 0072	hidetextbox 00003
+ 0074	halt
+ 0075	section_end
+ENDSECTION
+SECTION 12
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "{00872}{00657}{00482}ÆÈÊéï3\n{00333}{00310}{00317}ô{01640}{01641}{00536}{00538}{00418}"
+ 0027	paragraph
+ 0028	cmd62
+ 0029	textcolor COLOR_RED
+ 0031	flagctl 1, 0, 1
+ 0033	flagctl 1, 3, 1
+ 0035	flagctl 1, 4, 1
+ 0037	flagctl 1, 14, 1
+ 0039	flagctl 1, 16, 1
+ 0041	flagctl 1, 21, 1
+ 0043	flagctl 1, 23, 1
+ 0045	flagctl 1, 17, 1
+ 0047	flagctl 1, 48, 1
+ 0049	flagctl 1, 49, 1
+ 0051	flagctl 1, 24, 1
+ 0053	flagctl 1, 50, 1
+ 0055	flagctl 1, 29, 1
+ 0057	flagctl 1, 32, 1
+ 0059	flagctl 1, 31, 1
+ 0061	flagctl 1, 30, 1
+ 0063	setmovelocations 21, 20, 255, 255, 255
+ 0069	psychelock_itemchallenge 21, 15, 127, 127
+ 0074	text "ò"
+ 0075	cmd61 00021, 00020, 00255
+ 0079	text "òò"
+ 0081	setmovelocations 20, 21, 22, 19, 255
+ 0087	psychelock_itemchallenge 20, 16, 4294967185, 4294967182
+ 0092	text "ò"
+ 0093	cmd61 00020, 00021, 00022
+ 0097	screen_fade 255, FADE_NONE, 23, 32872
+ 0101	newevidence 107, PROFILE, 0
+ 0103	newevidence 109, PROFILE, 0
+ 0105	newevidence 116, EVIDENCE, 0
+ 0107	newevidence 125, EVIDENCE, 0
+ 0109	newevidence 162, PROFILE, 0
+ 0111	newevidence 147, EVIDENCE, 0
+ 0113	newevidence 123, EVIDENCE, 0
+ 0115	newevidence 121, EVIDENCE, 0
+ 0117	newevidence 119, EVIDENCE, 0
+ 0119	fadetoblack 00020
+ 0121	hidetextbox 00003
+ 0123	halt
+ 0124	section_end
+ENDSECTION
+SECTION 13
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "{00872}{00657}{00482}ÆÈÊéï4\n{00333}{00310}{00317}ô{01640}{01641}{00957}{00538}{00418}"
+ 0027	paragraph
+ 0028	cmd62
+ 0029	textcolor COLOR_RED
+ 0031	flagctl 1, 0, 1
+ 0033	flagctl 1, 3, 1
+ 0035	flagctl 1, 4, 1
+ 0037	flagctl 1, 14, 1
+ 0039	flagctl 1, 16, 1
+ 0041	flagctl 1, 21, 1
+ 0043	flagctl 1, 23, 1
+ 0045	flagctl 1, 17, 1
+ 0047	flagctl 1, 48, 1
+ 0049	flagctl 1, 49, 1
+ 0051	flagctl 1, 24, 1
+ 0053	flagctl 1, 50, 1
+ 0055	flagctl 1, 29, 1
+ 0057	flagctl 1, 32, 1
+ 0059	flagctl 1, 31, 1
+ 0061	flagctl 1, 30, 1
+ 0063	flagctl 1, 18, 1
+ 0065	flagctl 1, 33, 1
+ 0067	flagctl 1, 34, 1
+ 0069	flagctl 1, 35, 1
+ 0071	flagctl 1, 42, 1
+ 0073	flagctl 1, 41, 1
+ 0075	setmovelocations 21, 20, 255, 255, 255
+ 0081	psychelock_itemchallenge 21, 15, 127, 127
+ 0086	text "ò"
+ 0087	cmd61 00021, 00020, 00255
+ 0091	text "òò"
+ 0093	setmovelocations 20, 21, 22, 19, 255
+ 0099	psychelock_itemchallenge 20, 16, 4294967185, 4294967182
+ 0104	text "ò"
+ 0105	cmd61 00020, 00021, 00022
+ 0109	screen_fade 255, FADE_NONE, 23, 32872
+ 0113	newevidence 107, PROFILE, 0
+ 0115	newevidence 109, PROFILE, 0
+ 0117	newevidence 116, EVIDENCE, 0
+ 0119	newevidence 125, EVIDENCE, 0
+ 0121	newevidence 162, PROFILE, 0
+ 0123	newevidence 147, EVIDENCE, 0
+ 0125	newevidence 123, EVIDENCE, 0
+ 0127	newevidence 121, EVIDENCE, 0
+ 0129	newevidence 113, PROFILE, 0
+ 0131	newevidence 126, EVIDENCE, 0
+ 0133	newevidence 120, EVIDENCE, 0
+ 0135	fadetoblack 00020
+ 0137	hidetextbox 00003
+ 0139	halt
+ 0140	section_end
+ENDSECTION
+SECTION 14
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "{00872}{00657}{00482}ÆÈÊéï5\n{00517}{00612}ì{00406}Ùà"
+ 0024	paragraph
+ 0025	cmd62
+ 0026	textcolor COLOR_RED
+ 0028	flagctl 1, 0, 1
+ 0030	flagctl 1, 3, 1
+ 0032	flagctl 1, 4, 1
+ 0034	flagctl 1, 14, 1
+ 0036	flagctl 1, 16, 1
+ 0038	flagctl 1, 21, 1
+ 0040	flagctl 1, 23, 1
+ 0042	flagctl 1, 17, 1
+ 0044	flagctl 1, 48, 1
+ 0046	flagctl 1, 49, 1
+ 0048	flagctl 1, 24, 1
+ 0050	flagctl 1, 50, 1
+ 0052	flagctl 1, 29, 1
+ 0054	flagctl 1, 32, 1
+ 0056	flagctl 1, 31, 1
+ 0058	flagctl 1, 30, 1
+ 0060	flagctl 1, 18, 1
+ 0062	flagctl 1, 33, 1
+ 0064	flagctl 1, 34, 1
+ 0066	flagctl 1, 35, 1
+ 0068	flagctl 1, 42, 1
+ 0070	flagctl 1, 41, 1
+ 0072	flagctl 1, 19, 1
+ 0074	flagctl 1, 5, 1
+ 0076	flagctl 1, 6, 1
+ 0078	flagctl 1, 7, 1
+ 0080	flagctl 1, 15, 1
+ 0082	setmovelocations 21, 20, 255, 255, 255
+ 0088	psychelock_itemchallenge 21, 15, 127, 127
+ 0093	text "ò"
+ 0094	cmd61 00021, 00020, 00255
+ 0098	text "òò"
+ 0100	setmovelocations 20, 21, 22, 19, 255
+ 0106	psychelock_itemchallenge 20, 16, 4294967185, 4294967182
+ 0111	text "ò"
+ 0112	cmd61 00020, 00021, 00022
+ 0116	screen_fade 255, FADE_NONE, 23, 32872
+ 0120	newevidence 107, PROFILE, 0
+ 0122	newevidence 109, PROFILE, 0
+ 0124	newevidence 116, EVIDENCE, 0
+ 0126	newevidence 125, EVIDENCE, 0
+ 0128	newevidence 162, PROFILE, 0
+ 0130	newevidence 147, EVIDENCE, 0
+ 0132	newevidence 123, EVIDENCE, 0
+ 0134	newevidence 122, EVIDENCE, 0
+ 0136	newevidence 113, PROFILE, 0
+ 0138	newevidence 126, EVIDENCE, 0
+ 0140	newevidence 120, EVIDENCE, 0
+ 0142	fadetoblack 00020
+ 0144	hidetextbox 00003
+ 0146	halt
+ 0147	section_end
+ENDSECTION
+SECTION 15
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "{00872}{00657}1éï1\n{00703}Ä{01685}{01686}"
+ 0019	paragraph
+ 0020	cmd62
+ 0021	textcolor COLOR_RED
+ 0023	flagctl 1, 0, 1
+ 0025	newevidence 104, PROFILE, 0
+ 0027	newevidence 107, PROFILE, 0
+ 0029	newevidence 109, PROFILE, 0
+ 0031	fadetoblack 00021
+ 0033	hidetextbox 00003
+ 0035	halt
+ 0036	section_end
+ENDSECTION
+SECTION 16
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "{00872}{00657}1éï2\n➁-{00317}{00291}îÜ"
+ 0021	paragraph
+ 0022	cmd62
+ 0023	textcolor COLOR_RED
+ 0025	flagctl 1, 0, 1
+ 0027	flagctl 1, 3, 1
+ 0029	flagctl 1, 4, 1
+ 0031	flagctl 1, 14, 1
+ 0033	setmovelocations 21, 20, 255, 255, 255
+ 0039	psychelock_itemchallenge 21, 15, 127, 127
+ 0044	text "ò"
+ 0045	cmd61 00021, 00020, 00255
+ 0049	text "òò"
+ 0051	newevidence 104, PROFILE, 0
+ 0053	newevidence 107, PROFILE, 0
+ 0055	newevidence 109, PROFILE, 0
+ 0057	newevidence 116, EVIDENCE, 0
+ 0059	newevidence 125, EVIDENCE, 0
+ 0061	fadetoblack 00021
+ 0063	hidetextbox 00003
+ 0065	halt
+ 0066	section_end
+ENDSECTION
+SECTION 17
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "{00872}{00657}1éï3\n{00479}æÀîÀ"
+ 0020	paragraph
+ 0021	cmd62
+ 0022	textcolor COLOR_RED
+ 0024	flagctl 1, 0, 1
+ 0026	flagctl 1, 3, 1
+ 0028	flagctl 1, 4, 1
+ 0030	flagctl 1, 14, 1
+ 0032	flagctl 1, 16, 1
+ 0034	flagctl 1, 21, 1
+ 0036	flagctl 1, 23, 1
+ 0038	flagctl 1, 17, 1
+ 0040	setmovelocations 21, 20, 255, 255, 255
+ 0046	psychelock_itemchallenge 21, 15, 127, 127
+ 0051	text "ò"
+ 0052	cmd61 00021, 00020, 00255
+ 0056	text "òò"
+ 0058	setmovelocations 20, 21, 22, 19, 255
+ 0064	psychelock_itemchallenge 20, 16, 4294967185, 4294967182
+ 0069	text "ò"
+ 0070	cmd61 00020, 00021, 00022
+ 0074	screen_fade 255, FADE_NONE, 23, 32872
+ 0078	newevidence 107, PROFILE, 0
+ 0080	newevidence 109, PROFILE, 0
+ 0082	newevidence 116, EVIDENCE, 0
+ 0084	newevidence 125, EVIDENCE, 0
+ 0086	newevidence 162, PROFILE, 0
+ 0088	newevidence 147, EVIDENCE, 0
+ 0090	fadetoblack 00021
+ 0092	hidetextbox 00003
+ 0094	halt
+ 0095	section_end
+ENDSECTION
+SECTION 18
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "{00872}{00657}1éï4\n{00310}{00303}{00314}➀ô{00568}{00569}"
+ 0022	paragraph
+ 0023	cmd62
+ 0024	textcolor COLOR_RED
+ 0026	flagctl 1, 0, 1
+ 0028	flagctl 1, 3, 1
+ 0030	flagctl 1, 4, 1
+ 0032	flagctl 1, 16, 1
+ 0034	flagctl 1, 21, 1
+ 0036	flagctl 1, 23, 1
+ 0038	flagctl 1, 17, 1
+ 0040	flagctl 1, 48, 1
+ 0042	flagctl 1, 49, 1
+ 0044	flagctl 1, 24, 1
+ 0046	flagctl 1, 50, 1
+ 0048	flagctl 1, 29, 1
+ 0050	flagctl 1, 32, 1
+ 0052	flagctl 1, 31, 1
+ 0054	flagctl 1, 30, 1
+ 0056	flagctl 1, 18, 1
+ 0058	flagctl 1, 33, 1
+ 0060	flagctl 1, 34, 1
+ 0062	flagctl 1, 35, 1
+ 0064	flagctl 1, 42, 1
+ 0066	flagctl 1, 41, 1
+ 0068	setmovelocations 21, 20, 255, 255, 255
+ 0074	psychelock_itemchallenge 21, 15, 127, 127
+ 0079	text "ò"
+ 0080	cmd61 00021, 00020, 00255
+ 0084	text "òò"
+ 0086	setmovelocations 20, 21, 22, 19, 255
+ 0092	psychelock_itemchallenge 20, 16, 4294967185, 4294967182
+ 0097	text "ò"
+ 0098	cmd61 00020, 00021, 00022
+ 0102	screen_fade 255, FADE_NONE, 23, 32872
+ 0106	newevidence 107, PROFILE, 0
+ 0108	newevidence 109, PROFILE, 0
+ 0110	newevidence 116, EVIDENCE, 0
+ 0112	newevidence 162, PROFILE, 0
+ 0114	newevidence 147, EVIDENCE, 0
+ 0116	newevidence 123, EVIDENCE, 0
+ 0118	newevidence 121, EVIDENCE, 0
+ 0120	newevidence 113, PROFILE, 0
+ 0122	newevidence 126, EVIDENCE, 0
+ 0124	newevidence 120, EVIDENCE, 0
+ 0126	fadetoblack 00021
+ 0128	hidetextbox 00003
+ 0130	halt
+ 0131	section_end
+ENDSECTION
+SECTION 19
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "{00872}{00657}1éï5\n➁-{00317}{00291}îÜ"
+ 0021	paragraph
+ 0022	cmd62
+ 0023	textcolor COLOR_RED
+ 0025	flagctl 1, 0, 1
+ 0027	flagctl 1, 3, 1
+ 0029	flagctl 1, 4, 1
+ 0031	flagctl 1, 14, 1
+ 0033	flagctl 1, 16, 1
+ 0035	flagctl 1, 21, 1
+ 0037	flagctl 1, 23, 1
+ 0039	flagctl 1, 17, 1
+ 0041	flagctl 1, 48, 1
+ 0043	flagctl 1, 49, 1
+ 0045	flagctl 1, 24, 1
+ 0047	flagctl 1, 50, 1
+ 0049	flagctl 1, 29, 1
+ 0051	flagctl 1, 32, 1
+ 0053	flagctl 1, 31, 1
+ 0055	flagctl 1, 30, 1
+ 0057	flagctl 1, 18, 1
+ 0059	flagctl 1, 33, 1
+ 0061	flagctl 1, 34, 1
+ 0063	flagctl 1, 35, 1
+ 0065	flagctl 1, 42, 1
+ 0067	flagctl 1, 41, 1
+ 0069	flagctl 1, 19, 1
+ 0071	flagctl 1, 5, 1
+ 0073	flagctl 1, 6, 1
+ 0075	flagctl 1, 7, 1
+ 0077	flagctl 1, 15, 1
+ 0079	flagctl 1, 20, 1
+ 0081	flagctl 1, 25, 1
+ 0083	setmovelocations 21, 20, 255, 255, 255
+ 0089	psychelock_itemchallenge 21, 15, 127, 127
+ 0094	text "ò"
+ 0095	cmd61 00021, 00020, 00255
+ 0099	text "òò"
+ 0101	setmovelocations 20, 21, 22, 19, 255
+ 0107	psychelock_itemchallenge 20, 16, 4294967185, 4294967182
+ 0112	text "ò"
+ 0113	cmd61 00020, 00021, 00022
+ 0117	screen_fade 255, FADE_NONE, 50, 22
+ 0121	text "ì"
+ 0122	cmd32 00019, 00246
+ 0125	cmd37 00004, 00000
+ 0128	cmd37 00006, 00001
+ 0131	newevidence 104, PROFILE, 0
+ 0133	newevidence 107, PROFILE, 0
+ 0135	newevidence 109, PROFILE, 0
+ 0137	newevidence 116, EVIDENCE, 0
+ 0139	newevidence 125, EVIDENCE, 0
+ 0141	newevidence 162, PROFILE, 0
+ 0143	newevidence 147, EVIDENCE, 0
+ 0145	newevidence 123, EVIDENCE, 0
+ 0147	newevidence 122, EVIDENCE, 0
+ 0149	newevidence 113, PROFILE, 0
+ 0151	newevidence 126, EVIDENCE, 0
+ 0153	newevidence 120, EVIDENCE, 0
+ 0155	fadetoblack 00021
+ 0157	hidetextbox 00003
+ 0159	halt
+ 0160	section_end
+ENDSECTION
+SECTION 20
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "{00872}{00657}2éï1\n{00627}àÅà{00313}{00287}ᵃ"
+ 0022	paragraph
+ 0023	cmd62
+ 0024	textcolor COLOR_RED
+ 0026	flagctl 1, 0, 1
+ 0028	flagctl 1, 3, 1
+ 0030	flagctl 1, 4, 1
+ 0032	flagctl 1, 14, 1
+ 0034	flagctl 1, 16, 1
+ 0036	flagctl 1, 21, 1
+ 0038	setmovelocations 21, 20, 255, 255, 255
+ 0044	psychelock_itemchallenge 21, 15, 127, 127
+ 0049	text "ò"
+ 0050	cmd61 00021, 00020, 00255
+ 0054	text "òò"
+ 0056	newevidence 104, PROFILE, 0
+ 0058	newevidence 107, PROFILE, 0
+ 0060	newevidence 109, PROFILE, 0
+ 0062	newevidence 116, EVIDENCE, 0
+ 0064	newevidence 125, EVIDENCE, 0
+ 0066	newevidence 162, PROFILE, 0
+ 0068	fadetoblack 00022
+ 0070	hidetextbox 00003
+ 0072	halt
+ 0073	section_end
+ENDSECTION
+SECTION 21
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "{00872}{00657}2éï2\n{00502}{00529}{00677}{00678}ï{00584}{00738}{00556}{00608}"
+ 0024	paragraph
+ 0025	cmd62
+ 0026	textcolor COLOR_RED
+ 0028	flagctl 1, 0, 1
+ 0030	flagctl 1, 3, 1
+ 0032	flagctl 1, 4, 1
+ 0034	flagctl 1, 14, 1
+ 0036	flagctl 1, 16, 1
+ 0038	flagctl 1, 21, 1
+ 0040	flagctl 1, 23, 1
+ 0042	flagctl 1, 17, 1
+ 0044	setmovelocations 21, 20, 255, 255, 255
+ 0050	psychelock_itemchallenge 21, 15, 127, 127
+ 0055	text "ò"
+ 0056	cmd61 00021, 00020, 00255
+ 0060	text "òò"
+ 0062	setmovelocations 20, 21, 22, 19, 255
+ 0068	psychelock_itemchallenge 20, 16, 4294967185, 4294967182
+ 0073	text "ò"
+ 0074	cmd61 00020, 00021, 00022
+ 0078	screen_fade 255, FADE_NONE, 23, 32872
+ 0082	newevidence 107, PROFILE, 0
+ 0084	newevidence 109, PROFILE, 0
+ 0086	newevidence 116, EVIDENCE, 0
+ 0088	newevidence 125, EVIDENCE, 0
+ 0090	newevidence 162, PROFILE, 0
+ 0092	newevidence 147, EVIDENCE, 0
+ 0094	fadetoblack 00022
+ 0096	hidetextbox 00003
+ 0098	halt
+ 0099	section_end
+ENDSECTION
+SECTION 22
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "{00872}{00657}2éï3\n➁-{00317}{00291}îÜ"
+ 0021	paragraph
+ 0022	cmd62
+ 0023	textcolor COLOR_RED
+ 0025	flagctl 1, 0, 1
+ 0027	flagctl 1, 3, 1
+ 0029	flagctl 1, 4, 1
+ 0031	flagctl 1, 14, 1
+ 0033	flagctl 1, 16, 1
+ 0035	flagctl 1, 21, 1
+ 0037	flagctl 1, 23, 1
+ 0039	flagctl 1, 17, 1
+ 0041	flagctl 1, 48, 1
+ 0043	flagctl 1, 49, 1
+ 0045	flagctl 1, 24, 1
+ 0047	flagctl 1, 50, 1
+ 0049	flagctl 1, 29, 1
+ 0051	flagctl 1, 32, 1
+ 0053	flagctl 1, 31, 1
+ 0055	flagctl 1, 30, 1
+ 0057	setmovelocations 21, 20, 255, 255, 255
+ 0063	psychelock_itemchallenge 21, 15, 127, 127
+ 0068	text "ò"
+ 0069	cmd61 00021, 00020, 00255
+ 0073	text "òò"
+ 0075	setmovelocations 20, 21, 22, 19, 255
+ 0081	psychelock_itemchallenge 20, 16, 4294967185, 4294967182
+ 0086	text "ò"
+ 0087	cmd61 00020, 00021, 00022
+ 0091	screen_fade 255, FADE_NONE, 23, 32872
+ 0095	newevidence 107, PROFILE, 0
+ 0097	newevidence 109, PROFILE, 0
+ 0099	newevidence 116, EVIDENCE, 0
+ 0101	newevidence 125, EVIDENCE, 0
+ 0103	newevidence 162, PROFILE, 0
+ 0105	newevidence 147, EVIDENCE, 0
+ 0107	newevidence 123, EVIDENCE, 0
+ 0109	newevidence 121, EVIDENCE, 0
+ 0111	newevidence 119, EVIDENCE, 0
+ 0113	fadetoblack 00022
+ 0115	hidetextbox 00003
+ 0117	halt
+ 0118	section_end
+ENDSECTION
+SECTION 23
+ 0000	section_setup
+ 0001	bg 4095, BG_NOSHIFT
+ 0003	cmd74 00002, 00000
+ 0006	hidetextbox 00000
+ 0008	text "{00872}{00657}2éï4\n{00517}{00612}{00737}{01233}{00556}{00608}"
+ 0021	paragraph
+ 0022	cmd62
+ 0023	textcolor COLOR_RED
+ 0025	flagctl 1, 0, 1
+ 0027	flagctl 1, 3, 1
+ 0029	flagctl 1, 4, 1
+ 0031	flagctl 1, 14, 1
+ 0033	flagctl 1, 16, 1
+ 0035	flagctl 1, 21, 1
+ 0037	flagctl 1, 23, 1
+ 0039	flagctl 1, 17, 1
+ 0041	flagctl 1, 48, 1
+ 0043	flagctl 1, 49, 1
+ 0045	flagctl 1, 24, 1
+ 0047	flagctl 1, 50, 1
+ 0049	flagctl 1, 29, 1
+ 0051	flagctl 1, 32, 1
+ 0053	flagctl 1, 31, 1
+ 0055	flagctl 1, 30, 1
+ 0057	flagctl 1, 18, 1
+ 0059	flagctl 1, 33, 1
+ 0061	flagctl 1, 34, 1
+ 0063	flagctl 1, 35, 1
+ 0065	flagctl 1, 42, 1
+ 0067	flagctl 1, 41, 1
+ 0069	flagctl 1, 19, 1
+ 0071	flagctl 1, 5, 1
+ 0073	flagctl 1, 6, 1
+ 0075	flagctl 1, 7, 1
+ 0077	flagctl 1, 15, 1
+ 0079	flagctl 1, 20, 1
+ 0081	setmovelocations 21, 20, 255, 255, 255
+ 0087	psychelock_itemchallenge 21, 15, 127, 127
+ 0092	text "ò"
+ 0093	cmd61 00021, 00020, 00255
+ 0097	text "òò"
+ 0099	setmovelocations 20, 21, 22, 19, 255
+ 0105	psychelock_itemchallenge 20, 16, 4294967185, 4294967182
+ 0110	text "ò"
+ 0111	cmd61 00020, 00021, 00022
+ 0115	screen_fade 255, FADE_NONE, 50, 22
+ 0119	text "ì"
+ 0120	cmd37 00004, 00000
+ 0123	cmd37 00006, 00001
+ 0126	newevidence 104, PROFILE, 0
+ 0128	newevidence 107, PROFILE, 0
+ 0130	newevidence 109, PROFILE, 0
+ 0132	newevidence 116, EVIDENCE, 0
+ 0134	newevidence 125, EVIDENCE, 0
+ 0136	newevidence 162, PROFILE, 0
+ 0138	newevidence 147, EVIDENCE, 0
+ 0140	newevidence 123, EVIDENCE, 0
+ 0142	newevidence 122, EVIDENCE, 0
+ 0144	newevidence 113, PROFILE, 0
+ 0146	newevidence 126, EVIDENCE, 0
+ 0148	newevidence 120, EVIDENCE, 0
+ 0150	fadetoblack 00022
+ 0152	hidetextbox 00003
+ 0154	halt
+ 0155	section_end
+ENDSECTION

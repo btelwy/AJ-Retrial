@@ -1,0 +1,321 @@
+SECTION 0
+ 0000	section_setup
+ 0001	hidetextbox 00001
+ 0003	person 5, PLACE_DEFAULT, 0, 81, 81
+ 0007	cmd38 00001
+ 0009	name 5, SHOW_LEFT
+ 0011	person 5, PLACE_DEFAULT, 0, 82, 81
+ 0015	hidetextbox 00000
+ 0017	screen_fade 02305, 00008, 00031
+ 0021	sound 00044, 00001
+ 0024	shake 00030, 00002
+ 0027	speed 00002
+ 0029	text "Eeeeeeek!"
+ 0038	wait 00020
+ 0040	newline
+ 0041	text "Someone\'s"
+ 0050	screen_fade 02305, 00008, 00031
+ 0054	sound 00053, 00001
+ 0057	shake 00030, 00001
+ 0060	text " there!"
+ 0067	paragraph
+ 0068	person 5, PLACE_DEFAULT, 0, 81, 81
+ 0072	speed 00008
+ 0074	text "."
+ 0075	speed 00010
+ 0077	text "."
+ 0078	speed 00012
+ 0080	text "."
+ 0081	paragraph
+ 0082	person 5, PLACE_DEFAULT, 0, 68, 67
+ 0086	name 5, SHOW_LEFT
+ 0088	speed 00003
+ 0090	text "Oh,"
+ 0093	wait 00008
+ 0095	text " it\'s just a gold{DASH}painted\nhuman skeleton."
+ 0136	paragraph
+ 0137	name 4, SHOW_LEFT
+ 0139	person 5, PLACE_DEFAULT, 0, 75, 75
+ 0143	speed 00004
+ 0145	textcolor COLOR_BLUE
+ 0147	text "(Just a human skeleton!?\n..."
+ 0175	wait 00020
+ 0177	text "And painted gold?)"
+ 0195	textcolor COLOR_WHITE
+ 0197	paragraph
+ 0198	name 5, SHOW_LEFT
+ 0200	person 5, PLACE_DEFAULT, 0, 72, 69
+ 0204	speed 00003
+ 0206	text "There\'s a mannequin hand\nwaving to us from the box\nbehind the skeleton."
+ 0277	paragraph
+ 0278	person 5, PLACE_DEFAULT, 0, 74, 73
+ 0282	text "This place just screams"
+ 0305	wait 00006
+ 0307	newline
+ 0308	text "{00385}hospital storage{00385},"
+ 0327	wait 00006
+ 0329	text " don\'t\nyou think?"
+ 0346	paragraph
+ 0347	name 4, SHOW_LEFT
+ 0349	person 5, PLACE_DEFAULT, 0, 73, 73
+ 0353	speed 00003
+ 0355	text "It screams something,"
+ 0376	wait 00008
+ 0378	text " that\'s\nfor sure."
+ 0395	nextpage_button
+ 0396	hidetextbox 00001
+ 0398	personvanish 00004, 00001
+ 0401	wait 00016
+ 0403	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0407	hidetextbox 00003
+ 0409	halt
+ 0410	section_end
+ENDSECTION
+SECTION 1
+ 0000	section_setup
+ 0001	person 5, PLACE_DEFAULT, 0, 69, 69
+ 0005	cmd38 00001
+ 0007	name 5, SHOW_LEFT
+ 0009	person 5, PLACE_DEFAULT, 0, 72, 69
+ 0013	hidetextbox 00000
+ 0015	sound 00051, 00001
+ 0018	screen_fade 02305, 00008, 00031
+ 0022	shake 00030, 00000
+ 0025	speed 00002
+ 0027	text "Hey!"
+ 0031	wait 00016
+ 0033	text " A kitty{DASH}cat!"
+ 0046	wait 00016
+ 0048	text " "
+ 0049	speed 00003
+ 0051	text "Here,"
+ 0056	wait 00012
+ 0058	text " kitty\nkitty kitty."
+ 0077	nextpage_button
+ 0078	hidetextbox 00001
+ 0080	personvanish 00004, 00001
+ 0083	wait 00016
+ 0085	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0089	sound 00119, 00001
+ 0092	name 0, SHOW_LEFT
+ 0094	hidetextbox 00000
+ 0096	togglevoicesfx 00000
+ 0098	text "Meow."
+ 0103	paragraph
+ 0104	hidetextbox 00001
+ 0106	personvanish 00003, 00001
+ 0109	person 5, PLACE_DEFAULT, 0, 75, 75
+ 0113	wait 00016
+ 0115	person 5, PLACE_DEFAULT, 0, 76, 75
+ 0119	name 5, SHOW_LEFT
+ 0121	togglevoicesfx 00001
+ 0123	hidetextbox 00000
+ 0125	text "..."
+ 0128	wait 00020
+ 0130	text "It\'s not coming down."
+ 0151	paragraph
+ 0152	name 4, SHOW_LEFT
+ 0154	person 5, PLACE_DEFAULT, 0, 75, 75
+ 0158	text "We do look kind of suspicious,"
+ 0188	wait 00008
+ 0190	newline
+ 0191	person 5, PLACE_DEFAULT, 0, 81, 81
+ 0195	text "you have to admit."
+ 0213	paragraph
+ 0214	name 5, SHOW_LEFT
+ 0216	person 5, PLACE_DEFAULT, 0, 76, 75
+ 0220	text "It\'s OK kitty{DASH}cat!"
+ 0238	wait 00016
+ 0240	text " His hair\nwon\'t hurt you!"
+ 0265	nextpage_button
+ 0266	name 4, SHOW_LEFT
+ 0268	text "It\'s OK kitty{DASH}cat!"
+ 0286	wait 00016
+ 0288	text " She won\'t\nmake you disappear in her hat!"
+ 0329	nextpage_button
+ 0330	hidetextbox 00001
+ 0332	personvanish 00004, 00001
+ 0335	wait 00016
+ 0337	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0341	hidetextbox 00003
+ 0343	halt
+ 0344	section_end
+ENDSECTION
+SECTION 2
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	hidetextbox 00000
+ 0005	text "Look,"
+ 0010	wait 00008
+ 0012	text " it\'s a folding ladder."
+ 0035	paragraph
+ 0036	hidetextbox 00001
+ 0038	personvanish 00003, 00001
+ 0041	person 5, PLACE_DEFAULT, 0, 67, 67
+ 0045	wait 00016
+ 0047	name 5, SHOW_LEFT
+ 0049	person 5, PLACE_DEFAULT, 0, 68, 67
+ 0053	hidetextbox 00000
+ 0055	text "Polly!"
+ 0061	wait 00012
+ 0063	text " That\'s called a"
+ 0079	wait 00008
+ 0081	newline
+ 0082	person 5, PLACE_DEFAULT, 0, 74, 73
+ 0086	text "{00385}stepladder{00385}!"
+ 0099	wait 00016
+ 0101	text " C\'mon!"
+ 0108	nextpage_button
+ 0109	name 4, SHOW_LEFT
+ 0111	speed 00005
+ 0113	text "..."
+ 0116	wait 00020
+ 0118	speed 00003
+ 0120	text "A stepladder?"
+ 0133	wait 00016
+ 0135	text " How is that\n"
+ 0148	person 5, PLACE_DEFAULT, 0, 81, 81
+ 0152	sound 00052, 00001
+ 0155	screen_fade 02305, 00008, 00031
+ 0159	text "different from a regular\nladder then?"
+ 0196	paragraph
+ 0197	person 5, PLACE_DEFAULT, 0, 76, 75
+ 0201	name 5, SHOW_LEFT
+ 0203	speed 00003
+ 0205	text "It\'s a much more complex\npiece of machinery."
+ 0249	wait 00016
+ 0251	text " "
+ 0252	person 5, PLACE_DEFAULT, 0, 68, 67
+ 0256	text "It\'s like\ntwo ladders stuck together!"
+ 0293	nextpage_button
+ 0294	name 4, SHOW_LEFT
+ 0296	speed 00004
+ 0298	text "..."
+ 0301	wait 00020
+ 0303	text "So you admit that basically\nit\'s a ladder,"
+ 0345	wait 00010
+ 0347	text " right?"
+ 0354	nextpage_button
+ 0355	person 5, PLACE_DEFAULT, 0, 82, 81
+ 0359	name 5, SHOW_LEFT
+ 0361	sound 00051, 00001
+ 0364	screen_fade 02305, 00008, 00031
+ 0368	shake 00030, 00000
+ 0371	speed 00004
+ 0373	text "Wait..."
+ 0380	wait 00020
+ 0382	text " Huh?"
+ 0387	nextpage_button
+ 0388	name 4, SHOW_LEFT
+ 0390	speed 00003
+ 0392	text "You have to look past the\nform..."
+ 0425	wait 00020
+ 0427	text " at the essence of\nthe thing."
+ 0456	nextpage_button
+ 0457	person 5, PLACE_DEFAULT, 0, 75, 75
+ 0461	name 5, SHOW_LEFT
+ 0463	text "Er"
+ 0465	speed 00008
+ 0467	text "..."
+ 0470	wait 00040
+ 0472	text " "
+ 0473	speed 00003
+ 0475	person 5, PLACE_DEFAULT, 0, 91, 90
+ 0479	screen_fade 02305, 00008, 00031
+ 0483	shake 00030, 00000
+ 0486	text "Can we talk about\nsomething else?"
+ 0519	nextpage_button
+ 0520	hidetextbox 00001
+ 0522	personvanish 00004, 00001
+ 0525	wait 00016
+ 0527	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0531	hidetextbox 00003
+ 0533	halt
+ 0534	section_end
+ENDSECTION
+SECTION 3
+ 0000	section_setup
+ 0001	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0005	name 4, SHOW_LEFT
+ 0007	text "This is where we found your\npanties,"
+ 0043	wait 00008
+ 0045	text " isn\'t it,"
+ 0055	wait 00010
+ 0057	text " Trucy?"
+ 0064	paragraph
+ 0065	person 5, PLACE_DEFAULT, 0, 72, 69
+ 0069	name 5, SHOW_LEFT
+ 0071	text "And I can\'t thank you enough,"
+ 0100	wait 00008
+ 0102	newline
+ 0103	text "Apollo!"
+ 0110	nextpage_button
+ 0111	name 4, SHOW_LEFT
+ 0113	text "Well,"
+ 0118	wait 00008
+ 0120	text " thank you for saying\nthank you!"
+ 0152	paragraph
+ 0153	person 5, PLACE_DEFAULT, 0, 68, 67
+ 0157	name 5, SHOW_LEFT
+ 0159	text "Oh,"
+ 0162	wait 00008
+ 0164	text " I\'m always polite!"
+ 0183	wait 00016
+ 0185	text " It\'s\npart of being a performer."
+ 0217	wait 00016
+ 0219	newline
+ 0220	text "You know what Daddy says:"
+ 0245	nextpage_button
+ 0246	person 5, PLACE_DEFAULT, 0, 76, 75
+ 0250	text "{00385}It doesn\'t cost anything to\nbe polite,"
+ 0289	wait 00012
+ 0291	text " and it could bring\nyou more business.{00385}"
+ 0330	nextpage_button
+ 0331	name 4, SHOW_LEFT
+ 0333	speed 00004
+ 0335	text "..."
+ 0338	wait 00020
+ 0340	text "Typical."
+ 0348	nextpage_button
+ 0349	person 5, PLACE_DEFAULT, 0, 72, 69
+ 0353	name 5, SHOW_LEFT
+ 0355	shake 00030, 00000
+ 0358	screen_fade 02305, 00008, 00031
+ 0362	speed 00003
+ 0364	text "Just kidding!"
+ 0377	wait 00016
+ 0379	text " I really am\ngrateful!"
+ 0401	nextpage_button
+ 0402	hidetextbox 00001
+ 0404	personvanish 00004, 00001
+ 0407	wait 00016
+ 0409	person 0, PLACE_DEFAULT, 0, 0, 0
+ 0413	hidetextbox 00003
+ 0415	halt
+ 0416	section_end
+ENDSECTION
+SECTION 4
+ 0000	section_setup
+ 0001	name 4, SHOW_LEFT
+ 0003	text "This car belongs to someone\nat the Meraktis Clinic..."
+ 0056	wait 00016
+ 0058	newline
+ 0059	text "and it hit Mr. Wright."
+ 0081	paragraph
+ 0082	text "Mr. Wright sprained his\nankle,"
+ 0112	wait 00008
+ 0114	text " and the car lost\na side{DASH}view mirror."
+ 0151	paragraph
+ 0152	speed 00004
+ 0154	text "This car vs."
+ 0166	wait 00016
+ 0168	text " Mr. Wright..."
+ 0182	wait 00020
+ 0184	newline
+ 0185	speed 00003
+ 0187	text "Not quite the match of the\ncentury."
+ 0222	nextpage_button
+ 0223	hidetextbox 00003
+ 0225	halt
+ 0226	section_end
+ENDSECTION
